@@ -1,0 +1,26 @@
+/*! Vendor */
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "vendor/bootstrap/bootstrap";
+@import '../../bower_components/lightgallery/dist/css/lightgallery.min';
+
+/*! Base */
+@import "base/variables";
+@import "base/icons";
+@import "base/fonts";
+
+@import "png-sprite";
+@import "base/base";
+//@import "base/buttons";
+//@import "base/gamburgeer";
+//@import "base/m-group";
+/*! Main / Layouts */
+@import "main/header";
+@import "base/menu";
+
+@import "main/footer";
+//@import "main/top-menu";
+//@import "main/bread";
+
+@import "pages/home";

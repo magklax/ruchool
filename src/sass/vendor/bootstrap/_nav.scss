@@ -1,0 +1,163 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
+$green: #22bc8c;
+$dark: #0a152e;
+.nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  // Style for "Специалист"
+  padding: rem(26) rem(25);
+  text-align: center;
+
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1;
+
+
+
+  @include media-breakpoint-up(md) {
+    color: rgba($dark, 0.35);
+
+
+    &:hover {
+      //background: rgba($dark, 0.04);
+      color: $green;
+    }
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+
+
+  }
+  @include media-breakpoint-down(sm) {
+    color: $dark;
+    font-weight: 400;
+  }
+
+
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  // Disabled state lightens text and removes hover/tab effects
+  &.disabled {
+    color: $nav-disabled-link-color;
+    cursor: $cursor-disabled;
+  }
+}
+
+
+//
+// Tabs
+//
+.tab-pane {
+
+}
+.nav-tabs {
+
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+
+    //overflow-x: auto;
+  }
+
+  .nav-item {
+    margin-bottom: -1px;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    //border: $nav-tabs-border-width solid transparent;
+    //@include border-top-radius($nav-tabs-border-radius);
+
+    @include hover-focus {
+      //border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+    }
+
+    &.disabled {
+      color: $nav-disabled-link-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $green;
+    font-weight: 900;
+
+
+  }
+
+  .dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+  }
+}
+.nav-link--mobile {
+  color: $green;
+  font-weight: 900;
+}
+
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-pills-active-link-color;
+    cursor: default;
+    background-color: $nav-pills-active-link-bg;
+  }
+}
+
+
+//
+// Justified variants
+//
+
+.nav-fill {
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.nav-justified {
+  .nav-item {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}

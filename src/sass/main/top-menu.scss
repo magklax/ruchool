@@ -1,0 +1,155 @@
+.top-menu {
+  display: block;
+  text-align: center;
+  margin-bottom: rem(50);
+  @include media-breakpoint-down(sm) {
+    opacity: 0;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  & > ul {
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+    & > li {
+      display: inline-block;
+      margin: 0 rem(9);
+      position: relative;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 8px;
+      }
+
+      &:nth-child(1) {
+        &>a {
+          border: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      & > a {
+        display: block;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: rem(12) rem(20);
+        color: #ffffff;
+        font-family: $roboto;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1;
+        border-radius: $fz5;
+        border: 1px solid rgba(#d4e0e7, 0.36);
+        position: relative;
+        z-index: 2;
+        //transition: 0.2s color, background;
+      }
+      &:hover {
+        .dropdown {
+          opacity: 1;
+          pointer-events: all;
+          transition: 0.2s;
+          transform: translateY(0);
+        }
+        & > a.with-dropdown {
+          background: #fff;
+          color: #2c3447;
+
+          border-radius: 18px 18px 0 0;
+        }
+      }
+      
+    }
+
+  }
+  .dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    position: absolute;
+    left:0;
+    top: 100%;
+    text-align: left;
+    // Style for "подложка в"
+    width: rem(340);
+    padding: rem(15) rem(25) rem(37);
+    box-shadow: 0 0 117px rgba(92, 95, 101, 0.67);
+    border-radius: 0 $fz5 $fz5;
+    background-color: #ffffff;
+
+    @include media-breakpoint-down(sm) {
+      z-index: 10;
+      width: 100%;
+      border-radius: 0 0 5px 5px;
+      box-shadow: none;
+      border: 1px solid rgba(#d4e0e7, 0.36);
+      border-top: none;
+    }
+    li {
+      //margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      &:before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff9400;
+        margin-right: 7px;
+        flex-shrink: 0;
+        margin-top: 12px;
+
+      }
+    }
+    a {
+      // Style for "•  Юриспру"
+
+      color: $dark;
+      font-family: $lato;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      padding: 10px 0;
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+}
+.svg-caret-down {
+  // Style for ""
+  width: 10px;
+  height: 6px;
+  fill: $green;
+  margin-left: rem(15);
+
+}
+.svg-home {
+  width: 13px;
+  height: 12px;
+  fill: #22bc8c;
+  margin-right: 7px;
+  margin-bottom: -1px;
+}
+.top-menu {
+  position: absolute;
+  z-index: 100;
+  top: rem(17);
+  left: 0;
+  right: 0;
+}
+main {
+  display: block;
+  position: relative;
+}
+.header__login {
+  margin-left: rem(30);
+  padding: rem(18) rem(40);
+}

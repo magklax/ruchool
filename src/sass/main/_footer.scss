@@ -1,0 +1,207 @@
+.footer {
+  background-color: rgba(#046889, 0.2);
+  padding: rem(37) 0 15px;
+  .row {
+    margin-bottom: rem(35);
+  }
+  .row-1 {
+    margin-bottom: 17px;
+  }
+  .row-2 {
+    margin-bottom: -23px;
+  }
+  .row-3 {
+     margin-bottom: 9px;
+   }
+  .row-4 {
+    margin-bottom: 8px;
+  }
+  .row-5 {
+    margin-bottom: -19px;
+  }
+}
+.footer-logo {
+  display: block;
+}
+.soc-item {
+  background-color: #7597a5;
+  display: inline-block;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 13px;  
+  transition: 0.2s;
+  &:hover {
+    background: #ff0000;
+  }
+}
+.footer__tel {
+  // Style for "8 800 100"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #51798a;
+  font-size: rem(27);
+  line-height: 1.12;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+  margin-top: -16px;
+  text-align: right;
+  display: block;
+}
+.footer__tel-label {
+  // Style for "Звонок бес"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #51798a;
+  font-size: 10px;  
+  text-transform: uppercase;
+  // Text style for "Звонок бес"
+  letter-spacing: 0.28px;
+  text-align: right;
+}
+.footer__title {
+  // Style for "Контакты"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 16px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  // Text style for "Контакты"
+  letter-spacing: 0.4px;
+  margin-bottom: 11px;
+}
+.footer__address {
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1.3;
+
+  margin-bottom: 7px;
+}
+.diadoc {
+  display: inline-block;
+  border: 1px solid #96b0bb;
+  padding: 6px 22px 0px;
+
+}
+.footer__link {
+  display: block;
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 13px;
+  line-height: 1.08;
+  margin-bottom: 5px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer__map {
+  height: rem(281);
+  border: 1px solid white;
+}
+.footer__region {
+  // Style for "мы в регио"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 13px;
+  line-height: 1.15;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom:  rem(38);
+}
+.footer__pay {
+  // Style for "оплата"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 16px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  // Text style for "оплата"
+  letter-spacing: 0.4px;
+  margin-right: 35px;
+  flex-shrink: 0;
+}
+.pay-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  align-items: center;
+}
+.pay-item {
+  margin: 0 15px;
+  flex: 0 0 auto;
+}
+.footer__license  {
+  // Style for "Лицензия н"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 11px;
+  line-height: 1.36;
+  // Text style for "Л, ицензия"
+  letter-spacing: 0.28px;
+  text-align: right;
+  margin-top: -10px;
+}
+.footer__pay-col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__danger {
+  // Style for "Все содерж"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 11px;
+  line-height: 1.36;
+  // Text style for "В, се соде"
+  letter-spacing: 0.28px;
+  // Text style for "www.uprav."
+  letter-spacing: 0.28px;
+  }
+.footer__spda {
+  // Style for "Политика о"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #48443e;
+  font-size: 11px;
+  line-height: 1.36;
+  text-decoration: underline;
+  // Text style for "П, олитика"
+  letter-spacing: 0.28px;
+  text-align: right;
+  display: block;
+}
+.copyright {
+  background-color: rgba(#3d88a1, 0.6);
+  // Style for "© Русская"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1.36;
+  // Text style for "©,  Русска"
+  letter-spacing: 0.28px;
+  padding: rem(16) 0;
+  border-top: 1px solid white; 
+}
+@include media-breakpoint-up(lg) {
+  .footer-menu {
+    margin-left: 68px;
+  }
+  .soc-list {
+    margin-left: 55px;
+    margin-top: -6px;
+  }
+
+}

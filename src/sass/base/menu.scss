@@ -1,0 +1,95 @@
+.top-menu {
+    background: rgba( #424242, 0.51);
+    
+}
+.top-menu__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.top-menu__link {
+    display: inline-block;
+    // Style for "О школе"
+    font-family: $futurademic;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    // Text style for "О школе"
+    letter-spacing: 0.27px;
+    height: 59px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    width: 128px;
+    text-align: center;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+.top-menu__item    {
+    position: relative;
+    &:hover {
+        .top-menu__drop-level {
+        display: block;
+        }
+        .top-menu__link {
+            background-color: #1f1f1f;
+            color: #00eaff;
+            border: 1px solid #00eaff;
+        }
+
+    }
+}
+.top-menu__drop-level {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 128px;
+    z-index: 5;
+    display: none;
+}
+.top-menu__drop-link {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+    min-height: 39px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Style for "Главный бу"
+    font-family: $futurademic;
+    font-weight: 400;
+    color: #cecece;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    // Text style for "Главный бу"
+    letter-spacing: 0.27px;
+    text-align: center;
+    transition: 0.2s;
+    &:not(:last-child) {
+        border-bottom: 1px solid #0b0d0a;
+    }
+    &:hover {
+        color: #00eaff;
+    }
+}
+.top-menu__link--caret {
+    position: relative;
+    &:after {
+        content: '';
+        width: 10px;
+        height: 9px;
+        position: absolute;
+        top: 33%;
+        right: 12px;
+        display: block;
+        background-image: url(../images/drop-caret.svg);
+        background-size: cover;
+        transform: rotate(-221deg) translateY(-50%);
+    }
+}

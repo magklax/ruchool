@@ -1,0 +1,10 @@
+include svg-icon.pug
+include title.pug
+
+mixin icon(iconName)
+	if !attributes.class
+		svg(class='svg svg-' + iconName)&attributes(attributes)
+			use(xlink:href='images/sprite.svg#icon_' + iconName)
+	else
+		+e('svg')(class=attributes.class + " svg-" + iconName)
+			use(xlink:href='images/sprite.svg#icon_' + iconName)

@@ -1,0 +1,688 @@
+.main-section {
+  background-size: cover;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/main-pattern.svg);
+    background-size: cover;
+    z-index: 2;
+  }
+  .container {
+    z-index: 3;
+    position: relative;
+  }
+}
+.main-section__left-bar {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.main-section__right-text {
+  // Style for "Подписатьс"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 0.96;
+  text-transform: uppercase;
+  // Text style for "П, одписат"
+  letter-spacing: 0.25px;
+  margin-top: 8px;
+}
+.main-section__right-bar  {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.main-section__left-item  {
+  width: 69px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(#000, 0.35);
+  background: rgba( #000, 0.35);
+}
+.main-section__right-item {
+  width: 92px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(#000, 0.35);
+  background: rgba( #000, 0.35);
+}
+.main-section__left-day {
+  width: 69px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(#000, 0.35);
+  background: rgba( #000, 0.35);
+  // Style for "15 авг 16"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+  &:hover {
+    .main-section__left-hidden {
+      display: flex;
+    }
+  }
+}
+.main-section__left-hidden {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  // Style for "День откры"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  // Text style for "День откры"
+  letter-spacing: 0.18px;
+  background: rgba( #000, 0.35);
+  white-space: nowrap;
+  display: none;
+}
+.main-section__left-close  {
+  width: 69px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(#000, 0.70);
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/left-arr.png);
+    background-size: cover;
+  }
+}
+.main-section__left-item--mb {
+  border: none;
+  margin-bottom: 10px;
+}
+.video {
+  border: 1px solid #f0f0f0;
+  background: rgba(#1f1f1f, 0.59);
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%;
+}
+.video__title {
+  position: absolute;
+  top: 33px;
+  left: 31px;
+  // Style for "Почему РШУ"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;  
+  // Text style for "Почему РШУ"
+  letter-spacing: 0.33px;
+ 
+}
+.video__btn {
+   width: 31px;
+   height: 39px;
+   background: url(../images/video.svg);
+   background-size: cover;
+   opacity: 0.5;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.main-form {
+  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin-bottom: 43px;
+}
+.main-form__group {
+  margin-bottom: 14px;
+}
+.main-form__input {
+  border: 1px solid #a0a0a0;
+  width: 100%;
+  background: transparent;
+  padding: 12px 18px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $FuturaBookC;
+  letter-spacing: 0.3px;
+  &::placeholder {
+    color: #bcbbbc;
+}
+}
+.main-form__btn {
+  border: 1px solid #a0a0a0;
+  width: 100%;
+  background: transparent;
+  padding: 12px 18px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1;
+  font-family: $FuturaBookC;
+}
+.main-section__link {
+  border: 1px solid #fff;
+  width: 100%;
+  background: transparent;
+  display: block;
+  padding: 11px 49px;
+  // Style for "Подобрать"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #f6ff00;
+  font-size: 16px;
+  line-height: 1;
+  // Text style for "Подобрать"
+  letter-spacing: 0.3px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  &:after {
+    content: '';   
+      width: 10px;
+      height: 9px;
+      position: absolute;
+      top: 46%;
+      right: 20px;
+      display: block;
+      background-image: url(../images/drop-caret.svg);
+      background-size: cover;
+      transform: rotate(-310deg) translateY(-50%);
+  }
+ 
+}
+.main-section__bottom {
+  background-color: rgba(#424242, 0.51);
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  margin-top: 45px;
+  padding: 20px 0 11px;
+}
+
+.main-section__bottom-title {
+  // Style for "Бизнес-тре"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 0.91;
+  text-transform: uppercase;
+  // Text style for "Бизнес-тре"
+  letter-spacing: 0.56px;
+  margin-bottom: 5px;
+}
+.main-section__bottom-text {
+  // Style for "Выберите с"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 0.89;
+  text-decoration: underline;
+  // Text style for "Выберите с"
+  letter-spacing: 0.27px;
+  position: relative;
+    &:after {
+        content: '';
+        width: 10px;
+        height: 9px;       
+        display: block;
+        margin: 0 auto;
+        background-image: url(../images/drop-caret.svg);
+        background-size: cover;       
+        transform: rotate(-221deg);
+        margin-top: 5px;
+    }
+}
+.courses-section {
+  background: rgba(#d3dee2, 0.4);
+  padding: 20px 15px 10px;
+  margin-bottom: 58px;
+  .row {
+    &>* {
+      margin-bottom: 17px;
+    }
+  }
+}
+.courses-section__img {
+
+  //margin: 0 auto 11px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.courses-section__item {
+  background-color: #d3dee2;
+  text-align: center;
+  // Style for "Общее упра"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #013c56;
+  font-size: 19px;  
+  font-variant: small-caps;
+  // Text style for "Общее упра"
+  letter-spacing: 0.26px;
+  padding: 20px 9px 11px;
+  height: 100%;
+  min-height: 112px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+  border: 1px solid #cdd6d9;
+  //box-shadow: inset 0 0 0px 2px #cdd6d9;
+  &:hover {
+    border: 1px solid #5f8595;
+    background-color: #d1f5fd;
+
+  }
+}
+.preim-section {
+  background-color: rgba(#3d88a1, 0.6);
+  padding: 3.1rem 0 2.3rem;
+
+}
+.preim-section__item  {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+  width: 240px;
+  margin-left: 70px;
+  &:hover {
+    color: #013c56;
+  }
+}
+.preim-section__title {
+  // Style for "Наши клиен"
+  font-family: $futurademic;
+  font-weight: 400;  
+  font-size: 19px;
+  line-height: 0.92;
+  text-transform: uppercase;
+  // Text style for "Наши клиен"
+  letter-spacing: 0.26px;
+  margin-bottom: 14px;
+}
+.preim-section__text {
+  // Style for "Адшгрыдлва"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  line-height: 1.2;
+  
+  font-size: 16px;
+  // Text style for "А, дшгрыдл"
+  letter-spacing: 0.4px;
+}
+.preim-section__image  {
+  height: 68px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+.last-news  {
+  padding: 50px 0 45px;
+}
+.section-title {
+  // Style for "Форматы об"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #4e5c62;
+  font-size: rem(30); 
+  text-transform: uppercase;
+  // Text style for "Форматы об"
+  letter-spacing: 0.83px;
+  margin-bottom: 7.3625rem;
+  position: relative;
+  text-align: center;
+  margin-top: rem(70);
+  &:after {
+    content: attr(data-letter);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Style for "Ф"
+    font-family: $FuturaMediumC;
+    font-weight: 400;
+    color: #edf2f3;
+    font-size: rem(218);
+    line-height: 0.9;
+    text-transform: uppercase;
+    // Text style for "Ф"
+    letter-spacing: 0.27px;
+    z-index: -1;
+    margin-top: rem(10);
+  }
+}
+.last-news__item {
+  display: block;
+  text-decoration: none;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    .last-news__img {
+      opacity: 0.8;
+    }
+  }
+}
+.last-news__title {
+  // Style for "Очная форм"
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #201600;
+  font-size: rem(19);
+  line-height: 0.98;
+  text-transform: uppercase;
+  // Text style for "Очная форм"
+  letter-spacing: 0.24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.last-news__img {
+  margin-bottom: 11px;
+  transition: 0.2s;
+}
+.last-news__text {
+  // Style for "Текст текс"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.065;
+  margin-bottom: 20px;
+}
+.last-news__btn {
+  background-color: #ff5f10;
+  display: block;
+  width: 100%;
+  max-width: 162px;
+  margin: 0 auto;
+  text-align: center;
+  // Style for "Подробнее"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 0.93;
+  text-transform: uppercase;
+  // Text style for "Подробнее"
+  letter-spacing: 0.26px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: #ff4005;
+  }
+}
+.icon-section  {
+  background-color: rgba(#3d88a1, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 55px 0 38px;
+}
+.row-new-section {
+  padding: 43px 0 58px;
+}
+.icon-section__img {
+  height: rem(66);
+  margin-bottom: 20px;
+  img {
+    max-height: 100%;
+  }
+}
+
+.icon-section__text {
+  font-family: $futurademic;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: rem(19);
+  font-variant: small-caps;
+  // Text style for "Профессион"
+  letter-spacing: 0.46px;
+  line-height: 1.2;
+}
+
+.news-list__item  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  &:nth-child(2n) {
+    .news-list__body  {
+      background-color: rgba(#d3dee2, 0.4);
+      &:hover {
+        background-color: rgba(#d3dee2, 0.8);
+      }
+    }
+  }
+ 
+}
+.news-list__body  {
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-color: rgba(#046889, 0.2);
+  position: relative;
+  padding: rem(41) rem(63) rem(39) rem(126);
+  transition: 0.2s;
+  &:hover {
+    background-color: rgba(#046889, 0.3);
+  }
+  @include media-breakpoint-down(sm) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.news-list__img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-size: cover;
+  background-position: center;  
+  @include media-breakpoint-down(sm) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 33.5%;
+  }
+}
+.news-list__num {
+  width: rem(84);  
+  background-color: rgba(#046889, 0.15);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(-15);
+
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  padding: rem(34) rem(14) rem(31);
+  padding-left: rem(19);
+  text-align: right;
+  color: rgba(#ffffff, 0.22);
+  font-size: rem(103);
+  line-height: 0.7;
+  text-transform: uppercase;
+  // Text style for "2,"
+  letter-spacing: 0.26px;
+}
+.news-list__date {
+  // Style for "10 августа"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.06;
+  margin-bottom: 12px;
+}
+.news-list__title {
+  // Style for "фотоКонкур"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  // Text style for "фотоКонкур"
+  letter-spacing: 0.4px;
+  margin-bottom: 19px;
+}
+.news-list__text {
+  // Style for "Текст текс"
+  font-family: $FuturaBookC;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.06;
+  
+  
+}
+.news-list__btn {
+  // Style for "ВСЕ НОВОСТ"
+  font-family: $FuturaMediumC;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 0.93;
+  text-transform: uppercase;
+  // Text style for "ВСЕ НОВОСТ"
+  letter-spacing: 0.26px;
+  padding: 11px 30px;
+  display: inline-block;
+  background-color: #ff5f10;
+  margin-top: rem(40);
+}
+.client-section {
+  padding-top: 40px;
+  padding-bottom: 57px;
+  background-color: rgba(#3d88a1, 0.6);
+  z-index: 10;
+  .section-title {
+    color: #ffffff;
+    &:after {
+      color: #ffffff;
+      z-index: 2;
+      opacity: 0.17;
+    }
+  }
+}
+.client-section__logo  {
+  background-color: rgba(#fff, 0.5);
+  padding: 21px 30px;
+  .container {
+    max-width: 1120px;
+  }
+}
+.logo-slider .slick-track {
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.slick-prev, .slick-next {
+  width: 19px;
+  height: 37px;
+  background-image: url(../images/slider-next.png) !important;
+  background-size: cover;
+  
+}
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+.slick-prev {
+  transform: scale(-1, 1)  translate(0, -50%);
+}
+.review-slider {
+  img {
+    border: 18px solid rgba(#046889, 0.2);
+    margin: 0 auto;
+  }
+  .slick-prev, .slick-next {
+    width: 19px;
+    height: 37px;
+    background-image: url(../images/slick-white.png) !important;
+    background-size: cover;
+    
+  }
+}
+.lg-thumb-outer {
+  display: none;
+}
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@include media-breakpoint-up(lg) {
+  .video {
+    width: 107%;
+    padding-bottom: 60%;
+  }
+  .main-form {
+    padding: 31px 30px 31px;
+  }
+  .main-form__input {
+    padding: 8px 18px;
+  }
+  .main-form__btn {
+    padding: 8px 16px;
+    text-align: left;
+    letter-spacing: 0.3px;
+  }
+  .main-section__link {
+    padding: 8px 49px;
+  }
+  .main-section__link:after {
+    right: 35px;
+    transform: rotate(-310deg) translateY(-50%) scale(0.9);
+  }
+  .curse-container {
+    width: 1200px;
+  }
+}
+.review-section {
+  padding-top: 45px;
+  padding-bottom: 56px;
+  .container {
+    max-width: 1120px;
+  }
+}
+.section-title--big {
+  font-size: 35px;
+  margin-bottom: rem(114);
+}

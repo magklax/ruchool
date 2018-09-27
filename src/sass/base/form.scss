@@ -1,0 +1,86 @@
+.form-control {
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 13px 22px;
+  transition: 0.2s;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 20px;
+  }
+}
+.form-control--yellow {
+  border: 1px solid #f6dd3e;
+  background-color: rgba(white, 0.8);
+}
+.filtr-input {
+  @extend .form-control;
+  padding: 10px;
+  max-width: 100%;
+}
+.filtr-label {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.subscribe-form {
+  padding: 30px 35px;
+  @include media-breakpoint-down(md){
+    padding: 30px 15px;
+  }
+  .form-control {
+    width: 160px;
+  }
+
+  .advantages__item {
+    color: $head;
+    font-size: 15px;
+    font-weight: 400;
+
+  }
+
+}
+
+.flex-form {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+  .advantages__img {
+    width: 48px;
+    margin-right: 14px;
+  }
+  .advantages__item {
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(md) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+  .form-control {
+    flex-grow: 1;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}
+.icon-tel-big {
+  transform: translateY(4px);
+  margin-right: 11px;
+}
+.subscribe-form__btn {
+  @include media-breakpoint-up(md) {
+    margin-left: 6px;
+  }
+}
+.subscribe-section .call-block {
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+  }
+}

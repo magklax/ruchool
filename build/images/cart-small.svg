@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><defs>
+<style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}</style>
+<clipPath id="clip-path"><rect class="cls-1" width="16" height="16"/></clipPath>
+</defs><title>cart-small</title><g id="Слой_2" data-name="Слой 2">
+<g id="Слой_1-2" data-name="Слой 1"><g class="cls-2">
+<path class="cls-3" d="M4.8,12.8a1.6,1.6,0,1,0,1.6,1.6,1.61,1.61,0,0,0-1.6-1.6M0,0V1.6H1.6L4.48,7.68,3.36,9.6a2.89,2.89,0,0,0-.16.8A1.61,1.61,0,0,0,4.8,12h9.6V10.4H5.12A.17.17,0,0,1,5,10.24v-.08L5.68,8.8H11.6A1.46,1.46,0,0,0,13,8l2.88-5.2A.44.44,0,0,0,16,2.4a.76.76,0,0,0-.8-.8H3.36L2.64,0ZM12.8,12.8a1.6,1.6,0,1,0,1.6,1.6,1.61,1.61,0,0,0-1.6-1.6"/></g></g></g></svg>

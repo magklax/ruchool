@@ -1,0 +1,237 @@
+.catalog-carts {
+  display: flex;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+}
+.top-catalog {
+  z-index: 160;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #ffffff;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    left: 0;
+    box-shadow: 0 1px 62px rgba(0, 0, 0, 0.49);
+    transform: translateY(6px);
+  }
+  @include media-breakpoint-down(md) {
+    padding-bottom: 20px;
+  }
+
+}
+.top-catalog:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 180px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background: white;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.top-catalog:before {
+
+}
+.action-link:hover .top-catalog {
+  display: block;
+}
+
+.catalog-cart {
+
+  opacity:0;
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform-origin: top right;
+  padding: 6px 15px 15px;
+  width: calc(100% / 8);
+  transition: 0.2s;
+  box-shadow:  0 0 0 2px transparent;
+  position: relative;
+  &:hover {
+    box-shadow:  0 0 0 2px $gray2;
+    z-index: 10;
+  }
+  @include media-breakpoint-only(md) {
+    width: 50%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #eeeee8;
+
+  }
+}
+.catalog-cart--grow {
+  flex-grow: 1;
+  margin-top: 20px;
+}
+.catalog-cart__list {
+  min-height: 127px;
+}
+.carts2 .catalog-cart__list {
+  min-height: auto;
+  margin-bottom: -32px;
+}
+.catalog-cart:nth-child(1) {
+  animation-delay: 0s;
+}
+.catalog-cart:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.catalog-cart:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.catalog-cart:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.catalog-cart:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.catalog-cart:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.catalog-cart:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.catalog-cart:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.catalog-cart:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.catalog-cart:not(:last-child),
+.carts2 .catalog-cart:last-child {
+  border-right: 1px solid #eeeee8;
+}
+.catalog-carts:not(.carts2) .catalog-cart {
+  border-bottom: 1px solid #eeeee8;
+}
+
+.catalog-cart__name {
+  color: $head;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  font-family: $PTSerif;
+
+  text-align: center;
+  span {
+    color: $gray1;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  display: block;
+
+}
+.catalog-cart__item {
+  color: #6c6c6c !important;
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  font-family: PT_Sans,sans-serif;
+
+}
+.catalog-cart__item:hover {
+  color: #0d5a80 !important;
+  font-size: 13px;
+  text-decoration: underline;
+  //font-family: PT_SansBold,sans-serif;
+}
+.catalog-cart__img-cont {
+  text-align: center;
+  min-height: 135px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.catalog-cart__img-cont img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  max-width: 100%;
+  max-height: 130px;
+  will-change: opacity;
+}
+
+@keyframes menu {
+  from {
+    transform: translate(30px, 0);
+
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.cat-icon {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: -7px;
+
+}
+.cat-link-hover:hover > a {
+  color: white!important;
+}
+.cat-link-hover:hover  {
+  border-color: transparent !important;
+}
+.cat-link-hover {
+  margin-top: -3px !important;
+}
+.fixed-menu ul li:first-child a:hover {
+  background: none;
+  transition: none;
+  -webkit-transition: none;
+}
+.cat-nav__link.open ~ .top-catalog {
+  display: block;
+}
+.top-catalog:hover {
+  //display: block;
+}
+.fixed-menu .top-catalog {
+  transform: translateY(0);
+  top: 100%;
+
+}
+.fixed-menu .top-catalog:after {
+  left: 100px;
+}
+.top-catalog__close {
+  // Style for "Свернуть"
+  color: #3a5605;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  span {
+    border-bottom: 1px dashed;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  }
+
+}

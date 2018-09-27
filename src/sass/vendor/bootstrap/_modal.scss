@@ -1,0 +1,303 @@
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+$orange: #fb8900;
+$fz1: rem(50);
+$light4: #666666;
+$fz4: rem(22);
+$fz2: rem(46);
+$light2: #9faeb9;
+$dark: #0a152e;
+$fz6: 15px;
+$fz3: rem(28);
+$fz7: rem(36);
+$fz5: 18px;
+$green: #22bc8c;
+$light3: #b3b3b3;
+$light1: #eef1f5;
+$lato: "Lato", Arial, sans-serif;
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  display: none;
+  overflow: hidden;
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+  // See also https://github.com/twbs/bootstrap/issues/17695
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    @include transition($modal-transition);
+    transform: translate(0, -25%);
+  }
+  &.show .modal-dialog { transform: translate(0, 0); }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: $modal-dialog-margin;
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-clip: padding-box;
+  box-shadow: 0 0 18px rgba(39, 39, 39, 0.31);
+  border-radius: 7px;
+  @include media-breakpoint-down(sm) {
+    padding: 50px 15px 15px;
+  }
+  &.add-to-cart {
+    max-width: 296px;
+    padding: 33px 5px 2px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-backdrop;
+  background-color: $modal-backdrop-bg;
+
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+  &.show { opacity: $modal-backdrop-opacity; }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  display: flex;
+  align-items: center; // vertically center it
+  justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+  padding: $modal-header-padding;
+  border-bottom: $modal-header-border-width solid $modal-header-border-color;
+}
+
+// Title text within header
+.modal-title {
+
+  color: $dark;
+  font-family: $lato;
+  font-size: $fz3;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.close {
+
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  opacity:0.6;
+  transition: 0.2s;
+  width: 16px;
+  height: 16px;
+  z-index: 10;
+  &:hover {
+    opacity:1;
+  }
+}
+.modal-text-close {
+  // Style for "Закрыть ок"
+  color: $gray1;
+  font-size: 15px;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
+
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    right: rem(49);
+    bottom: rem(55);
+  }
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  // Enable `flex-grow: 1` so that the body take up as much space as possible
+  // when should there be a fixed height on `.modal-dialog`.
+  flex: 1 1 auto;
+  padding: rem(20) rem(40) rem(40);
+  @include media-breakpoint-down(sm) {
+    padding: 10px;
+  }
+
+}
+.modal-scroll {
+  border-top: 4px solid #dadada;
+  border-bottom: 4px solid #dadada;
+  padding: 15px rem(40);
+  @include media-breakpoint-down(sm) {
+    padding: 10px;
+  }
+}
+
+// Footer (for actions)
+.modal-footer {
+  display: flex;
+  align-items: center; // vertically center
+  justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
+  padding: $modal-inner-padding;
+  border-top: $modal-footer-border-width solid $modal-footer-border-color;
+
+  // Easily place margin between footer elements
+  > :not(:first-child) { margin-left: .25rem; }
+  > :not(:last-child) { margin-right: .25rem; }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Scale up the modal
+@include media-breakpoint-up(sm) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    max-width: 454px;
+    margin: 100px auto;
+  }
+
+  .modal-content {
+    @include box-shadow($modal-content-sm-up-box-shadow);
+  }
+
+  .modal-sm { max-width: $modal-sm; }
+}
+
+@include media-breakpoint-up(lg) {
+  .modal-lg { max-width: $modal-lg; }
+}
+.modal-text {
+  color: $gray;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.modal-form {
+  .material-group:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  textarea {
+    height: 130px;
+  }
+  button[type=submit] {
+    margin-top: 10px;
+  }
+}
+.modal-md {
+  max-width: 580px;
+}
+.modal {
+  .flex-label--order span {
+    min-width: 90px;
+  }
+}
+.modal:not(.modal-video) {
+  .modal-content {
+
+    box-shadow: 2px 3px 13px rgba(168, 161, 151, 0.55);
+    border-radius: rem(30);
+    background-color: #ffffff;
+    padding: rem(50) rem(20) rem(30);
+    @include media-breakpoint-up(lg) {
+      padding-left: rem(50);
+      padding-right: rem(50);
+    }
+  }
+
+  .close {
+    width: 24px;
+    height: 24px;
+    top: rem(20);
+    right: rem(20);
+    &::before,
+    &::after {
+      background-color: $light3;
+    }
+
+  }
+  button {
+    min-width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  .modal-dialog {
+    @include media-breakpoint-down(sm) {
+      width: auto;
+    }
+  }
+}
+.snpd,
+.modal-text {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.modal-text, .snpd {
+  color: $dark;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.modal-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $dark;
+  font-family: $lato;
+  font-size: $fz5;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: center;
+}

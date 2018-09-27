@@ -1,0 +1,370 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+      .main-section__left-bar 
+
+        .main-section__left-item 
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')   
+        .main-section__left-item 
+          img(src='images/calendar-white.png' alt='')       
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-close           
+      .main-section__right-bar 
+        .main-section__right-item 
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')       
+          .main-section__right-text Подписаться
+      .container 
+        .row.justify-content-between
+          .col-md-5 
+            .video 
+              .video__title Почему РШУ?
+              .video__btn
+                 
+
+          .col-md-4 
+            .main-section__form
+              .main-form
+                form 
+                  .main-form__group
+                    input(type='text' placeholder='ФИО').main-form__input
+                  .main-form__group
+                    input(type='text' placeholder='Телефон').main-form__input             
+                  button(type='submit').main-form__btn Получить бесплатную консультацию
+                                                    
+            .main-section__link Подобрать курс
+      .main-section__bottom   
+        .main-section__bottom-title   Бизнес-тренинги, бизнес-семинары
+        a.main-section__bottom-text(href="#") Выберите семинары и тренинги по направлениям
+
+
+     
+    .container.curse-container
+      section.courses-section 
+        .row.justify-content-center 
+          .col-md-3
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/manager.png' alt='').courses-section__image
+              .courses-section__name Директорские курсы
+        .row 
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c1.png' alt='').courses-section__image
+              .courses-section__name Общее управление&#160;(25)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c2.png' alt='').courses-section__image
+              .courses-section__name Стратегия Проекты Инновации&#160;(29)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c3.png' alt='').courses-section__image
+              .courses-section__name Финансы Экономика Бухгалтерия&#160;(39)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c4.png' alt='').courses-section__image
+              .courses-section__name Персонал&#160;(71)   
+
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c5.png' alt='').courses-section__image
+              .courses-section__name Право&#160;(86)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c6.png' alt='').courses-section__image
+              .courses-section__name Безопастность&#160;(32)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c7.png' alt='').courses-section__image
+              .courses-section__name Продажи&#160;(27)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c8.png' alt='').courses-section__image
+              .courses-section__name Маркетинг&#160;(26)        
+
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c9.png' alt='').courses-section__image
+              .courses-section__name Процессы и качество&#160;(21)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c10.png' alt='').courses-section__image
+              .courses-section__name Производство&#160;(25)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c11.png' alt='').courses-section__image
+              .courses-section__name ИТ&#160;(16)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c12.png' alt='').courses-section__image
+              .courses-section__name PR и Реклама&#160;(14)                                                             
+
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c13.png' alt='').courses-section__image
+              .courses-section__name ВЭД&#160;(16)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c14.png' alt='').courses-section__image
+              .courses-section__name Логистика Снабжение&#160;(21)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c15.png' alt='').courses-section__image
+              .courses-section__name Конкурсы Тендеры&#160;(20)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c16.png' alt='').courses-section__image
+              .courses-section__name Строительство Девелопмент&#160;(36)   
+
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c17.png' alt='').courses-section__image
+              .courses-section__name ЖКХ&#160;(23)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c18.png' alt='').courses-section__image
+              .courses-section__name Коммерческая недвижимость&#160;(19)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c19.png' alt='').courses-section__image
+              .courses-section__name Торговля Ритейл&#160;(26)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c20.png' alt='').courses-section__image
+              .courses-section__name Сфера услуг&#160;(22)   
+
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c21.png' alt='').courses-section__image
+              .courses-section__name Индустрия обучения и&#160;развития&#160;(18)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c22.png' alt='').courses-section__image
+              .courses-section__name Личность<br> Коммуникации&#160;(104)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c23.png' alt='').courses-section__image
+              .courses-section__name Офис АХО Сервис&#160;(29)
+          .col-md-3 
+            a.courses-section__item(href='#')
+              .courses-section__img 
+                img(src='images/c24.png' alt='').courses-section__image
+              .courses-section__name Аналитика&#160;(15) 
+      
+    section.preim-section
+      .container 
+        .row 
+          .col-md-4 
+            .preim-section__item 
+              .preim-section__image 
+                  img(src='images/adv1.png' alt='')
+              .preim-section__title Наши клиенты
+              .preim-section__text
+          .col-md-4 
+            .preim-section__item 
+              .preim-section__image 
+                  img(src='images/adv2.png' alt='')
+              .preim-section__title Преподаватели
+              .preim-section__text Адшгрыдлваор ЛИРдшгва дшгргш лдтгым,ждгш ывдлгшнва, швагрплрва , тшы
+          .col-md-4 
+            .preim-section__item 
+              .preim-section__image 
+                  img(src='images/adv3.png' alt='')
+              .preim-section__title Отзывы
+              .preim-section__text     Адшгрыдлваор ЛИРдшгва дшгргш лдтгым,ждгш ывдлгшнва, швагрплрва                       
+
+    section.last-news 
+      .container 
+        .section-title(data-letter='ф') Форматы обучения
+        .row 
+          .col-md-3 
+            a.last-news__item(href='#')
+              .last-news__title Очная форма
+              .last-news__img 
+                img(src='http://placehold.it/264x236' alt='')
+              .last-news__text Текст текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, 
+              .last-news__btn   Подробнее
+          .col-md-3 
+            a.last-news__item(href='#')
+              .last-news__title Дистанционная
+              .last-news__img 
+                img(src='http://placehold.it/264x236' alt='')
+              .last-news__text Текст текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, 
+              .last-news__btn   Подробнее
+          .col-md-3 
+            a.last-news__item(href='#')
+              .last-news__title Онлайн-трансляция
+              .last-news__img 
+                img(src='http://placehold.it/264x236' alt='')
+              .last-news__text Текст текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, 
+              .last-news__btn   Подробнее
+          .col-md-3 
+            a.last-news__item(href='#')
+              .last-news__title Другая форма
+              .last-news__img 
+                img(src='http://placehold.it/264x236' alt='')
+              .last-news__text Текст текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, текст текст, 
+              .last-news__btn   Подробнее                                          
+    section.icon-section 
+      .container
+        .row
+          .col-md-2
+            .icon-section__item
+              .icon-section__img
+                img(src='images/i1.png' alt='')
+              .icon-section__text Для российских компаний  
+          .col-md-2
+            .icon-section__item 
+              .icon-section__img 
+                img(src='images/i2.png' alt='')
+              .icon-section__text Профессиональный фокус
+          .col-md-2
+            .icon-section__item 
+              .icon-section__img 
+                img(src='images/i3.png' alt='')
+              .icon-section__text Высокий стандарт качества  
+          .col-md-2
+            .icon-section__item 
+              .icon-section__img 
+                img(src='images/i4.png' alt='')
+              .icon-section__text Выбор форматов обучения
+          .col-md-2
+            .icon-section__item 
+              .icon-section__img 
+                img(src='images/i5.png' alt='')
+              .icon-section__text Более 2000 отзывов 
+          .col-md-2
+            .icon-section__item 
+              .icon-section__img 
+                img(src='images/i6.png' alt='')
+              .icon-section__text Без отрыва от работы   
+    section.row-new-section 
+      .container
+        .section-title(data-letter='н') наши Новости
+        .news-list 
+          a.news-list__item(href='#')
+            .news-list__body 
+              .news-list__num 1
+              .news-list__date 10 августа 2018 / в Москве
+              .news-list__title фотоКонкурс «учусь в ршу!»
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+            .news-list__img(style='background-image: url(http://placehold.it/570x191)')
+              
+          a.news-list__item(href='#')
+            .news-list__body 
+              .news-list__num 2
+              .news-list__date 14 августа 2018 / в Москве
+              .news-list__title СЕМИНАР ПО ЮРИДИЧЕСКОМУ ПРАВУ
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+            .news-list__img(style='background-image: url(http://placehold.it/570x191)')
+              
+          a.news-list__item(href='#')
+            .news-list__body 
+              .news-list__num 3
+              .news-list__date 20 августа 2018 / в Москве
+              .news-list__title Конференция по управлению персоналом
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+            .news-list__img(style='background-image: url(http://placehold.it/570x191)')
+                            
+                        
+        .text-center
+          a.news-list__btn(href='#') ВСЕ НОВОСТИ
+    section.client-section 
+      .container
+        .section-title(data-letter='к') наши клиенты 
+      .client-section__logo 
+        .container 
+          .logo-slider 
+            div 
+              img(src='images/l1.png' alt='')
+            div 
+              img(src='images/l2.png' alt='')
+            div 
+              img(src='images/l3.png' alt='')
+            div 
+              img(src='images/l4.png' alt='')
+            div 
+              img(src='images/l5.png' alt='')          
+            div 
+              img(src='images/l1.png' alt='')
+            div 
+              img(src='images/l2.png' alt='')
+            div 
+              img(src='images/l3.png' alt='')
+            div 
+              img(src='images/l4.png' alt='')
+            div 
+              img(src='images/l5.png' alt='')  
+    section.review-section 
+      .container
+        .section-title.section-title--big(data-letter='о') отзывы
+        .review-slider.lightgallery
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o1.jpg' alt='')      
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o2.jpg' alt='')  
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o3.jpg' alt='')  
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o4.jpg' alt='')           
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o1.jpg' alt='')      
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o2.jpg' alt='')  
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o3.jpg' alt='')  
+          a(href='http://placehold.it/700x800.png') 
+            img(src='images/o4.jpg' alt='')                                                                                                                      
+
+    include pug/footer.pug

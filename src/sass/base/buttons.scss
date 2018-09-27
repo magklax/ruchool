@@ -1,0 +1,94 @@
+.btn {
+  border: 2px solid transparent;
+  display: inline-block;
+  background: transparent;
+
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 26px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 15px;
+  text-align: center;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  .taint {
+    display: block;
+    position: absolute;
+    background: rgba($dark, 0.15);
+    border-radius: 100%;
+    transform: scale(0);
+    &.drop {
+
+      animation: ripple 0.65s linear;
+    }
+  }
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+
+}
+.btn-green {
+  border: 2px solid $green;
+  color: $green;
+  font-family: $lato;
+  &:hover {
+    background-color: $green;
+    color: #fff;
+  }
+}
+.btn-block {
+  width: 100%;
+}
+.slick-arrow .svg {
+  width: 20px;
+  height: 38px;
+  fill: #8ea1b2;
+  opacity: 0.86;
+  &:hover {
+    fill: $green;
+    opacity: 1;
+  }
+}
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #99a9b5;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+.slick-dots li.slick-active button {
+  background-color: #99a9b5;
+}
+.slick-dots li button:before {
+  display: none;
+}
+.slick-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.btn-orange {
+  background-color: #fd9e00;
+  color: $dark;
+  &:hover {
+    background-color: #fd9e00;
+  }
+}
+.btn-gray  {
+  border: 2px solid #96a39f;
+  color: #96a39f;
+  font-family: $lato;
+  &:hover {
+    border: 2px solid #fd9e00;
+    color: #fd9e00;
+  }
+}

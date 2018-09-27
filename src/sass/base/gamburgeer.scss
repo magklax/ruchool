@@ -1,0 +1,61 @@
+$gamburger-width: 22px;
+$gamburger-height: 20px;
+$gamburger-line-height: 2px;
+$gamburger-color: #102c69;
+$gamburger-transition: 0.4s;
+
+.gamburger{
+  font-size: 10px;
+  display: inline-block;
+  width: $gamburger-width;
+  height: $gamburger-height;
+  transition: 1s;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  @include media-breakpoint-down(sm) {
+    font-size: 7px;
+  }
+  &.open {
+
+  }
+}
+.gamburger span{
+  display: block;
+  width: 100%;
+  height: $gamburger-line-height;
+  background: $gamburger-color;
+  position: absolute;
+}
+.gamburger-line1{
+  top: 0;
+  left: 0;
+  transition: $gamburger-transition;
+}
+.gamburger-line2{
+  top: 50%;
+  margin-top: - $gamburger-line-height / 2;
+  left: 0;
+}
+.gamburger-line3{
+  top: 100%;
+  margin-top: - $gamburger-line-height;
+  left: 0;
+  transition: $gamburger-transition;
+}
+.gamburger.open .gamburger-line1{
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: - $gamburger-line-height / 2;
+}
+.gamburger.open .gamburger-line2{
+  position: absolute;
+  right: -400%;
+  left: auto;
+}
+
+.gamburger.open .gamburger-line3{
+  transform: rotate(-45deg);
+  top: 50%;
+  margin-top: - $gamburger-line-height / 2;
+}
