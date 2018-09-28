@@ -98,14 +98,52 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <label class="contacts" for="fio">1.Контактные данные</label>
+            <label class="contacts" id="fio">1.Контактные данные</label>
             <input class="surname" name="fio" placeholder="ФИО" type="text">
             <input class="phone" name="phone" placeholder="Телефон" type="text">
             <input class="e-mail" name="e-mail" placeholder="E-mail" type="text">
           </div>
           <div class="col-md-4">
-            <input class="legal-entity" name="law-person" type="checkbox">
-            <label class="body" for="legal">Юридическое лицо</label>
+            <p class="main-paragraph">
+              <label class="body" id="law-person">Юридическое лицо
+                <input class="visually-hidden" name="law-person" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+            <p class="main-paragraph">
+              <label class="body" id="individual">Физическое лицо 
+                <input class="visually-hidden" name="individual" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <label class="contacts">2.Способы Оплаты</label>
+            <label class="body">Юридическое лицам</label>
+            <p class="main-paragraph">
+              <label class="body" id="bank-card">Банковская карта
+                <input class="visually-hidden" name="bank-card" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+            <p class="main-paragraph">
+              <label class="body" id="bill">Выставить счет
+                <input class="visually-hidden" name="bill" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+            <label class="contacts">3.Доставка</label>
+            <p class="main-paragraph">
+              <label class="body" id="pickup-card">Самовывоз/Забрать на обучении
+                <input class="visually-hidden" name="pickup" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+            <p class="main-paragraph">
+              <label class="body" id="courier-city">Доставка курьером(Москва и Санкт-Петербург)
+                <input class="visually-hidden" name="courier-city" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
+            <p class="main-paragraph">
+              <label class="body" id="courier">Доставка курьером
+                <input class="visually-hidden" name="courier" type="checkbox"><span class="checkbox-indicator"></span>
+              </label>
+            </p>
           </div>
         </div>
       </div>

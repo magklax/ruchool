@@ -20,13 +20,45 @@ html
       .container
           .row
             .col-md-8
-              label.contacts(for='fio') 1.Контактные данные
+              label#fio.contacts 1.Контактные данные
               input.surname(name='fio', placeholder='ФИО', type='text')
               input.phone(name='phone', placeholder='Телефон', type='text')
               input.e-mail(name='e-mail', placeholder='E-mail', type='text')
             .col-md-4
-              input.legal-entity(name='law-person' type='checkbox')
-              label.body(for='legal') Юридическое лицо
+              p.main-paragraph
+                label#law-person.body Юридическое лицо
+                  input.visually-hidden(name='law-person' type='checkbox')
+                  span.checkbox-indicator
+              p.main-paragraph
+                label#individual.body Физическое лицо 
+                  input.visually-hidden(name='individual' type='checkbox')
+                  span.checkbox-indicator
+            .col-md-3
+              label.contacts 2.Способы Оплаты
+              label.body Юридическое лицам
+              p.main-paragraph
+                label#bank-card.body Банковская карта
+                  input.visually-hidden(name='bank-card' type='checkbox')
+                  span.checkbox-indicator
+              p.main-paragraph
+                label#bill.body Выставить счет
+                  input.visually-hidden(name='bill' type='checkbox')
+                  span.checkbox-indicator
+              label.contacts 3.Доставка
+              p.main-paragraph
+                label#pickup-card.body Самовывоз/Забрать на обучении
+                  input.visually-hidden(name='pickup' type='checkbox')
+                  span.checkbox-indicator
+              p.main-paragraph
+                label#courier-city.body Доставка курьером(Москва и Санкт-Петербург)
+                  input.visually-hidden(name='courier-city' type='checkbox')
+                  span.checkbox-indicator
+              p.main-paragraph
+                label#courier.body Доставка курьером
+                  input.visually-hidden(name='courier' type='checkbox')
+                  span.checkbox-indicator
+                  
+              
 
             
 

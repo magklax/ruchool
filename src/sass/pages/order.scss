@@ -45,3 +45,68 @@
     border: 1px solid #8c9ba0;
     background-color: #edf2f3;
 }
+
+.filter-checkbox {
+    position: relative;
+    padding: 1.2px 0 0 41px;
+    cursor: pointer;
+  }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    list-style: none;
+}
+
+input+.checkbox-indicator {
+    position: absolute;
+    top: -2.5px;
+    left: 1px;
+    width: 36px;
+    height: 35px;
+    background-image: url(../images/square.svg);
+  }
+
+input:checked+.checkbox-indicator::before,
+input:checked+.checkbox-indicator::after {
+    content: url(../images/daw.svg);
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+    width: 23px;
+    height: 17px;
+    background: none;
+}
+
+.paragraph-one {
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #000000;
+    opacity: 0.9;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.paragraph-one {
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.main-paragraph {
+    position: relative;
+    padding: 1.2px 0 0 41px;
+    cursor: pointer;
+    margin-bottom: 45px;
+  }
