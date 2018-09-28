@@ -5225,42 +5225,90 @@ ul.spec-item__text-full {
   font-size: 35px;
   margin-bottom: 7.125rem; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
+.container-bread-crumps {
+  margin-top: 17px;
+  margin-left: 275px;
+  opacity: 0.6;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px; }
+
+.col-md-5:nth-child(1) {
+  margin: 0 auto; }
+
+.headline {
+  margin: 0 auto;
+  width: 330px;
+  height: 23px;
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31.94px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px; }
+
+.main-header {
+  margin-top: 47px; }
+
 .form-section {
   width: 1140px;
   height: 675px;
   background-color: #edf2f3;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-top: 41px;
+  margin-bottom: 43px;
+  padding: 54px 0 0 31px; }
+
+.contacts-details {
+  display: block;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .contacts {
-  margin-bottom: 25px;
+  display: block;
+  margin-bottom: 20.6px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.dilivery {
+  display: block;
+  margin-top: 51px;
   text-transform: uppercase;
   font-weight: bold; }
 
 .surname {
+  display: block;
+  margin-bottom: 19px;
   padding: 8.5px 18px;
   padding-right: 492px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
-  color: #8c9ba0;
-  margin-bottom: 25px; }
+  color: #8c9ba0; }
 
 .phone {
-  padding: 8.5px 18px;
-  padding-right: 30px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
   color: #8c9ba0;
+  padding: 8.5px 18px;
+  padding-right: 71px;
   margin-right: 27px; }
 
 .e-mail {
   padding: 8.5px 18px;
-  padding-right: 272px;
+  padding-right: 229px;
   margin-right: 50px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
   color: #8c9ba0; }
+
+.law-persons {
+  text-decoration: underline; }
 
 .legal-entity {
   padding: 10px 10px;
@@ -5285,15 +5333,15 @@ ul.spec-item__text-full {
 
 input + .checkbox-indicator {
   position: absolute;
-  top: -2.5px;
-  left: 1px;
+  top: -9px;
+  left: -6px;
   width: 36px;
   height: 35px;
-  background-image: url(../images/square.svg); }
+  background-image: url(../images/square.png); }
 
 input:checked + .checkbox-indicator::before,
 input:checked + .checkbox-indicator::after {
-  content: url(../images/daw.svg);
+  content: url(../images/daw.png);
   position: absolute;
   bottom: 8px;
   right: 6px;
@@ -5323,4 +5371,43 @@ input:checked + .checkbox-indicator::after {
   position: relative;
   padding: 1.2px 0 0 41px;
   cursor: pointer;
-  margin-bottom: 45px; }
+  margin-top: 33px; }
+
+.paragraph-element-one {
+  position: relative;
+  padding: 1.2px 0 0 41px;
+  cursor: pointer;
+  margin-top: 50.8px; }
+
+.paragraph-element-two {
+  position: relative;
+  padding: 1.2px 0 0 41px;
+  cursor: pointer;
+  margin-top: 36px; }
+
+.col-md-8 {
+  margin-bottom: 47px; }
+
+.col-md-4 {
+  margin-left: -14px; }
+
+.col-md-5 {
+  margin-top: 22px;
+  margin-left: 10px; }
+
+.col-md-3 {
+  margin: 0 auto; }
+
+.button-offer {
+  width: 195px;
+  height: 35px;
+  background-color: #ff5f10;
+  border: none;
+  color: #ffffff;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.footer {
+  margin-top: 43px; }
