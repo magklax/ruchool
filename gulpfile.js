@@ -200,7 +200,9 @@ gulp.task('build', [
     'fonts:build',
     //'image:build',
     'png-sprite',
+    /*
     'svg-sprite'
+    */
     //'webp'
 ]);
 gulp.task('htmlbeautify', function() {

@@ -1,0 +1,33 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+    section.form-section
+      .container
+          .row
+            .col-md-8
+              label.contacts(for='fio') 1.Контактные данные
+              input.surname(name='fio', placeholder='ФИО', type='text')
+              input.phone(name='phone', placeholder='Телефон', type='text')
+              input.e-mail(name='e-mail', placeholder='E-mail', type='text')
+            .col-md-4
+              input.legal-entity(name='law-person' type='checkbox')
+              label.body(for='legal') Юридическое лицо
+
+            
+
+    include pug/footer.pug

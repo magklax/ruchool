@@ -1,4 +1,0 @@
-node-modules
-bower_components
-.history
-.idea
