@@ -5231,11 +5231,17 @@ a {
 
 .container-bread-crumps {
   margin-top: 17px;
-  margin-left: 275px;
+  margin-left: 250px;
   opacity: 0.6;
   color: #000000;
   font-family: "Futura Book C", Arial, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.4px; }
+
+.bread-crumps-link:not(:last-child):after {
+  content: '»'; }
 
 .col-md-5:nth-child(1) {
   margin: 0 auto; }
@@ -5261,7 +5267,7 @@ a {
   background-color: #edf2f3;
   margin: 0 auto;
   margin-top: 41px;
-  margin-bottom: 43px;
+  margin-bottom: 86px;
   padding: 54px 0 0 31px; }
 
 .contacts-details {
@@ -5387,37 +5393,32 @@ input:checked + .checkbox-indicator::after {
   color: #000000;
   opacity: 0.9; }
 
-.paragraph-payment-methods {
+.paragraph-payment {
+  margin: 0;
+  margin-top: 9px;
   position: relative;
   padding: 0.7px 0 0 49px;
   cursor: pointer;
-  margin-top: 33.6px; }
-
-.paragraph-delivery {
-  position: relative;
-  padding: 0.7px 0 0 49px;
-  cursor: pointer;
-  margin-top: 35px; }
-
-.paragraph-element-one {
-  position: relative;
-  padding: 1.2px 0 0 41px;
-  cursor: pointer;
-  margin-top: 50.8px; }
-
-.paragraph-element-two {
-  position: relative;
-  padding: 1.2px 0 0 41px;
-  cursor: pointer;
-  margin-top: 36px; }
+  margin-bottom: 36.6px; }
 
 .delivery-bill {
-  margin-top: 49px; }
+  margin: 49px 0 32px 0; }
 
 .col-md-8 {
   margin-bottom: 47px; }
 
+.col-md-12 {
+  margin: 0 !important;
+  margin-bottom: 24px; }
+
+.col-md-2 {
+  margin: 0 auto; }
+
 .button-offer {
+  position: absolute;
+  top: 66px;
+  left: 247px;
+  margin: 0 auto;
   width: 195px;
   height: 35px;
   background-color: #ff5f10;
@@ -5430,3 +5431,6 @@ input:checked + .checkbox-indicator::after {
 
 .footer {
   margin-top: 43px; }
+
+.paragraph-legalperson {
+  margin-bottom: 34px; }

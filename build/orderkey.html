@@ -96,10 +96,12 @@
     <section class="main-section pb-0" style="background-image: url(images/main.jpg)"></section>
     <div class="container-bread-crumps">
       <div class="row">
-        <div class="col-md-4"><a class="bread-crumps-link1" href="#" alt="">
-             Главная »</a><a class="bread-crumps-link1" href="#" alt="">
-             Вернуться к подбору курсов »</a><a class="bread-crumps-link1" href="#" alt="">
-             Корзина</a></div>
+        <div class="col-md-4">
+          <div class="bread-crumps"><a class="bread-crumps-link1" href="#" alt="">
+               Главная</a><a class="bread-crumps-link1" href="#" alt="">
+               Вернуться к подбору курсов</a><a class="bread-crumps-link1" href="#" alt="">
+               Корзина</a></div>
+        </div>
       </div>
     </div>
     <div class="container main-header">
@@ -113,25 +115,27 @@
       <form class="form-offer" id="main-form">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
               <label class="contacts-details" id="family">1. Контактные данные</label>
+            </div>
+            <div class="col-md-8">
               <input class="surname" name="family" placeholder="ФИО" type="text">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-5">
                   <input class="phone" name="phone" placeholder="Телефон" type="text">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-7">
                   <input class="e-mail" name="e-mail" placeholder="E-mail" type="text">
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <p class="paragraph-element-one">
+              <p class="paragraph-payment">
                 <label class="body-label" id="law-person">Юридическое лицо
                   <input class="visually-hidden" name="law-person" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="paragraph-element-two">
+              <p class="paragraph-payment">
                 <label class="body-label" id="individual">Физическое лицо 
                   <input class="visually-hidden" name="individual" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
@@ -142,12 +146,12 @@
               <p class="paragraph-legalperson">
                 <label class="law-persons">Юридическим лицам</label>
               </p>
-              <p class="paragraph-payment-methods">
+              <p class="paragraph-payment">
                 <label class="body-label" id="bank-card">Банковская карта
                   <input class="visually-hidden" name="bank-card" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="paragraph-payment-methods">
+              <p class="paragraph-payment">
                 <label class="body-label" id="bill">Выставить счет
                   <input class="visually-hidden" name="bill" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
@@ -155,33 +159,29 @@
               <p class="delivery-bill">
                 <label class="delivery">3. Доставка</label>
               </p>
-              <p class="paragraph-delivery">
+              <p class="paragraph-payment">
                 <label class="body-label" id="pickup-card">Самовывоз/Забрать на обучении
                   <input class="visually-hidden" name="pickup" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="paragraph-delivery">
+              <p class="paragraph-payment">
                 <label class="body-label" id="courier-city">Доставка курьером(Москва и Санкт-Петербург)
                   <input class="visually-hidden" name="courier-city" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="paragraph-delivery">
+              <p class="paragraph-payment">
                 <label class="body-label" id="courier">Доставка курьером
                   <input class="visually-hidden" name="courier" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
+              <div class="col-md-2">
+                <button class="button-offer" form="main-form" type="submit" value="">Оформить заказ</button>
+              </div>
             </div>
           </div>
         </div>
       </form>
     </section>
-    <div class="container button">
-      <div class="row">
-        <div class="col-md-3">
-          <button class="button-offer" form="main-form" type="submit" value="">Оформить заказ</button>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center row-1">
