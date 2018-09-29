@@ -5417,9 +5417,6 @@ input:checked + .checkbox-indicator::after {
 .col-md-8 {
   margin-bottom: 47px; }
 
-.col-md-5 {
-  margin-top: 22px; }
-
 .button-offer {
   width: 195px;
   height: 35px;
