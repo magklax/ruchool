@@ -37,39 +37,44 @@ html
               .col-md-8
                 label#family.contacts-details 1. Контактные данные
                 input.surname(name='family', placeholder='ФИО', type='text')
-                input.phone(name='phone', placeholder='Телефон', type='text')
-                input.e-mail(name='e-mail', placeholder='E-mail', type='text')
+                .row
+                  .col-md-3
+                    input.phone(name='phone', placeholder='Телефон', type='text')
+                  .col-md-5
+                    input.e-mail(name='e-mail', placeholder='E-mail', type='text')
               .col-md-4
                 p.paragraph-element-one
-                  label#law-person.body Юридическое лицо
+                  label#law-person.body-label Юридическое лицо
                     input.visually-hidden(name='law-person' type='checkbox')
                     span.checkbox-indicator
                 p.paragraph-element-two
-                  label#individual.body Физическое лицо 
+                  label#individual.body-label Физическое лицо 
                     input.visually-hidden(name='individual' type='checkbox')
                     span.checkbox-indicator
               .col-md-5
                 label.contacts 2. Способы Оплаты
-                label.law-persons Юридическое лицам
-                p.main-paragraph
-                  label#bank-card.body Банковская карта
+                p.paragraph-legalperson
+                  label.law-persons Юридическим лицам
+                p.paragraph-payment-methods
+                  label#bank-card.body-label Банковская карта
                     input.visually-hidden(name='bank-card' type='checkbox')
                     span.checkbox-indicator
-                p.main-paragraph
-                  label#bill.body Выставить счет
+                p.paragraph-payment-methods
+                  label#bill.body-label Выставить счет
                     input.visually-hidden(name='bill' type='checkbox')
                     span.checkbox-indicator
-                label.dilivery 3.Доставка
-                p.main-paragraph
-                  label#pickup-card.body Самовывоз/Забрать на обучении
+                p.delivery-bill
+                  label.delivery 3. Доставка
+                p.paragraph-delivery
+                  label#pickup-card.body-label Самовывоз/Забрать на обучении
                     input.visually-hidden(name='pickup' type='checkbox')
                     span.checkbox-indicator
-                p.main-paragraph
-                  label#courier-city.body Доставка курьером(Москва и Санкт-Петербург)
+                p.paragraph-delivery
+                  label#courier-city.body-label Доставка курьером(Москва и Санкт-Петербург)
                     input.visually-hidden(name='courier-city' type='checkbox')
                     span.checkbox-indicator
-                p.main-paragraph
-                  label#courier.body Доставка курьером
+                p.paragraph-delivery
+                  label#courier.body-label Доставка курьером
                     input.visually-hidden(name='courier' type='checkbox')
                     span.checkbox-indicator
 

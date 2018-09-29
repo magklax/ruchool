@@ -116,47 +116,57 @@
             <div class="col-md-8">
               <label class="contacts-details" id="family">1. Контактные данные</label>
               <input class="surname" name="family" placeholder="ФИО" type="text">
-              <input class="phone" name="phone" placeholder="Телефон" type="text">
-              <input class="e-mail" name="e-mail" placeholder="E-mail" type="text">
+              <div class="row">
+                <div class="col-md-3">
+                  <input class="phone" name="phone" placeholder="Телефон" type="text">
+                </div>
+                <div class="col-md-5">
+                  <input class="e-mail" name="e-mail" placeholder="E-mail" type="text">
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
               <p class="paragraph-element-one">
-                <label class="body" id="law-person">Юридическое лицо
+                <label class="body-label" id="law-person">Юридическое лицо
                   <input class="visually-hidden" name="law-person" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
               <p class="paragraph-element-two">
-                <label class="body" id="individual">Физическое лицо 
+                <label class="body-label" id="individual">Физическое лицо 
                   <input class="visually-hidden" name="individual" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
             </div>
             <div class="col-md-5">
               <label class="contacts">2. Способы Оплаты</label>
-              <label class="law-persons">Юридическое лицам</label>
-              <p class="main-paragraph">
-                <label class="body" id="bank-card">Банковская карта
+              <p class="paragraph-legalperson">
+                <label class="law-persons">Юридическим лицам</label>
+              </p>
+              <p class="paragraph-payment-methods">
+                <label class="body-label" id="bank-card">Банковская карта
                   <input class="visually-hidden" name="bank-card" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="main-paragraph">
-                <label class="body" id="bill">Выставить счет
+              <p class="paragraph-payment-methods">
+                <label class="body-label" id="bill">Выставить счет
                   <input class="visually-hidden" name="bill" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <label class="dilivery">3.Доставка</label>
-              <p class="main-paragraph">
-                <label class="body" id="pickup-card">Самовывоз/Забрать на обучении
+              <p class="delivery-bill">
+                <label class="delivery">3. Доставка</label>
+              </p>
+              <p class="paragraph-delivery">
+                <label class="body-label" id="pickup-card">Самовывоз/Забрать на обучении
                   <input class="visually-hidden" name="pickup" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="main-paragraph">
-                <label class="body" id="courier-city">Доставка курьером(Москва и Санкт-Петербург)
+              <p class="paragraph-delivery">
+                <label class="body-label" id="courier-city">Доставка курьером(Москва и Санкт-Петербург)
                   <input class="visually-hidden" name="courier-city" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>
-              <p class="main-paragraph">
-                <label class="body" id="courier">Доставка курьером
+              <p class="paragraph-delivery">
+                <label class="body-label" id="courier">Доставка курьером
                   <input class="visually-hidden" name="courier" type="checkbox"><span class="checkbox-indicator"></span>
                 </label>
               </p>

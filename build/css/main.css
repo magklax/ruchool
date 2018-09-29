@@ -5266,42 +5266,54 @@ a {
 
 .contacts-details {
   display: block;
+  color: #000000;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 24px;
-  text-transform: uppercase;
-  font-weight: bold; }
+  text-transform: uppercase; }
 
 .contacts {
   display: block;
-  margin-bottom: 20.6px;
+  color: #000000;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
   text-transform: uppercase;
-  font-weight: bold; }
+  margin-bottom: 20.6px; }
 
-.dilivery {
+.delivery {
   display: block;
-  margin-top: 51px;
-  text-transform: uppercase;
-  font-weight: bold; }
+  color: #000000;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase; }
 
 .surname {
   display: block;
+  width: 100%;
+  padding: 8.6px 0 8.6px 0;
   margin-bottom: 19px;
-  padding: 8.5px 18px;
-  padding-right: 492px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
   color: #8c9ba0; }
 
 .phone {
+  display: block;
+  width: 100%;
+  padding: 8.6px 0 8.6px 0;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
   color: #8c9ba0;
-  padding: 8.5px 18px;
-  padding-right: 71px;
   margin-right: 27px; }
 
 .e-mail {
-  padding: 8.5px 18px;
-  padding-right: 229px;
+  display: block;
+  width: 100%;
+  padding: 8.6px 0 8.6px 0;
   margin-right: 50px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
@@ -5320,6 +5332,14 @@ a {
   padding: 1.2px 0 0 41px;
   cursor: pointer; }
 
+.body-label {
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.9;
+  letter-spacing: 0.3px; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -5334,7 +5354,7 @@ a {
 input + .checkbox-indicator {
   position: absolute;
   top: -9px;
-  left: -6px;
+  left: 1px;
   width: 36px;
   height: 35px;
   background-image: url(../images/square.png); }
@@ -5367,11 +5387,17 @@ input:checked + .checkbox-indicator::after {
   color: #000000;
   opacity: 0.9; }
 
-.main-paragraph {
+.paragraph-payment-methods {
   position: relative;
-  padding: 1.2px 0 0 41px;
+  padding: 0.7px 0 0 49px;
   cursor: pointer;
-  margin-top: 33px; }
+  margin-top: 33.6px; }
+
+.paragraph-delivery {
+  position: relative;
+  padding: 0.7px 0 0 49px;
+  cursor: pointer;
+  margin-top: 35px; }
 
 .paragraph-element-one {
   position: relative;
@@ -5385,18 +5411,14 @@ input:checked + .checkbox-indicator::after {
   cursor: pointer;
   margin-top: 36px; }
 
+.delivery-bill {
+  margin-top: 49px; }
+
 .col-md-8 {
   margin-bottom: 47px; }
 
-.col-md-4 {
-  margin-left: -14px; }
-
 .col-md-5 {
-  margin-top: 22px;
-  margin-left: 10px; }
-
-.col-md-3 {
-  margin: 0 auto; }
+  margin-top: 22px; }
 
 .button-offer {
   width: 195px;
