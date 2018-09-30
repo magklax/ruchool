@@ -16,6 +16,8 @@ html
 
     include pug/header.pug
     section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+      .container
+        .pagetitle Лучшая база курсов России
     .container-bread-crumps
         .row
           .col-md-4
@@ -45,11 +47,12 @@ html
                   .col-md-7
                     input.e-mail(name='e-mail', placeholder='E-mail', type='text')
               .col-md-4
-                p.paragraph-payment
-                  label#law-person.body-label Юридическое лицо
-                    input.visually-hidden(name='law-person' type='checkbox')
+                p.paragraph-payment.col-right
+                  label#law-person.body-label 
+                    input.visually-hidden(name='law-person' type='checkbox' checked)
                     span.checkbox-indicator
-                p.paragraph-payment
+                    span.checkboxes Юридическое лицо
+                p.paragraph-payment.col-right
                   label#individual.body-label Физическое лицо 
                     input.visually-hidden(name='individual' type='checkbox')
                     span.checkbox-indicator
