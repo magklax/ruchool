@@ -5229,9 +5229,9 @@ a {
   text-decoration: none;
   color: #000; }
 
-.container-bread-crumps {
-  margin-top: 17px;
-  margin-left: 250px;
+.bread-crumps {
+  margin-top: 10px;
+  margin-left: 14px;
   opacity: 0.6;
   color: #000000;
   font-family: "Futura Book C", Arial, sans-serif;
@@ -5240,8 +5240,10 @@ a {
   line-height: 17px;
   letter-spacing: 0.4px; }
 
-.bread-crumps-link:not(:last-child):after {
-  content: '»'; }
+.bread-crumps-link1:not(:last-child):after {
+  content: '»';
+  display: inline-block;
+  margin: 0 5px; }
 
 .col-md-5:nth-child(1) {
   margin: 0 auto; }
@@ -5267,7 +5269,7 @@ a {
   background-color: #edf2f3;
   margin: 0 auto;
   margin-top: 41px;
-  margin-bottom: 86px;
+  margin-bottom: 42px;
   padding: 54px 0 0 31px; }
 
 .contacts-details {
@@ -5305,7 +5307,8 @@ a {
   margin-bottom: 19px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
-  color: #8c9ba0; }
+  color: #8c9ba0;
+  padding-left: 15px; }
 
 .phone {
   display: block;
@@ -5314,7 +5317,8 @@ a {
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
   color: #8c9ba0;
-  margin-right: 27px; }
+  margin-right: 27px;
+  padding-left: 15px; }
 
 .e-mail {
   display: block;
@@ -5323,7 +5327,8 @@ a {
   margin-right: 50px;
   border: 1px solid #8c9ba0;
   background-color: #edf2f3;
-  color: #8c9ba0; }
+  color: #8c9ba0;
+  padding-left: 15px; }
 
 .law-persons {
   text-decoration: underline; }
@@ -5421,10 +5426,10 @@ input[type=checkbox]:checked ~ .checkboxes {
   margin: 0 auto; }
 
 .button-offer {
-  position: absolute;
+  display: block;
+  margin: 0 auto;
   top: 66px;
   left: 247px;
-  margin: 0 auto;
   width: 195px;
   height: 35px;
   background-color: #ff5f10;
@@ -5435,8 +5440,12 @@ input[type=checkbox]:checked ~ .checkboxes {
   font-weight: 400;
   text-transform: uppercase; }
 
+.button-offer:hover {
+  background-color: #ff4005;
+  transition: 0.2s; }
+
 .footer {
-  margin-top: 43px; }
+  margin-top: 53px; }
 
 .paragraph-legalperson {
   margin-bottom: 34px; }
@@ -5444,9 +5453,11 @@ input[type=checkbox]:checked ~ .checkboxes {
 .pagetitle {
   color: #ffffff;
   font-family: "Futura Demi C", Arial, sans-serif;
-  font-size: 63px;
+  font-size: 58px;
   font-weight: 400;
   line-height: 57.07px;
   font-variant: small-caps;
   letter-spacing: 0.27px;
-  text-align: center; }
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 82px; }

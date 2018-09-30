@@ -18,73 +18,81 @@ html
     section.main-section.pb-0(style='background-image: url(images/main.jpg)')
       .container
         .pagetitle Лучшая база курсов России
-    .container-bread-crumps
-        .row
-          .col-md-4
-            div.bread-crumps
-              a.bread-crumps-link1(href='#' alt='') 
-                | Главная
-              a.bread-crumps-link1(href='#' alt='') 
-                | Вернуться к подбору курсов
-              a.bread-crumps-link1(href='#' alt='') 
-                | Корзина
+    div.bread-crumps
+      .container
+          .row
+            .col-md-4
+              div.bread-crumps
+                a.bread-crumps-link1(href='#') 
+                  | Главная
+                a.bread-crumps-link1(href='#') 
+                  | Вернуться к подбору курсов
+                a.bread-crumps-link1
+                  | Корзина
     .container.main-header
       .row
         .col-md-5
           h1.headline
             | Оформление заказа
-    section.form-section
-      form#main-form.form-offer
-        .container
-            .row
-              .col-md-12
-                label#family.contacts-details 1. Контактные данные
-              .col-md-8
-                input.surname(name='family', placeholder='ФИО', type='text')
-                .row
-                  .col-md-5
-                    input.phone(name='phone', placeholder='Телефон', type='text')
-                  .col-md-7
-                    input.e-mail(name='e-mail', placeholder='E-mail', type='text')
-              .col-md-4
-                p.paragraph-payment.col-right
-                  label#law-person.body-label 
-                    input.visually-hidden(name='law-person' type='checkbox' checked)
-                    span.checkbox-indicator
-                    span.checkboxes Юридическое лицо
-                p.paragraph-payment.col-right
-                  label#individual.body-label Физическое лицо 
-                    input.visually-hidden(name='individual' type='checkbox')
-                    span.checkbox-indicator
-              .col-md-5
-                label.contacts 2. Способы Оплаты
-                p.paragraph-legalperson
-                  label.law-persons Юридическим лицам
-                p.paragraph-payment
-                  label#bank-card.body-label Банковская карта
-                    input.visually-hidden(name='bank-card' type='checkbox')
-                    span.checkbox-indicator
-                p.paragraph-payment
-                  label#bill.body-label Выставить счет
-                    input.visually-hidden(name='bill' type='checkbox')
-                    span.checkbox-indicator
-                p.delivery-bill
-                  label.delivery 3. Доставка
-                p.paragraph-payment
-                  label#pickup-card.body-label Самовывоз/Забрать на обучении
-                    input.visually-hidden(name='pickup' type='checkbox')
-                    span.checkbox-indicator
-                p.paragraph-payment
-                  label#courier-city.body-label Доставка курьером(Москва и Санкт-Петербург)
-                    input.visually-hidden(name='courier-city' type='checkbox')
-                    span.checkbox-indicator
-                p.paragraph-payment
-                  label#courier.body-label Доставка курьером
-                    input.visually-hidden(name='courier' type='checkbox')
-                    span.checkbox-indicator
-                .col-md-2
-                  button.button-offer(form='main-form' type='submit' value='')
-                    | Оформить заказ
+    form
+      section.form-section
+        div#main-form.form-offer
+          .container
+              .row
+                .col-md-12
+                  label#family.contacts-details 1. Контактные данные
+                .col-md-8
+                  input.surname(name='family', placeholder='ФИО', type='text')
+                  .row
+                    .col-md-5
+                      input.phone(name='phone', placeholder='Телефон', type='text')
+                    .col-md-7
+                      input.e-mail(name='e-mail', placeholder='E-mail', type='text')
+                .col-md-4
+                  p.paragraph-payment.col-right
+                    label#law-person.body-label 
+                      input.visually-hidden(name='law-person' type='checkbox' checked)
+                      span.checkbox-indicator
+                      span.checkboxes Юридическое лицо
+                  p.paragraph-payment.col-right
+                    label#individual.body-label
+                      input.visually-hidden(name='individual' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Физическое лицо 
+                .col-md-5
+                  label.contacts 2. Способы Оплаты
+                  p.paragraph-legalperson
+                    label.law-persons Юридическим лицам
+                  p.paragraph-payment
+                    label#bank-card.body-label
+                      input.visually-hidden(name='bank-card' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Банковская карта
+                  p.paragraph-payment
+                    label#bill.body-label
+                      input.visually-hidden(name='bill' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Выставить счет
+                  p.delivery-bill
+                    label.delivery 3. Доставка
+                  p.paragraph-payment
+                    label#pickup-card.body-label
+                      input.visually-hidden(name='pickup' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Самовывоз/Забрать на обучении
+                  p.paragraph-payment
+                    label#courier-city.body-label
+                      input.visually-hidden(name='courier-city' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Доставка курьером(Москва и Санкт-Петербург)
+                  p.paragraph-payment
+                    label#courier.body-label
+                      input.visually-hidden(name='courier' type='checkbox')
+                      span.checkbox-indicator
+                      span.checkboxes Доставка курьером
+                  .col-md-2
+      button.button-offer(form='main-form' type='submit' value='')
+        | Оформить заказ
                   
               
 

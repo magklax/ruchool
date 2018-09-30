@@ -28,6 +28,7 @@ $(document).ready(function() {
             return false;
         });
 
+        
     }
     if ($("body").width() < 768) {
         $(".footer__right").append($(".footer__left"));
