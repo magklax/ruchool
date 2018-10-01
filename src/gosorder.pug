@@ -1,0 +1,40 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/header-image.jpg)')
+
+    div.container
+      .row
+        .col-md-12
+          h1.mainline Государственный заказ
+          .col-md-12
+            p.border-line
+        .col-md-12
+          span.about-us Русская Школа Управления уже 8 лет успешно реализует образовательный проекты в рамках государственных и муниципальных закупок по Ф3-44 и Ф3-233
+    container.previlige
+      .row
+        .col-md-5
+            h1.we-have У нас есть все, чтобы на высшем уровне выполнить любой государственный заказ:
+        .col-md-7
+
+
+                  
+              
+
+            
+
+    include pug/footer.pug
