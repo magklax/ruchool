@@ -5503,5 +5503,13 @@ a {
 .col-md-5 {
   margin: 0; }
 
-.first-row {
-  background-image: url("images/gosbuilding.jpg"); }
+.bc-image {
+  height: 396px; }
+
+.advantage {
+  flex: 40%;
+  max-width: 40%; }
+
+.building {
+  flex: 60%;
+  max-width: 60%; }
