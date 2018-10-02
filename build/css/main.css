@@ -3796,6 +3796,14 @@ use {
   font-weight: 400;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Futura Light Light';
+  src: url("../fonts/futura-light-light.woff2") format("woff2"), url("../fonts/futura-light-light.woff") format("woff");
+  /* modern browsers */
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; }
+
 .sprite {
   display: inline-block;
   vertical-align: sub; }
@@ -5481,6 +5489,13 @@ a {
   background-color: #ffffff;
   margin-bottom: 54px; }
 
+.border-line-adv {
+  width: 194px;
+  border: 1px solid #86a3ae;
+  background-color: #ffffff;
+  margin-bottom: 42px;
+  margin-top: 24px; }
+
 .about-us {
   display: block;
   text-align: center;
@@ -5491,14 +5506,19 @@ a {
   margin-bottom: 77px; }
 
 .previlige {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background-color: #edf2f3; }
 
 .we-have {
   color: #4e5c62;
   font-family: "Futura Book C";
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  line-height: 35px; }
 
 .col-md-5 {
   margin: 0; }
@@ -5507,9 +5527,49 @@ a {
   height: 396px; }
 
 .advantage {
-  flex: 40%;
-  max-width: 40%; }
+  display: block;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 238px;
+  padding-top: 61px;
+  padding-right: 40px; }
 
 .building {
-  flex: 60%;
-  max-width: 60%; }
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.catalog-style {
+  padding-left: 14px;
+  color: #000000;
+  font-family: "Futura Book C";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #003b5e; }
+
+.inner-color {
+  color: #000000; }
+
+.header-adavantages {
+  color: #03aab9;
+  font-family: "Futura Light Light";
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 33.49px;
+  text-transform: uppercase; }
+
+.first-paragraph {
+  color: #000000;
+  font-family: "Futura Demi C";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 16.88px;
+  text-transform: uppercase;
+  letter-spacing: 0.27px; }
+
+.advantages {
+  flex: 0 0 33.333%;
+  margin: 0 auto; }
+
+.advantages:nth-child(1n+0) {
+  border-right: 3px solid black; }
