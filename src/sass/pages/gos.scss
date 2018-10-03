@@ -85,15 +85,15 @@ a {
 }
 
 .image-section-two {
-    flex: 0 0 65%;
-    max-width: 65%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin: 0;
     padding: 0;
 }
 
 .advantage-two {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding-top: 61px;
     padding-right: 40px;
 }
@@ -192,4 +192,14 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 10px;
+}
+
+.input-order {
+    width: 280px;
+    height: 35px;
+    display: block;
+    padding: 8.6px 0 8.6px 0;
+    border: 1px solid #8c9ba0;
+    background-color: #edf2f3;
+    color: #8c9ba0;
 }
