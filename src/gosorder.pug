@@ -44,29 +44,50 @@ html
                 span.inner-color Огромная база программ
               li 
                 span.inner-color Возможность работать в любой точке России
-        .building
+        .image-section-one
           img.bc-image(src='images/gosbuilding.jpg' alt="здание")
     div.two-section
-      .container
+      .container-edge
         .row
-          .div.advantages
-            h1.header-adavantages 8 лет
-            p.fist-paragraph Опыта гособучения
-          .div.advantages
+          .col-md-4.advantages-one
+            h3.header-adavantages 8лет
+            p.privilege-paragraph Опыта гособучения
+          .col-md-4.advantages-one
             h3.header-adavantages 1000+
-            p.fist-paragraph обученных госслужащих
-          .div.advantages
+            p.privilege-paragraph обученных госслужащих
+          .col-md-4.advantages-one
             h3.header-adavantages 600
-            p.fist-paragraph программ обучения
-          .div.advantages
+            p.privilege-paragraph программ обучения
+          .col-md-4.advantages-two
             h3.header-adavantages 300
-            p.fist-paragraph преподователь-практиков
-          .div.advantages
+            p.privilege-paragraph преподователей-практиков
+          .col-md-4.advantages-two
             h3.header-adavantages 80
-            p.fist-paragraph реализованных госконтрактов
-          .div.advantages
+            p.privilege-paragraph реализованных госконтрактов
+          .col-md-4.advantages-two
             h3.header-adavantages 12
-            p.fist-paragraph городов России
+            p.privilege-paragraph городов России
+        div.one-section
+    div.previlige
+      .row
+        .image-section-two
+          img.bc-image(src='images/keyboard.jpg' alt="клавиатура")
+        .advantage-two
+          span.we-have 
+            | Оставить заявку:
+          p.border-line-adv
+          p.paragraph-for-order
+            | Вы можете оставить заявку на предварительный расчет минимальной стоимости контракта
+          form
+            .row
+              div.form-order
+                input.phone(name='surname', placeholder='ФИО', type='text')
+              div.form-order
+                input.phone(name='E-mail', placeholder='E-mail', type='text')
+              div.form-order
+                input.phone(name='phone', placeholder='Телефон', type='text')
+            button.button-order(form='main-form' type='submit' value='')
+              | Отправить
 
 
                   
