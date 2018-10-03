@@ -1,4 +1,3 @@
-var kazanMap, myplacemark1, myplacemark2, myplacemark3;
 $(document).ready(function() {
     if ($("body").width() > 991) {
         if ($('.fixed-header').length == 0) {
@@ -78,7 +77,9 @@ $(document).ready(function() {
         return false;
     })
     
-
+   
+        $('.js-select').selectric();
+     
 });
 if (document.fonts) {
     document.fonts.load("bold 16px Lato", "b").then(function() {

@@ -47,9 +47,9 @@
 //= ../sass/vendor/bootstrap/js/modal.js
 // ../sass/vendor/xzoom/xzoom.min.js
 // ../../bower_components/promise-polyfill/promise.min.js
-// ../../node_modules/slick-carousel/slick/slick.min.js
+//= ../../node_modules/slick-carousel/slick/slick.min.js
 // ../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js
 // ../../node_modules/readmore-js/readmore.min.js
 // ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
-// ../../bower_components/lightgallery/dist/js/lightgallery-all.min.js
-
+//= ../../bower_components/lightgallery/dist/js/lightgallery-all.min.js
+//= ../../node_modules/selectric/public/jquery.selectric.min.js

@@ -1,10 +1,10 @@
 /*! Vendor */
 
-//@import "../../node_modules/slick-carousel/slick/slick.scss";
-//@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "vendor/bootstrap/bootstrap";
-//@import '../../bower_components/lightgallery/dist/css/lightgallery.min';
-
+@import '../../bower_components/lightgallery/dist/css/lightgallery.min';
+@import '../../node_modules/selectric/public/selectric';
 /*! Base */
 @import "base/variables";
 @import "base/icons";
@@ -27,3 +27,4 @@
 @import "pages/order";
 
 @import "pages/gos";
+@import "pages/lego";
