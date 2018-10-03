@@ -29,14 +29,66 @@ html
     div.previlige
       .row
         .advantage
-          h1.we-have У нас есть все, чтобы на высшем уровне выполнить любой государственный заказ:
-        .building
+          span.we-have 
+            |У нас есть все, чтобы на высшем уровне
+            br
+            | выполнить любой государственный заказ:
+          p.border-line-adv
+          .catalog
+            ul.catalog-style
+              li 
+                span.inner-color Лицензия на образовательную деятельность
+              li 
+                span.inner-color Опытные преподаватели
+              li 
+                span.inner-color Огромная база программ
+              li 
+                span.inner-color Возможность работать в любой точке России
+        .image-section-one
           img.bc-image(src='images/gosbuilding.jpg' alt="здание")
+    div.two-section
+      .container-edge
+        .row
+          .col-md-4.advantages-one
+            h3.header-adavantages 8лет
+            p.privilege-paragraph Опыта гособучения
+          .col-md-4.advantages-one
+            h3.header-adavantages 1000+
+            p.privilege-paragraph обученных госслужащих
+          .col-md-4.advantages-one
+            h3.header-adavantages 600
+            p.privilege-paragraph программ обучения
+          .col-md-4.advantages-two
+            h3.header-adavantages 300
+            p.privilege-paragraph преподователей-практиков
+          .col-md-4.advantages-two
+            h3.header-adavantages 80
+            p.privilege-paragraph реализованных госконтрактов
+          .col-md-4.advantages-two
+            h3.header-adavantages 12
+            p.privilege-paragraph городов России
+        div.one-section
+    div.previlige
+      .row
+        .image-section-two
+          img.bc-image(src='images/keyboard.jpg' alt="клавиатура")
+        .advantage-two
+          span.we-have 
+            | Оставить заявку:
+          p.border-line-adv
+          p.paragraph-for-order
+            | Вы можете оставить заявку на предварительный расчет минимальной стоимости контракта
+          form
+            .row
+              div.form-order
+                input.input-order(name='surname', placeholder='ФИО', type='text')
+              div.form-order
+                input.input-order(name='E-mail', placeholder='E-mail', type='text')
+              div.form-order
+                input.input-order(name='phone', placeholder='Телефон', type='text')
+            button.button-order(form='main-form' type='submit' value='')
+              | Отправить
 
 
                   
-              
-
-            
-
     include pug/footer.pug
