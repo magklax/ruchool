@@ -10,8 +10,4 @@ node_modules/
 npm-debug.*
 source/css/*.css
 Thumbs.db
-<<<<<<< HEAD
-=======
-.history/
->>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
 bower_components/

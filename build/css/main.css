@@ -3954,6 +3954,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .lg-sub-html, .lg-toolbar {
   background-color: rgba(0, 0, 0, 0.45); }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
 
 @font-face {
   font-family: lg;
@@ -3991,10 +3994,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {
   pointer-events: none;
   opacity: .5; }
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'Futura Light Light';
+  src: url("../fonts/futuralightc.woff2") format("woff2"), url("../fonts/futuralightc.woff") format("woff");
+  /* modern browsers */
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; }
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
 
 .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
   color: #FFF; }
 
+<<<<<<< HEAD
 .lg-actions .lg-next {
   right: 20px; }
 
@@ -4014,17 +4028,113 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     left: -30px; } }
 
 @keyframes lg-right-end {
+=======
+.lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
+  color: #FFF; }
+
+.lg-actions .lg-next {
+  right: 20px; }
+
+.lg-actions .lg-next:before {
+  content: "\e095"; }
+
+.lg-actions .lg-prev {
+  left: 20px; }
+
+.lg-actions .lg-prev:after {
+  content: "\e094"; }
+
+@-webkit-keyframes lg-right-end {
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
   0%, 100% {
     left: 0; }
   50% {
     left: -30px; } }
 
+<<<<<<< HEAD
 @-webkit-keyframes lg-left-end {
   0%, 100% {
     left: 0; }
   50% {
     left: 30px; } }
 
+@keyframes lg-left-end {
+=======
+@keyframes lg-right-end {
+  0%, 100% {
+    left: 0; }
+  50% {
+    left: -30px; } }
+
+@-webkit-keyframes lg-left-end {
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
+  0%, 100% {
+    left: 0; }
+  50% {
+    left: 30px; } }
+
+<<<<<<< HEAD
+.lg-outer.lg-right-end .lg-object {
+  -webkit-animation: lg-right-end .3s;
+  animation: lg-right-end .3s;
+  position: relative; }
+
+.lg-outer.lg-left-end .lg-object {
+  -webkit-animation: lg-left-end .3s;
+  animation: lg-left-end .3s;
+  position: relative; }
+
+.lg-toolbar {
+  z-index: 1082;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.lg-toolbar .lg-icon {
+  color: #999;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  height: 47px;
+  line-height: 27px;
+  padding: 10px 0;
+  text-align: center;
+  width: 50px;
+  text-decoration: none !important;
+  outline: 0;
+  transition: color .2s linear; }
+
+.lg-toolbar .lg-icon:hover {
+  color: #FFF; }
+
+.lg-toolbar .lg-close:after {
+  content: "\e070"; }
+
+.lg-toolbar .lg-download:after {
+  content: "\e0f2"; }
+
+.lg-sub-html {
+  bottom: 0;
+  color: #EEE;
+  font-size: 16px;
+  left: 0;
+  padding: 10px 40px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 1080; }
+
+.lg-sub-html h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700; }
+
+.lg-sub-html p {
+  font-size: 12px;
+  margin: 5px 0 0; }
+
+=======
 @keyframes lg-left-end {
   0%, 100% {
     left: 0; }
@@ -4091,6 +4201,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 12px;
   margin: 5px 0 0; }
 
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
 #lg-counter {
   color: #999;
   display: inline-block;
@@ -4759,6 +4870,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-css3.lg-slide.lg-use-left .lg-item.lg-current, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
 
+<<<<<<< HEAD
 /*! Base */
 .svg {
   transition: 0.2s !important;
@@ -5596,6 +5708,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-css3.lg-slide.lg-use-left .lg-item.lg-current, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
 
+=======
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
 /*======================================
   Selectric v1.13.0
 ======================================*/
@@ -8205,4 +8319,7 @@ a {
 .variety {
   height: 396px; }
 >>>>>>> 301a3ed4b01188f1baed9b3e638093d180d3b4d4
+<<<<<<< HEAD
+>>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
+=======
 >>>>>>> f4fa8a79012cd8e5889cdb206279d5638ba24153
