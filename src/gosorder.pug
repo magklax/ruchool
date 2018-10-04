@@ -15,19 +15,31 @@ html
     // векторный спрайт конец
 
     include pug/header.pug
-    section.main-section.pb-0(style='background-image: url(images/header-image.jpg)')
+    section.main-section.pb-0.header-section(style='background-image: url(images/header-image.jpg)')
+      .row.booking-form
+        .col-md-6
+        .col-md-6.text
+          p.header-submitted
+            | Нам доверяют.
+          a.submite(href='request')
+            | Оставить заявку
+          p.our-number
+            | Или позвоните нам по номеру
+          p.number
+            | 8 800 100 02 03
+
 
     div.one-section
-      .container
+      .container.major-text
         .row
           .col-md-12
-            h1.mainline Государственный заказ
+            h1.main-line Государственный заказ
             .col-md-12
               p.border-line
           .col-md-12
-            span.about-us Русская Школа Управления уже 8 лет успешно реализует образовательный проекты в рамках государственных и муниципальных закупок по Ф3-44 и Ф3-233
+            span.about-us Русская Школа Управления уже 8 лет успешно реализует образовательный проекты в рамках государственных и муниципальных закупок по Ф3-44 и Ф3-223
     div.previlige
-      .row
+      .row.variety
         .advantage
           span.we-have 
             |У нас есть все, чтобы на высшем уровне
@@ -45,31 +57,31 @@ html
               li 
                 span.inner-color Возможность работать в любой точке России
         .image-section-one
-          img.bc-image(src='images/gosbuilding.jpg' alt="здание")
+          img.bc-image-build(src='images/gosbuilding.jpg' alt="здание")
     div.two-section
       .container-edge
         .row
           .col-md-4.advantages-one
-            h3.header-adavantages 8лет
+            h3.header-advantages 8 лет
             p.privilege-paragraph Опыта гособучения
           .col-md-4.advantages-one
-            h3.header-adavantages 1000+
+            h3.header-advantages 1000+
             p.privilege-paragraph обученных госслужащих
           .col-md-4.advantages-one
-            h3.header-adavantages 600
+            h3.header-advantages 600
             p.privilege-paragraph программ обучения
           .col-md-4.advantages-two
-            h3.header-adavantages 300
+            h3.header-advantages 300
             p.privilege-paragraph преподователей-практиков
           .col-md-4.advantages-two
-            h3.header-adavantages 80
+            h3.header-advantages 80
             p.privilege-paragraph реализованных госконтрактов
           .col-md-4.advantages-two
-            h3.header-adavantages 12
+            h3.header-advantages 12
             p.privilege-paragraph городов России
         div.one-section
     div.previlige
-      .row
+      .row.no-gutters
         .image-section-two
           img.bc-image(src='images/keyboard.jpg' alt="клавиатура")
         .advantage-two
@@ -78,7 +90,7 @@ html
           p.border-line-adv
           p.paragraph-for-order
             | Вы можете оставить заявку на предварительный расчет минимальной стоимости контракта
-          form
+          form.pattern
             .row
               div.form-order
                 input.input-order(name='surname', placeholder='ФИО', type='text')
@@ -86,8 +98,35 @@ html
                 input.input-order(name='E-mail', placeholder='E-mail', type='text')
               div.form-order
                 input.input-order(name='phone', placeholder='Телефон', type='text')
-            button.button-order(form='main-form' type='submit' value='')
-              | Отправить
+              button.button-order(form='main-form' type='submit' value='')
+                | Отправить
+    .container
+      .row
+        .col-md-12
+          p.our-contrarts| Исполненные контракты
+          p.border-line-cnt
+      .row.companies-row
+        div.stanchion
+          div.column-companies
+            p.client
+              span.warden Заказчик: 
+              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+            p.date-contraction
+              | Дата заключения: 29.05.2018
+              | Срок исполнения: 20.12.2018
+            p.requisites
+              | Реквизиты заказа: 0145200000418000392
+            p.border-line-cmp
+            p.costs
+              | Сумма: 
+              span.costs-style
+                  | 400 000
+              span.rubles-style
+                  | р
+          div.column-companies
+          div.column-companies
+          div.column-companies
+
 
 
                   
