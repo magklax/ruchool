@@ -1,0 +1,386 @@
+.pagetitle--order {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 63px;
+    letter-spacing: 1.27px;
+    margin-bottom: 80px;
+}
+.lego-form {
+    background-color: rgba(#ffffff, 0.85);
+    padding: 38px 67px 33px;
+    margin-bottom: 48px;
+}
+.lego-form__group {
+    margin-bottom: 14px;
+    &--search {
+        position: relative;
+        &:after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-size: cover;
+            background-image: url(../images/loop.png);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 9px;
+            display: block;
+        }
+    }
+}
+.lego-form__control {
+    border: 1px solid #8c9ba0;
+    display: block;
+    padding: 8px 12px;
+    color: #000000;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    // Text style for "Преподават"
+    letter-spacing: 0.3px;
+    background: transparent;
+    width: 100%;
+   
+}
+.input-row {
+    display: flex;
+    input {
+        flex: 0 0 50%;
+        max-width: 50%;
+        &:first-child {
+           border-right: none;
+        }
+    }
+}
+.selectric .label {    
+    color: rgba(#000000, 0.5);
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;    
+    // Text style for "Направлени"
+    letter-spacing: 0.3px;
+    line-height: 36px;
+    height: 32px;
+    
+    padding-left: 6px;
+}
+.selectric {
+    background: transparent;
+    border: 1px solid #8c9ba0;
+}
+.selectric .button {
+    background: transparent;
+}
+.selectric-items li.selected {
+    background: rgba(#E0E0E0, 0.6);    
+}
+.selectric-items li.hover {
+    background: rgba(#E0E0E0, 0.8);    
+}
+.selectric-items ul, .selectric-items li {
+    font-size: 16px;
+}
+.lego-form__btn {
+    color: #ffffff;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    // Text style for "Поиск"
+    letter-spacing: 0.3px;
+    display: inline-block;
+    padding: 11px 55px;
+    border: none;
+    background-color: #ff5f10;
+    transition: 0.2s;
+    &:hover {
+        background: #ff4005;
+
+    }
+}
+.lego-result__title {
+    color: rgba(#000000, 0.5);
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: underline;
+    // Text style for "По Вашему"
+    letter-spacing: 0.4px;
+    margin-bottom: 69px;
+}
+.lego-result__group-title {
+    color: #4e5c62;
+    font-family: $futurademic;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    // Text style for "Директорск"
+    letter-spacing: 0.4px;
+    margin-bottom: 37px;                  
+}
+.lego-result__item {
+    background-color: rgba(#d3dee2, 0.4);
+    padding: 17px 28px 0;
+    position: relative;
+    &:nth-child(2n) {
+        background: #fff;
+    }
+}
+.lego-result__img {
+    border: 1px solid #b7c6cb;
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.lego-result__status {
+    color: #ffffff;
+    font-family: $FuturaBookC;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    // Text style for "очно"
+    letter-spacing: 0.62px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 15px;
+    background-color: #aabcc2;
+    margin-bottom: 14px;
+}
+.lego-result__name {
+    color: #000000;
+    font-family: $FuturaMediumC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    // Text style for "Директор п"
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+.lego-result__text {
+    // Style for "Текст текс"
+  
+    color: #000000;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.06;
+    // Text style for "Подробнее"
+    a {
+        color: #001eff;
+        text-decoration: underline;  
+        transition: 0.2s;
+        &:hover {
+            color: #ff5f10;
+        }     
+    }
+   position: relative;
+   padding-bottom: 13px;
+   margin-bottom: 16px;
+   &:after {
+       content: '';
+       display: block;
+       width: 225px;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+   }
+}
+.lego-result__dates {
+
+    color: #000000;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.06;
+    a {
+        color: #001eff;
+        text-decoration: underline;
+        transition: 0.2s;
+        &:hover {
+            color: #ff5f10;
+        }
+    }
+}
+.lego-result__price-col  {
+    text-align: center;
+    padding-top: 45px;
+    
+}
+.lego-result__price  {
+
+    color: #3f4e55;
+    font-family: $futurademic;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    // Text style for "55.000"
+    letter-spacing: 0.4px;
+    // Text style for "руб."
+    margin-bottom: 7px;
+    .rub {
+        letter-spacing: 0.4px;
+        font-variant: small-caps;
+        font-size: 0.7em;
+    }
+    
+}
+.lego-result__one-click {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(#000000, 0.5);
+   
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;    
+    letter-spacing: 0.3px;
+    padding: 8px;
+    border: 1px solid #8c9ba0;
+    margin-bottom: 7px;
+    width: 100%;
+    max-width: 153px;
+    transition: 0.2s;
+    &:hover {
+        background: rgba(4, 104, 137, 0.03);
+     }
+}
+.lego-result__cart-btn {
+    color: #ffffff;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    // Text style for "В корзину"
+    letter-spacing: 0.3px;
+    padding: 10px;    
+    background-color: #ff5f10;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 153px;
+    transition: 0.2s;
+    &:hover {
+        background: #ff4005;
+
+    }
+}
+.lego-result__sity-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 10;
+}
+.lego-result__sity-item {
+    display: inline-block;
+// Style for "Санкт-Пете"
+   
+   
+    color: rgba(#000000, 0.5);
+    
+    font-family: $FuturaBookC;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    // Text style for "Санкт-Пете"
+   
+    letter-spacing: 0.19px;    
+    padding: 4px 7px;
+    border: 1px solid #c0cdd2;
+    margin-left: -1px;
+    transition: 0.2s;
+    &--current {
+        color: #000000;
+        border-bottom: transparent;
+        pointer-events: none;
+    }
+    &:hover {
+       background: rgba(4, 104, 137, 0.03);
+    }
+}
+.lego-result {
+    padding: 25px 0 9px;
+}
+.lego-result__group  {
+    margin-bottom: 70px;
+}
+.pagination__list {
+    display: flex;
+    justify-content: center;
+}
+.pagination__link {
+    min-width: 43px;
+    line-height: 43px;
+    border: 1px solid #aabcc2;
+    color: #000000;
+    font-family: $FuturaBookC;
+    font-size: 20px;
+    font-weight: 400;   
+    // Text style for "1"
+    letter-spacing: -0.33px;
+    transition: 0.2s;
+    text-align: center;
+    margin: 0 7px;
+    &--current {
+        border: 1px solid #ff5f10;
+        pointer-events: none;
+    }
+    &:hover {
+        background: rgba(4, 104, 137, 0.03);
+     }
+}
+.pagetitle--big {
+    text-align: center;
+    font-family: $futurademic;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 0.91;
+    text-transform: uppercase;
+    // Text style for "Конструкто"
+    letter-spacing: 1.46px;
+    margin: -30px 0 37px;
+}
+@include media-breakpoint-up(md) {
+    .lego-form .row > * {
+        padding: 0 30px;
+    }
+    .lego-form .row  {
+        margin: 0 -30px;
+    }
+    .lego-result__title {       
+        margin-bottom: 66px;
+        margin-top: -3px;
+        margin-left: 29px;
+    }
+    .lego-result__group-title {
+        margin-left: 29px;
+        letter-spacing: 0.7px;
+    }
+    .lego-result__price-col {
+        margin-right: -50px;
+        max-width: 100%;
+        margin-left: 34px;
+        margin-right: -34px;
+        padding-top: 27px;
+    }
+}

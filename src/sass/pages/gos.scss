@@ -5,6 +5,7 @@ a {
 
 .header-section {
     padding-top: 155px;
+    width: 100%;
 }
 .main-line {
     text-align: center;
@@ -29,7 +30,7 @@ a {
 
 .border-line-adv {
     width: 194px;
-    border: 1px solid #86a3ae;
+    border-bottom: 1px solid #86a3ae;
     background-color: #ffffff;
     margin-bottom: 44px;
     margin-top: 24px;
@@ -66,14 +67,6 @@ a {
 
 .col-md-5 {
     margin: 0;
-}
-
-.bc-image-build {
-    height: 100%;
-}
-
-.bc-image {
-    height: 100%;
 }
 
 .advantage {
@@ -124,6 +117,7 @@ a {
 }
 
 .advantages-one {
+    padding-right: 55px;
     padding-top: 45px;
     padding-bottom: 25px;
     margin: 0 !important;
@@ -151,7 +145,7 @@ a {
     margin: 0;
     color: #03aab9;
     font-family: "Futura Light Light";
-    font-size: 79px;
+    font-size: 82px;
     font-weight: 400;
     line-height: 33.49px;
     text-transform: uppercase;
@@ -174,9 +168,7 @@ a {
 }
 
 .two-section {
-    margin-bottom: 56px;
-    margin-left: 242px;
-    margin-top: 4px;
+    margin: 0 auto;
 }
 
 .paragraph-for-order {
@@ -221,7 +213,6 @@ a {
 .no-gutters {
     padding: 0px;
     margin: 0px;
-    height: 528px;
 }
 
 .pattern {
@@ -229,7 +220,8 @@ a {
 }
 
 .text {
-    padding-left: 90px;
+    text-align: center;
+    padding-right: 38px;
 }
 
 .header-submitted {
@@ -240,6 +232,8 @@ a {
     line-height: 57.07px;
     font-variant: small-caps;
     letter-spacing: 0.27px;
+    margin-top: 24px;
+    margin-bottom: 67px;
 }
 
 .submite {
@@ -260,6 +254,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2.88px;
+    margin-bottom: 4px;
 }
 
 .number {
@@ -268,6 +263,7 @@ a {
     font-size: 37px;
     font-weight: 400;
     letter-spacing: 0.39px;
+    margin: 0;
 }
 
 .our-contrarts {
@@ -284,7 +280,7 @@ a {
 .border-line-cnt {
     margin: 0 auto;
     width: 194px;
-    border: 1px solid #86a3ae;
+    border-bottom: 1px solid #86a3ae;
     background-color: #ffffff;
     margin-bottom: 23px;
     margin-top: 22px;
@@ -293,7 +289,6 @@ a {
 .column-companies {
     padding-left: 17.5px;
     padding-top: 7px;
-    width: 242px;
     height: 284px;
     border: 1px solid #86a3ae;
 }
@@ -302,10 +297,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-
-.column-companies:not(:nth-child(4n)) {
-    margin-right: 17px;
 }
 
 .client {
@@ -335,7 +326,7 @@ a {
 
 .border-line-cmp {
     width: 205px;
-    border: 1px solid #86a3ae;
+    border-bottom: 1px solid #86a3ae;
     background-color: #ffffff;
     margin-bottom: 12px;
 }
@@ -383,8 +374,10 @@ a {
 
 .booking-form {
     position: relative;
+    z-index: 10;
+    margin-bottom: 141px;
 }
 
-.variety {
-    height: 396px;
+.spacing-style {
+    display: inline-block;
 }

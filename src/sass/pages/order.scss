@@ -6,7 +6,7 @@ a {
 .bread-crumps {
     margin-top: 10px;
     margin-left: 14px;
-    opacity: 0.6;
+    
     color: #000000;
     font-family: $FuturaBookC;
     font-size: 16px;
@@ -14,11 +14,21 @@ a {
     line-height: 17px;
     letter-spacing: 0.4px;
 }
-
+.bread-crumps-link1 {
+    transition: 0.2s;
+    opacity: 0.6;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:last-child {
+        pointer-events: none;
+    }
+}
 .bread-crumps-link1:not(:last-child):after {
     content: '»';
     display: inline-block;
     margin: 0 5px;
+    
 }
 
 .col-md-5:nth-child(1)  {

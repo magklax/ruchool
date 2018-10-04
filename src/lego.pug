@@ -1,0 +1,265 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Конструктор курсов')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/lego.jpg)')
+      .main-section__left-bar 
+
+        .main-section__left-item 
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')   
+        .main-section__left-item 
+          img(src='images/calendar-white.png' alt='')       
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-close           
+      .main-section__right-bar 
+        .main-section__right-item 
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')       
+          .main-section__right-text Подписаться    
+      .container
+        .pagetitle.pagetitle--big Конструктор курсов
+        .lego-form 
+          form 
+            .row 
+              .col-md-4
+                .lego-form__group 
+                  select.js-select
+                    option Город
+                    option Город
+                    option Город
+                    option Город
+                .lego-form__group    
+                  .input-row 
+                    input(type='text' placeholder='Кол-во дней от').lego-form__control
+                    input(type='text' placeholder='до').lego-form__control
+                .lego-form__group    
+                  .input-row 
+                    input(type='text' placeholder='Цена от, Р').lego-form__control
+                    input(type='text' placeholder='до').lego-form__control
+              .col-md-4
+                .lego-form__group 
+                  select.js-select
+                    option Направление
+                    option Направление
+                    option Направление
+                    option Направление
+                .lego-form__group 
+                  select.js-select 
+                    option Период
+                    option Период
+                    option Период
+                    option Период  
+                .lego-form__group.lego-form__group--search        
+                  input(type='text' placeholder='Преподаватель').lego-form__control                     
+              .col-md-4
+                .lego-form__group 
+                  select.js-select 
+                    option Форма обучения
+                    option Форма обучения
+                    option Форма обучения
+                    option Форма обучения
+                .lego-form__group 
+                  select.js-select 
+                    option Квалификация
+                    option Квалификация
+                    option Квалификация
+                    option Квалификация
+                .lego-form__group.lego-form__group--search     
+                  input(type='text' placeholder='Ключевые слова').lego-form__control
+            
+            .text-center 
+              button(type='submit').lego-form__btn Поиск
+    section.lego-result 
+      .container 
+        .lego-result__title По Вашему запросу найдено 145 курсов:
+        .lego-result__group 
+          .lego-result__group-title Директорские курсы
+          .lego-result__list 
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .col-md-2 
+                  img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Директор по обучению и развитию персонала (5 дней)
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 55.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name PR-Директор (5 дней)
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 45.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Директор по логистике
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 35.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину 
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Главный бухгалтер
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 27.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину                                        
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Директор по закупкам
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 38.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину  
+        .lego-result__group 
+          .lego-result__group-title Строительство Девелопмент   
+          .lego-result__list
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Долевое строительство: новое законодательство (16 часов)
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 35.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину 
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Финансово-технический надзор (16 часов)
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 27.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину 
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+              .row 
+                .col-md-2 
+                  a(href='#')
+                    img(src='http://placehold.it/157x136' alt='').lego-result__img
+                .col-md-7 
+                  .lego-result__status очно
+                  a(href='#').lego-result__name Инженер-проектировщик
+                  .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... <a href='#'>Подробнее >></a>
+                  .lego-result__dates Ближайшая дата: 10 августа 2018. <a href=''>Смотреть другие даты  >></a> 
+                .col-md-3  
+                  .lego-result__price-col 
+                    .lego-result__price 39.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Купить в 1 клик
+                    a(href='#').lego-result__cart-btn В корзину                     
+        .pagination 
+          .pagination__list 
+            a(href='').pagination__link 1
+            a(href='').pagination__link.pagination__link--current 2
+            a(href='').pagination__link 3
+            a(href='').pagination__link 4
+            a(href='').pagination__link 5
+    include pug/footer.pug

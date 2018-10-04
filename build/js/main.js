@@ -1,4 +1,3 @@
-var kazanMap, myplacemark1, myplacemark2, myplacemark3;
 $(document).ready(function() {
     if ($("body").width() > 991) {
         if ($('.fixed-header').length == 0) {
@@ -67,6 +66,12 @@ $(document).ready(function() {
         slidesToScroll: 5,
         arrows: true
     });
+    $('.stanchion').slick({
+        infiniti: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true
+    })
     $(".lightgallery").lightGallery();
     $('.review-slider').slick({        
         slidesToShow: 4,
@@ -78,7 +83,9 @@ $(document).ready(function() {
         return false;
     })
     
-
+   
+        $('.js-select').selectric();
+     
 });
 if (document.fonts) {
     document.fonts.load("bold 16px Lato", "b").then(function() {

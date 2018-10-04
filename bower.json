@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "jquery.maskedinput": "^1.4.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "lightgallery": "^1.6.11"
   }
 }
