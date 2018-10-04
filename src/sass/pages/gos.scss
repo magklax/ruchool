@@ -4,6 +4,7 @@ a {
 }
 
 .header-section {
+    background-position: center;
     padding-top: 155px;
     width: 100%;
 }
@@ -86,6 +87,8 @@ a {
 }
 
 .image-section-two {
+    display: flex;
+    justify-content: flex-end;
     flex: 0 0 50%;
     max-width: 50%;
     margin: 0 !important;

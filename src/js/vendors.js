@@ -52,5 +52,4 @@
 // ../../node_modules/readmore-js/readmore.min.js
 // ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 //= ../../bower_components/lightgallery/dist/js/lightgallery-all.min.js
-
 //= ../../node_modules/selectric/public/jquery.selectric.min.js
