@@ -16,7 +16,7 @@ html
 
     include pug/header.pug
     section.main-section.pb-0.header-section(style='background-image: url(images/header-image.jpg)')
-      .container
+      .container.formheader
         .row.booking-form
           .col-md-6
           .col-md-6.text
@@ -63,25 +63,31 @@ html
       .container-edge
         .row
           .col-md-4.advantages-one
-            h3.header-advantages 8 лет
+            h3.header-advantages-one 8 лет
             p.privilege-paragraph Опыта гособучения
           .col-md-4.advantages-one
-            h3.header-advantages 1
+            h3.header-advantages-one 1
               span.spacing-style 
                 | 000+
             p.privilege-paragraph обученных госслужащих
           .col-md-4.advantages-one
-            h3.header-advantages 600
-            p.privilege-paragraph программ обучения
+            h3.header-advantages-one 600
+            p.privilege-paragraph-programm программ обучения
           .col-md-4.advantages-two
             h3.header-advantages 300
-            p.privilege-paragraph преподователей-практиков
+            p.privilege-paragraph-teachers
+              |преподавателей
+              br
+              |-практиков
           .col-md-4.advantages-two
             h3.header-advantages 80
-            p.privilege-paragraph реализованных госконтрактов
+            p.privilege-paragraph-one реализованных госконтрактов
           .col-md-4.advantages-two
-            h3.header-advantages 12
-            p.privilege-paragraph городов России
+            h3.header-advantages-cities 12
+            p.privilege-paragraph-one
+              | городов
+              br
+              | России
         div.one-section
     div.previlige
       .row.no-gutters
@@ -92,7 +98,9 @@ html
             | Оставить заявку:
           p.border-line-adv
           p.paragraph-for-order
-            | Вы можете оставить заявку на предварительный расчет минимальной стоимости контракта
+            | Вы можете оставить заявку на предварительный расчет
+            br
+            | минимальной стоимости контракта
           form.pattern
             .row
               div.form-order
@@ -103,6 +111,9 @@ html
                 input.input-order(name='phone', placeholder='Телефон', type='text')
               button.button-order(form='main-form' type='submit' value='')
                 | Отправить
+          p.offer-call Или позвоните нам по номеру  
+            span.phone-number 
+              |8 800 100 02 03
     .container
       .cotracts-cont
         p.our-contrarts| Исполненные контракты

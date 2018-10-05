@@ -6699,8 +6699,11 @@ a {
 
 .header-section {
   background-position: center;
-  padding-top: 155px;
+  padding-top: 231px;
   width: 100%; }
+
+.formheader {
+  margin-bottom: 112px; }
 
 .main-line {
   text-align: center;
@@ -6725,7 +6728,7 @@ a {
   width: 194px;
   border-bottom: 1px solid #86a3ae;
   background-color: #ffffff;
-  margin-bottom: 44px;
+  margin-bottom: 24px;
   margin-top: 24px; }
 
 .about-us {
@@ -6746,6 +6749,7 @@ a {
   margin-bottom: 76px; }
 
 .we-have {
+  display: inline-block;
   color: #4e5c62;
   font-family: "Futura Book C";
   font-size: 26px;
@@ -6761,7 +6765,7 @@ a {
   display: block;
   flex: 0 0 50%;
   max-width: 50%;
-  padding-left: 238px;
+  padding-left: 580px;
   padding-top: 59.5px;
   padding-right: 40px; }
 
@@ -6782,11 +6786,12 @@ a {
 .advantage-two {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-top: 61px;
-  padding-right: 250px;
+  padding-top: 60px;
+  padding-right: 100px;
   padding-left: 79px; }
 
 .catalog-style {
+  display: block;
   padding-left: 14px;
   color: #000000;
   font-family: "Futura Book C";
@@ -6809,10 +6814,10 @@ a {
   text-align: center; }
 
 .advantages-two {
-  padding-top: 56px;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-top: 55px;
+  padding-left: 41px;
+  padding-right: 89px; }
 
 .advantages-one:not(:nth-child(3)) {
   border-right: 1px solid #829ca7; }
@@ -6821,16 +6826,46 @@ a {
   height: 184px;
   border-right: 1px solid #829ca7; }
 
-.header-advantages {
+.header-advantages-one {
+  word-spacing: 10px;
+  padding-left: 11px;
   margin: 0;
   color: #03aab9;
   font-family: "Futura Light Light";
   font-size: 82px;
   font-weight: 400;
   line-height: 33.49px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: -3.9px; }
 
-.privilege-paragraph {
+.header-advantages {
+  padding-left: 28px;
+  margin: 0;
+  color: #03aab9;
+  font-family: "Futura Light Light";
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 33.49px;
+  text-transform: uppercase;
+  letter-spacing: -3.9px; }
+
+.header-advantages-cities {
+  margin: 0;
+  color: #03aab9;
+  font-family: "Futura Light Light";
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 33.49px;
+  text-transform: uppercase;
+  letter-spacing: -13.5px; }
+
+.header-advantages:nth-child(3) {
+  letter-spacing: 1px; }
+
+.privilege-paragraph,
+.privilege-paragraph-programm,
+.privilege-paragraph-one,
+.privilege-paragraph-teachers {
   color: #000000;
   font-family: "Futura Demi C";
   font-size: 19px;
@@ -6838,14 +6873,29 @@ a {
   line-height: 16.88px;
   text-transform: uppercase;
   letter-spacing: 0.27px;
-  margin-top: 29px;
+  margin-top: 26.3px;
+  margin-left: 15px;
   line-height: 28px; }
+
+.privilege-paragraph-programm {
+  margin-top: 26.3px;
+  margin-left: 3px; }
+
+.privilege-paragraph-one {
+  margin-top: 29.3px;
+  margin-left: 16px; }
+
+.privilege-paragraph-teachers {
+  margin-top: 30.3px;
+  margin-left: 29px; }
 
 .container-edge {
   width: 1080px; }
 
 .two-section {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 17.7px;
+  margin-bottom: 56px; }
 
 .paragraph-for-order {
   color: #000000;
@@ -6853,11 +6903,13 @@ a {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
-  margin-bottom: 29px; }
+  margin-bottom: 28px; }
 
 .form-order {
   flex: 0 0 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 14px; }
 
 .button-order {
   display: block;
@@ -6870,10 +6922,10 @@ a {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 10px; }
+  margin-top: 19px; }
 
 .input-order {
-  width: 280px;
+  width: 282px;
   height: 35px;
   display: block;
   padding: 8.6px 0 8.6px 0;
@@ -6887,7 +6939,8 @@ a {
   margin: 0px; }
 
 .pattern {
-  margin-left: 17px; }
+  margin-left: 17px;
+  margin-bottom: 34px; }
 
 .text {
   text-align: center;
@@ -6901,19 +6954,20 @@ a {
   line-height: 57.07px;
   font-variant: small-caps;
   letter-spacing: 0.27px;
-  margin-top: 24px;
-  margin-bottom: 67px; }
+  margin-top: 22px;
+  margin-bottom: 65px; }
 
 .submite {
   display: inline-block;
-  padding: 8px 33px 8px 33px;
+  padding: 8px 31.5px 8px 31.5px;
   border: 1px solid #fff;
   color: #ffffff;
   font-family: "Futura Book C";
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 20px; }
+  margin-bottom: 49px;
+  margin-right: 18px; }
 
 .our-number {
   color: #ffffff;
@@ -6921,7 +6975,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2.88px;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  margin-right: 12px; }
 
 .number {
   color: #ffffff;
@@ -6929,7 +6984,8 @@ a {
   font-size: 37px;
   font-weight: 400;
   letter-spacing: 0.39px;
-  margin: 0; }
+  margin: 0;
+  margin-right: 20px; }
 
 .our-contrarts {
   text-align: center;
@@ -6953,7 +7009,9 @@ a {
   padding-left: 17.5px;
   padding-top: 7px;
   height: 284px;
-  border: 1px solid #86a3ae; }
+  border: 1px solid #86a3ae;
+  margin-left: 8.5px;
+  margin-right: 8.5px; }
 
 .stanchion {
   display: flex;
@@ -7027,11 +7085,24 @@ a {
 
 .booking-form {
   position: relative;
-  z-index: 10;
-  margin-bottom: 141px; }
+  z-index: 10; }
 
 .spacing-style {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: -14.3px; }
+
+.offer-call {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Futura Book CTT";
+  font-weight: 300;
+  letter-spacing: 0.4px; }
+
+.phone-number {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.55px; }
 
 .pagetitle--order {
   text-align: center;
