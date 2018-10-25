@@ -1,5 +1,7 @@
 .main-section__usl-title {
     // Style for "Условия об"
+    margin-top: -11px;
+    margin-bottom: 83px;
     font-family: $futurademic;
     color: #ffffff;
     font-size: 63px;
@@ -7,10 +9,11 @@
     line-height: 0.91;
     font-variant: small-caps;
     // Text style for "Условия об"
-    letter-spacing: 0.26px;
+    letter-spacing: -0.44px;
     text-align: center;
 }
 .haw {
+    padding-top: 67px;    
     .container {
         position: relative;
         &:after {
@@ -42,7 +45,7 @@
             background: #86a3ae;
             width: 195px;
             height: 1px;
-            margin: 40px auto 54px;
+            margin: 42px auto 54px;
             display: block;
         }
     }

@@ -8467,108 +8467,106 @@ a {
     letter-spacing: -1.5px; } }
 
 .main-section__usl-title {
+  margin-top: -11px;
+  margin-bottom: 83px;
   font-family: "Futura Demi C", Arial, sans-serif;
   color: #ffffff;
   font-size: 63px;
   font-weight: 400;
   line-height: 0.91;
   font-variant: small-caps;
-  letter-spacing: 0.26px;
+  letter-spacing: -0.44px;
   text-align: center; }
 
-.haw .container {
-  position: relative; }
-  .haw .container:after {
-    content: "";
-    display: block;
+.haw {
+  padding-top: 67px; }
+  .haw .container {
+    position: relative; }
+    .haw .container:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      width: 729px;
+      z-index: -1;
+      background-image: url(../images/haw.jpg);
+      background-size: cover; }
+  .haw__title {
+    font-family: "Futura Medium C", Arial, sans-serif;
+    color: #4e5c62;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center; }
+    .haw__title:after {
+      content: '';
+      background: #86a3ae;
+      width: 195px;
+      height: 1px;
+      margin: 42px auto 54px;
+      display: block; }
+  .haw__item-title {
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    position: relative; }
+    .haw__item-title span {
+      font-family: "Futura Demi C", Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400; }
+    .haw__item-title:after {
+      content: '';
+      background: #86a3ae;
+      width: 190px;
+      height: 1px;
+      margin: 40px 0 54px;
+      display: block; }
+  .haw__item-num {
+    font-family: "Futura Medium C", Arial, sans-serif;
+    color: #227189;
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: -3.2px;
     position: absolute;
     top: 0;
-    bottom: 0;
     right: 100%;
-    width: 729px;
-    z-index: -1;
-    background-image: url(../images/haw.jpg);
-    background-size: cover; }
-
-.haw__title {
-  font-family: "Futura Medium C", Arial, sans-serif;
-  color: #4e5c62;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.06;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  text-align: center; }
-  .haw__title:after {
-    content: '';
-    background: #86a3ae;
-    width: 195px;
-    height: 1px;
-    margin: 40px auto 54px;
-    display: block; }
-
-.haw__item-title {
-  font-family: "Futura Book C", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  position: relative; }
-  .haw__item-title span {
-    font-family: "Futura Demi C", Arial, sans-serif;
-    text-transform: uppercase;
+    margin-right: 13px; }
+  .haw__text {
+    font-family: "Futura Book C", Arial, sans-serif;
+    color: #000000;
+    font-size: 16px;
     font-weight: 400; }
-  .haw__item-title:after {
-    content: '';
-    background: #86a3ae;
-    width: 190px;
-    height: 1px;
-    margin: 40px 0 54px;
-    display: block; }
-
-.haw__item-num {
-  font-family: "Futura Medium C", Arial, sans-serif;
-  color: #227189;
-  font-size: 54px;
-  font-weight: 400;
-  letter-spacing: -3.2px;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  margin-right: 13px; }
-
-.haw__text {
-  font-family: "Futura Book C", Arial, sans-serif;
-  color: #000000;
-  font-size: 16px;
-  font-weight: 400; }
-
-.haw__list {
-  font-family: "Futura Book C", Arial, sans-serif;
-  color: #000000;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: underline;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 28px; }
-  .haw__list li {
-    margin-bottom: 5px; }
-
-.haw__bottom {
-  font-size: 16px;
-  font-family: "Futura Book C", Arial, sans-serif;
-  font-weight: 300;
-  display: flex;
-  margin-top: 37px; }
-  .haw__bottom span {
-    font-family: "Futura Demi C", Arial, sans-serif;
-    font-weight: 600; }
-  .haw__bottom:before {
-    content: '';
-    display: inline-block;
-    width: 75px;
-    height: 58px;
-    flex-shrink: 0;
-    margin-right: 18px;
-    background-image: url(../images/check.png);
-    background-size: cover; }
+  .haw__list {
+    font-family: "Futura Book C", Arial, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 28px; }
+    .haw__list li {
+      margin-bottom: 5px; }
+  .haw__bottom {
+    font-size: 16px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-weight: 300;
+    display: flex;
+    margin-top: 37px; }
+    .haw__bottom span {
+      font-family: "Futura Demi C", Arial, sans-serif;
+      font-weight: 600; }
+    .haw__bottom:before {
+      content: '';
+      display: inline-block;
+      width: 75px;
+      height: 58px;
+      flex-shrink: 0;
+      margin-right: 18px;
+      background-image: url(../images/check.png);
+      background-size: cover; }
