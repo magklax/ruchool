@@ -221,3 +221,16 @@
         letter-spacing: 0.035px;
     }
 }
+
+.requirements {
+    padding: 0;
+    &__title {
+        @include s-title;
+        padding-top: 67px;
+        text-align: center;
+
+        &::after {
+            @include s-title-line;
+        }
+    }
+}
