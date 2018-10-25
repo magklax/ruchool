@@ -223,14 +223,71 @@
 }
 
 .requirements {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 46px;
     &__title {
         @include s-title;
         padding-top: 67px;
         text-align: center;
-
         &::after {
             @include s-title-line;
+            margin-bottom: 58px;
         }
+    }
+
+    &__text {
+        @include s-text;
+        padding-bottom: 22px;
+    }
+}
+
+.location {
+    position: relative;
+    padding: 0;
+    background-color: #edf2f3;
+
+    &__wrapper-content {
+        padding-left: 66px;
+    }
+
+    &__title {
+        @include s-title;
+        padding-top: 68px;
+        &::after {
+            @include s-title-line;
+            margin-top: 32px;
+            margin-bottom: 38px;
+            margin-left: 1px;
+        }
+    }
+
+    &__text {
+        padding-left: 2px;
+        font-family: "Futura Book C";
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        span {
+            font-family: "Futura Demi C";
+            font-weight: 600;
+        }
+    }
+
+    &__link {
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background-image: url("../images/earthmap.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #81854a;
     }
 }
