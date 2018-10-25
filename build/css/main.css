@@ -8627,8 +8627,9 @@ a {
       position: absolute;
       left: 0;
       top: 60px;
-      width: 112px;
-      height: 141px; }
+      width: 113px;
+      height: 141px;
+      background-repeat: no-repeat; }
     .payment__item_one::after {
       top: 19px;
       width: 196px;
