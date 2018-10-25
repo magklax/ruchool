@@ -8495,17 +8495,17 @@ a {
       background-image: url(../images/haw.jpg);
       background-size: cover; }
   .haw__title {
-    padding-top: 67px;
-    font-family: "Futura Medium C", Arial, sans-serif;
     color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 1.06;
     text-transform: uppercase;
     letter-spacing: 0.78px;
+    padding-top: 67px;
     text-align: center; }
     .haw__title:after {
-      content: '';
+      content: "";
       background: #86a3ae;
       width: 195px;
       height: 1px;
@@ -8589,4 +8589,80 @@ a {
       background-size: cover; }
 
 .payment {
-  padding: 0; }
+  padding: 0;
+  background-color: #edf2f3; }
+  .payment__title {
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+    padding-top: 67px;
+    text-align: center; }
+    .payment__title::after {
+      content: "";
+      background: #86a3ae;
+      width: 195px;
+      height: 1px;
+      margin: 42px auto 66px;
+      display: block;
+      margin-bottom: 45px; }
+  .payment__text {
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: center; }
+    .payment__text_bottom {
+      padding-top: 34px;
+      padding-bottom: 65px;
+      margin-right: 3px; }
+  .payment__item {
+    position: relative;
+    padding-top: 210px; }
+    .payment__item::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 112px;
+      height: 141px; }
+    .payment__item_one::after {
+      top: 19px;
+      width: 196px;
+      height: 195px;
+      margin-left: -44px;
+      background-image: url("../images/icon-payment-cash.png"); }
+    .payment__item_two {
+      margin-right: -15px;
+      padding-left: 31px; }
+      .payment__item_two::after {
+        margin-left: 28px;
+        background-image: url("../images/icon-payment-score.png"); }
+    .payment__item_three {
+      margin-right: -25px;
+      padding-left: 53px; }
+      .payment__item_three::after {
+        margin-left: 51px;
+        background-image: url("../images/icon-payment-cart.png"); }
+    .payment__item_four {
+      padding-left: 47px; }
+      .payment__item_four::after {
+        margin-left: 45px;
+        background-image: url("../images/icon-payment-time.png"); }
+  .payment__item-title {
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31.94px;
+    text-transform: uppercase;
+    letter-spacing: 0.41px; }
+  .payment__item-text {
+    padding-top: 4px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.24;
+    font-weight: 400;
+    letter-spacing: 0.035px; }

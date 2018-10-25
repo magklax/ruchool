@@ -29,23 +29,11 @@
         }
     }
     &__title {
+        @include s-title;
         padding-top: 67px;
-        font-family: $FuturaMediumC;
-        color: #4e5c62;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 1.06;
-        text-transform: uppercase;
-        // Text style for "Как стать"
-        letter-spacing: 0.78px;
         text-align: center;
         &:after {
-            content: '';
-            background: #86a3ae;
-            width: 195px;
-            height: 1px;
-            margin: 42px auto 66px;
-            display: block;
+            @include s-title-line;
         }
     }
 
@@ -77,13 +65,11 @@
         }
     }
     &__item-num {
-        // Style for "1."
         font-family: $FuturaMediumC;
         color: #227189;
         font-size: 54px;
         line-height: 54px;
         font-weight: 400;
-        // Text style for "1."
         letter-spacing: -4.6px;
         position: absolute;
         top: -4px;
@@ -95,7 +81,6 @@
         }
     }
     &__text  {
-    // Style for "В течение"
         font-family: $FuturaBookC;
         color: #000000;
         font-size: 16px;
@@ -150,4 +135,87 @@
 
 .payment {
     padding: 0;
+    background-color: #edf2f3;
+    &__title {
+        @include s-title;
+        padding-top: 67px;
+        text-align: center;
+        &::after {
+            @include s-title-line;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__text {
+        @include s-text;
+        text-align: center;
+        &_bottom {
+            padding-top: 34px;
+            padding-bottom: 65px;
+            margin-right: 3px;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 210px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 60px;
+            width: 112px;
+            height: 141px;
+        }
+
+        &_one {
+            &::after {
+                top: 19px;
+                width: 196px;
+                height: 195px;
+                margin-left: -44px;
+                background-image: url("../images/icon-payment-cash.png");
+            }
+        }
+        &_two {
+            margin-right: -15px;
+            padding-left: 31px; 
+            &::after {
+                margin-left: 28px;
+                background-image: url("../images/icon-payment-score.png");
+            }  
+        }
+        &_three {
+            margin-right: -25px;
+            padding-left: 53px;
+            &::after {
+                margin-left: 51px;
+                background-image: url("../images/icon-payment-cart.png");
+            }
+        }
+        &_four {
+            padding-left: 47px;
+            &::after {
+                margin-left: 45px;
+                background-image: url("../images/icon-payment-time.png");
+            }
+        }
+    }
+
+    &__item-title {
+        font-family: "Futura Demi C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 31.94px;
+        text-transform: uppercase;
+        letter-spacing: 0.41px;
+    }
+
+    &__item-text {
+        padding-top: 4px;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.24;
+        font-weight: 400;
+        letter-spacing: 0.035px;
+    }
 }

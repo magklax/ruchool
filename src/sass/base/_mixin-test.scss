@@ -1,0 +1,25 @@
+@mixin s-title {
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.06;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+} 
+
+@mixin s-title-line {
+  content: "";
+  background: #86a3ae;
+  width: 195px;
+  height: 1px;
+  margin: 42px auto 66px;
+  display: block;
+}
+
+@mixin s-text {
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
