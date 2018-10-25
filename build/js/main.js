@@ -79,13 +79,57 @@ $(document).ready(function() {
         arrows: true
     });
     $('.main-section__bottom-text').on('click', function(e) {
-        $("html:not(:animated),body:not(:animated)").animate({scrollTop: $('.courses-section').offset().top}, 600);
+        //$("html:not(:animated),body:not(:animated)").animate({scrollTop: $('.courses-section').offset().top}, 600);
+        $('.main-section__bottom').trigger('click');
         return false;
     })
-    
+    $('.main-section__bottom').on('click', function(e) {
+        $('.courses-section').slideToggle();
+    })
    
         $('.js-select').selectric();
-     
+     $('.cart__like').on('click', function(e) {
+        
+         
+        if( $(this).is('.cart__like_active')) {
+            $(this).removeClass('cart__like_anim');
+            $(this).removeClass('cart__like_active');
+        } else {
+            $(this).addClass('cart__like_active');
+            $(this).addClass('cart__like_anim');
+            setTimeout(function() {
+                $('.cart__like').removeClass('cart__like_anim');
+            }, 1000)
+        }
+        return false
+     })
+     $('.cart__count-input').on('input', function(e) {
+         var val = parseFloat($(this).val());
+         var rez = val > 0 ? val : 1;
+         $(this).val(rez);
+     })
+     $('.cart__count-btn').on('click', function(e) {
+        var a = 1;
+        if( $(this).is('.cart__count-btn_minus')) {
+            a = -1;
+        }
+        var val = parseFloat($(this).closest('.cart__count').find('.cart__count-input').val());
+        var rez = val + a;
+        rez = rez > 0 ? rez : 1;        
+        $(this).closest('.cart__count').find('.cart__count-input').val(rez);
+     })
+     $('.main-section__left-item.calendar').on('click', function(e) {
+        if( $(this).is('.open')) {
+            $(this).removeClass('open');
+            $('.main-section__left-hide').slideUp();
+        } else {
+            $(this).addClass('open');
+            $('.main-section__left-hide').slideDown();
+        }
+     })
+     $('.main-section__left-close').on('click', function(e) {
+        $('.main-section__left-item.calendar').eq(0).trigger('click');
+     })
 });
 if (document.fonts) {
     document.fonts.load("bold 16px Lato", "b").then(function() {

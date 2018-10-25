@@ -3,7 +3,7 @@
     z-index: 5;
 }
 .header {
-    background-color: rgba(#201600, 0.38);
+    background-color: rgba(#000, 0.38);
     padding: 31px 0 21px;
 }
 .header__row {
@@ -25,8 +25,9 @@
     font-size: 15px;   
     font-variant: small-caps;
     // Text style for "Управления"
-    letter-spacing: 0.11px;
-    margin-top: -13px;
+    letter-spacing: 0.71px;
+    margin-top: -10px;
+    line-height: 1.1;
     img {
         width: 60px;
         height: 60px;
@@ -52,6 +53,10 @@
     font-size: 15px;    
     font-variant: small-caps;
     text-transform: none;
+    div {
+        line-height: 1.6;
+        margin-top: -1px;
+    }
 }
 .header__city-item {
     // Style for "мОСКВА сАН"
@@ -63,7 +68,7 @@
     text-transform: uppercase;
     // Text style for "мОСКВА"
     letter-spacing: 0.53px; 
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .header__city-item--active {
     text-decoration: underline;
@@ -113,6 +118,10 @@
     padding: 7px 15px;
     padding-right: 40px;
     display: block;
+    transition: 0.2s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
 }
 .header__cart  {
     width: 17px;

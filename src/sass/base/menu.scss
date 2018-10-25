@@ -85,11 +85,12 @@
         width: 10px;
         height: 9px;
         position: absolute;
-        top: 33%;
+        top: 48%;
         right: 12px;
         display: block;
         background-image: url(../images/drop-caret.svg);
-        background-size: cover;
-        transform: rotate(-221deg) translateY(-50%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
     }
 }

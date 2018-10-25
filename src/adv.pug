@@ -1,0 +1,72 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Реклама')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style='background-image: url(images/owl.jpg)')
+      .container
+        .row
+          .col-md-6 
+          .col-md-6 
+            +b.advertising-title 
+              +e.title-b Реклама
+              +e.tilte-m в Русской Школе Управления              
+              +e.A.btn(href='#') написать
+    +b.SECTION.opportunities
+      .container 
+        +e.title Рекламные возможности
+        +e.text Интересует реклама в РШУ? Мы открыты к сотрудничеству!
+        +e.list   
+          .row 
+            .col-md-6 
+              +e.item(style='background-image: url(images/a1.jpg)' alt='')
+                +e.item-text E-mail-рассылка по базе из 25 000 клиентов
+            .col-md-6 
+              +e.item(style='background-image: url(images/a2.jpg)' alt='')
+                +e.item-text Пост на странице РШУ в Facebook
+            .col-md-6 
+              +e.item(style='background-image: url(images/a3.jpg)' alt='')
+                +e.item-text Вложения в папки участников семинаров
+            .col-md-6 
+              +e.item(style='background-image: url(images/a4.jpg)' alt='')
+                +e.item-text Мобильные стенды и стойки  
+            .col-md-6 
+              +e.item(style='background-image: url(images/a5.jpg)' alt='')
+                +e.item-text Выступление в качестве специального гостя
+            .col-md-6 
+              +e.item(style='background-image: url(images/a6.jpg)' alt='')
+                +e.item-text Розыгрыши, конкурсы и лотереи
+    +b.SECTION.leaders 
+      
+      .container
+        +e.image(style='background-image: url(images/leaders.jpg)')
+        .row 
+          .col-md-4 
+            +e.title Наша аудитория:
+            +e.UL.list
+              li Генеральные директора
+              li Собственники бизнеса
+              li Топ-менеджеры
+              li Госслужащие
+              li Руководители всех уровней
+              li Специалисты из разных отраслей
+    +b.SECTION.owl-call
+      .container 
+        +e.title Есть другие предложения? Давайте обсудим!
+        +e.text По всем вопросам размещения рекламы в РШУ звоните по телефону  <a href='tel:+74959805728'>+7 495  980 57 28</a>  или пишите в рекламный отдел.
+        +e.A.btn(href='#') написать
+        +e.politica Данное предложение не является публичной офертой, возможность любого рекламного взаимодействия рассматривается в индивидуальном порядке.
+    include pug/footer.pug

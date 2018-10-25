@@ -1,0 +1,44 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Реклама')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style='background-image: url(images/main.jpg)')
+      .container
+        
+            .main-section__usl-title Условия обучения
+             
+    +b.SECTION.haw 
+      .container 
+        +e.title Как стать участником обучения
+        .row 
+          .col-md-6 
+            +e.item-title
+              +e.item-num 1.
+              | <span>зарегистрироваться на сайте</span>  или<br> <span>по телефону 8 800 100 02 03</span> (звонок бесплатный по России)
+            +e.text В течение дня после регистрации на указанный вами электронный адрес придет счет. Оплата счета считается акцептом (присоединением) Заказчика к Договору на оказание образовательных услуг:
+          .col-md-6 
+            +e.item-title
+              +e.item-num 2.
+              | <span>Оплатите участие по выставленному вам счету</span> и ознакомьтесь с условиями договора
+            +e.UL.list
+              li 1. Договор присоединения на оказание образовательных услуг физическому лицу
+              li 2. Договор присоединения на оказание образовательных услуг работникам юридического лица
+              li 3. Договор о дистанционном оказании образовательных услуг
+            +e.text *Согласование и подписание Договора присоединения обеими сторонами, согласно действующему законодательству, не требуется.
+        +e.bottom <div><span>В связи с ограниченным количеством мест в группах рекомендуем</span> вам своевременно оплачивать счет и <span>подтверждать вашу регистрацию как можно раньше</span>, позвонив в офис Школы по телефону 8 800 100 02 03 и сообщив номер платежного поручения и сумму платежа.</div>
+
+    include pug/footer.pug

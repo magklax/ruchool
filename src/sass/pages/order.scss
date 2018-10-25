@@ -31,9 +31,7 @@ a {
     
 }
 
-.col-md-5:nth-child(1)  {
-    margin: 0 auto;
-}
+
 
 .headline {
     margin: 0 auto;
@@ -224,18 +222,12 @@ input[type=checkbox]:checked ~ .checkboxes {
     margin: 49px 0 32px 0;
 }
 
-.col-md-8 {
-    margin-bottom: 47px;
-}
 
-.col-md-12 {
+.section-line {
     margin: 0 !important;
     margin-bottom: 24px;
 }
 
-.col-md-2 {
-    margin: 0 auto;
-}
 
 .button-offer {
     display: block;

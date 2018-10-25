@@ -1,0 +1,382 @@
+.cart {
+    padding-bottom: 0;
+    .row > *:not(:last-child) {
+        margin-bottom: 0;
+    }
+    &__title {
+        font-family: $FuturaMediumC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.06;
+        text-transform: uppercase;
+        // Text style for "Корзина"
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    &__body {
+        background-color: rgba(#cde1e7, 0.4);
+        padding: 0 45px 43px;
+        margin: 0 -15px;
+        padding-right: 37px;
+    }
+    &__head {
+        padding-bottom: 17px;
+        padding-top: 46px;
+    }
+    &__col-name {
+        @include make-col-ready();
+        @include make-col(5.7);
+    }
+    &__col-img {
+        display: block;
+        @include make-col-ready();
+        @include make-col(1.2);
+    }
+    &__col-small {
+        @include make-col-ready();
+        @include make-col(1.575);
+    }
+    &__main-col {
+        @include make-col-ready();
+        @include make-col(4.5);
+    }
+    &__header-title {
+        font-family: $FuturaMediumC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        // Text style for "Кол-во"
+        letter-spacing: 0.4px;
+        
+        &_big {
+            text-transform: uppercase;
+            text-align: left;
+        }
+        &_count {
+            text-align: center;
+        }
+    }
+    &__price {
+        font-family: $futurademic;
+        color: #000000;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.43;
+        font-variant: small-caps;
+        // Text style for "35.000 руб"
+        letter-spacing: 0.3px;
+        margin-top: 13px;
+    }
+    &__table-text {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        // Text style for "25.08–28.0"
+        letter-spacing: 0.4px;
+        margin-top: 15px;
+    }
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    &__count-btn {
+        font-family: $FuturaBookC;
+        color: #96b0bb;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 31px;
+        // Text style for "+"
+        letter-spacing: 0.4px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            color: #7597a5;
+        }
+        &_plus {
+            padding-top: 4px;
+        }    
+    }
+    &__count-input {
+        width: 35px;
+        height: 31px;
+        border: 1px solid #aabcc2;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        // Text style for "1"
+        letter-spacing: 0.4px;
+        text-align: center;
+    }
+    &__col-count-cottom {
+        @include make-col-ready();
+        @include make-col(1.5);
+    }
+    &__col-itog {
+        @include make-col-ready();
+        @include make-col(4.5);
+    }
+    &__itog-count {
+        font-family: $FuturaMediumC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        // Text style for "4 товара"
+        letter-spacing: 0.4px;
+        text-align: center;
+    }
+    &__itog-title {
+        font-family: $FuturaMediumC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        text-transform: uppercase;
+        // Text style for "Итого:"
+        letter-spacing: 0.4px;
+        text-align: right;
+    }
+    &__price_itog {
+       margin-top: 0;
+    }
+    &__promo {
+        display: flex;
+    }
+    &__promo-input {
+        border: 1px solid #8c9ba0;
+        background: transparent;
+        font-family: $FuturaBookC;
+        opacity: 0.5;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        // Text style for "Промокод"
+        letter-spacing: 0.4px;
+        padding: 9px 5px;
+        width: 165px;
+        text-align: center;
+    }
+    &__promo-btn {
+        border: 1px solid #8c9ba0;
+        background-color: #d8e2e6;
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        // Text style for "Применить"
+        letter-spacing: 0.3px;
+        padding: 9px 37px;
+        margin-left: -1px;
+        transition: 0.2s;
+        &:hover {
+            background: rgba(#7597a5, 0.4);
+        }
+    }
+    &__btn-click {
+        border: 1px solid #8c9ba0;
+        font-family: $FuturaBookC;
+        opacity: 0.5;
+        color: #000000;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        // Text style for "Купить в 1"
+        color: #000000;
+        letter-spacing: 0.3px;
+        padding: 9px 18px;
+        display: inline-block;
+        transition: 0.2s;
+        &:hover {
+            background: rgba(#7597a5, 0.4);
+        }
+    }
+    &__order {
+        font-family: $FuturaBookC;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        // Text style for "Оформить з"
+        letter-spacing: 0.3px;
+        padding: 10px 11px;
+        margin-left: 12px;
+        display: inline-block;
+        background-color: #ff5f10;
+        border: none;
+        transition: 0.2s;
+        &:hover {
+            background: #ff4005;
+        }
+    }
+   &__btns  {
+    text-align: right; 
+   }
+   &__like {
+    display: inline-block;
+    margin-right: 26px;
+    width: 14px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    .svg-like-full {
+        display: none;
+    }
+    &_active {
+        .svg-like-full {
+            display: block;
+        } 
+        .svg-like-empty {
+            display: none;
+        } 
+    }
+    &_anim {
+        svg {
+            animation: like 0.2s ease-out;
+        }
+        
+    }
+    &:hover {
+        .svg-like-empty {
+            fill:  #ffae00;
+        } 
+    }
+   }
+   &__delete  {
+    display: inline-block;
+    margin-right: 26px;
+   }
+   &__product-name {
+    display: block;
+    font-family: $FuturaBookC;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.06;
+    // Text style for "Книга «Биз"
+    letter-spacing: 0.4px;
+    margin-bottom: 7px;
+    margin-top: 16px;
+   }
+   &__sity-select  {
+    display: inline-block;
+    .selectric .label {
+        font-family: $FuturaMediumC;
+       height: 23px;
+        line-height: 23px;
+        font-size: 10px;
+        font-weight: 400;       
+        text-transform: uppercase;
+        // Text style for "Москва"
+        color: rgba(#000000, 0.8);
+        letter-spacing: 0.18px;
+        padding-left: 0;
+        margin-right: 22px;
+    }
+    .selectric .button {
+        width: 23px;
+        height: 23px;
+    }
+   }
+   &__main-bottom  {
+        display: flex;
+        align-items: center;
+   }
+   &__product-line {
+       border-top: 1px solid #d3dee2;
+       padding: 15px 0 12px;
+   }
+   &__bottom {
+        padding: 28px 0 14px;
+        border-top: 1px solid rgba(#000000, 0.33);
+        border-bottom: 1px solid #d3dee2;
+    }
+    &__sale-line {
+        padding: 21px 0 33px;       
+    }
+    &__sale {
+        font-family: $futurademic;        
+        color: rgba(#000000, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.06;
+        text-transform: uppercase;
+        // Text style for "Хотите ски"
+        letter-spacing: 0.4px;
+        text-align: right;
+        padding-right: 32px;
+        position: relative;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 9px;
+            position: absolute;
+            top: 45%;
+            transform:  translateY(-50%) rotate(138deg);
+            right: 15px;
+            background: url(../images/arrow.svg);    
+            background-size: cover;
+        }
+    }
+}
+.svg-like-empty {
+    width: 14px;
+    height: 20px;
+    fill: #a7a9a8;
+    visibility: visible;
+}
+.svg-del {
+    width: 12px;
+    height: 14px;
+    fill: #a7a9a8;
+    visibility: visible;
+    transition: 0.2s;
+    &:hover {
+        fill:red;
+    }
+}
+.svg-like-full {
+    width: 13px;
+    height: 12px;
+    fill: #ffae00;
+}
+@keyframes like {
+    0% {
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    100% {
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}

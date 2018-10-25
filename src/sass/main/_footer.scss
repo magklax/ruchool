@@ -34,8 +34,17 @@
   justify-content: center;
   margin: 0 13px;  
   transition: 0.2s;
-  &:hover {
+  &_you:hover {
     background: #ff0000;
+  }
+  &_vk:hover {
+    background: #4a76a8;
+  }
+  &_fb:hover {
+    background: #4267b2;
+  }
+  &_inst:hover {
+    background:  linear-gradient(to top right, #f69d0e 0%, #da1d47 50%, #8a45ba 100%);
   }
 }
 .footer__tel {

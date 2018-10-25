@@ -2,7 +2,7 @@
   background-size: cover;
   position: relative;
   &:after {
-    content: '';
+    /*content: '';
     position: absolute;
     display: block;
     left: 0;
@@ -11,7 +11,7 @@
     right: 0;
     background-image: url(../images/main-pattern.svg);
     background-size: cover;
-    z-index: 2;
+    z-index: 2;*/
   }
   .container {
     z-index: 3;
@@ -20,7 +20,7 @@
 }
 .main-section__left-bar {
   position: absolute;
-  top: 184px;
+  top: 273px;
   left: 0;
   z-index: 10;
   cursor: pointer;
@@ -39,7 +39,7 @@
 }
 .main-section__right-bar  {
   position: absolute;
-  top: 184px;
+  top: 273px;
   right: 0;
   z-index: 10;
   cursor: pointer;
@@ -62,6 +62,14 @@
   flex-direction: column;
   border-bottom: 2px solid rgba(#000, 0.35);
   background: rgba( #000, 0.35);
+  img {
+    opacity: 0.8;
+    transition: 0.2s;
+    
+  }
+  &:hover img {
+    opacity: 1;
+  }
 }
 .main-section__left-day {
   width: 69px;
@@ -187,6 +195,10 @@
   font-size: 16px;
   line-height: 1;
   font-family: $FuturaBookC;
+  transition: 0.2s;
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }
 .main-section__link {
   border: 1px solid #fff;
@@ -204,17 +216,23 @@
   letter-spacing: 0.3px;
   background: rgba(0, 0, 0, 0.5);
   position: relative;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
   &:after {
     content: '';   
       width: 10px;
       height: 9px;
       position: absolute;
-      top: 46%;
+      top: 50%;
       right: 20px;
       display: block;
-      background-image: url(../images/drop-caret.svg);
-      background-size: cover;
-      transform: rotate(-310deg) translateY(-50%);
+      background-image: url(../images/tre-right.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
   }
  
 }
@@ -225,6 +243,7 @@
   position: relative;
   margin-top: 45px;
   padding: 20px 0 11px;
+  cursor: pointer;
 }
 
 .main-section__bottom-title {
@@ -250,15 +269,21 @@
   // Text style for "Выберите с"
   letter-spacing: 0.27px;
   position: relative;
+  transition: 0.2s;
+  &:hover {
+    color: #f6ff00;
+  }
     &:after {
         content: '';
-        width: 10px;
+        width: 15px;
         height: 9px;       
         display: block;
         margin: 0 auto;
-        background-image: url(../images/drop-caret.svg);
-        background-size: cover;       
-        transform: rotate(-221deg);
+        background-image: url(../images/tre-big.svg);
+        
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
         margin-top: 5px;
     }
 }
@@ -266,6 +291,7 @@
   background: rgba(#d3dee2, 0.4);
   padding: 20px 15px 10px;
   margin-bottom: 58px;
+  display: none;
   .row {
     &>* {
       margin-bottom: 17px;
@@ -315,13 +341,31 @@
 .preim-section__item  {
   display: block;
   text-decoration: none;
-  color: #fff;
-  transition: 0.2s;
+  color: #fff;  
   width: 240px;
   margin-left: 70px;
+  fill:white;
+  * {
+    transition: 0s !important;
+    transition-delay: 0s;
+  }
   &:hover {
     color: #013c56;
+    fill:#013c56;
   }
+}
+.svg-star {
+  width: 46px;
+  height: 43px;
+}
+
+.svg-book {
+  width: 61px;
+  height: 41px;
+}
+.svg-lamp {
+  width: 49px;
+  height: 68px;
 }
 .preim-section__title {
   // Style for "Наши клиен"
@@ -587,6 +631,10 @@
   display: inline-block;
   background-color: #ff5f10;
   margin-top: rem(40);
+  transition: 0.2s;
+  &:hover {
+    background: #ff4005;
+  }
 }
 .client-section {
   padding-top: 40px;
@@ -604,14 +652,14 @@
 }
 .client-section__logo  {
   background-color: rgba(#fff, 0.5);
-  padding: 21px 30px;
+  padding: 21px 30px 40px;
   .container {
     max-width: 1120px;
   }
 }
 .logo-slider .slick-track {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   img {
     margin: 0 auto;
   }
@@ -633,6 +681,10 @@
   img {
     border: 18px solid rgba(#046889, 0.2);
     margin: 0 auto;
+    transition: 0.2s;
+    &:hover {
+      border: 18px solid rgba(#046889, 0.3);
+    }
   }
   .slick-prev, .slick-next {
     width: 19px;
@@ -669,7 +721,7 @@
   }
   .main-section__link:after {
     right: 35px;
-    transform: rotate(-310deg) translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
   }
   .curse-container {
     width: 1200px;
@@ -685,4 +737,33 @@
 .section-title--big {
   font-size: 35px;
   margin-bottom: rem(114);
+}
+.main-section__left-hide {
+  display: none;
+}
+.main-section__left-item img{
+  opacity: 0.8;
+}
+.main-section__left-item:hover img{
+  opacity: 1;
+}
+.main-section__left-item.calendar {
+  border: none;
+}
+.main-section__left-item.calendar:not(.open) img{
+  opacity: 0.6;
+}
+.main-section__left-item.calendar:hover img{
+  opacity: 0.8;
+}
+.main-section__left-item.calendar.open img{
+  opacity: 1;
+}
+.news-list__more {
+  color: #0000ff;
+}
+.logo-slider {
+  .slick-prev, .slick-next {
+    top: 63%;
+  }
 }

@@ -5,7 +5,7 @@ doctype html
 html
   head(lang="en")
     include pug/metatags.pug
-    +title('Главная')
+    +title('Государственный заказ')
     include pug/styles.pug
     meta(http-equiv='Cache-Control', content='public')
 
@@ -32,34 +32,36 @@ html
 
     div.one-section
       .container.major-text
-        .row
-          .col-md-12
-            h1.main-line Государственный заказ
-            .col-md-12
-              p.border-line
-          .col-md-12
-            span.about-us Русская Школа Управления уже 8 лет успешно реализует образовательный проекты в рамках государственных и муниципальных закупок по Ф3-44 и Ф3-223
+        
+        .section-line
+          h1.main-line Государственный заказ
+          .section-line
+            p.border-line
+        .section-line
+          span.about-us Русская Школа Управления уже 8 лет успешно реализует образовательный проекты в рамках государственных и муниципальных закупок по Ф3-44 и Ф3-223
     div.previlige
-      .row.variety
-        .desirable
-          .advantage
-            span.we-have 
-              |У нас есть все, чтобы на высшем уровне
-              br
-              | выполнить любой государственный заказ:
-            p.border-line-adv
-            .catalog
-              ul.catalog-style
-                li 
-                  span.inner-color Лицензия на образовательную деятельность
-                li 
-                  span.inner-color Опытные преподаватели
-                li 
-                  span.inner-color Огромная база программ
-                li 
-                  span.inner-color Возможность работать в любой точке России
-        .image-section-one
-            img.bc-image-build(src='images/gosbuilding.jpg' alt="здание")
+      .previlige__img(style=" background-image: url('images/gosbuilding.jpg')")
+      .container
+        .row
+          .col-md-6
+
+            .advantage
+              span.we-have 
+                |У нас есть все, чтобы на высшем уровне
+                br
+                | выполнить любой государственный заказ:
+              p.border-line-adv
+              .catalog
+                ul.catalog-style
+                  li 
+                    span.inner-color Лицензия на образовательную деятельность
+                  li 
+                    span.inner-color Опытные преподаватели
+                  li 
+                    span.inner-color Огромная база программ
+                  li 
+                    span.inner-color Возможность работать в любой точке России
+        
     div.two-section
       .container-edge
         .row
@@ -82,7 +84,7 @@ html
               |-практиков
           .col-md-4.advantages-two
             h3.header-advantages 80
-            p.privilege-paragraph-one реализованных госконтрактов
+            p.privilege-paragraph-one реализованных<br> госконтрактов
           .col-md-4.advantages-two
             h3.header-advantages-cities 12
             p.privilege-paragraph-one
@@ -90,132 +92,139 @@ html
               br
               | России
         div.one-section
-    div.previlige
-      .row.no-gutters
-        .image-section-two
-          img.bc-image(src='images/keyboard-1.jpg' alt="клавиатура")
-        .advantage-two
-          span.we-have 
-            | Оставить заявку:
-          p.border-line-order
-          p.paragraph-for-order
-            | Вы можете оставить заявку на предварительный расчет
-            br
-            | минимальной стоимости контракта
-          form.pattern
-            .row
-              div.form-order
-                input.input-order(name='surname', placeholder='ФИО', type='text')
-              div.form-order
-                input.input-order(name='E-mail', placeholder='E-mail', type='text')
-              div.form-order
-                input.input-order(name='phone', placeholder='Телефон', type='text')
-              button.button-order(form='main-form' type='submit' value='')
-                | Отправить
-          p.offer-call Или позвоните нам по номеру  
-            span.phone-number 
-              |8 800 100 02 03
+    div.previlige.previlige--two
+      .previlige__img(style='background-image: url(images/keyboard-1.jpg)')
+      .container
+        .row.no-gutters
+          .col-md-6   
+          .col-md-6       
+            .advantage-two
+              span.we-have 
+                | Оставить заявку:
+              p.border-line-order
+              p.paragraph-for-order
+                | Вы можете оставить заявку на предварительный расчет
+                br
+                | минимальной стоимости контракта
+              form.pattern
+                .row
+                  div.form-order
+                    input.input-order(name='surname', placeholder='ФИО', type='text')
+                  div.form-order
+                    input.input-order(name='E-mail', placeholder='E-mail', type='text')
+                  div.form-order
+                    input.input-order(name='phone', placeholder='Телефон', type='text')
+                  button.button-order(form='main-form' type='submit' value='')
+                    | Отправить
+              p.offer-call Или позвоните нам по номеру  
+                  a(href='tel:88001000203').phone-number 
+                   | 8 800 100 02 03
     .container
       .cotracts-cont
         p.our-contrarts| Исполненные контракты
         p.border-line-cnt
       .companies-row
         .stanchion
-          div.column-companies
-            p.client
-              span.warden Заказчик: 
-              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
-            p.date-contraction-one
-              | Дата заключения: 29.05.2018
-            p.date-contraction-two
-              | Срок исполнения: 20.12.2018
-            p.requisites
-              | Реквизиты заказа: 
-              span.requisites-numeric
-                | 0145200000418000392
-            p.border-line-cmp
-            p.costs
-              | Сумма: 
-              span.costs-style
-                  | 400 000
-              span.rubles-style
-                  | р
-          div.column-companies
-            p.client
-              span.warden Заказчик: 
-              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
-            p.date-contraction-one
-              | Дата заключения: 29.05.2018
-            p.date-contraction-two
-              | Срок исполнения: 20.12.2018
-            p.requisites
-              | Реквизиты заказа: 
-              span.requisites-numeric
-                | 0145200000418000392
-            p.border-line-cmp
-            p.costs
-              | Сумма: 
-              span.costs-style
-                  | 400 000
-              span.rubles-style
-                  | р
-          div.column-companies
-            p.client
-              span.warden Заказчик: 
-              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
-            p.date-contraction-one
-              | Дата заключения: 29.05.2018
-            p.date-contraction-two
-              | Срок исполнения: 20.12.2018
-            p.requisites
-              | Реквизиты заказа: 
-              span.requisites-numeric
-                | 0145200000418000392
-            p.border-line-cmp
-            p.costs
-              | Сумма: 
-              span.costs-style
-                  | 400 000
-              span.rubles-style
-                  | р
-          div.column-companies
-            p.client
-              span.warden Заказчик: 
-              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
-            p.date-contraction-one
-              | Дата заключения: 29.05.2018
-            p.date-contraction-two
-              | Срок исполнения: 20.12.2018
-            p.requisites
-              | Реквизиты заказа: 
-              span.requisites-numeric
-                | 0145200000418000392
-            p.border-line-cmp
-            p.costs
-              | Сумма: 
-              span.costs-style
-                  | 400 000
-              span.rubles-style
-                  | р
-          div.column-companies
-            p.client
-              span.warden Заказчик: 
-              | Комитет по жилищно-коммунальному хозяйству Ленинградской области
-            p.date-contraction-one
-              | Дата заключения: 29.05.2018
-            p.date-contraction-two
-              | Срок исполнения: 20.12.2018
-            p.requisites
-              | Реквизиты заказа: 
-              span.requisites-numeric
-                | 0145200000418000392
-            p.border-line-cmp
-            p.costs
-              | Сумма: 
-              span.costs-style
-                  | 400 000
-              span.rubles-style
-                  | р
+          div
+            div.column-companies
+              p.client
+                span.warden Заказчик: 
+                | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+              p.date-contraction-one
+                | Дата заключения: 29.05.2018
+              p.date-contraction-two
+                | Срок исполнения: 20.12.2018
+              p.requisites
+                | Реквизиты заказа: 
+                span.requisites-numeric
+                  | 0145200000418000392
+              p.border-line-cmp
+              p.costs
+                | Сумма: 
+                span.costs-style
+                    | 400 000
+                span.rubles-style
+                    | р
+          div
+            div.column-companies
+              p.client
+                span.warden Заказчик: 
+                | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+              p.date-contraction-one
+                | Дата заключения: 29.05.2018
+              p.date-contraction-two
+                | Срок исполнения: 20.12.2018
+              p.requisites
+                | Реквизиты заказа: 
+                span.requisites-numeric
+                  | 0145200000418000392
+              p.border-line-cmp
+              p.costs
+                | Сумма: 
+                span.costs-style
+                    | 400 000
+                span.rubles-style
+                    | р
+          div
+            div.column-companies
+              p.client
+                span.warden Заказчик: 
+                | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+              p.date-contraction-one
+                | Дата заключения: 29.05.2018
+              p.date-contraction-two
+                | Срок исполнения: 20.12.2018
+              p.requisites
+                | Реквизиты заказа: 
+                span.requisites-numeric
+                  | 0145200000418000392
+              p.border-line-cmp
+              p.costs
+                | Сумма: 
+                span.costs-style
+                    | 400 000
+                span.rubles-style
+                    | р
+          div
+            div.column-companies
+              p.client
+                span.warden Заказчик: 
+                | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+              p.date-contraction-one
+                | Дата заключения: 29.05.2018
+              p.date-contraction-two
+                | Срок исполнения: 20.12.2018
+              p.requisites
+                | Реквизиты заказа: 
+                span.requisites-numeric
+                  | 0145200000418000392
+              p.border-line-cmp
+              p.costs
+                | Сумма: 
+                span.costs-style
+                    | 400 000
+                span.rubles-style
+                    | р
+          div
+            div.column-companies
+              p.client
+                span.warden Заказчик: 
+                | Комитет по жилищно-коммунальному хозяйству Ленинградской области
+              p.date-contraction-one
+                | Дата заключения: 29.05.2018
+              p.date-contraction-two
+                | Срок исполнения: 20.12.2018
+              p.requisites
+                | Реквизиты заказа: 
+                span.requisites-numeric
+                  | 0145200000418000392
+              p.border-line-cmp
+              p.costs
+                | Сумма: 
+                span.costs-style
+                    | 400 000
+                span.rubles-style
+                    | р
 
 
                   

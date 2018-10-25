@@ -1,0 +1,199 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Корзина')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+      .main-section__left-bar 
+
+        .main-section__left-item 
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')   
+        .main-section__left-item 
+          img(src='images/calendar-white.png' alt='')       
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-close           
+      .main-section__right-bar 
+        .main-section__right-item 
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')       
+          .main-section__right-text Подписаться      
+      .container
+        .pagetitle.pagetitle--order Лучшая база курсов России
+    div.bread-crumps
+      .container
+          .row
+            .col-md-4
+              div.bread-crumps
+                a.bread-crumps-link1(href='#') 
+                  | Главная
+                a.bread-crumps-link1(href='#') 
+                  | Вернуться к подбору курсов
+                a.bread-crumps-link1
+                  | Корзина
+    +b.SECTION.cart 
+      .container
+        +e.title Корзина
+        +e.body
+          +e.head 
+            .row 
+              +e.col-name
+                +e.header-title._big Ваш заказ
+              +e.col-small
+                +e.header-title._count Кол-во
+              +e.col-small
+                +e.header-title Форма
+              +e.col-small
+                +e.header-title Дата
+              +e.col-small
+                +e.header-title Цена   
+          +e.products 
+            +e.product-line 
+              .row 
+                +e.A.col-img(href='#')
+                  +e.IMG.img(src='http://placehold.it/67x58' alt='')
+                +e.main-col 
+                  +e.A.product-name(href='#') Директор по обучению и развитию персонала (5 дней)
+                  +e.main-bottom 
+                    +e.A.like._active(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
+                    +e.A.delete(href='#')
+                      +svg('del')
+                    +e.sity-select 
+                      select(class='js-select')
+                        option(value="Москва") Москва
+                        option(value="Москва") Москва
+                        option(value="Москва") Москва
+                +e.col-small
+                  +e.count 
+                    +e.count-btn._minus –
+                    +e.INPUT.count-input(type='text' value='1') 
+                    +e.count-btn._plus +
+                +e.col-small
+                  +e.table-text Очно
+                  
+                +e.col-small
+                  +e.table-text 25.08–28.08
+                +e.col-small
+                  +e.price 35.000 руб.               
+            +e.product-line 
+              .row 
+                +e.A.col-img(href='#')
+                  +e.IMG.img(src='http://placehold.it/67x58' alt='')
+                +e.main-col 
+                  +e.A.product-name(href='#') PR-Директор (5 дней)
+                  +e.main-bottom 
+                    +e.A.like(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
+                    +e.A.delete(href='#')
+                      +svg('del')
+                    +e.sity-select 
+                      select(class='js-select')
+                        option(value="Москва") Москва
+                        option(value="Москва") Москва
+                        option(value="Москва") Москва
+
+                +e.col-small
+                  +e.count 
+                    +e.count-btn._minus –
+                    +e.INPUT.count-input(type='text' value='1') 
+                    +e.count-btn._plus +
+                +e.col-small
+                  +e.table-text Дистанционно
+                +e.col-small
+                  +e.table-text 25.08–28.08
+                +e.col-small
+                  +e.price 55.000 руб.
+            +e.product-line 
+              .row 
+                +e.A.col-img(href='#')
+                  +e.IMG.img(src='http://placehold.it/67x58' alt='')
+                +e.main-col 
+                  +e.A.product-name(href='#') Книга «Бизнес с нуля»
+                  +e.main-bottom 
+                    +e.like 
+                    +e.delete 
+                    +e.sity-select 
+
+                +e.col-small
+                  +e.count 
+                    +e.count-btn._minus –
+                    +e.INPUT.count-input(type='text' value='1') 
+                    +e.count-btn._plus +
+                +e.col-small
+                  
+                +e.col-small
+                  
+                +e.col-small
+                  +e.price 600 руб.
+            +e.product-line 
+              .row 
+                +e.A.col-img(href='#')
+                  +e.IMG.img(src='http://placehold.it/67x58' alt='')
+                +e.main-col 
+                  +e.A.product-name(href='#') Книга «Разумный инвестор»
+                  +e.main-bottom 
+                    +e.like 
+                    +e.delete 
+                    +e.sity-select 
+
+                +e.col-small
+                  +e.count 
+                    +e.count-btn._minus –
+                    +e.INPUT.count-input(type='text' value='1') 
+                    +e.count-btn._plus +
+                +e.col-small
+                  
+                +e.col-small                  
+                +e.col-small
+                  +e.price 850 руб.            
+          +e.bottom 
+            .row 
+              +e.col-name
+                +e.itog-title Итого:
+              +e.col-small
+                +e.itog-count 4 товара
+              +e.col-small
+              +e.col-small
+              +e.col-small
+                +e.price._itog 103.850 руб.
+          +e.sale-line 
+            +e.sale Хотите скидку 33%?
+          +e.footer 
+            .row 
+              .col-md-6 
+                +e.promo 
+                  +e.INPUT.promo-input(placeholder='Промокод')
+                  +e.BUTTON.promo-btn Применить
+              .col-md-6 
+                +e.btns 
+                  +e.A.btn-click(href='#') Купить в 1 клик
+                  +e.BUTTON(type='submit').order Оформить заказ
+
+    include pug/footer.pug

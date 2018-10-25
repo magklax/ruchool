@@ -1,0 +1,125 @@
+.main-section__usl-title {
+    // Style for "Условия об"
+    font-family: $futurademic;
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 0.91;
+    font-variant: small-caps;
+    // Text style for "Условия об"
+    letter-spacing: 0.26px;
+    text-align: center;
+}
+.haw {
+    .container {
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100%;  
+            width: 729px;
+            z-index: -1;
+            background-image: url(../images/haw.jpg);
+            background-size: cover;
+        }
+    }
+    &__title {
+        // Style for "Как стать"
+        font-family: $FuturaMediumC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.06;
+        text-transform: uppercase;
+        // Text style for "Как стать"
+        letter-spacing: 0.4px;
+        text-align: center;
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 195px;
+            height: 1px;
+            margin: 40px auto 54px;
+            display: block;
+        }
+    }
+    &__item-title {
+        font-family: $FuturaBookC;
+        font-weight: 300;
+        font-size: 16px;
+        position: relative;
+        
+        span {
+            font-family:$futurademic;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 190px;
+            height: 1px;
+            margin: 40px 0 54px;
+            display: block;
+        }
+    }
+    &__item-num {
+        // Style for "1."
+        font-family: $FuturaMediumC;
+        color: #227189;
+        font-size: 54px;
+        font-weight: 400;
+        // Text style for "1."
+        letter-spacing: -3.2px;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        margin-right: 13px;
+    }
+    &__text  {
+    // Style for "В течение"
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;     
+    }
+    &__list {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 28px;
+        li {
+            margin-bottom: 5px;
+        }
+    }
+    &__bottom {
+        font-size: 16px;
+        font-family: $FuturaBookC;
+        font-weight: 300;
+        display: flex;
+        margin-top: 37px;
+        span {
+            font-family: $futurademic;
+            font-weight: 600;
+        }
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 75px;
+            height: 58px;
+            flex-shrink: 0;
+            margin-right: 18px;
+            background-image: url(../images/check.png);
+            background-size: cover;
+        }
+    }
+}

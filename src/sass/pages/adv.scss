@@ -1,0 +1,255 @@
+.main-section--owl {
+    &:after {
+        display: none;
+    }
+}
+.advertising-title {
+    margin-top: 60px;
+    margin-left: 77px;
+    margin-bottom: 140px;
+    &__title-b  {
+        // Style for "Реклама"
+        font-family: $FuturaBookC;
+        color: #00eaff;
+        font-size: 94px;
+        font-weight: 400;
+        line-height: 0.49;
+        text-transform: uppercase;
+        // Text style for "Р"        
+        font-variant: small-caps;
+        // Text style for "еклама"
+        letter-spacing: 1.68px;
+        margin-bottom: 28px;
+    }
+    &__tilte-m {
+        // Style for "в Русской"
+        font-family: $FuturaMediumC;
+        color: #00eaff;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 0.89;
+        font-variant: small-caps;
+        // Text style for "в Русской"
+        letter-spacing: 0.47px;
+    }
+    &__btn {
+        // Style for "написать"
+        font-family: $FuturaBookC;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "н, аписать"
+        letter-spacing: 0.4px;
+        border: 1px solid #ffffff;
+        display: inline-block;
+        padding: 9px 57px;
+        margin-top: 79px;
+        margin-left: 100px;
+        transition: 0.2s;
+        &:hover {
+            border: 1px solid #5f8595;
+            background-color: rgba(#d1f5fd, 0.2);
+        
+          }
+    }
+}
+.opportunities {
+    padding-top: 69px;
+    padding-bottom: 78px;
+    .row > *:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    &__item {
+        padding-bottom: 47%;
+        position: relative;
+        margin-bottom: 30px;
+        border: 1px solid #5f8595;
+    }
+    &__item-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;    
+        right: 0;
+        // Style for "E-mail-рас"
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "E, -mail-р"
+        letter-spacing: 0.48px;
+        background: rgba(white, 0.91);
+        text-align: center;
+        padding: 23px 5px;
+    }
+    &__title {
+        // Style for "Рекламные"
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.06;
+        text-transform: uppercase;
+        // Text style for "Рекламные"
+        letter-spacing: 0.7px;
+        text-align: center;
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 195px;
+            height: 1px;
+            margin: 40px auto 54px;
+            display: block;
+        }
+    }
+    &__text {
+        // Style for "Интересует"
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        // Text style for "И, нтересу"
+        letter-spacing: 0.4px;  
+        text-align: center;    
+        margin-bottom: 63px;
+    }
+}
+.leaders {
+    background-color: rgba(#d3dee2, 0.4);
+    padding-top: 68px;
+    padding-bottom: 48px;
+    .container {
+        position: relative;
+    }   
+    &__image {
+        position: absolute;
+        top: -68px;
+        bottom: -48px;       
+        left: 29.5%;
+        width: 1202px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__title {
+        // Style for "Наша аудит"
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 195px;
+            height: 1px;
+            margin: 31px 0 42px;
+            display: block;
+        }
+    }
+    &__list {
+        // Style for "Генеральны"
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;        
+        // Text style for "Генеральны"
+        letter-spacing: 0.4px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 31px;
+            &:after {
+                content: '';
+                display: inline-block;
+                background-color: #4e5c62;
+                border-radius: 50%;
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                left: 0;
+                top: 0.3em;
+            }
+        }
+    }
+    
+}
+.owl-call {
+    text-align: center;
+    padding-top: 74px;
+    padding-bottom: 29px;
+    &__title {
+        // Style for "Есть други"
+        font-family: $FuturaMediumC;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 400;
+        font-variant: small-caps;
+        // Text style for "Е, сть дру"
+        letter-spacing: 0.55px;
+        margin-bottom: 22px;
+    }
+    &__text {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.68;
+        // Text style for "П, о всем"
+        letter-spacing: 0.4px;
+        // Text style for "+7 495  98"
+       
+        margin-bottom: 51px;  
+        max-width: 670px;
+        margin-left: auto;
+        margin-right: auto;
+        a {
+            font-size: 22px;
+        }
+    }
+    &__btn {
+        font-family: $FuturaBookC;
+        color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "н, аписать"
+        color: #ffffff;
+        letter-spacing: 0.4px;
+        background-color: #ff5f10;
+        padding: 9px 59px;
+        margin-bottom: 59px;
+        display: inline-block;
+        transition: 0.2s;
+        &:hover {
+          background: #ff4005;
+        }
+    }
+    &__politica {
+        // Style for "Данное пре"
+        font-family: $FuturaBookC;
+        opacity: 0.7;
+        color: #000000;
+        font-size: 13px;
+        font-weight: 400;
+        // Text style for "Д, анное п"
+        letter-spacing: 0.33px;  
+        max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;     
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.advertising-title__tilte-m {
+        letter-spacing: -1.5px;
+    }
+}
+@supports (-ms-ime-align:auto) {
+    .advertising-title__tilte-m {
+        letter-spacing: -1.5px;
+    }
+}

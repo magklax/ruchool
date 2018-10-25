@@ -19,22 +19,21 @@ html
       .main-section__left-bar 
 
         .main-section__left-item 
-          img(src='images/like.png' alt='')
-        .main-section__left-item.main-section__left-item--mb
-          img(src='images/calendar.png' alt='')   
-        .main-section__left-item 
-          img(src='images/calendar-white.png' alt='')       
-        .main-section__left-day 15 авг
-          .main-section__left-hidden День открытых дверей
-        .main-section__left-day 16 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 17 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 18 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 19 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-close           
+          img(src='images/like.png' alt='')       
+        .main-section__left-item.calendar 
+          img(src='images/calendar-white.png' alt='')   
+        .main-section__left-hide              
+          .main-section__left-day 15 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-day 16 авг
+            .main-section__left-hidden День открытых дверей        
+          .main-section__left-day 17 авг
+            .main-section__left-hidden День открытых дверей        
+          .main-section__left-day 18 авг
+            .main-section__left-hidden День открытых дверей        
+          .main-section__left-day 19 авг
+            .main-section__left-hidden День открытых дверей        
+          .main-section__left-close           
       .main-section__right-bar 
         .main-section__right-item 
           img(src='images/tel.png' alt='')
@@ -206,21 +205,21 @@ html
       .container 
         .row 
           .col-md-4 
-            .preim-section__item 
+            a.preim-section__item(href='#')
               .preim-section__image 
-                  img(src='images/adv1.png' alt='')
+                +svg('star')
               .preim-section__title Наши клиенты
               .preim-section__text
           .col-md-4 
-            .preim-section__item 
+            a.preim-section__item(href='#') 
               .preim-section__image 
-                  img(src='images/adv2.png' alt='')
+                +svg('lamp')
               .preim-section__title Преподаватели
               .preim-section__text Адшгрыдлваор ЛИРдшгва дшгргш лдтгым,ждгш ывдлгшнва, швагрплрва , тшы
           .col-md-4 
-            .preim-section__item 
+            a.preim-section__item(href='#')
               .preim-section__image 
-                  img(src='images/adv3.png' alt='')
+                +svg('book')
               .preim-section__title Отзывы
               .preim-section__text     Адшгрыдлваор ЛИРдшгва дшгргш лдтгым,ждгш ывдлгшнва, швагрплрва                       
 
@@ -298,7 +297,7 @@ html
               .news-list__num 1
               .news-list__date 10 августа 2018 / в Москве
               .news-list__title фотоКонкурс «учусь в ршу!»
-              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  <span class='news-list__more'>>></span>
             .news-list__img(style='background-image: url(http://placehold.it/570x191)')
               
           a.news-list__item(href='#')
@@ -306,7 +305,7 @@ html
               .news-list__num 2
               .news-list__date 14 августа 2018 / в Москве
               .news-list__title СЕМИНАР ПО ЮРИДИЧЕСКОМУ ПРАВУ
-              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...   <span class='news-list__more'>>></span>
             .news-list__img(style='background-image: url(http://placehold.it/570x191)')
               
           a.news-list__item(href='#')
@@ -314,7 +313,7 @@ html
               .news-list__num 3
               .news-list__date 20 августа 2018 / в Москве
               .news-list__title Конференция по управлению персоналом
-              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...  >>
+              .news-list__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст...   <span class='news-list__more'>>></span>
             .news-list__img(style='background-image: url(http://placehold.it/570x191)')
                             
                         

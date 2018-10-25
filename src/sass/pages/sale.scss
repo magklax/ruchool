@@ -1,0 +1,294 @@
+.main-section--sale {
+    &:after {
+       display: none;
+    }
+}
+.sale-title  {
+    padding-top: 10px;
+    padding-left: 78px;
+    margin-bottom: 120px;
+    &__title-m {
+        color: #ffffff;
+        font-family: $FuturaMediumC;
+        font-size: 37px;
+        font-weight: 400;
+        line-height: 30.61px;
+        text-transform: uppercase;
+        // Text style for "Система"
+        letter-spacing: 5.35px;
+        margin-bottom: 18px;
+    }
+    &__tilte-b {
+        color: #ffffff;
+        font-family: $futurademic;
+        font-size: 97px;
+        font-weight: 400;
+        line-height: 0.88;
+        text-transform: uppercase;
+        // Text style for "скидок"
+        letter-spacing: 7.83px;
+        padding-bottom: 33px;
+        position: relative;
+        margin-bottom: 46px;
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 488px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__text {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        // Text style for "Р, усская"
+        letter-spacing: 0.4px;
+        max-width: 439px;
+        line-height: 1.4;
+    }
+}
+.sale-price {
+    overflow: hidden;
+    padding-bottom: 70px;
+    .container {
+        position: relative;
+        z-index: 3;
+        &:before {
+            content: '';
+            display: block;
+            width: 580px;
+            height: 344px;
+            background-image: url(../images/flover.jpg);
+            background-size: cover;
+            position: absolute;
+            top: -58px;
+            left: -235px;
+        }
+    }
+    &__title {
+        // Style for "Постоянные"
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "П, остоянн"
+        letter-spacing: 0.75px;
+        margin-bottom: 45px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+    }
+    &__item {
+        border: 1px solid #8c9ba0;
+        padding: 17px 5px 19px;
+        text-align: center;
+    }
+    &__price {
+        // Style for "-15%"
+        font-family: $FuturaMediumC;
+        color: #076c8b;
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 1.02;
+        text-transform: uppercase;
+        // Text style for "-15, %"
+        letter-spacing: -3.13px;
+        margin-bottom: -2px;
+    }
+    &__name {
+        // Style for "«Дальновид"
+        font-family: $FuturaMediumC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+        text-transform: uppercase;
+        // Text style for "«Дальновид"
+        letter-spacing: 0.21px;       
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 195px;
+            height: 1px;
+            margin: 2px auto 7px;
+            display: block;
+        }
+    }
+    &__text {
+        line-height: 1.3;
+        min-height: 2.5em;
+    }
+    &__small {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+    }
+    &__star {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__percent {
+        font-size: 0.6em;
+        vertical-align: top;
+    }
+    &__items {
+        margin-bottom: 33px;
+    }
+}
+.conditions {
+    background-color: rgba(#d3dee2, 0.4);
+    .row {
+        margin-left: auto;
+        max-width: 1082px;
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+       
+        &:before {
+            content: '';
+            display: block;
+            width: 525px;
+            height: 492px;
+            background-image: url(../images/dol.png);
+            background-size: cover;
+            position: absolute;
+            top: -63px;
+            left: -163px;
+            
+        }
+    }
+    &__title {
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 30px;
+        line-height: 1.2;
+
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "О, собые у"
+        letter-spacing: 0.75px;
+        margin-bottom: 44px;
+        text-align: center;
+    }
+    &__item  {
+        border: 1px solid #8c9ba0;
+        margin-bottom: 35px;
+        text-align: center;
+        padding: 14px 40px 16px;
+        max-width: 306px;
+        margin-left:  auto;
+        margin-right: auto;
+    }
+    &__price {
+        font-family: $FuturaMediumC;
+        color: #ff4e00;
+        font-size: 88px;
+        font-weight: 400;
+        line-height: 1.02;
+        text-transform: uppercase;
+        // Text style for "-30, %"
+        letter-spacing: -0.83px;
+    }
+    &__percent {
+        font-size: 0.6em;
+        vertical-align: top;
+        transform: translateX(-6px);
+        display: inline-block;
+    }
+    &__cost {
+        font-family: $futurademic;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+        text-transform: uppercase;
+        // Text style for "от 500 000"
+        letter-spacing: 0.21px;    
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 195px;
+            height: 1px;
+            margin: 6px auto 10px;
+            display: block;
+        }
+    }
+    &__text {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;   
+        text-align: center;
+        margin: 0 -42px;
+        line-height: 1.2;
+        padding-left: 270px;
+    }
+    &__usl {
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+.clients {
+    padding-bottom: 74px;
+    &__title {
+        // Style for "Как стать"
+        font-family: $FuturaBookC;
+        color: #4e5c62;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        // Text style for "К, ак стат"
+        letter-spacing: 0.75px;
+        text-align: center;
+        &:after {
+            content: '';
+            background: #86a3ae;
+            width: 190px;
+            height: 1px;
+            margin: 48px auto 54px;
+            display: block;
+        }
+    }
+    &__text {
+        // Style for "Регулярно"
+        font-family: $FuturaBookC;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        // Text style for "Р, егулярн"
+        letter-spacing: 0.4px;
+       text-align: center;
+       max-width: 1000px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+.photo {
+    background-image: url(../images/mask.png);
+    background-size: cover;
+    padding: 0;
+    margin-bottom: -51px;
+    text-align: center;
+    &__img {
+        margin: 0 auto;
+    }
+}
