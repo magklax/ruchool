@@ -443,3 +443,67 @@
         background-size: cover;
     }
 }
+
+.price {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 71px;
+    &__title {
+        @include s-title;
+        padding-top: 68px;
+        text-align: center;
+        &::after {
+            @include s-title-line;
+            margin-bottom: 58px;
+        }
+    }
+
+    &__text {
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        &_second {
+            margin-left: -1px;
+            padding-top: 23px;
+            padding-bottom: 60px;
+            letter-spacing: 0.4px;
+            span {
+                text-transform: uppercase;
+            } 
+        }
+    }
+    &__wrapper-button {
+        text-align: center;
+    }
+    &__button {
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 0;
+        background-color: #ff5f10;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 9px;
+        padding-top: 10px;
+        display: inline-block;
+        transition: 0.2s;
+        &:hover {
+          background: #ff4005;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+
+        width: 807px;
+        height: 464px;
+        background-image: url("../images/flower.jpg");
+        background-repeat: no-repeat;
+    }
+}
