@@ -8698,7 +8698,8 @@ a {
 
 .location {
   position: relative;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 103px;
   background-color: #edf2f3; }
   .location__wrapper-content {
     padding-left: 66px; }
@@ -8719,16 +8720,17 @@ a {
       margin: 42px auto 66px;
       display: block;
       margin-top: 32px;
-      margin-bottom: 38px;
+      margin-bottom: 37px;
       margin-left: 1px; }
   .location__text {
     padding-left: 2px;
-    font-family: "Futura Book C";
+    padding-bottom: 41px;
+    font-family: "Futura Book C", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400; }
     .location__text span {
-      font-family: "Futura Demi C";
+      font-family: "Futura Demi C", Arial, sans-serif;
       font-weight: 600; }
   .location__link {
     font-weight: 300;
@@ -8744,3 +8746,145 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #81854a; }
+  .location__button {
+    display: inline-block;
+    margin-left: 2px;
+    padding-left: 24px;
+    padding-right: 23px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #8c9ba0; }
+
+.time {
+  padding: 0; }
+  .time__title {
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+    padding-top: 74px;
+    text-align: center; }
+    .time__title::after {
+      content: "";
+      background: #86a3ae;
+      width: 195px;
+      height: 1px;
+      margin: 42px auto 66px;
+      display: block;
+      margin-top: 41px;
+      margin-bottom: 59px; }
+  .time__item {
+    text-align: center; }
+  .time__item-title {
+    color: #076c8b;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2; }
+    .time__item-title::after {
+      content: "";
+      background: #829ca7;
+      width: 128px;
+      height: 1px;
+      margin: 16px auto 30px;
+      display: block; }
+    .time__item-title_one {
+      padding-left: 21px; }
+    .time__item-title_two {
+      margin-right: -20px;
+      padding-left: 20px; }
+    .time__item-title_three {
+      padding-left: 42px; }
+    .time__item-title_four {
+      padding-right: 7px; }
+  .time__item-text {
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.1px; }
+    .time__item-text_one {
+      padding-right: 3px;
+      margin-right: -25px; }
+    .time__item-text_two {
+      margin-top: -3px;
+      margin-right: -20px;
+      padding-left: 21px; }
+    .time__item-text_three {
+      margin-top: -3px;
+      padding-left: 42px; }
+    .time__item-text_four {
+      margin-top: -3px;
+      padding-right: 2px; }
+  .time__bottom {
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-left: -46px;
+    padding-top: 45px;
+    padding-bottom: 67px;
+    text-align: center; }
+
+.additionally {
+  position: relative;
+  padding: 0;
+  background-color: #edf2f3; }
+  .additionally__wrapper-content {
+    padding-bottom: 56px; }
+  .additionally__title {
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+    margin-left: -3px;
+    padding-top: 64px;
+    line-height: 1.35; }
+    .additionally__title::after {
+      content: "";
+      background: #86a3ae;
+      width: 195px;
+      height: 1px;
+      margin: 42px auto 66px;
+      display: block;
+      margin-top: 27px;
+      margin-bottom: 45px;
+      margin-left: 4px; }
+  .additionally__epigraph {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase; }
+  .additionally__text {
+    padding-top: 12px;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    line-height: 1.22;
+    font-weight: 500;
+    letter-spacing: 0.2px; }
+    .additionally__text_second {
+      padding-top: 14px; }
+  .additionally::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-image: url("../images/grouppeople.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
