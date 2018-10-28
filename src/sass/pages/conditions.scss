@@ -103,6 +103,12 @@
         margin-bottom: 25px;
         li {
             margin-bottom: 5px;
+            a {
+                &:hover,
+                &:focus {
+                    color: #013c56;
+                }
+            }
         }
     }
     &__bottom {
@@ -236,8 +242,10 @@
     }
 
     &__text {
-        @include s-text;
-        padding-bottom: 22px;
+        p {
+            @include s-text;
+            padding-bottom: 22px;
+        }
     }
 }
 
@@ -282,6 +290,10 @@
     &__link {
         font-weight: 300;
         text-decoration: underline;
+        &:hover,
+        &:focus {
+            color: #013c56;
+        }
     }
 
     &::after {
@@ -308,6 +320,10 @@
         font-weight: 400;
         text-transform: uppercase;
         border: 1px solid #8c9ba0;
+        &:hover,
+        &:focus {
+            background: rgba(117, 151, 165, 0.4);
+        }
     }
 }
 .time {
@@ -392,12 +408,11 @@
     position: relative;;
     padding: 0;
     background-color: #edf2f3;
-    z-index: -1;
     .container {
         z-index: 3;
     }
     &__wrapper-content {
-        padding-bottom: 56px;
+        padding-bottom: 47px;
     }
     &__title {
         @include s-title;
@@ -407,27 +422,20 @@
         &::after {
             @include s-title-line;
             margin-top: 27px;
-            margin-bottom: 45px;
+            margin-bottom: 33px;
             margin-left: 4px;
         }
     }
-    &__epigraph {
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 400;
-        font-family: "Futura Medium C", Arial, sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-        text-transform: uppercase;
-    }
     &__text {
-        padding-top: 12px;
-        font-family: "Futura Medium C", Arial, sans-serif;
-        line-height: 1.22;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-        &_second {
-            padding-top: 14px;
+        p {
+            margin: 0;
+            margin-left: -1px;
+            font-size: 16px;
+            padding-top: 12px;
+            font-family: "Futura Medium C", Arial, sans-serif;
+            line-height: 1.22;
+            font-weight: 500;
+            letter-spacing: 0.25px;
         }
     }
     &::after {
@@ -436,6 +444,7 @@
         top: 0;
         bottom: 0;
         right: 0;
+        z-index: -1;
         width: 50%;
         background-image: url("../images/grouppeople.jpg");
         background-repeat: no-repeat;
@@ -453,7 +462,7 @@
         text-align: center;
         &::after {
             @include s-title-line;
-            margin-bottom: 58px;
+            margin-bottom: 57px;
         }
     }
     &__text {
@@ -461,17 +470,14 @@
         font-size: 16px;
         line-height: 1.2;
         font-weight: 400;
-        &_second {
-            margin-left: -1px;
-            padding-top: 23px;
-            padding-bottom: 60px;
-            letter-spacing: 0.4px;
-            span {
-                text-transform: uppercase;
-            } 
+        p {
+            margin: 0;
+            padding-bottom: 22px;
         }
     }
     &__wrapper-button {
+        padding-top: 39px;
+        margin-left: -2px;
         text-align: center;
     }
     &__button {
@@ -488,7 +494,8 @@
         padding-top: 10px;
         display: inline-block;
         transition: 0.2s;
-        &:hover {
+        &:hover,
+        &:focus {
           background: #ff4005;
         }
     }
@@ -832,43 +839,46 @@
             margin-bottom: 34px;
         }
     }
-    &__text {
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 14px;
-        font-family: "Futura Book C", Arial, sans-serif;
-        line-height: 1.2;
-        font-size: 16px;
-        font-weight: 400;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 5px;
-            left: 0;
-
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #4e5c62;
-        }
-        span{
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 12px;
+            font-family: "Futura Book C", Arial, sans-serif;
+            line-height: 1.2;
+            font-size: 16px;
+            font-weight: 400;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #4e5c62;
+            }
+            b {
             font-family: "Futura Demi C", Arial, sans-serif;
             font-weight: 600;
-        }
-        &_second {
-            padding-bottom: 11px;
+            }
         }
     }
-    &__mail {
-        text-transform: uppercase;
-    }
+
     &__link {
         display: inline-block;
         margin-left: 30px;
-        padding-top: 2px;
+        padding-top: 5px;
         color: #0000ff;
         font-weight: 300;
         text-decoration: underline;
+        &:hover,
+        &:focus {
+            color: #000000;
+        }
     }
 }
