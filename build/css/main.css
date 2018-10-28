@@ -8565,6 +8565,8 @@ a {
     margin-bottom: 25px; }
     .haw__list li {
       margin-bottom: 5px; }
+      .haw__list li a:hover, .haw__list li a:focus {
+        color: #013c56; }
   .haw__bottom {
     margin-left: 158px;
     padding-top: 41px;
@@ -8610,6 +8612,7 @@ a {
       display: block;
       margin-bottom: 45px; }
   .payment__text {
+    margin: 0;
     font-family: "Futura Book C", Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -8689,7 +8692,8 @@ a {
       margin: 42px auto 66px;
       display: block;
       margin-bottom: 58px; }
-  .requirements__text {
+  .requirements__text p {
+    margin: 0;
     font-family: "Futura Book C", Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -8737,6 +8741,8 @@ a {
   .location__link {
     font-weight: 300;
     text-decoration: underline; }
+    .location__link:hover, .location__link:focus {
+      color: #013c56; }
   .location::after {
     content: "";
     position: absolute;
@@ -8760,6 +8766,8 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     border: 1px solid #8c9ba0; }
+    .location__button:hover, .location__button:focus {
+      background: rgba(117, 151, 165, 0.4); }
 
 .time {
   padding: 0; }
@@ -8828,6 +8836,7 @@ a {
       margin-top: -3px;
       padding-right: 2px; }
   .time__bottom {
+    margin: 0;
     font-family: "Futura Book C", Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -8840,12 +8849,11 @@ a {
 .additionally {
   position: relative;
   padding: 0;
-  background-color: #edf2f3;
-  z-index: -1; }
+  background-color: #edf2f3; }
   .additionally .container {
     z-index: 3; }
   .additionally__wrapper-content {
-    padding-bottom: 56px; }
+    padding-bottom: 47px; }
   .additionally__title {
     color: #4e5c62;
     font-family: "Futura Medium C", Arial, sans-serif;
@@ -8865,30 +8873,24 @@ a {
       margin: 42px auto 66px;
       display: block;
       margin-top: 27px;
-      margin-bottom: 45px;
+      margin-bottom: 33px;
       margin-left: 4px; }
-  .additionally__epigraph {
+  .additionally__text p {
+    margin: 0;
+    margin-left: -1px;
     font-size: 16px;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: "Futura Medium C", Arial, sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    text-transform: uppercase; }
-  .additionally__text {
     padding-top: 12px;
     font-family: "Futura Medium C", Arial, sans-serif;
     line-height: 1.22;
     font-weight: 500;
-    letter-spacing: 0.2px; }
-    .additionally__text_second {
-      padding-top: 14px; }
+    letter-spacing: 0.25px; }
   .additionally::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
+    z-index: -1;
     width: 50%;
     background-image: url("../images/grouppeople.jpg");
     background-repeat: no-repeat;
@@ -8915,20 +8917,18 @@ a {
       height: 1px;
       margin: 42px auto 66px;
       display: block;
-      margin-bottom: 58px; }
+      margin-bottom: 57px; }
   .price__text {
     font-family: "Futura Book C", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400; }
-    .price__text_second {
-      margin-left: -1px;
-      padding-top: 23px;
-      padding-bottom: 60px;
-      letter-spacing: 0.4px; }
-      .price__text_second span {
-        text-transform: uppercase; }
+    .price__text p {
+      margin: 0;
+      padding-bottom: 22px; }
   .price__wrapper-button {
+    padding-top: 39px;
+    margin-left: -2px;
     text-align: center; }
   .price__button {
     font-family: "Futura Book C", Arial, sans-serif;
@@ -8944,7 +8944,7 @@ a {
     padding-top: 10px;
     display: inline-block;
     transition: 0.2s; }
-    .price__button:hover {
+    .price__button:hover, .price__button:focus {
       background: #ff4005; }
   .price::after {
     content: "";
@@ -9244,35 +9244,37 @@ a {
       margin-left: 0;
       margin-top: 24px;
       margin-bottom: 34px; }
-  .plans__text {
-    position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 14px;
-    font-family: "Futura Book C", Arial, sans-serif;
-    line-height: 1.2;
-    font-size: 16px;
-    font-weight: 400; }
-    .plans__text::after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 0;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #4e5c62; }
-    .plans__text span {
-      font-family: "Futura Demi C", Arial, sans-serif;
-      font-weight: 600; }
-    .plans__text_second {
-      padding-bottom: 11px; }
-  .plans__mail {
-    text-transform: uppercase; }
+  .plans__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .plans__list li {
+      position: relative;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 12px;
+      font-family: "Futura Book C", Arial, sans-serif;
+      line-height: 1.2;
+      font-size: 16px;
+      font-weight: 400; }
+      .plans__list li::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #4e5c62; }
+      .plans__list li b {
+        font-family: "Futura Demi C", Arial, sans-serif;
+        font-weight: 600; }
   .plans__link {
     display: inline-block;
     margin-left: 30px;
-    padding-top: 2px;
+    padding-top: 5px;
     color: #0000ff;
     font-weight: 300;
     text-decoration: underline; }
+    .plans__link:hover, .plans__link:focus {
+      color: #000000; }
