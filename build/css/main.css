@@ -5478,7 +5478,7 @@ ul.spec-item__text-full {
   font-weight: 400;
   color: #00eaff;
   font-size: 10px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.24px;
   margin-top: -6px; }
@@ -5487,7 +5487,8 @@ ul.spec-item__text-full {
   font-weight: bold;
   font-size: 15px;
   font-variant: small-caps;
-  text-transform: none; }
+  text-transform: none;
+  line-height: 1.4; }
   .header__slogan-big div {
     line-height: 1.6;
     margin-top: -1px; }

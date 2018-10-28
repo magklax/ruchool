@@ -1,0 +1,41 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Информация для СМИ')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/massmedia.jpg)")
+      .container
+        .main-section__massmedia-title <span>Информация</span> для СМИ
+
+    +b.SECTION.rent-gallery 
+      .container 
+        ul.nav.nav-tabs(role="tablist")
+            <!-- Nav tabs -->
+
+            li.nav-item
+              a.nav-link.active(data-toggle='tab', href='#rent1', role='tab') Москва
+            li.nav-item
+              a.nav-link(data-toggle='tab', href='#rent2', role='tab') Санкт-Петербург
+            li.nav-item
+              a.nav-link(data-toggle='tab', href='#rent3', role='tab') Екатеринбург
+            li.nav-item
+              a.nav-link(data-toggle='tab', href='#rent4', role='tab') Тюмень
+        .tab-content
+            .tab-pane.fade.active.show#rent1(role="tabpanel") 1
+            .tab-pane.fade#rent2(role="tabpanel") 2
+            .tab-pane.fade#rent3(role="tabpanel") 3
+            .tab-pane.fade#rent4(role="tabpanel") 4
+    include pug/footer.pug
