@@ -67,7 +67,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "./build",
-            index: "conditions.html"
+            index: "/massmedia.html"
 
 
         }

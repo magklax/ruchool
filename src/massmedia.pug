@@ -1,0 +1,81 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Информация для СМИ')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/massmedia.jpg)")
+      .container
+        .main-section__massmedia-title <span>Информация</span> для СМИ
+
+    +b.SECTION.info
+      .container
+        +e.title Информация для СМИ
+        +e.text Русская Школа Управления активно работает со средствами массовой информации.
+
+    +b.SECTION.prepared
+      .container
+        .row
+          .col-md-6
+            +e.wrapper
+              +e.title Мы готовы:
+              +e.UL.list
+                li Рассказать о тенденциях на рынке бизнес-образования
+                li Поделиться результатами наших опросов
+                li Дать комментарии ведущих спикеров РШУ
+                li Реализовать совместные проекты
+
+    +b.SECTION.interests
+      .container 
+        .row.justify-content-end
+          .col-md-6
+            +e.wrapper
+              +e.title Наши интересы
+              +e.UL.list
+                li Образование
+                li Право
+                li Личная эффективность
+                li Управление персоналом
+                li Финансы
+                li Менеджмент
+                li Маркетинг
+                li Продажи
+
+    +b.SECTION.press
+      .container
+        +e.title О нас пишут
+        +e.UL.list
+          li
+            img(src="images/press1.png" alt="РБК" width="108" height="29")
+          li
+            img(src="images/press2.png" alt="Коммерсант" width="190" height="25")
+          li
+            img(src="images/press3.png" alt="Форбс" width="118" height="29")
+          li
+            img(src="images/press4.png" alt="Эксперт" width="119" height="44")
+          li
+            img(src="images/press5.png" alt="Ведомости" width="172" height="31")
+          li
+            img(src="images/press6.png" alt="Генеральный Директор" width="134" height="44")
+
+    +b.SECTION.press-contacts
+      .container
+        +e.title Контакты пресс-службы
+        +e.UL.list
+          li Телефон: <a href="tel:+74959805728">+7 495  980 57 28</a>
+          li E-mail: <a href="mailto:pr@uprav.ru">pr@uprav.ru</a>
+        +e.bottom Мы ценим ваше время, любим свою работу и всегда открыты к интересным предложениям.
+
+    include pug/footer.pug
