@@ -1,8 +1,8 @@
 .main-section {
   background-size: cover;
   position: relative;
-  &:after {
-    /*content: '';
+  &--dark:after {
+    content: '';
     position: absolute;
     display: block;
     left: 0;
@@ -11,7 +11,7 @@
     right: 0;
     background-image: url(../images/main-pattern.svg);
     background-size: cover;
-    z-index: 2;*/
+    z-index: 2;
   }
   .container {
     z-index: 3;

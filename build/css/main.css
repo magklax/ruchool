@@ -5866,8 +5866,8 @@ ul.spec-item__text-full {
 .main-section {
   background-size: cover;
   position: relative; }
-  .main-section:after {
-    /*content: '';
+  .main-section--dark:after {
+    content: '';
     position: absolute;
     display: block;
     left: 0;
@@ -5876,7 +5876,7 @@ ul.spec-item__text-full {
     right: 0;
     background-image: url(../images/main-pattern.svg);
     background-size: cover;
-    z-index: 2;*/ }
+    z-index: 2; }
   .main-section .container {
     z-index: 3;
     position: relative; }
