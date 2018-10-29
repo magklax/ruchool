@@ -1,279 +1,269 @@
 .rent-title {
-  margin-top: -2px;
-  margin-left: 60px;
-  margin-right: 40px;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Futura Book C", Arial, sans-serif;
-  font-size: 63px;
-  font-weight: 400;
-  letter-spacing: 1.48px;
-  line-height: 0.98;
-  &__title-top {
-    font-variant: small-caps;
-  }
-  &__button {
-    font-family: "Futura Book C", Arial, sans-serif;
+    margin-top: -2px;
+    margin-left: 60px;
+    margin-right: 40px;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    border: 1px solid #ffffff;
-    display: inline-block;
-    margin-top: 49px;
-    margin-right: 4px;
-    padding: 10px 31px 8px 32px;
-    transition: 0.2s;
-    &:hover,
-    &:focus {
-      border: 1px solid #5f8595;
-      background-color: rgba(209, 245, 253, 0.2);
-    }
-  }
-  &__title-bottom {
-    padding-top: 58px;
-    padding-bottom: 96px;
-    padding-left: 2px;
-    color: #ffffff;
-    font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 2.93px;
-    a {
-      display: inline-block;
-      padding-top: 8px;
-      color: inherit;
-      font-family: "Futura Medium C", Arial, sans-serif;
-      font-size: 37px;
-      font-weight: 400;
-      letter-spacing: 0.9px;
-    }
-  }
-}
-
-.rent-bread-crumps {
-  .bread-crumps {
-    margin-left: 0;
-    margin-top: 32px;
-  }
-}
-
-.audience {
-  padding: 0;
-  padding-bottom: 30px;
-  &__title {
-    @include s-title;
-    padding-top: 45px;
     text-align: center;
-    &::after {
-      @include s-title-line;
-      margin-bottom: 58px;
-    }
-  }
-  &__text {
-    color: #000000;
     font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 63px;
     font-weight: 400;
-    line-height: 1.2;
-    p {
-      margin: 0;
-      padding-bottom: 29px;
+    letter-spacing: 1.48px;
+    line-height: 0.98;
+    &__title-top {
+        font-variant: small-caps;
     }
-    a {
-      text-decoration: underline;
-      &:hover,
-      &:focus {
-        color: #013c56;
-      }
-    }
-  }
-}
-
-.rent-gallery {
-  margin: 0;
-  margin-left: -1px;
-  padding: 0;
-  padding-bottom: 68px;
-  background-color: #edf2f3;
-
-  &__wrapper-nav {
-    display: flex;
-  }
-
-  .nav-tabs {
-    margin-top: 0;
-    padding-top: 14px;
-    border-bottom: 1px solid #86a3ae;
-  }
-  .nav-item {
-    margin-right: -2px;
-  }
-  .nav-link {
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    color: #000000;
-    opacity: 0.5;
-    font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    transition: 0s;
-  }
-  .nav-link.active {
-    border: 1px solid #86a3ae;
-    opacity: 1;
-    color: #000000;
-    font-family: "Futura Medium C", Arial, sans-serif;
-  }
-  &__tab-description {
-    max-width: 518px;
-    color: #000000;
-    font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.15px;
-  }
-  &__gallery-list {
-    margin: 0;
-    padding: 0;
-    padding-top: 28px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -7px;
-  }
-  &__gallery-item {
-    width: 80px;
-    height: 53px;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-bottom: 11px;
-    img {
-      display: block;
-    }
-    &_selected {
-      box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 5px #076c8b;
-    }
-    &:hover {
-      box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 5px #076c8b;
-    }
-  }
-  &__tab-title {
-    padding-top: 25px;
-    color: #4e5c62;
-    font-family: "Futura Medium C", Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.2;
-    font-variant: small-caps;
-    letter-spacing: 0.55px;
-    &::after {
-      @include s-title-line;
-      margin-top: 21px;
-      margin-bottom: 31px;
-      margin-left: 0;
-    }
-  }
-  &__tab-text-text {
-    padding-bottom: 18px;
-    a {
-      color: #0012ff;
-      &:hover,
-      &:focus {
-        color: #000000;
-      }
-    }
-    &_adress {
-      letter-spacing: 0.12px;
-      &::before {
-        content: "";
+    &__button {
+        font-family: "Futura Book C", Arial, sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        border: 1px solid #ffffff;
         display: inline-block;
-        vertical-align: baseline;
-        margin-right: 6px;
-        width: 17px;
-        height: 11px;
-        background-image: url("../images/metro-icon.png");
-        background-repeat: no-repeat;
-      }
+        margin-top: 49px;
+        margin-right: 4px;
+        padding: 10px 31px 8px 32px;
+        transition: 0.2s;
+        &:hover, &:focus {
+            border: 1px solid #5f8595;
+            background-color: rgba(209, 245, 253, 0.2);
+        }
     }
-    &_bottom {
-      letter-spacing: 0.02px;
-      a {
-        text-decoration: underline;
-      }
+    &__title-bottom {
+        padding-top: 58px;
+        padding-bottom: 96px;
+        padding-left: 2px;
+        color: #ffffff;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2.93px;
+        a {
+            display: inline-block;
+            padding-top: 8px;
+            color: inherit;
+            font-family: "Futura Medium C", Arial, sans-serif;
+            font-size: 37px;
+            font-weight: 400;
+            letter-spacing: 0.9px;
+        }
     }
-  }
-  &__tab-view-item {
-    margin-left: -25px;
-    text-align: center;
-    img {
-      display: block;
-      box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 11px rgba(#96b0bb, 0.5);
-    }
-  }
-  &__title-view-item {
-    padding-top: 38px;
-    padding-bottom: 26px;
-    margin-left: -15px;
-    text-align: center;
-    color: #000000;
-    line-height: 1.2;
-    font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    b {
-      font-family: "Futura Medium C", Arial, sans-serif;
-      font-weight: 500;
-    }
-    sup {
-      font-size: 8px;
-    }
-  }
-  &__button {
-    margin-top: 37px;
-    margin-left: 4px;
-    font-family: "Futura Book C", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 0.4px;
-    background-color: #ff5f10;
-    padding-left: 24px;
-    padding-right: 26px;
-    padding-bottom: 9px;
-    padding-top: 10px;
-    display: inline-block;
-    transition: 0.2s;
-    &:hover,
-    &:focus {
-      background: #ff4005;
-    }
-  }
 }
-
-.lego-result_rent-page {
-  margin-bottom: -53px;
-  padding-bottom: 70px;
-  .lego-result__group-title {
+.rent-bread-crumps {
+    .bread-crumps {
+        margin-left: 0;
+        margin-top: 32px;
+    }
+}
+.audience {
+    padding: 0;
+    padding-bottom: 30px;
+    &__title {
+        @include s-title;
+        padding-top: 45px;
+        text-align: center;
+        &::after {
+            @include s-title-line;
+            margin-bottom: 58px;
+        }
+    }
+    &__text {
+        color: #000000;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        p {
+            margin: 0;
+            padding-bottom: 29px;
+        }
+        a {
+            text-decoration: underline;
+            &:hover, &:focus {
+                color: #013c56;
+            }
+        }
+    }
+}
+.rent-gallery {
     margin: 0;
-    padding-top: 28px;
-    padding-bottom: 33px;
-    color: #4e5c62;
-    font-family: "Futura Medium C", Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.2;
-    font-variant: small-caps;
-    letter-spacing: 0.53px;
-    text-transform: none;
-  }
+    margin-left: -1px;
+    padding: 0;
+    padding-bottom: 68px;
+    background-color: #edf2f3;
+    &__wrapper-nav {
+        display: flex;
+    }
+    .nav-tabs {
+        margin-top: 0;
+        padding-top: 14px;
+        border-bottom: 1px solid #86a3ae;
+    }
+    .nav-item {
+        margin-right: -2px;
+    }
+    .nav-link {
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 6px;
+        padding-bottom: 4px;
+        color: #000000;
+        opacity: 0.5;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        transition: 0s;
+    }
+    .nav-link.active {
+        border: 1px solid #86a3ae;
+        opacity: 1;
+        color: #000000;
+        font-family: "Futura Medium C", Arial, sans-serif;
+    }
+    &__tab-description {
+        max-width: 518px;
+        color: #000000;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+    }
+    &__gallery-list {
+        margin: 0;
+        padding: 0;
+        padding-top: 28px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -4px;
+        margin-right: -7px;
+    }
+    &__gallery-item {
+        width: 80px;
+        height: 53px;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-bottom: 11px;
+        img {
+            display: block;
+        }
+        &_selected {
+            box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 5px #076c8b;
+        }
+        &:hover {
+            box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 5px #076c8b;
+        }
+    }
+    &__tab-title {
+        padding-top: 25px;
+        color: #4e5c62;
+        font-family: "Futura Medium C", Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.2;
+        font-variant: small-caps;
+        letter-spacing: 0.55px;
+        &::after {
+            @include s-title-line;
+            margin-top: 21px;
+            margin-bottom: 31px;
+            margin-left: 0;
+        }
+    }
+    &__tab-text-text {
+        padding-bottom: 18px;
+        a {
+            color: #0012ff;
+            &:hover, &:focus {
+                color: #ff5f10;
+            }
+        }
+        &_adress {
+            letter-spacing: 0.12px;
+            &::before {
+                content: "";
+                display: inline-block;
+                vertical-align: baseline;
+                margin-right: 6px;
+                width: 17px;
+                height: 11px;
+                background-image: url("../images/metro-icon.png");
+                background-repeat: no-repeat;
+            }
+        }
+        &_bottom {
+            letter-spacing: 0.02px;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__tab-view-item {
+        margin-left: -25px;
+        text-align: center;
+        img {
+            display: block;
+            box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 11px rgba(#96b0bb, 0.5);
+        }
+    }
+    &__title-view-item {
+        padding-top: 38px;
+        padding-bottom: 26px;
+        margin-left: -15px;
+        text-align: center;
+        color: #000000;
+        line-height: 1.2;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        b {
+            font-family: "Futura Medium C", Arial, sans-serif;
+            font-weight: 500;
+        }
+        sup {
+            font-size: 8px;
+        }
+    }
+    &__button {
+        margin-top: 37px;
+        margin-left: 4px;
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 0.4px;
+        background-color: #ff5f10;
+        padding-left: 24px;
+        padding-right: 26px;
+        padding-bottom: 9px;
+        padding-top: 10px;
+        display: inline-block;
+        transition: 0.2s;
+        &:hover, &:focus {
+            background: #ff4005;
+        }
+    }
+}
+.lego-result_rent-page {
+    margin-bottom: -53px;
+    padding-bottom: 70px;
+    .lego-result__group-title {
+        margin: 0;
+        padding-top: 28px;
+        padding-bottom: 33px;
+        color: #4e5c62;
+        font-family: "Futura Medium C", Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.2;
+        font-variant: small-caps;
+        letter-spacing: 0.53px;
+        text-transform: none;
+    }
 }

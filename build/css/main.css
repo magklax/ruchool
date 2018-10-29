@@ -9278,7 +9278,7 @@ a {
     font-weight: 300;
     text-decoration: underline; }
     .plans__link:hover, .plans__link:focus {
-      color: #000000; }
+      color: #ff5f10; }
 
 .main-section__massmedia-title {
   margin-top: -11px;
@@ -9709,7 +9709,7 @@ a {
     .rent-gallery__tab-text-text a {
       color: #0012ff; }
       .rent-gallery__tab-text-text a:hover, .rent-gallery__tab-text-text a:focus {
-        color: #000000; }
+        color: #ff5f10; }
     .rent-gallery__tab-text-text_adress {
       letter-spacing: 0.12px; }
       .rent-gallery__tab-text-text_adress::before {
