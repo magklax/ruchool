@@ -1,0 +1,49 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Список страниц')
+    include pug/styles.pug
+    meta(target='_blank' http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--dark.pb-0(style='background-image: url(images/lego.jpg)')
+      
+      .container
+        .pagetitle.pagetitle--big Список страниц
+    section 
+      .container
+        style. 
+          li {
+            margin-bottom:10px;
+          }
+        ol  
+          li 
+            a(target='_blank' href='index.html') Главная
+          li 
+            a(target='_blank' href='adv.html') Раклама
+          li 
+            a(target='_blank' href='cart.html') Корзина
+          li 
+            a(target='_blank' href='orderkey.html')  Оформление  
+          li 
+            a(target='_blank' href='conditions.html') Условия обучения
+          li 
+            a(target='_blank' href='gosorder.html') Гос заказ          
+          li 
+            a(target='_blank' href='massmedia.html') Информация для СМИ 
+          li 
+            a(target='_blank' href='rent.html')  Аренда помещений
+          li 
+            a(target='_blank' href='sale.html')  Скидки
+         
+
+    include pug/footer.pug
