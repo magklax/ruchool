@@ -207,3 +207,19 @@ function setWorkListHeight() {
         });
     }
 }
+
+// галерея в rent
+
+$(".rent-gallery__gallery-item").on("click", function() {
+    var clicked = $(this);
+    // вставка картинки
+    var fullSize = clicked.find("img").data("full");
+    $(".rent-gallery__tab-view-item img").attr("src", fullSize);
+    $(".rent-gallery__gallery-item").removeClass("rent-gallery__gallery-item_selected");
+    clicked.addClass("rent-gallery__gallery-item_selected");
+    // вставка title
+    var tbig = clicked.find("img").data("tbig");
+    var tsmall = clicked.find("img").data("tsmall");
+    var titleView = $(".rent-gallery__title-view-item");
+    titleView.html("<b>" + tbig + "</b> — " + tsmall);
+});

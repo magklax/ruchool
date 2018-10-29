@@ -6,7 +6,7 @@ doctype html
 html
   head(lang="en")
     include pug/metatags.pug
-    +title('Информация для СМИ')
+    +title('Аренда аудиторий')
     include pug/styles.pug
     meta(http-equiv='Cache-Control', content='public')
 
@@ -16,15 +16,39 @@ html
     // векторный спрайт конец
 
     include pug/header.pug
-    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/massmedia.jpg)")
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/rent.jpg)")
       .container
-        .main-section__massmedia-title <span>Информация</span> для СМИ
+        .row.justify-content-end
+          .col-md-6
+            +b.rent-title 
+              +e.title-top Аренда аудиторий в разных городах.
+              +e.A.button Оставить заявку
+              +e.title-bottom или позвоните нам по номеру <a href="tel:88001000203">8 800 100 02 03</a>
+
+    +b.rent-bread-crumps
+      .container
+          .row
+            .col-md-4
+              div.bread-crumps
+                a.bread-crumps-link1(href='#') 
+                  | Главная
+                a.bread-crumps-link1(href='#') 
+                  | Корпоративное обучение 
+                a.bread-crumps-link1
+                  | Аренда
+
+    +b.SECTION.audience
+      .container
+        +e.title Аренда аудиторий
+        +e.text
+          p Вам нужно помещение для проведения мероприятия? Можете арендовать аудитории РШУ в <a href="#">Москве</a>, <a href="#">Санкт-Петербурге</a>, <a href="#">Екатеринбурге</a> и <a href="#">Тюмени</a>.
+          p Все аудитории оснащены современным презентационным мультимедийным оборудованием. К услугам участников – Wi-Fi, зона отдыха, возможность приобрести деловую литература и сувенирную продукцию РШУ.
+          p Помещения предоставляются в аренду, если они не заняты под основную деятельность РШУ, поэтому каждый запрос арендаторов рассматривается индивидуально.
 
     +b.SECTION.rent-gallery 
       .container 
-        ul.nav.nav-tabs(role="tablist")
-            <!-- Nav tabs -->
-
+        +e.wrapper-nav
+          ul.nav.nav-tabs(role="tablist")
             li.nav-item
               a.nav-link.active(data-toggle='tab', href='#rent1', role='tab') Москва
             li.nav-item
@@ -33,9 +57,47 @@ html
               a.nav-link(data-toggle='tab', href='#rent3', role='tab') Екатеринбург
             li.nav-item
               a.nav-link(data-toggle='tab', href='#rent4', role='tab') Тюмень
+
         .tab-content
-            .tab-pane.fade.active.show#rent1(role="tabpanel") 1
-            .tab-pane.fade#rent2(role="tabpanel") 2
-            .tab-pane.fade#rent3(role="tabpanel") 3
-            .tab-pane.fade#rent4(role="tabpanel") 4
+          .tab-pane.fade.active.show#rent1(role="tabpanel")
+            .row
+              .col-md-6
+                +e.tab-description
+                  +e.tab-title РШУ в Москве
+                  +e.tab-text-top 12 учебных аудиторий, которые рассчитаны на группы от 10 до 55 человек.
+                  +e.tab-text-moddle Ботанический сад, 9 мин.пешком  На карте ул. Сельскохозяйственная, д. 17, корп. 5. Тел.: +7 (495) 980-57-28
+                  +e.tab-text-bottom По вопросу аренды в Москве обращайтесь на <a href="#"> uprav@uprav.ru</a>
+                  +e.UL.gallery-list
+                    +e.LI.gallery-item._selected
+                      img(src="http://placehold.it/80x53/000000/ffffff/" alt="phono-1" width="80" height="53" data-full="http://placehold.it/569x371/000000/ffffff/" data-tbig="big-1" data-tsmall="small-1")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/ffffff/000000/" alt="phono-2" width="80" height="53" data-full="http://placehold.it/569x371/ffffff/000000/" data-tbig="big-2" data-tsmall="small-2")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/00ff00/ff00ff/" alt="phono-3" width="80" height="53" data-full="http://placehold.it/569x371/00ff00/ff00ff/" data-tbig="big-3" data-tsmall="small-3")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/ff0000/00ffff/" alt="phono-4" width="80" height="53" data-full="http://placehold.it/569x371/ff0000/00ffff/" data-tbig="big-4" data-tsmall="small-4")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/0000ff/ffff00/" alt="phono-5" width="80" height="53" data-full="http://placehold.it/569x371/0000ff/ffff00/" data-tbig="big-5" data-tsmall="small-5")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/742bef/f0f0f0f/" alt="phono-6" width="80" height="53" data-full="http://placehold.it/569x371/742bef/f0f0f0f/" data-tbig="big-6" data-tsmall="small-6")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/871111/0f0f0f/" alt="phono-7" width="80" height="53" data-full="http://placehold.it/569x371/871111/0f0f0f/" data-tbig="big-7" data-tsmall="small-7")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/f000ff/0fff00/" alt="phono-8" width="80" height="53" data-full="http://placehold.it/569x371/f000ff/0fff00/" data-tbig="big-8" data-tsmall="small-8")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/81756b/f30fff/" alt="phono-9" width="80" height="53" data-full="http://placehold.it/569x371/81756b/f30fff/" data-tbig="big-9" data-tsmall="small-9")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/e56728/ffffff/" alt="phono-10" width="80" height="53" data-full="http://placehold.it/569x371/e56728/ffffff/" data-tbig="big-10" data-tsmall="small-10")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/608f1d/ffffff/" alt="phono-11" width="80" height="53" data-full="http://placehold.it/569x371/608f1d/ffffff/" data-tbig="big-11" data-tsmall="small-11")
+                    +e.LI.gallery-item
+                      img(src="http://placehold.it/80x53/afafaf/ffffff/" alt="phono-12" width="80" height="53" data-full="http://placehold.it/569x371/afafaf/ffffff/" data-tbig="big-12" data-tsmall="small-12")
+              .col-md-6
+                +e.tab-view-item
+                  +e.title-view-item <b>Аудитория «ГЖЕЛЬ»</b> — 50 м2, 30 посадочных мест
+                  img(src="http://placehold.it/569x371" alt="Аудитория «ГЖЕЛЬ»" width="569" height="371")
+
+          .tab-pane.fade#rent2(role="tabpanel") 2
+          .tab-pane.fade#rent3(role="tabpanel") 3
+          .tab-pane.fade#rent4(role="tabpanel") 4
     include pug/footer.pug
