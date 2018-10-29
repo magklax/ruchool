@@ -9705,6 +9705,10 @@ a {
       margin-left: 0; }
   .rent-gallery__tab-text-text {
     padding-bottom: 18px; }
+    .rent-gallery__tab-text-text a {
+      color: #0012ff; }
+      .rent-gallery__tab-text-text a:hover, .rent-gallery__tab-text-text a:focus {
+        color: #000000; }
     .rent-gallery__tab-text-text_adress {
       letter-spacing: 0.12px; }
       .rent-gallery__tab-text-text_adress::before {
@@ -9716,3 +9720,46 @@ a {
         height: 11px;
         background-image: url("../images/metro-icon.png");
         background-repeat: no-repeat; }
+    .rent-gallery__tab-text-text_bottom {
+      letter-spacing: 0.02px; }
+      .rent-gallery__tab-text-text_bottom a {
+        text-decoration: underline; }
+  .rent-gallery__tab-view-item {
+    margin-left: -25px;
+    text-align: center; }
+    .rent-gallery__tab-view-item img {
+      display: block;
+      box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 11px rgba(150, 176, 187, 0.5); }
+  .rent-gallery__title-view-item {
+    padding-top: 38px;
+    padding-bottom: 26px;
+    margin-left: -15px;
+    text-align: center;
+    color: #000000;
+    line-height: 1.2;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+    .rent-gallery__title-view-item b {
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-weight: 500; }
+    .rent-gallery__title-view-item sup {
+      font-size: 8px; }
+  .rent-gallery__button {
+    margin-top: 37px;
+    margin-left: 4px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    background-color: #ff5f10;
+    padding-left: 24px;
+    padding-right: 26px;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: 0.2s; }
+    .rent-gallery__button:hover, .rent-gallery__button:focus {
+      background: #ff4005; }

@@ -183,6 +183,13 @@
   }
   &__tab-text-text {
     padding-bottom: 18px;
+    a {
+      color: #0012ff;
+      &:hover,
+      &:focus {
+        color: #000000;
+      }
+    }
     &_adress {
       letter-spacing: 0.12px;
       &::before {
@@ -195,6 +202,59 @@
         background-image: url("../images/metro-icon.png");
         background-repeat: no-repeat;
       }
+    }
+    &_bottom {
+      letter-spacing: 0.02px;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__tab-view-item {
+    margin-left: -25px;
+    text-align: center;
+    img {
+      display: block;
+      box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 11px rgba(#96b0bb, 0.5);
+    }
+  }
+  &__title-view-item {
+    padding-top: 38px;
+    padding-bottom: 26px;
+    margin-left: -15px;
+    text-align: center;
+    color: #000000;
+    line-height: 1.2;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    b {
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-weight: 500;
+    }
+    sup {
+      font-size: 8px;
+    }
+  }
+  &__button {
+    margin-top: 37px;
+    margin-left: 4px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    background-color: #ff5f10;
+    padding-left: 24px;
+    padding-right: 26px;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+      background: #ff4005;
     }
   }
 }
