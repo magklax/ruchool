@@ -117,6 +117,7 @@
         letter-spacing: 0.5px;
         &::after {
             @include s-title-line;
+            width: 241px;
             margin-left: 0;
             margin-top: 33px;
             margin-bottom: 66px;

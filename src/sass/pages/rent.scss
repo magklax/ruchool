@@ -101,15 +101,14 @@
         border-bottom: 1px solid #86a3ae;
     }
     .nav-item {
-        margin-right: -2px;
+        margin-right: 0;  
     }
     .nav-link {
         padding-left: 19px;
         padding-right: 19px;
         padding-top: 6px;
         padding-bottom: 4px;
-        color: #000000;
-        opacity: 0.5;
+        color: rgba(#000000, 0.5);
         font-family: "Futura Book C", Arial, sans-serif;
         font-size: 10px;
         font-weight: 400;
@@ -119,10 +118,12 @@
         transition: 0s;
     }
     .nav-link.active {
+        padding-left: 18px;
+        padding-right: 18px;
         border: 1px solid #86a3ae;
-        opacity: 1;
         color: #000000;
-        font-family: "Futura Medium C", Arial, sans-serif;
+        padding-top: 4px;
+        padding-bottom: 5px;
     }
     &__tab-description {
         max-width: 518px;
