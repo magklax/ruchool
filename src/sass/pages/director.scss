@@ -1,0 +1,28 @@
+.page-course {
+  
+  &__main {
+    border: 3px solid #000000;
+    height: 100vh;
+  }
+  &__rec {
+    border: 3px solid #000000;
+    height: 100vh;
+  }
+}
+
+@include media-breakpoint-up(xx) {
+  .page-course {
+  
+    &__main {
+      border: 3px solid #000000;
+      height: 100vh;
+      margin-right: 66px;
+    }
+  }
+
+  .col-xx-0 {
+    position: absolute;
+    left: calc(100% - 71px);
+    top: 0;
+  }
+}

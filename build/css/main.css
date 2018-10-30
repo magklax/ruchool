@@ -973,7 +973,7 @@
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .col-xx {
     flex-basis: 0;
     flex-grow: 1;
@@ -1840,7 +1840,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .d-xl-inline-flex {
     display: inline-flex !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .d-xx-none {
     display: none !important; }
   .d-xx-inline {
@@ -2218,7 +2218,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .flex-xx-first {
     order: -1; }
   .flex-xx-last {
@@ -2325,7 +2325,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .float-xl-none {
     float: none !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .float-xx-left {
     float: left !important; }
   .float-xx-right {
@@ -3540,7 +3540,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
     margin-top: auto !important;
     margin-bottom: auto !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .m-xx-0 {
     margin: 0 0 !important; }
   .mt-xx-0 {
@@ -3802,7 +3802,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .text-xl-center {
     text-align: center !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .text-xx-left {
     text-align: left !important; }
   .text-xx-right {
@@ -3918,11 +3918,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-xl-up {
     display: none !important; } }
 
-@media (max-width: 1349px) {
+@media (max-width: 1599px) {
   .hidden-xl-down {
     display: none !important; } }
 
-@media (min-width: 1350px) {
+@media (min-width: 1600px) {
   .hidden-xx-up {
     display: none !important; } }
 
@@ -9786,3 +9786,21 @@ a {
     font-variant: small-caps;
     letter-spacing: 0.53px;
     text-transform: none; }
+
+.page-course__main {
+  border: 3px solid #000000;
+  height: 100vh; }
+
+.page-course__rec {
+  border: 3px solid #000000;
+  height: 100vh; }
+
+@media (min-width: 1600px) {
+  .page-course__main {
+    border: 3px solid #000000;
+    height: 100vh;
+    margin-right: 66px; }
+  .col-xx-0 {
+    position: absolute;
+    left: calc(100% - 71px);
+    top: 0; } }

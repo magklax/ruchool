@@ -1,0 +1,41 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Условия обучения')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style='background-image: url(images/main.jpg)')
+
+    +b.rent-bread-crumps
+      .container
+          .row
+            .col-md-4
+              div.bread-crumps
+                a.bread-crumps-link1(href='#') 
+                  | Главная
+                a.bread-crumps-link1(href='#') 
+                  | Хлебные крошки
+                a.bread-crumps-link1
+                  | Директорские курсы
+
+    +b.page-course
+      .container
+        .row
+          .col-9.col-xx-12
+            +e.main
+          .col-3.col-xx-0
+            +e.rec
+
+    include pug/footer.pug
