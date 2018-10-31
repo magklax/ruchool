@@ -54,6 +54,9 @@ $(document).ready(function() {
 
   var a = $('.header-wrap').height();
   $('.main-section').css('margin-top', -a).css('padding-top', a +70);
+  if ($(".main-section--course")) {
+    $('.main-section--course').css('margin-top', -a).css('padding-top', a);
+  }
 
     if (!document.fonts) {
 

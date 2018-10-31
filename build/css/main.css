@@ -9787,20 +9787,147 @@ a {
     letter-spacing: 0.53px;
     text-transform: none; }
 
-.page-course__main {
-  border: 3px solid #000000;
-  height: 100vh; }
+.course-bread-crumps .bread-crumps {
+  margin-left: 32px;
+  margin-top: 21px;
+  margin-bottom: 34px; }
 
-.page-course__rec {
-  border: 3px solid #000000;
-  height: 100vh; }
+.banner {
+  padding: 0;
+  padding-top: 5px; }
+
+.course {
+  padding: 0; }
+  .course__wrapper-title {
+    padding-left: 30px; }
+  .course__title {
+    padding-bottom: 13px;
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.7px; }
+  .course__time {
+    padding-bottom: 6px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.39px; }
+  .course__content {
+    background-color: #edf2f3;
+    height: 100px; }
+
+.rating {
+  width: 254px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  background-color: #edf2f3; }
+  .rating__wrapper-rating {
+    padding-top: 12px;
+    padding-bottom: 7px;
+    padding-left: 21px;
+    padding-right: 14px; }
+  .rating__rating-title {
+    padding-bottom: 4px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.4px; }
+  .rating__rating-listen {
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px; }
+  .rating__rating-value {
+    position: relative;
+    padding-top: 6px;
+    padding-left: 14px;
+    flex-grow: 1;
+    background-color: #55a730;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15.7px;
+    letter-spacing: -1.2px; }
+    .rating__rating-value b {
+      font-family: "Futura Demi C", Arial, sans-serif;
+      font-size: 45px;
+      line-height: 47.92px;
+      letter-spacing: -3.3px; }
+    .rating__rating-value::after, .rating__rating-value::before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-right: 18px solid transparent;
+      left: 0;
+      content: ""; }
+    .rating__rating-value::after {
+      bottom: 0;
+      border-bottom: 29px solid #edf2f3; }
+    .rating__rating-value::before {
+      top: 0;
+      border-top: 29px solid #edf2f3; }
+
+.salary {
+  border: 1px solid #8c9ba0; }
+  .salary__salary-top {
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+    padding-right: 80px;
+    border-bottom: 1px solid #8c9ba0;
+    background-color: #edf2f3;
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: 0.45px; }
+    .salary__salary-top::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 13px;
+      width: 46px;
+      height: 46px;
+      background-image: url("../images/hh-icon.png");
+      background-repeat: no-repeat; }
+  .salary__salaty-bottom {
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 11px; }
+    .salary__salaty-bottom p {
+      margin: 0;
+      padding-bottom: 2px;
+      color: #4e5c62;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.6px; }
+      .salary__salaty-bottom p b {
+        font-family: "Futura Medium C", Arial, sans-serif;
+        letter-spacing: 0; }
+  .salary__rub {
+    font-variant: small-caps; }
 
 @media (min-width: 1600px) {
-  .page-course__main {
-    border: 3px solid #000000;
-    height: 100vh;
-    margin-right: 66px; }
-  .col-xx-0 {
+  .page-course__main-content {
+    margin-right: 68px; }
+  .col-costom {
     position: absolute;
     left: calc(100% - 71px);
     top: 0; } }

@@ -16,12 +16,12 @@ html
     // векторный спрайт конец
 
     include pug/header.pug
-    section.main-section.main-section--owl.pb-0.header-section(style='background-image: url(images/main.jpg)')
+    section.main-section.main-section--course.pb-0.header-section(style='background-image: url(images/main.jpg)')
 
-    +b.rent-bread-crumps
+    +b.course-bread-crumps
       .container
           .row
-            .col-md-4
+            .col-md-12
               div.bread-crumps
                 a.bread-crumps-link1(href='#') 
                   | Главная
@@ -34,8 +34,26 @@ html
       .container
         .row
           .col-9.col-xx-12
-            +e.main
-          .col-3.col-xx-0
-            +e.rec
+            +e.main-content
+              +b.SECTION.course
+                .row.justify-content-between
+                  .col-6.col-xx-7
+                    +e.wrapper-title
+                      +e.title Курс «Директор по маркетингу»
+                      +e.time Время проведения: ДНЕВНОЕ + ВЕЧЕРНЕЕ (9.00–19.30)
+                  .col
+                    +b.rating
+                      +e.wrapper-rating
+                        +e.rating-title Рейтинг курса
+                        +e.rating-listen 355 прослушали
+                      +e.rating-value <b>4,9</b> из 5
+                +e.content
+          .col-3.col-costom
+            +b.SECTION.banner
+              +b.salary
+                +e.salary-top Уровень зарплаты специалистов <br> по данным HendHanter
+                +e.salaty-bottom
+                  <p> Средний: 42.000-45.000 <span class="salary__rub">руб.</span> </p>
+                  <p> <b>После обучения: 55.000-62.000 <span class="salary__rub">руб.</span></b> </p>
 
     include pug/footer.pug
