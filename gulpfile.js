@@ -243,8 +243,8 @@ gulp.task('watch', function () {
 gulp.task('watch', function() {
     gulp.watch([path.watch.style], ["style:build"]);
     gulp.watch([path.watch.pug], ["html:build"]);
-    gulp.watch([path.watch.mainJs], ["mainJs:build"]);
-    gulp.watch([path.watch.fonts], ["fonts:build"]);
+    // gulp.watch([path.watch.mainJs], ["mainJs:build"]);
+    // gulp.watch([path.watch.fonts], ["fonts:build"]);
     //gulp.watch([path.watch.img], ["image:build"]);
     //gulp.watch([path.watch.webp], ["webp"]);
     gulp.watch([path.watch.svgSprite], ["svg-sprite"]);

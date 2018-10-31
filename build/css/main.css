@@ -9795,6 +9795,8 @@ a {
 .banner {
   padding: 0;
   padding-top: 5px; }
+  .banner__item {
+    margin-bottom: 39px; }
 
 .course {
   padding: 0; }
@@ -9923,6 +9925,190 @@ a {
         letter-spacing: 0; }
   .salary__rub {
     font-variant: small-caps; }
+
+.course-registry {
+  padding-bottom: 37px;
+  border: 1px solid #8c9ba0;
+  background-color: #edf2f3; }
+  .course-registry__title {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    color: #ffffff;
+    background-color: #013c56;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    text-align: center; }
+  .course-registry__wrapper {
+    padding-left: 19%;
+    padding-right: 18%; }
+  .course-registry__old-price {
+    padding-top: 20px;
+    margin-left: -3px;
+    margin-right: -10px;
+    opacity: 0.4;
+    color: #3f4e55;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.13px;
+    text-decoration: line-through; }
+  .course-registry__price {
+    position: relative;
+    padding-top: 1px;
+    margin-left: -5px;
+    margin-right: -22px;
+    color: #ff5f10;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.05px;
+    font-variant: small-caps; }
+    .course-registry__price::after {
+      content: "*";
+      position: relative;
+      top: -10px;
+      right: 11px;
+      font-size: 16px;
+      line-height: 1; }
+  .course-registry__rub {
+    font-size: 14px;
+    line-height: 1; }
+    .course-registry__rub_new {
+      font-size: 32px; }
+  .course-registry__form-title {
+    margin-bottom: 2px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    color: rgba(63, 78, 85, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    border-bottom: 1px solid #8c9ba0;
+    letter-spacing: -0.1px;
+    font-variant: small-caps;
+    text-transform: uppercase; }
+  .course-registry__checkbox {
+    display: block;
+    color: #3f4e55;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.26px; }
+    .course-registry__checkbox span {
+      position: relative;
+      display: block;
+      padding-left: 36px;
+      padding-top: 15px; }
+      .course-registry__checkbox span::after, .course-registry__checkbox span::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0; }
+      .course-registry__checkbox span::after {
+        top: 16px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #8c9ba0; }
+      .course-registry__checkbox span::before {
+        top: 22px;
+        left: 6px;
+        width: 14px;
+        height: 8px;
+        border-bottom: 3px solid #066988;
+        border-left: 3px solid #066988;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        opacity: 0; }
+    .course-registry__checkbox input:checked + span::before {
+      opacity: 1; }
+    .course-registry__checkbox input:focus + span::after,
+    .course-registry__checkbox input:hover + span::after {
+      border-color: #c4c4c4; }
+  .course-registry__wrapper-select {
+    padding-top: 22px; }
+  .course-registry__select_item {
+    margin-bottom: 13px; }
+    .course-registry__select_item .selectric .label {
+      margin-right: 29px;
+      margin-left: 3px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 0.3px; }
+    .course-registry__select_item .selectric .button {
+      width: 27px;
+      height: 100%; }
+  .course-registry__credit-title {
+    margin-right: -20px;
+    padding-bottom: 5px;
+    position: relative;
+    padding-top: 15px;
+    color: #3f4e55;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    font-variant: small-caps;
+    letter-spacing: -0.2px; }
+    .course-registry__credit-title::after {
+      content: "**";
+      position: relative;
+      right: 10px;
+      top: -17px;
+      font-size: 12px;
+      line-height: 1; }
+  .course-registry__credit-text {
+    padding-left: 4px;
+    padding-top: 9px;
+    border-top: 1px solid #8c9ba0;
+    color: #3f4e55;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.26px; }
+  .course-registry button {
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #ff5f10;
+    transition: 0.2s;
+    text-overflow: ellipsis; }
+    .course-registry button:hover {
+      background-color: #ff4005; }
+  .course-registry__wrapper-sponsor {
+    padding-top: 7px;
+    padding-bottom: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .course-registry__wrapper-sponsor img {
+      flex-grow: 0;
+      display: block;
+      margin-bottom: 10px; }
 
 @media (min-width: 1600px) {
   .page-course__main-content {
