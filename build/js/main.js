@@ -58,6 +58,11 @@ $(document).ready(function() {
     $('.main-section--course').css('margin-top', -a).css('padding-top', a);
   }
 
+  if ($(".banner")) {
+    var b = $(".banner").height();
+    $(".page-course").css("min-height", b);
+  }
+
     if (!document.fonts) {
 
         $("body").css("opacity", "1").addClass("body-ready");

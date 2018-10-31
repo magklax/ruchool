@@ -55,5 +55,38 @@ html
                 +e.salaty-bottom
                   <p> Средний: 42.000-45.000 <span class="salary__rub">руб.</span> </p>
                   <p> <b>После обучения: 55.000-62.000 <span class="salary__rub">руб.</span></b> </p>
+              +b.course-registry
+                +e.title Регистрация на курс
+                +e.old-price Цена: 199.850 руб.
+                +e.price 149.850 руб.*
+                +e.form
+                  form
+                    +e.form-title Выберите скидку:
+                    +e.LABEL.checkbox(for="sale-15")
+                      input(type="checkbox" id="sale-15")
+                      span -15% при оплате до 00.00.2018
+                    +e.LABEL.checkbox(for="sale-25")
+                      input(type="checkbox" id="sale-25")
+                      span -25% за двух и более участников
+
+                    select.js-select
+                      option Санкт-Петербург
+                      option Санкт-Петербург
+                      option Санкт-Петербург
+                      option Санкт-Петербург
+
+                    select.js-select
+                      option Выбрать дату
+                      option Выбрать дату
+                      option Выбрать дату
+                      option Выбрать дату
+
+                    +e.credit
+                      +e.credit-title 4.900 р./мес.
+                      +e.credit-text **в рассрочку по карте
+                      img
+                      img
+
+                    button(type='submit').course-registry__button Регистрация
 
     include pug/footer.pug
