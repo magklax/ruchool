@@ -9835,21 +9835,17 @@ a {
       display: block; }
   .course__description {
     display: flex;
-    padding-bottom: 26px; }
+    padding-bottom: 25px; }
   .course__content-description {
     flex-grow: 1;
     margin-left: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
+    margin-right: 0; }
     .course__content-description * {
       transition: 0s; }
     .course__content-description .course__wrapper-nav {
       min-width: 100%; }
     .course__content-description .tab-content {
       position: relative;
-      flex-grow: 1;
-      margin-bottom: 0;
       border: 1px solid #8c9ba0; }
     .course__content-description .nav {
       position: relative;
@@ -9882,10 +9878,11 @@ a {
       border: 1px solid #8c9ba0;
       border-bottom: none; }
     .course__content-description .tab-pane {
+      min-height: 214px;
       padding-left: 26px;
       padding-top: 38px;
-      padding-right: 10px;
-      padding-bottom: 17px; }
+      padding-right: 26px;
+      padding-bottom: 16px; }
   .course__tab-day {
     position: absolute;
     left: 26px;
@@ -9917,7 +9914,8 @@ a {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.37px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    text-align: justify; }
   .course__programms {
     border: 1px solid #8c9ba0;
     border-bottom: none; }
@@ -10031,6 +10029,7 @@ a {
   .course__equipment .nav-item {
     margin-right: 0; }
   .course__equipment .nav-link {
+    height: 100%;
     color: #000000;
     font-family: "Futura Medium C", Arial, sans-serif;
     font-size: 16px;
@@ -10174,6 +10173,19 @@ a {
     .rating__rating-value::before {
       top: 0;
       border-top: 29px solid #edf2f3; }
+
+.page-course .lego-result__group-title {
+  margin-top: 37px;
+  margin-left: 68px;
+  margin-bottom: 34px;
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31.94px;
+  font-variant: small-caps;
+  letter-spacing: 0.6px;
+  text-transform: none; }
 
 .salary {
   border: 1px solid #8c9ba0; }
@@ -10443,6 +10455,7 @@ a {
     background-image: url("../images/aerotour.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-color: #1897aa; }
   .banner-hotel__button {
     display: block;
