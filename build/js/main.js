@@ -231,3 +231,10 @@ $(".rent-gallery__gallery-item").on("click", function() {
     var titleView = perentCliked.find(".rent-gallery__title-view-item");
     titleView.html("<b>" + tbig + "</b> — " + tsmall);
 });
+
+
+if ($(".course__programms")) {
+    $(".course__programms-title").on("click", function(e) {
+        $(".course__programms-content").slideToggle();
+    });
+}

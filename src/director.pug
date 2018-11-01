@@ -37,7 +37,7 @@ html
             +e.main-content
               +b.SECTION.course
                 .row.justify-content-between
-                  .col-6.col-xx-7
+                  .col-7.col-xx-7
                     +e.wrapper-title
                       +e.title Курс «Директор по маркетингу»
                       +e.time Время проведения: ДНЕВНОЕ + ВЕЧЕРНЕЕ (9.00–19.30)
@@ -47,7 +47,97 @@ html
                         +e.rating-title Рейтинг курса
                         +e.rating-listen 355 прослушали
                       +e.rating-value <b>4,9</b> из 5
-                +e.content
+                +e.wrapper-description
+                  +e.description
+                    +e.image-description
+                      img(src="images/directors-course.jpg" alt="")
+                    +e.content-description
+                      +e.wrapper-nav
+                        ul.nav.nav-tabs(role="tablist")
+                          li.nav-item
+                            a.nav-link.active(data-toggle='tab', href='#course1', role='tab') Очно
+                          li.nav-item
+                            a.nav-link(data-toggle='tab', href='#course2', role='tab') Дистанционно
+                          li.nav-item
+                            a.nav-link(data-toggle='tab', href='#course3', role='tab') Трансляция
+
+                      .tab-content
+                        .tab-pane.fade.active.show#course1(role="tabpanel")
+                          +e.tab-day 5 ДНЕЙ
+                          +e.tab-title Описание курса:
+                          +e.tab-text Как быть, если маркетинг и продажи не единое целое в компании? Сколько стоит Ваше ONLINE и OFFLINE продвижение? И есть ли оно у Вас? Куда и как осваивать новые рынки? Это и другие вопросы часто задают участники, проходящие курс Директор по маркетингу. За 5 дней Вы получите максимально полную информацию о стратегии и тактики, об инструментах продвижения, о выводе продукта на рынки.  Теорий может быть множество и обо всех можно почитать в книгах. В реалиях - только опыт и практика дадут Вам наиболее точные и эффективные инструменты работы службы маркетинга. Весь арсенал наиболее важных компетенций Директора по маркетингу вы можете найти в программе.
+                        .tab-pane.fade#course2(role="tabpanel") 2
+                        .tab-pane.fade#course3(role="tabpanel") 3
+                      
+                  +e.programms
+                    +e.header-programms
+                      +e.A.programms-title Программа семинара
+                      +e.A.programms-button._download Скачать
+                      +e.A.programms-button._print Печатать
+                    +e.programms-content
+                      +e.A.button-expand Развернуть все
+                      +e.UL.programms-list
+                        +e.LI.programms-item
+                          | HR-стратегия компании. Аудит. Аналитика. Автоматизация бизнесс процессов.
+                          +e.UL.programms-sublist
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                        +e.LI.programms-item
+                          | Бютджетирование затрат на персонал
+                          +e.UL.programms-sublist
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                        +e.LI.programms-item
+                          | Разработка моделей компетенции. Оргнизация системы найма и адаптации персонала. Оценка при подборе.
+                          +e.UL.programms-sublist
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                            +e.LI.programms-subitem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, mollitia?
+                    
+                    +e.about-course 
+                      +e.about-title Для кого этот курс:
+                      +e.UL.about-list
+                        li начальникам отдела кадров;
+                        li сотрудникам кадровых служб;
+                        li HR-менеджерам;
+                        li начальникам отделов, занимающихся управлением персоналом.
+
+                  +e.equipment
+                    +e.wrapper-nav
+                      ul.nav.nav-tabs(role="tablist")
+                        li.nav-item
+                          a.nav-link.active(data-toggle='tab', href='#equipment1', role='tab') В стоимость входит
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#equipment2', role='tab') Процесс обучения
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#equipment3', role='tab') Преподаватели
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#equipment4', role='tab') Отзывы
+
+                    .tab-content
+                      .tab-pane.fade.active.show#equipment1(role="tabpanel")
+                        +e.incost-list
+                          .row
+                            .col-md-3
+                              +e.incost-item._certificate Удостоверение о <br> повышении квалификации
+                            .col-md-3
+                              +e.incost-item._bonus Бонусы и подарки <br> от партнеров
+                            .col-md-3
+                              +e.incost-item._folder Учебный материал <br> в фирменной папке РШУ
+                            .col-md-3
+                              +e.incost-item._cofee Вкусные <br> кофе-брейки
+                      .tab-pane.fade#equipment2(role="tabpanel") 2
+                      .tab-pane.fade#equipment3(role="tabpanel") 3
+                      .tab-pane.fade#equipment4(role="tabpanel") 4
+
+
+
+
           .col-3.col-costom
             +b.SECTION.banner
               +b.salary.__item
@@ -93,5 +183,15 @@ html
 
                       .text-center
                         button(type='submit').course-registry__button Регистрация
+              +b.banner-map.__item
+                +e.title Место проведения:
+                +e.text г.Москва, ул.Новомосковская, д.25, корпус 2, 2 этаж, офис 205
+                +e.wrapper-map
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afba61b9cbe2cfa74420a4cb175a89e504d3d72c9e9ccd206c7583a2f31c7e3da&amp;width=calc(100%-1px)&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+
+              +b.banner-hotel.__item
+                +e.wrapper
+                  +e.A.button Заказать гостиницу
+                  +e.A.button Бронировать билет
 
     include pug/footer.pug

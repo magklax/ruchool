@@ -18,6 +18,7 @@
   padding: 0;
   &__wrapper-title {
     padding-left: 30px;
+    margin-right: -60px;
   }
   &__title {
     padding-bottom: 13px;
@@ -38,9 +39,357 @@
     line-height: 16px;
     letter-spacing: 0.39px;
   }
-  &__content {
+  &__wrapper-description {
+    padding-top: 11px;
+    padding-left: 32px;
+    padding-right: 29px;
+    padding-bottom: 30px;
     background-color: #edf2f3;
-    height: 100px;
+  }
+  &__image-description {
+    flex: 0 0 26%;
+    align-self: flex-start;
+    margin-top: 22px;
+    border: 1px solid #8c9ba0;
+    img {
+      display: block;
+    }
+  }
+  &__description {
+    display: flex;
+    padding-bottom: 26px;
+  }
+  &__content-description {
+    flex-grow: 1;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    * {
+      transition: 0s;
+    }  
+    .course__wrapper-nav {
+      min-width: 100%;
+    }  
+    .tab-content {
+      position: relative;
+      flex-grow: 1;
+      margin-bottom: 0;
+      border: 1px solid #8c9ba0;
+    }
+    .nav {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      margin-top: 0;
+    }
+    .nav-item {
+      margin-right: 0;
+      &:first-child {
+        margin-left: auto;
+      }
+    }
+    .nav-link {
+      padding-top: 6px;
+      padding-bottom: 4px;
+      padding-left: 15px;
+      padding-right: 16px;
+      color: rgba(#000000, 0.5);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: -0.2px;
+    }
+    .nav-link.active {
+      padding-left: 14px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #000000;
+      background-color: #edf2f3;
+      border: 1px solid #8c9ba0;
+      border-bottom: none;
+    }
+    .tab-pane {
+      padding-left: 26px;
+      padding-top: 38px;
+      padding-right: 10px;
+      padding-bottom: 17px;
+    }
+  }
+  &__tab-day {
+    position: absolute;
+    left: 26px;
+    top: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #96b0bb;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.49px;
+  }
+  &__tab-title {
+    padding-bottom: 8px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  &__tab-text {
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.37px;
+    line-height: 1.2;
+  }
+  &__programms {
+    border: 1px solid #8c9ba0;
+    border-bottom: none;
+  }
+  &__header-programms {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 33px;
+    padding-right: 3px;
+    color: #ffffff;
+    background-color: #013c56;
+    a {
+      color: inherit;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__programms-title {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    margin-right: auto;
+    padding-right: 40px;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    &::after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -3px;
+      background-image: url(../images/tre-big.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  &__programms-button {
+    position: relative;
+    padding-top: 24px;
+    padding-left: 6px;
+    padding-right: 9px;
+    color: #ffffff;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    &_download {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 8px;
+        left: 50%;
+        margin-left: -10px;
+        background-image: url("../images/downloads.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    &_print {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 19px;
+        top: 6px;
+        left: 50%;
+        margin-left: -12px;
+        background-image: url("../images/print.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__programms-content {
+    display: none;
+    border-bottom: 1px solid #8c9ba0;
+  }
+  &__about-course {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #8c9ba0;
+  }
+  &__about-title {
+    padding-bottom: 9px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  &__about-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      padding-bottom: 5px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+      line-height: 22px;
+      &::before {
+        content: "—";
+        display: inline-block;
+        padding-right: 5px;
+      }
+    }
+  }
+  &__equipment {
+    .nav-tabs {
+      margin-top: 27px;
+      * {
+        transition: 0s;
+      }
+    }
+    .nav-item {
+      margin-right: 0;
+    }
+    .nav-link {
+      color: #000000;
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-top: 10px;
+      padding-bottom: 6px;
+      padding-left: 28px;
+      padding-right: 25px;
+    }
+    .nav-link.active {
+      padding-top: 9px;
+      padding-bottom: 7px;
+      padding-left: 27px;
+      padding-right: 24px;
+      color: #000000;
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17px;
+      background-color: #edf2f3;
+      border: 1px solid #8c9ba0;
+      border-bottom: none;
+    }
+    .tab-content {
+      padding-top: 10px;
+      padding-left: 34px;
+      padding-right: 25px;
+      border: 1px solid #8c9ba0;
+    }
+  }
+  &__incost-list {
+    margin-left: 28px;
+    padding-bottom: 63px;
+  }
+  &__incost-item {
+    position: relative;
+    padding-top: 100px;
+    color: #013c56;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-variant: small-caps;
+    letter-spacing: 0.4px;
+    text-align: center;
+    &_certificate {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 45px;
+        width: 56px;
+        height: 43px;
+        margin-left: -29px;
+        background-image: url("../images/certificate.svg");
+        background-repeat: no-repeat;
+      }
+    }
+    &_bonus {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 35px;
+        width: 51px;
+        height: 53px;
+        margin-left: -28px;
+        background-image: url("../images/bonus.svg");
+        background-repeat: no-repeat;
+      }
+    }
+    &_folder {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 29px;
+        width: 64px;
+        height: 58px;
+        margin-left: -33px;
+        background-image: url("../images/folder.svg");
+        background-repeat: no-repeat;
+      }
+    }
+    &_cofee {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 38px;
+        width: 52px;
+        height: 50px;
+        margin-left: -27px;
+        background-image: url("../images/cofee.svg");
+        background-repeat: no-repeat;
+      }
+    }
   }
 }
 
@@ -378,6 +727,71 @@
       flex-grow: 0;
       display: block;
       margin-bottom: 10px;
+    }
+  }
+}
+
+.banner-map {
+  &__title {
+    margin-top: -7px;
+    margin-bottom: 1px;
+    color: #3f4e55;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-variant: small-caps;
+    letter-spacing: 0.36px;
+    text-align: center
+  }
+  &__text {
+    margin-bottom: 12px;
+    color: #3f4e55;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.35px;
+    line-height: 19px;
+    text-align: center;
+  }
+  &__wrapper-map {
+    position: relative;
+    height: 182px;
+    border: 1px solid #8c9ba0;
+    border-right: 2px solid #8c9ba0;
+  }
+}
+
+.banner-hotel {
+  margin-top: 46px;
+  border: 1px solid #8c9ba0;
+  &__wrapper {
+    padding-top: 111px;
+    padding-left: 33px;
+    padding-right: 31px;
+    height: 221px;
+    color: #ffffff;
+    background-image: url("../images/aerotour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1897aa;
+  }
+  &__button {
+    display: block;
+    margin-bottom: 14px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    border: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    &:hover {
+      background: rgba(117, 151, 165, 0.4);
     }
   }
 }
