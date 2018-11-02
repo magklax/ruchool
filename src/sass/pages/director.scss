@@ -243,6 +243,7 @@
   }
 
   &__button-expand {
+    position: relative;
     padding: 0;
     padding-left: 26px;
     margin-bottom: 12px;
@@ -258,11 +259,32 @@
     &:hover {
       color: #04688a;
     }
+    &::after {
+      content: ">>";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &_collapse {
+      display: none;
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+    &_expand {
+      display: none;
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
   }
 
   &__programms-content {
+    max-height: 706px;
+    overflow-y: auto;
     padding-left: 34px;
     padding-top: 24px;
+    padding-bottom: 24px;
     padding-right: 10px;
     ul {
       padding: 0;
@@ -271,12 +293,16 @@
     }
   }
   &__programms-item {
+    cursor: pointer;
     padding-left: 25px;
     color: #000000;
     font-family: "Futura Medium C", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+    &:hover {
+      color: #003c56;
+    }
   }
   &__programms-subitem {
     margin-top: 4px;
@@ -290,6 +316,10 @@
       content: "–";
       margin-right: 4px;
     }
+  }
+
+  &__programms-sublist {
+    display: none;
   }
 
   &__about-course {
