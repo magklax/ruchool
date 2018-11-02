@@ -155,6 +155,7 @@ html
                           .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
+                            .lego-result__old-price 55.000 <span class='rub'>руб.</span>
                             .lego-result__price 45.000 <span class='rub'>руб.</span>
                             a(href='#').lego-result__one-click Подробнее
                     .lego-result__item 
@@ -173,6 +174,7 @@ html
                           .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
+                            .lego-result__old-price 52.000 <span class='rub'>руб.</span>
                             .lego-result__price 41.000 <span class='rub'>руб.</span>
                             a(href='#').lego-result__one-click Подробнее
                     .lego-result__item 
@@ -191,6 +193,7 @@ html
                           .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
+                            .lego-result__old-price 45.000 <span class='rub'>руб.</span>
                             .lego-result__price 35.000 <span class='rub'>руб.</span>
                             a(href='#').lego-result__one-click Подробнее
 
@@ -249,5 +252,74 @@ html
                 +e.wrapper
                   +e.A.button Заказать гостиницу
                   +e.A.button Бронировать билет
+
+    +b.SECTION.books
+      .container
+        +e.title Рекомендуемые книги:
+        +e.list
+          .row
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book1.png", alt="")
+                +e.item-description
+                  +e.price 600 <span>р</span>
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book2.png", alt="")
+                +e.item-description
+                  +e.price 600 <span>р</span>
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book3.png", alt="")
+                +e.item-description
+                  +e.price 1300 <span>р</span>
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book4.png", alt="")
+                +e.item-description
+                  +e.price 850 <span>р</span>
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book5.png", alt="")
+                +e.item-description
+                  +e.price 600 <span>р</span>
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book2.png", alt="")
+                +e.item-description
+                  +e.price 600
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
+            .col-md-2
+              +e.books-item
+                +e.A(href="#").link-img
+                  img(src="images/book3.png", alt="")
+                +e.item-description
+                  +e.price 1300
+                  +e.title-item «Проихождение», Дэн Браун
+                  +e.availability В наличии
+                  +e.A.basket В корзину
 
     include pug/footer.pug

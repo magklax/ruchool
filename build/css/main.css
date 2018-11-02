@@ -973,7 +973,7 @@
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .col-xx {
     flex-basis: 0;
     flex-grow: 1;
@@ -1840,7 +1840,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .d-xl-inline-flex {
     display: inline-flex !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .d-xx-none {
     display: none !important; }
   .d-xx-inline {
@@ -2218,7 +2218,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .align-self-xl-stretch {
     align-self: stretch !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .flex-xx-first {
     order: -1; }
   .flex-xx-last {
@@ -2325,7 +2325,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .float-xl-none {
     float: none !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .float-xx-left {
     float: left !important; }
   .float-xx-right {
@@ -3540,7 +3540,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
     margin-top: auto !important;
     margin-bottom: auto !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .m-xx-0 {
     margin: 0 0 !important; }
   .mt-xx-0 {
@@ -3802,7 +3802,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   .text-xl-center {
     text-align: center !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .text-xx-left {
     text-align: left !important; }
   .text-xx-right {
@@ -3918,11 +3918,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-xl-up {
     display: none !important; } }
 
-@media (max-width: 1599px) {
+@media (max-width: 1653px) {
   .hidden-xl-down {
     display: none !important; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .hidden-xx-up {
     display: none !important; } }
 
@@ -10187,6 +10187,24 @@ a {
   letter-spacing: 0.6px;
   text-transform: none; }
 
+.page-course .lego-result__old-price {
+  opacity: 0.4;
+  color: #3f4e55;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  letter-spacing: 0.33px; }
+  .page-course .lego-result__old-price .rub {
+    letter-spacing: 0.33px;
+    font-variant: small-caps; }
+
+.page-course .lego-result__one-click {
+  margin-top: 17px;
+  color: #000000; }
+
 .salary {
   border: 1px solid #8c9ba0; }
   .salary__salary-top {
@@ -10473,10 +10491,45 @@ a {
     .banner-hotel__button:hover {
       background: rgba(117, 151, 165, 0.4); }
 
-@media (min-width: 1600px) {
+@media (min-width: 1654px) {
   .page-course__main-content {
     margin-right: 68px; }
   .col-costom {
     position: absolute;
     left: calc(100% - 71px);
     top: 0; } }
+
+.books {
+  padding: 0; }
+  .books__title {
+    padding-top: 19px;
+    padding-left: 68px;
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31.94px;
+    font-variant: small-caps;
+    letter-spacing: 0.5px; }
+  .books__list {
+    padding-top: 40px; }
+  .books__link-img img {
+    display: block; }
+  .books__item-description {
+    padding: 13px; }
+  .books__title-item {
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px; }
+  .books__price {
+    color: #000000;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.37px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px; }
+    .books__price span {
+      text-decoration: line-through; }

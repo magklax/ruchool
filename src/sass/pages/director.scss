@@ -477,6 +477,25 @@
       letter-spacing: 0.6px;
       text-transform: none;
     }
+    &__old-price {
+      opacity: 0.4;
+      color: #3f4e55;
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 24.37px;
+      text-decoration: line-through;
+      text-transform: uppercase;
+      letter-spacing: 0.33px;
+      .rub {
+        letter-spacing: 0.33px;
+        font-variant: small-caps;
+      }
+    }
+    &__one-click {
+      margin-top: 17px;
+      color: #000000;
+    }
   }
 }
 
@@ -825,5 +844,51 @@
     position: absolute;
     left: calc(100% - 71px);
     top: 0;
+  }
+}
+
+.books {
+  padding: 0;
+  &__title {
+    padding-top: 19px;
+    padding-left: 68px;
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31.94px;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+  }
+  &__list {
+    padding-top: 40px;
+    // width: 1073px;
+  }
+  &__link-img {
+    img {
+      display: block;
+    }
+  }
+  &__item-description {
+    padding: 13px;
+  }
+  &__title-item {
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  &__price {
+    color: #000000;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.37px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    span {
+      text-decoration: line-through;
+    }
   }
 }

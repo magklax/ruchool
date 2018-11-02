@@ -68,6 +68,12 @@ $(document).ready(function() {
         $("body").css("opacity", "1").addClass("body-ready");
 
     }
+    $('.books__list > .row').slick({
+        infiniti: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true
+    })
     $('.logo-slider').slick({
         infinite: true,
         slidesToShow: 5,
