@@ -266,7 +266,11 @@ html
                   +e.price 600 <span>р</span>
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like.cart__like_active(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -275,7 +279,11 @@ html
                   +e.price 600 <span>р</span>
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -284,7 +292,11 @@ html
                   +e.price 1300 <span>р</span>
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like.cart__like_active(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -293,7 +305,11 @@ html
                   +e.price 850 <span>р</span>
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -302,7 +318,11 @@ html
                   +e.price 600 <span>р</span>
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -311,7 +331,11 @@ html
                   +e.price 600
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
             .col-md-2
               +e.books-item
                 +e.A(href="#").link-img
@@ -320,6 +344,10 @@ html
                   +e.price 1300
                   +e.title-item «Проихождение», Дэн Браун
                   +e.availability В наличии
-                  +e.A.basket В корзину
+                  +e.wrapper-pay
+                    +e.A.basket В корзину
+                    a.cart__like.cart__like_active(href='#')
+                      +svg('like-empty')
+                      +svg('like-full')
 
     include pug/footer.pug

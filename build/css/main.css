@@ -10501,7 +10501,9 @@ a {
     top: 0; } }
 
 .books {
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 41px;
+  margin-bottom: -53px; }
   .books__title {
     padding-top: 19px;
     padding-left: 68px;
@@ -10513,18 +10515,28 @@ a {
     font-variant: small-caps;
     letter-spacing: 0.5px; }
   .books__list {
-    padding-top: 40px; }
-  .books__link-img img {
-    display: block; }
+    padding-top: 44px;
+    padding-left: 88px;
+    padding-right: 132px; }
+  .books__link-img {
+    display: block;
+    width: 120px;
+    height: 156px; }
+    .books__link-img img {
+      display: block; }
   .books__item-description {
-    padding: 13px; }
+    padding-left: 23px;
+    padding-top: 21px; }
   .books__title-item {
     color: #000000;
     font-family: "Futura Medium C", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 14px; }
+    line-height: 19px;
+    padding-bottom: 8px;
+    letter-spacing: -0.4px; }
   .books__price {
+    padding-bottom: 8px;
     color: #000000;
     font-family: "Futura Demi C", Arial, sans-serif;
     font-size: 20px;
@@ -10534,3 +10546,33 @@ a {
     letter-spacing: 0.35px; }
     .books__price span {
       text-decoration: line-through; }
+  .books__availability {
+    opacity: 0.5;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px; }
+  .books__basket {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #001eff;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px; }
+    .books__basket:hover {
+      color: #ff4005; }
+  .books__wrapper-pay {
+    display: flex;
+    align-items: center; }
+  .books .slick-prev {
+    left: -74px; }
+  .books .slick-next {
+    right: -47px; }
+  .books .slick-prev,
+  .books .slick-next {
+    top: 78px; }
+  .books .cart__like {
+    padding-top: 3px;
+    margin-left: 15px; }
