@@ -8894,6 +8894,7 @@ a {
     top: 0;
     bottom: 0;
     right: 0;
+    z-index: 1;
     width: 50%;
     background-image: url("../images/grouppeople.jpg");
     background-repeat: no-repeat;
