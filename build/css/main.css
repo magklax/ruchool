@@ -9992,6 +9992,47 @@ a {
   .course__programms-content {
     display: none;
     border-bottom: 1px solid #8c9ba0; }
+  .course__button-expand {
+    padding: 0;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    border: none;
+    background-color: transparent;
+    color: #98b0bc;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px; }
+    .course__button-expand:hover {
+      color: #04688a; }
+  .course__programms-content {
+    padding-left: 34px;
+    padding-top: 24px;
+    padding-right: 10px; }
+    .course__programms-content ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+  .course__programms-item {
+    padding-left: 25px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; }
+  .course__programms-subitem {
+    margin-top: 4px;
+    margin-left: 21px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; }
+    .course__programms-subitem::before {
+      content: "–";
+      margin-right: 4px; }
   .course__about-course {
     padding-left: 34px;
     padding-right: 34px;
