@@ -266,26 +266,19 @@ if ($(".course__programms")) {
         sublist.slideDown();
         $(this).css("display", "none");
         $(".course__button-expand_collapse").css("display", "block");
+        $(".course__programms-item").addClass("course__programms-item_open")
     });
     $(".course__button-expand_collapse").on("click", function(e) {
         sublist.slideUp();
         $(this).css("display", "none");
         $(".course__button-expand_expand").css("display", "block");
+        $(".course__programms-item").removeClass("course__programms-item_open")
     });
     $(".course__programms-item").on("click", function(e) {
         $(this).children(".course__programms-sublist").slideToggle();
+        $(this).toggleClass("course__programms-item_open");
         checkSublist();
-        checkitem();
     });
-    // + -
-    function checkitem() {
-        if ($(".course__programms-item").is(".course__programms-item_open")) {
-            $(".course__programms-item").removeClass("course__programms-item_open")
-        } else {
-                $(".course__programms-item").addClass("course__programms-item_open")
-            }
-        // console.log("1");
-    }
 }
 
 if ($(".course-registry")) {

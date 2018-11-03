@@ -305,6 +305,9 @@
       color: #003c56;
     }
     &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
       content: "+";
       color: #96b0bb;
       font-family: "Futura Demi C", Arial, sans-serif;
@@ -315,7 +318,7 @@
     }
     &_open {
       &::before {
-        content: "−";
+        content: "-";
       }
     }
   }

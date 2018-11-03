@@ -10046,6 +10046,9 @@ a {
     .course__programms-item:hover {
       color: #003c56; }
     .course__programms-item::before {
+      position: absolute;
+      left: 0;
+      top: 0;
       content: "+";
       color: #96b0bb;
       font-family: "Futura Demi C", Arial, sans-serif;
@@ -10054,7 +10057,7 @@ a {
       line-height: 20px;
       text-transform: uppercase; }
     .course__programms-item_open::before {
-      content: "−"; }
+      content: "-"; }
   .course__programms-subitem {
     margin-top: 2px;
     padding-top: 1px;
