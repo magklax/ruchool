@@ -244,9 +244,7 @@ if ($(".course__programms")) {
         $(".course__programms-content").slideToggle();
     });
 
-    
     var sublist = $(".course__programms-sublist");
-
     function checkSublist() {
         var k = false ;
         sublist.each(function(index, el) {
@@ -256,7 +254,6 @@ if ($(".course__programms")) {
                 return k = false;
             }
         });
-        console.log(k);
         if (k) {
             $(".course__button-expand_collapse").css("display", "block");
             $(".course__button-expand_expand").css("display", "none");
@@ -265,7 +262,6 @@ if ($(".course__programms")) {
             $(".course__button-expand_expand").css("display", "block");
         }
     }
-
     $(".course__button-expand_expand").on("click", function(e) {
         sublist.slideDown();
         $(this).css("display", "none");
@@ -278,6 +274,31 @@ if ($(".course__programms")) {
     });
     $(".course__programms-item").on("click", function(e) {
         $(this).children(".course__programms-sublist").slideToggle();
-        checkSublist()
+        checkSublist();
+        checkitem();
+    });
+    // + -
+    function checkitem() {
+        if ($(".course__programms-item").is(".course__programms-item_open")) {
+            $(".course__programms-item").removeClass("course__programms-item_open")
+        } else {
+                $(".course__programms-item").addClass("course__programms-item_open")
+            }
+        // console.log("1");
+    }
+}
+
+if ($(".course-registry")) {
+    if ($(".course-registry__checkbox_sale-two input").is(":checked")) {
+        $(".course-registry__wrapper-quantity").show();
+    } else {
+        $(".course-registry__wrapper-quantity").hide();
+    }
+    $(".course-registry__checkbox_sale-two").on("click", function(e) {
+        if ($(".course-registry__checkbox_sale-two input").is(":checked")) {
+            $(".course-registry__wrapper-quantity").show();
+        } else {
+            $(".course-registry__wrapper-quantity").hide();
+        }
     });
 }
