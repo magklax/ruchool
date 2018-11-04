@@ -175,8 +175,56 @@ html
                               +e.incost-item._folder Учебный материал <br> в фирменной папке РШУ
                             .col-md-3
                               +e.incost-item._cofee Вкусные <br> кофе-брейки
-                      .tab-pane.fade#equipment2(role="tabpanel") 2
-                      .tab-pane.fade#equipment3(role="tabpanel") 3
+                      .tab-pane.fade#equipment2(role="tabpanel")
+                        +e.process-learn
+                          .row
+                            .col-md-2
+                              +e.learn-item._check Регистрация на курс на&nbsp;нашем сайте
+                            .col-md-2
+                              +e.learn-item._pay Оплата обучения (оплата проходит в течение 1-3 дней)
+                            .col-md-2
+                              +e.learn-item._access Доступ в личный<br>кабинет дистанционной платформы 
+                            .col-md-2
+                              +e.learn-item._theory Изучение теории с помощью&nbsp;видео-,&nbsp;аудио- и текстовых материалов
+                            .col-md-2
+                              +e.learn-item._task Выполнение практических заданий и тестов
+                            .col-md-2
+                              +e.learn-item._certificate Получение удостоверения о повышении квалификации
+
+                      .tab-pane.fade#equipment3(role="tabpanel")
+                        +e.teacher-list
+                       
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-1.png", alt="")
+                            +e.name-teacher АВРАМЕНКО Андрей Геннадьевич
+              
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-2.png", alt="")
+                            +e.name-teacher ТАБАЧНИКОВА Иванна Александровна
+                
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-3.png", alt="")
+                            +e.name-teacher АЛЕКСЕЕВ Антон Александрович
+                
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-4.png", alt="")
+                            +e.name-teacher ШЕВЧУК Елена Викторовна
+                
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-1.png", alt="")
+                            +e.name-teacher ИВАНОВ Сергей Иванович
+                    
+                          +e.teacher-item
+                            +e.wrapper-image
+                              img(src="images/teacher-1.png", alt="")
+                            +e.name-teacher ИВАНОВ Сергей Иванович
+
+
                       .tab-pane.fade#equipment4(role="tabpanel") 4
 
               section.lego-result.lego-result_course-page

@@ -10137,6 +10137,7 @@ a {
     border: 1px solid #8c9ba0;
     border-bottom: none; }
   .course__equipment .tab-content {
+    min-height: 230px;
     padding-top: 10px;
     padding-left: 34px;
     padding-right: 25px;
@@ -10195,6 +10196,95 @@ a {
       margin-left: -27px;
       background-image: url("../images/cofee.svg");
       background-repeat: no-repeat; }
+  .course__process-learn {
+    margin-left: -13px;
+    margin-right: -18px; }
+    .course__process-learn .col-md-2:first-child .course__learn-item::before {
+      content: none; }
+  .course__learn-item {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 102px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #013c56;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.4px;
+    text-align: center; }
+    .course__learn-item::after {
+      content: "";
+      position: absolute;
+      top: 44px;
+      left: 50%;
+      background-repeat: no-repeat; }
+    .course__learn-item::before {
+      content: "";
+      position: absolute;
+      top: 57px;
+      left: -25px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/arrow-learn.png");
+      background-repeat: no-repeat; }
+    .course__learn-item_check::after {
+      width: 51px;
+      margin-left: -22px;
+      height: 43px;
+      background-image: url("../images/learn-1.png"); }
+    .course__learn-item_check::before {
+      left: -25px; }
+    .course__learn-item_pay {
+      margin-left: -4px;
+      margin-right: 20px; }
+      .course__learn-item_pay::after {
+        width: 51px;
+        margin-left: -20px;
+        height: 43px;
+        background-image: url("../images/learn-2.png"); }
+      .course__learn-item_pay::before {
+        left: -25px; }
+    .course__learn-item_access {
+      margin-left: -20px; }
+      .course__learn-item_access::after {
+        width: 44px;
+        margin-left: -26px;
+        height: 43px;
+        background-image: url("../images/learn-3.png"); }
+      .course__learn-item_access::before {
+        left: -14px; }
+    .course__learn-item_theory {
+      margin-left: -12px;
+      margin-right: -18px; }
+      .course__learn-item_theory::after {
+        width: 59px;
+        margin-left: -27px;
+        height: 43px;
+        background-image: url("../images/learn-4.png"); }
+      .course__learn-item_theory::before {
+        left: -23px; }
+    .course__learn-item_task {
+      margin-left: 9px;
+      margin-right: -18px; }
+      .course__learn-item_task::after {
+        width: 59px;
+        margin-left: -19px;
+        height: 43px;
+        background-image: url("../images/learn-5.png"); }
+      .course__learn-item_task::before {
+        left: -22px; }
+    .course__learn-item_certificate::after {
+      width: 40px;
+      margin-left: -20px;
+      height: 43px;
+      background-image: url("../images/learn-6.png"); }
+    .course__learn-item_certificate::before {
+      left: -15px; }
+  .course__process-learn {
+    width: 100%; }
 
 .rating {
   width: 254px;

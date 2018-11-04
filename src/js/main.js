@@ -80,6 +80,12 @@ $(document).ready(function() {
         slidesToScroll: 5,
         arrows: true
     });
+    $('.course__teacher-list').slick({
+        infiniti: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true
+    });
     $('.stanchion').slick({
         infiniti: true,
         slidesToShow: 4,
@@ -161,10 +167,6 @@ $(window).load(function() {
     $("body").css("opacity", "1");
 
 });
-
-
-
-
 
 //добавляет подчеркивание в топменю
 function tabBorder(e) {
@@ -295,3 +297,5 @@ if ($(".course-registry")) {
         }
     });
 }
+
+
