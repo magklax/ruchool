@@ -68,6 +68,9 @@ $(document).ready(function() {
         $("body").css("opacity", "1").addClass("body-ready");
 
     }
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $(window).trigger('resize');
+    })
     $('.books__list > .row').slick({
         infiniti: true,
         slidesToShow: 5,
@@ -79,7 +82,7 @@ $(document).ready(function() {
         slidesToShow: 5,
         slidesToScroll: 5,
         arrows: true
-    });
+    }); 
     $('.course__teacher-list').slick({
         infiniti: true,
         slidesToShow: 5,

@@ -606,8 +606,35 @@
       }
     }
   }
-  &__process-learn {
-    width: 100%;
+  &__teacher-list {
+    margin-top: 16px;
+    margin-left: 27px;
+    margin-right: 29px;
+    .slick-prev,
+    .slick-next {
+      margin-top: -18px;
+    }
+  }
+  &__teacher-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__teacher-image {
+    max-width: 141px;
+    border: 1px solid #8c9ba0;
+  }
+  &__name-teacher {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: -12px;
+    margin-right: -5px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.35px;
+
   }
 }
 
