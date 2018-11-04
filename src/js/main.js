@@ -68,8 +68,14 @@ $(document).ready(function() {
         $("body").css("opacity", "1").addClass("body-ready");
 
     }
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('a[href="#equipment3"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
+        $('.course__teacher-list').slick({
+            infiniti: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true
+        });
     })
     $('.books__list > .row').slick({
         infiniti: true,
@@ -83,12 +89,6 @@ $(document).ready(function() {
         slidesToScroll: 5,
         arrows: true
     }); 
-    $('.course__teacher-list').slick({
-        infiniti: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true
-    });
     $('.stanchion').slick({
         infiniti: true,
         slidesToShow: 4,
