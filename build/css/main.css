@@ -10057,7 +10057,9 @@ a {
       line-height: 20px;
       text-transform: uppercase; }
     .course__programms-item_open::before {
-      content: "-"; }
+      content: "-";
+      left: 1px;
+      top: -1px; }
   .course__programms-subitem {
     margin-top: 2px;
     padding-top: 1px;
@@ -10309,10 +10311,116 @@ a {
     letter-spacing: 0.35px; }
   .course__feedback-list {
     margin: 0;
+    margin-right: -20px;
     padding: 0;
     list-style: none;
     height: 202px;
     overflow-y: auto; }
+  .course__feedback-item {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 21px;
+    padding-bottom: 23px;
+    margin-right: 37px;
+    border-bottom: 1px solid #8c9ba0; }
+  .course__feedback-photo {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-right: 32px;
+    border: 1px solid #8c9ba0;
+    width: 139px;
+    height: 139px; }
+    .course__feedback-photo img {
+      display: block; }
+  .course__feedback-content {
+    flex-grow: 1; }
+  .course__feedback-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 7px;
+    margin-bottom: 13px; }
+    .course__feedback-header::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+      max-width: 100%;
+      width: 331px;
+      height: 1px;
+      background-color: #8c9ba0; }
+  .course__feedback-data {
+    margin-top: -1px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px; }
+  .course__feedback-rate {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto; }
+  .course__rate-item {
+    width: 14px;
+    height: 13px;
+    margin-right: 3px; }
+  .course [data-star='1'] .course__rate-item:nth-child(5) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='2'] .course__rate-item:nth-child(5) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='2'] .course__rate-item:nth-child(4) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='3'] .course__rate-item:nth-child(5) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='3'] .course__rate-item:nth-child(4) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='3'] .course__rate-item:nth-child(3) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='4'] .course__rate-item:nth-child(5) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='4'] .course__rate-item:nth-child(4) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='4'] .course__rate-item:nth-child(3) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='4'] .course__rate-item:nth-child(2) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='5'] .course__rate-item:nth-child(5) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='5'] .course__rate-item:nth-child(4) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='5'] .course__rate-item:nth-child(3) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='5'] .course__rate-item:nth-child(2) {
+    background-image: url(../images/star-rate.svg); }
+  .course [data-star='5'] .course__rate-item:nth-child(1) {
+    background-image: url(../images/star-rate.svg); }
+  .course__feedback-user {
+    padding-left: 3px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px; }
+  .course__feedback-text {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding-left: 3px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: justify; }
+  .course__locate {
+    padding-left: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px; }
 
 .rating {
   width: 254px;
