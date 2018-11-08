@@ -174,6 +174,7 @@
     width: 175px;
     margin: 0;
     padding: 0;
+    margin-top: 2px;
     list-style: none;
     position: absolute;
     top: 0;
@@ -181,48 +182,50 @@
   }
 
   &__item-sort {
-    color: #96b0bb;
-    position: relative;
-    padding-left: 26px;
-    padding-top: 3px;
-    padding-bottom: 4px;
-
-    &::before {
-      content: "";
-      // position: absolute;
-      float: left;
-      margin-top: 8px;
-      margin-right: 7px;
-
-      width: 4px;
-      height: 4px;
-      display: block;
-      background-color: #96b0bb;
-      border-radius: 50%;
-
-    }
-    &_active {
-      color: #ffffff;
-      background-color: #96b0bb;
-      text-decoration: underline;
-
-      &::before {
-        background-color: #ffffff;
-      }
-    }
     a {
-      color: inherit;
+      display: block;
+      color: #96b0bb;
+      position: relative;
+      padding-left: 26px;
+      padding-top: 3px;
+      padding-bottom: 4px;
+      margin-bottom: -2px;
+
       font-family: "Futura Book C", Arial, sans-serif;
       font-size: 14px;
       line-height: 1.2;
       font-weight: 400;
       font-variant: small-caps;
-      letter-spacing: 0.15px;
+      letter-spacing: 0.35px;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
+      }
+      &::before {
+        content: "";
+        // position: absolute;
+        float: left;
+        margin-top: 6px;
+        margin-right: 7px;
+  
+        width: 4px;
+        height: 4px;
+        display: block;
+        background-color: #96b0bb;
+        border-radius: 50%;
       }
     }
+    &_active {
+      a {
+        color: #ffffff;
+        background-color: #96b0bb;
+        text-decoration: underline;
+        &::before {
+          background-color: #ffffff;
+        }
+      }
+    }
+    
   }
 
   .lego-result {
@@ -394,5 +397,127 @@
     &:hover {
       border: 1px solid #DDD;
     }
+  }
+}
+
+.modal-programm {
+  &:not(.modal-video) button {
+    min-width: auto;
+  }
+  &__content {
+    position: relative;
+    width: 323px;
+    padding-bottom: 20px;
+    border: 2px solid #8c9ba0;
+    background-color: #ffffff;
+  }
+  &__title {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: #0d465e;
+    color: #ffffff;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1.23px;
+    text-align: center;
+  }
+  &__form {
+    padding-left: 19px;
+    padding-right: 18px;
+    padding-top: 20px;
+  }
+  &__wrapper-text {
+    margin-bottom: 15px;
+    input {
+      padding-top: 9px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      border: 1px solid #8c9ba0;
+      color: rgba(#000000, 0.5);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+      &:hover {
+        border: 1px solid #c4c4c4;
+      }
+    }
+  }
+  &__wrapper-button {
+    width: 153px;
+    margin: 0 auto;
+    padding-top: 6px;
+  }
+  &__submit {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba(117, 151, 165, 0.4);
+    }
+  }
+  &__dawnload {
+    margin-top: 12px;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    text-align: center;
+    background-color: #ff5f10;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    &:hover {
+      background-color: #ff4005;
+    }
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  width: 14px;
+  height: 14px;
+  min-width: auto;
+  border: none;
+  background-color: transparent;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 14px;
+    height: 3px;
+    background-color: #8c9ba0;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
   }
 }

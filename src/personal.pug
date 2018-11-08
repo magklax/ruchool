@@ -231,6 +231,29 @@ html
                 option Показывать по 10
                 option Показывать по 20
                 option Показывать по 30
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programmModal">
+        |Модалка "программа курса"
+      </button>
+
+      <div class="modal fade modal-programm" id="programmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          .modal-programm__content
+            .modal-programm__title Программа курса
+            form.modal-programm__form
+              .modal-programm__wrapper-text
+                input(type="text" placeholder="ФИО")
+              .modal-programm__wrapper-text
+                input(type="text" placeholder="E-mail")
+              .modal-programm__wrapper-text
+                input(type="text" placeholder="Город")
+              .modal-programm__wrapper-button
+                button(type="submit").modal-programm__submit Получить на почту
+                a(href="#").modal-programm__dawnload Скачать
+
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
               
               
               

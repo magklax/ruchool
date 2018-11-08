@@ -11053,42 +11053,43 @@ a {
     width: 175px;
     margin: 0;
     padding: 0;
+    margin-top: 2px;
     list-style: none;
     position: absolute;
     top: 0;
     right: calc(100% - 39px); }
-  .personal-main__item-sort {
+  .personal-main__item-sort a {
+    display: block;
     color: #96b0bb;
     position: relative;
     padding-left: 26px;
     padding-top: 3px;
-    padding-bottom: 4px; }
-    .personal-main__item-sort::before {
+    padding-bottom: 4px;
+    margin-bottom: -2px;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.35px; }
+    .personal-main__item-sort a:hover {
+      opacity: 0.8; }
+    .personal-main__item-sort a::before {
       content: "";
       float: left;
-      margin-top: 8px;
+      margin-top: 6px;
       margin-right: 7px;
       width: 4px;
       height: 4px;
       display: block;
       background-color: #96b0bb;
       border-radius: 50%; }
-    .personal-main__item-sort_active {
-      color: #ffffff;
-      background-color: #96b0bb;
-      text-decoration: underline; }
-      .personal-main__item-sort_active::before {
-        background-color: #ffffff; }
-    .personal-main__item-sort a {
-      color: inherit;
-      font-family: "Futura Book C", Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.2;
-      font-weight: 400;
-      font-variant: small-caps;
-      letter-spacing: 0.15px; }
-      .personal-main__item-sort a:hover {
-        opacity: 0.5; }
+  .personal-main__item-sort_active a {
+    color: #ffffff;
+    background-color: #96b0bb;
+    text-decoration: underline; }
+    .personal-main__item-sort_active a::before {
+      background-color: #ffffff; }
   .personal-main .lego-result {
     padding-top: 0; }
     .personal-main .lego-result__group {
@@ -11224,3 +11225,112 @@ a {
     text-align: center; }
     .personal-main__more:hover {
       border: 1px solid #DDD; }
+
+.modal-programm:not(.modal-video) button {
+  min-width: auto; }
+
+.modal-programm__content {
+  position: relative;
+  width: 323px;
+  padding-bottom: 20px;
+  border: 2px solid #8c9ba0;
+  background-color: #ffffff; }
+
+.modal-programm__title {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  background-color: #0d465e;
+  color: #ffffff;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1.23px;
+  text-align: center; }
+
+.modal-programm__form {
+  padding-left: 19px;
+  padding-right: 18px;
+  padding-top: 20px; }
+
+.modal-programm__wrapper-text {
+  margin-bottom: 15px; }
+  .modal-programm__wrapper-text input {
+    padding-top: 9px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    border: 1px solid #8c9ba0;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px; }
+    .modal-programm__wrapper-text input:hover {
+      border: 1px solid #c4c4c4; }
+
+.modal-programm__wrapper-button {
+  width: 153px;
+  margin: 0 auto;
+  padding-top: 6px; }
+
+.modal-programm__submit {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #8c9ba0;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: transparent; }
+  .modal-programm__submit:hover {
+    background-color: rgba(117, 151, 165, 0.4); }
+
+.modal-programm__dawnload {
+  margin-top: 12px;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  text-align: center;
+  background-color: #ff5f10;
+  color: #ffffff;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.3px; }
+  .modal-programm__dawnload:hover {
+    background-color: #ff4005; }
+
+.close-modal {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 14px;
+  height: 14px;
+  min-width: auto;
+  border: none;
+  background-color: transparent; }
+  .close-modal::after, .close-modal::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 14px;
+    height: 3px;
+    background-color: #8c9ba0; }
+  .close-modal::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .close-modal::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
