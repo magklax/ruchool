@@ -1,0 +1,398 @@
+.personal-header {
+  padding: 0;
+  padding-bottom: 46px;
+
+  &__title {
+    margin-top: -52px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-variant: small-caps;
+    letter-spacing: 1.36px;
+
+    text-align: center;
+  }
+
+  &__form {
+    margin-left: 35px;
+    margin-right: 32px;
+    padding-top: 38px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: rgba(#ffffff, 0.75);
+  }
+
+  &__wrapper-text {
+    position: relative;
+
+    input {
+      margin-bottom: 17px;
+      width: 100%;
+      padding-left: 13px;
+      padding-right: 50px;
+      border: 1px solid #8c9ba0;
+      min-height: 35px;
+      background-color: transparent;
+      color: rgba(#000000, 0.6);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.3px;
+      transition: 0s;
+      &:hover {
+        border: 1px solid #c4c4c4;
+      }
+    }
+    .svg-loop {
+      position: absolute;
+      top: 9px;
+      right: 14px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__wrapper-select {
+    margin-bottom: 17px;
+    &_left {
+      margin-right: -15px;
+      .selectric {
+        .label {
+          font-family: "Futura Book C", Arial, sans-serif;
+          color: #000000;
+        }
+      }
+    }
+    &_right {
+      margin-left: -16px;
+      .selectric {
+        .label {
+          font-family: "Futura Book C", Arial, sans-serif;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .selectric {
+    .label {
+      padding-top: 8px;
+      padding-left: 3px;
+      color: rgba(#000000, 0.6);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &__button-sale {
+    padding-top: 7px;
+    display: block;
+    min-height: 35px;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-align: center;
+    &:hover {
+      background: rgba(117, 151, 165, 0.4);
+    }
+  }
+
+  &__button-results {
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    border: none;
+    min-height: 35px;
+    background-color: #96b0bb;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-align: center;
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__banner {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 22px;
+    margin-left: 35px;
+    margin-right: 32px;
+    padding-left: 32px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 183px;
+    background-color: rgba(#ffffff, 0.85);
+    background-image: url("../images/know.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  &__banner-text {
+    padding-top: 10px;
+    margin-left: 23px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+}
+
+.personal-main {
+  padding: 0;
+  padding-top: 52px;
+  padding-left: 35px;
+  padding-right: 32px;
+  padding-bottom: 34px;
+
+  .container {
+    position: relative;
+  }
+
+  &__list-sort {
+    width: 175px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 39px);
+  }
+
+  &__item-sort {
+    color: #96b0bb;
+    position: relative;
+    padding-left: 26px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+
+    &::before {
+      content: "";
+      // position: absolute;
+      float: left;
+      margin-top: 8px;
+      margin-right: 7px;
+
+      width: 4px;
+      height: 4px;
+      display: block;
+      background-color: #96b0bb;
+      border-radius: 50%;
+
+    }
+    &_active {
+      color: #ffffff;
+      background-color: #96b0bb;
+      text-decoration: underline;
+
+      &::before {
+        background-color: #ffffff;
+      }
+    }
+    a {
+      color: inherit;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-variant: small-caps;
+      letter-spacing: 0.15px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .lego-result {
+    padding-top: 0;
+
+    &__group {
+      padding-left: 35px;
+      padding-right: 32px;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      padding-left: 0;
+      padding-top: 31px;
+      padding-bottom: 14px;
+    }
+
+    &__sity-toggle {
+      top: 31px;
+      right: 38px;
+    }
+    &__sity-item {
+      padding-top: 7px;
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-bottom: 5px;
+      border: none;
+      border-bottom: 1px solid #8c9ba0;
+      margin-left: 0;
+      &--current {
+        padding-top: 6px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 1px solid #8c9ba0;
+      }
+    }
+    &__img {
+      display: block;
+      border: 1px solid #8c9ba0;
+    }
+    &__col-text {
+      margin-left: -30px;
+    }
+    &__status {
+      padding-top: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 17px;
+    }
+    &__text {
+      margin-bottom: 10px;
+      line-height: 1.2;
+      letter-spacing: 0.25px;
+    }
+    &__dates {
+      line-height: 1.2;
+    }
+    &__old-price {
+      margin-top: 7px;
+      margin-bottom: 2px;
+      margin-left: -15px;
+      opacity: 0.4;
+      color: #3f4e55;
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 24.37px;
+      text-decoration: line-through;
+      letter-spacing: 0.33px;
+      .rub {
+        letter-spacing: 0.33px;
+        font-variant: small-caps;
+      }
+    }
+    &__price {
+      margin-left: 11px;
+      margin-bottom: 18px;
+      letter-spacing: 1.4px;
+    }
+    &__one-click {
+      margin-bottom: 9px;
+    }
+    &__wrapper-image {
+      width: 174px;
+      margin-left: 31px;
+    }
+    &__wrapper-button {
+      display: flex;
+      margin-top: 10px;
+      border: 1px solid #8c9ba0;
+    }
+    &__button-programm {
+      flex-grow: 1;
+      position: relative;
+      display: block;
+      padding-top: 6px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 3px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      &:hover {
+        background-color: rgba(117, 151, 165, 0.4);
+      }
+    }
+    &__button-download {
+      margin-left: auto;
+      width: 33px;
+      background-image: url("../images/download-programm.png");
+      background-size: 16px 16px;
+      background-position: center 8px;
+      background-repeat: no-repeat;
+      background-color: #55a730;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    padding-left: 35px;
+    padding-right: 32px;
+    .personal-main__wrapper-select {
+      flex: 0 0 188px;
+
+      .selectric {
+        .label {
+          padding-top: 13px;
+          padding-bottom: 31px;
+          color: rgba(#000000, 0.5);
+          font-family: "Futura Book C", Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.2;
+          letter-spacing: 0.3px;
+        }
+        .button {
+          top: 3px;
+          right: 4px;
+          &::after {
+            content: "";
+
+            border: 0;
+            width: 11px;
+            height: 6px;
+            background-image: url("../images/arrow-show.png");
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  &__more {
+    margin-right: -1px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    flex-grow: 1;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: center;
+    &:hover {
+      border: 1px solid #DDD;
+    }
+  }
+}

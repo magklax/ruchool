@@ -1,0 +1,240 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Аренда аудиторий')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/personal.jpg)")
+      .container
+        +b.SECTION.personal-header
+          +e.title Курсы управления персоналом
+          +e.FORM.form
+            .row
+              .col-md-4
+                +e.wrapper-select
+                  +e.select_item
+                    select.js-select
+                      option Город
+                      option Город
+                      option Город
+                      option Город
+                .row
+                  .col-6
+                    +e.wrapper-select._left
+                      +e.select_item
+                        select.js-select
+                          option Период с
+                          option Период с
+                          option Период с
+                          option Период с
+                  .col-6
+                    +e.wrapper-select._right
+                      +e.select_item
+                        select.js-select
+                          option до
+                          option до
+                          option до
+                          option до
+
+              .col-md-4
+                +e.wrapper-select
+                  +e.select_item
+                    select.js-select
+                      option Форма обучения
+                      option Форма обучения
+                      option Форма обучения
+                      option Форма обучения
+                +e.wrapper-text
+                  input(type="text" placeholder="Преподаватели")
+                  +svg("loop")
+                +e.BUTTON(type="submit").button-results Найдено 1547 курсов
+
+              .col-md-4
+                +e.wrapper-text
+                  input(type="text" placeholder="Ключевые слова")
+                  +svg("loop")
+                +e.A.button-sale Курсы с 15% скидкой
+
+          +e.banner
+            img(src="images/expert-banner.jpg", width="128" height="35" alt="")
+            +e.banner-text пО МНЕНИЮ ЖУРНАЛА “эКСПЕРТ” ршу ВХОДИТ В ПЯТЕРКУ ЛУЧШИХ БИЗНЕС-ШКОЛ рОССИИ
+        
+    +b.SECTION.personal-main
+      section.lego-result 
+        .container 
+          .lego-result__group 
+            .lego-result__list 
+              .lego-result__item 
+                .lego-result__sity-toggle
+                  a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                  a(href='').lego-result__sity-item Санкт-Петербург
+                  a(href='').lego-result__sity-item Екатеринбург
+                .row 
+                  .col-md-3 
+                    .lego-result__wrapper-image
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                      .lego-result__wrapper-button
+                        a(href="#").lego-result__button-programm Программа курса
+                        a(href="#").lego-result__button-download 
+                  .col-md-6
+                    .lego-result__col-text
+                      .lego-result__status очно (5 дней)
+                      a(href='#').lego-result__name Директор по персоналу
+                      .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст текст текст текст...
+                      .lego-result__dates Ближайшая дата: 20 августа 2018. <br> <a href=''>Смотреть другие даты  >></a> 
+                  .col-md-3  
+                    .lego-result__price-col
+                      .lego-result__old-price 55.000 <span class='rub'>руб.</span>
+                      .lego-result__price 45.000 <span class='rub'>руб.</span>
+                      a(href='#').lego-result__one-click Купить в 1 клик
+                      a(href='#').lego-result__cart-btn Подробнее
+              .lego-result__item 
+                .lego-result__sity-toggle
+                  a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                  a(href='').lego-result__sity-item Санкт-Петербург
+                  a(href='').lego-result__sity-item Екатеринбург
+                .row 
+                  .col-md-3 
+                    .lego-result__wrapper-image
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                      .lego-result__wrapper-button
+                        a(href="#").lego-result__button-programm Программа курса
+                        a(href="#").lego-result__button-download 
+                  .col-md-6
+                    .lego-result__col-text
+                      .lego-result__status очно (5 дней)
+                      a(href='#').lego-result__name PR-ДИРЕКТОР (5 ДНЕЙ)
+                      .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст текст текст текст...
+                      .lego-result__dates Ближайшая дата: 20 августа 2018. <br> <a href=''>Смотреть другие даты  >></a> 
+                  .col-md-3  
+                    .lego-result__price-col
+                      .lego-result__old-price 52.000 <span class='rub'>руб.</span>
+                      .lego-result__price 41.000 <span class='rub'>руб.</span>
+                      a(href='#').lego-result__one-click Купить в 1 клик
+                      a(href='#').lego-result__cart-btn Подробнее
+              .lego-result__item 
+                .lego-result__sity-toggle
+                  a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                  a(href='').lego-result__sity-item Санкт-Петербург
+                  a(href='').lego-result__sity-item Екатеринбург
+                .row 
+                  .col-md-3 
+                    .lego-result__wrapper-image
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                      .lego-result__wrapper-button
+                        a(href="#").lego-result__button-programm Программа курса
+                        a(href="#").lego-result__button-download 
+                  .col-md-6
+                    .lego-result__col-text
+                      .lego-result__status очно (5 дней)
+                      a(href='#').lego-result__name Micro mba. персонал
+                      .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст текст текст текст...
+                      .lego-result__dates Ближайшая дата: 20 августа 2018. <br> <a href=''>Смотреть другие даты  >></a> 
+                  .col-md-3  
+                    .lego-result__price-col
+                      .lego-result__old-price 45.000 <span class='rub'>руб.</span>
+                      .lego-result__price 35.000 <span class='rub'>руб.</span>
+                      a(href='#').lego-result__one-click Купить в 1 клик
+                      a(href='#').lego-result__cart-btn Подробнее
+              .lego-result__item 
+                .lego-result__sity-toggle
+                  a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                  a(href='').lego-result__sity-item Санкт-Петербург
+                  a(href='').lego-result__sity-item Екатеринбург
+                .row 
+                  .col-md-3 
+                    .lego-result__wrapper-image
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                      .lego-result__wrapper-button
+                        a(href="#").lego-result__button-programm Программа курса
+                        a(href="#").lego-result__button-download 
+                  .col-md-6
+                    .lego-result__col-text
+                      .lego-result__status очно (5 дней)
+                      a(href='#').lego-result__name Менеджер по персоналу
+                      .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст текст текст текст...
+                      .lego-result__dates Ближайшая дата: 20 августа 2018. <br> <a href=''>Смотреть другие даты  >></a> 
+                  .col-md-3  
+                    .lego-result__price-col
+                      .lego-result__old-price 52.000 <span class='rub'>руб.</span>
+                      .lego-result__price 41.000 <span class='rub'>руб.</span>
+                      a(href='#').lego-result__one-click Купить в 1 клик
+                      a(href='#').lego-result__cart-btn Подробнее
+              .lego-result__item 
+                .lego-result__sity-toggle
+                  a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                  a(href='').lego-result__sity-item Санкт-Петербург
+                  a(href='').lego-result__sity-item Екатеринбург
+                .row 
+                  .col-md-3 
+                    .lego-result__wrapper-image
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                      .lego-result__wrapper-button
+                        a(href="#").lego-result__button-programm Программа курса
+                        a(href="#").lego-result__button-download 
+                  .col-md-6
+                    .lego-result__col-text
+                      .lego-result__status очно (5 дней)
+                      a(href='#').lego-result__name ДИРЕКТОР Гостиницы
+                      .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст текст текст текст...
+                      .lego-result__dates Ближайшая дата: 20 августа 2018. <br> <a href=''>Смотреть другие даты  >></a> 
+                  .col-md-3  
+                    .lego-result__price-col
+                      .lego-result__old-price 45.000 <span class='rub'>руб.</span>
+                      .lego-result__price 35.000 <span class='rub'>руб.</span>
+                      a(href='#').lego-result__one-click Купить в 1 клик
+                      a(href='#').lego-result__cart-btn Подробнее
+
+          +e.UL.list-sort
+            +e.LI.item-sort
+              a(href="#") ВСЕ КАТЕГОРИИ
+            +e.LI.item-sort._active
+              a(href="#") Кадровая политика
+            +e.LI.item-sort
+              a(href="#") Кадровое делопроизводство
+            +e.LI.item-sort
+              a(href="#") Подбор и адаптация
+            +e.LI.item-sort
+              a(href="#") Оценка, обучение и развитие
+            +e.LI.item-sort
+              a(href="#") Мотивация
+            +e.LI.item-sort
+              a(href="#") Рекрутмент, развитие и карьера
+            +e.LI.item-sort
+              a(href="#") Корпоративная культура
+            +e.LI.item-sort
+              a(href="#") Онлайн-курсы по персоналу
+            +e.LI.item-sort
+              a(href="#") Дистанционное обучение
+            +e.LI.item-sort
+              a(href="#") Вечерний формат
+
+      
+      .container
+        +e.bottom
+          +e.A.more Показать еще
+          +e.wrapper-select
+            +e.select_item
+              select.js-select
+                option Показывать по 10
+                option Показывать по 20
+                option Показывать по 30
+              
+              
+              
+
+
+
+    include pug/footer.pug

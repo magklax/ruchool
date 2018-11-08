@@ -10915,3 +10915,312 @@ a {
   .books .cart__like {
     padding-top: 3px;
     margin-left: 15px; }
+
+.personal-header {
+  padding: 0;
+  padding-bottom: 46px; }
+  .personal-header__title {
+    margin-top: -52px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-variant: small-caps;
+    letter-spacing: 1.36px;
+    text-align: center; }
+  .personal-header__form {
+    margin-left: 35px;
+    margin-right: 32px;
+    padding-top: 38px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: rgba(255, 255, 255, 0.75); }
+  .personal-header__wrapper-text {
+    position: relative; }
+    .personal-header__wrapper-text input {
+      margin-bottom: 17px;
+      width: 100%;
+      padding-left: 13px;
+      padding-right: 50px;
+      border: 1px solid #8c9ba0;
+      min-height: 35px;
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.3px;
+      transition: 0s; }
+      .personal-header__wrapper-text input:hover {
+        border: 1px solid #c4c4c4; }
+    .personal-header__wrapper-text .svg-loop {
+      position: absolute;
+      top: 9px;
+      right: 14px;
+      width: 18px;
+      height: 18px; }
+  .personal-header__wrapper-select {
+    margin-bottom: 17px; }
+    .personal-header__wrapper-select_left {
+      margin-right: -15px; }
+      .personal-header__wrapper-select_left .selectric .label {
+        font-family: "Futura Book C", Arial, sans-serif;
+        color: #000000; }
+    .personal-header__wrapper-select_right {
+      margin-left: -16px; }
+      .personal-header__wrapper-select_right .selectric .label {
+        font-family: "Futura Book C", Arial, sans-serif;
+        color: #000000; }
+  .personal-header .selectric .label {
+    padding-top: 8px;
+    padding-left: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px; }
+  .personal-header__button-sale {
+    padding-top: 7px;
+    display: block;
+    min-height: 35px;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-align: center; }
+    .personal-header__button-sale:hover {
+      background: rgba(117, 151, 165, 0.4); }
+  .personal-header__button-results {
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    border: none;
+    min-height: 35px;
+    background-color: #96b0bb;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-align: center; }
+    .personal-header__button-results:hover {
+      color: rgba(0, 0, 0, 0.6); }
+  .personal-header__banner {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 22px;
+    margin-left: 35px;
+    margin-right: 32px;
+    padding-left: 32px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 183px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-image: url("../images/know.png");
+    background-repeat: no-repeat;
+    background-position: right top; }
+  .personal-header__banner-text {
+    padding-top: 10px;
+    margin-left: 23px;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.4px; }
+
+.personal-main {
+  padding: 0;
+  padding-top: 52px;
+  padding-left: 35px;
+  padding-right: 32px;
+  padding-bottom: 34px; }
+  .personal-main .container {
+    position: relative; }
+  .personal-main__list-sort {
+    width: 175px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 39px); }
+  .personal-main__item-sort {
+    color: #96b0bb;
+    position: relative;
+    padding-left: 26px;
+    padding-top: 3px;
+    padding-bottom: 4px; }
+    .personal-main__item-sort::before {
+      content: "";
+      float: left;
+      margin-top: 8px;
+      margin-right: 7px;
+      width: 4px;
+      height: 4px;
+      display: block;
+      background-color: #96b0bb;
+      border-radius: 50%; }
+    .personal-main__item-sort_active {
+      color: #ffffff;
+      background-color: #96b0bb;
+      text-decoration: underline; }
+      .personal-main__item-sort_active::before {
+        background-color: #ffffff; }
+    .personal-main__item-sort a {
+      color: inherit;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-variant: small-caps;
+      letter-spacing: 0.15px; }
+      .personal-main__item-sort a:hover {
+        opacity: 0.5; }
+  .personal-main .lego-result {
+    padding-top: 0; }
+    .personal-main .lego-result__group {
+      padding-left: 35px;
+      padding-right: 32px;
+      margin-bottom: 25px; }
+    .personal-main .lego-result__item {
+      padding-left: 0;
+      padding-top: 31px;
+      padding-bottom: 14px; }
+    .personal-main .lego-result__sity-toggle {
+      top: 31px;
+      right: 38px; }
+    .personal-main .lego-result__sity-item {
+      padding-top: 7px;
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-bottom: 5px;
+      border: none;
+      border-bottom: 1px solid #8c9ba0;
+      margin-left: 0; }
+      .personal-main .lego-result__sity-item--current {
+        padding-top: 6px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 1px solid #8c9ba0; }
+    .personal-main .lego-result__img {
+      display: block;
+      border: 1px solid #8c9ba0; }
+    .personal-main .lego-result__col-text {
+      margin-left: -30px; }
+    .personal-main .lego-result__status {
+      padding-top: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 17px; }
+    .personal-main .lego-result__text {
+      margin-bottom: 10px;
+      line-height: 1.2;
+      letter-spacing: 0.25px; }
+    .personal-main .lego-result__dates {
+      line-height: 1.2; }
+    .personal-main .lego-result__old-price {
+      margin-top: 7px;
+      margin-bottom: 2px;
+      margin-left: -15px;
+      opacity: 0.4;
+      color: #3f4e55;
+      font-family: "Futura Medium C", Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 24.37px;
+      text-decoration: line-through;
+      letter-spacing: 0.33px; }
+      .personal-main .lego-result__old-price .rub {
+        letter-spacing: 0.33px;
+        font-variant: small-caps; }
+    .personal-main .lego-result__price {
+      margin-left: 11px;
+      margin-bottom: 18px;
+      letter-spacing: 1.4px; }
+    .personal-main .lego-result__one-click {
+      margin-bottom: 9px; }
+    .personal-main .lego-result__wrapper-image {
+      width: 174px;
+      margin-left: 31px; }
+    .personal-main .lego-result__wrapper-button {
+      display: flex;
+      margin-top: 10px;
+      border: 1px solid #8c9ba0; }
+    .personal-main .lego-result__button-programm {
+      flex-grow: 1;
+      position: relative;
+      display: block;
+      padding-top: 6px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 3px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2; }
+      .personal-main .lego-result__button-programm:hover {
+        background-color: rgba(117, 151, 165, 0.4); }
+    .personal-main .lego-result__button-download {
+      margin-left: auto;
+      width: 33px;
+      background-image: url("../images/download-programm.png");
+      background-size: 16px 16px;
+      background-position: center 8px;
+      background-repeat: no-repeat;
+      background-color: #55a730; }
+      .personal-main .lego-result__button-download:hover {
+        opacity: 0.5; }
+  .personal-main__bottom {
+    display: flex;
+    padding-left: 35px;
+    padding-right: 32px; }
+    .personal-main__bottom .personal-main__wrapper-select {
+      flex: 0 0 188px; }
+      .personal-main__bottom .personal-main__wrapper-select .selectric .label {
+        padding-top: 13px;
+        padding-bottom: 31px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Futura Book C", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.3px; }
+      .personal-main__bottom .personal-main__wrapper-select .selectric .button {
+        top: 3px;
+        right: 4px; }
+        .personal-main__bottom .personal-main__wrapper-select .selectric .button::after {
+          content: "";
+          border: 0;
+          width: 11px;
+          height: 6px;
+          background-image: url("../images/arrow-show.png");
+          background-repeat: no-repeat; }
+  .personal-main__more {
+    margin-right: -1px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    flex-grow: 1;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: center; }
+    .personal-main__more:hover {
+      border: 1px solid #DDD; }
