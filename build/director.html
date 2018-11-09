@@ -160,7 +160,13 @@
                     </div>
                   </div>
                   <div class="course__programms">
-                    <div class="course__header-programms"><a class="course__programms-title">Программа семинара</a><a class="course__programms-button course__programms-button_download">Скачать</a><a class="course__programms-button course__programms-button_print">Печатать</a>
+                    <div class="course__header-programms"><a class="course__programms-title">Программа семинара<span class="course__title-arrow course__title-arrow_expand">Развернуть
+                      <svg class="svg svg-arrow-expand">
+                        <use xlink:href="#svg-icon-arrow-expand"></use>
+                      </svg></span><span class="course__title-arrow course__title-arrow_collapse">Свернуть
+                      <svg class="svg svg-arrow-expand">
+                        <use xlink:href="#svg-icon-arrow-expand"></use>
+                      </svg></span></a><a class="course__programms-button course__programms-button_download">Скачать</a><a class="course__programms-button course__programms-button_print">Печатать</a>
                     </div>
                     <div class="course__programms-content">
                       <button class="course__button-expand course__button-expand_expand"> 
@@ -279,10 +285,12 @@
                     <div class="course__about-course"> 
                       <div class="course__about-title">Для кого этот курс:
                       </div>
-                      <ul class="course__about-list">
+                      <ul class="course__about-list scroll-pane scroll-pane-costom">
                         <li>начальникам отдела кадров;</li>
                         <li>сотрудникам кадровых служб;</li>
                         <li>HR-менеджерам;</li>
+                        <li>начальникам отделов, занимающихся управлением персоналом.</li>
+                        <li>начальникам отделов, занимающихся управлением персоналом.</li>
                         <li>начальникам отделов, занимающихся управлением персоналом.</li>
                       </ul>
                     </div>
@@ -390,7 +398,7 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="equipment4" role="tabpanel"> 
-                        <ul class="course__feedback-list">
+                        <ul class="course__feedback-list scroll-pane scroll-pane-costom">
                           <li class="course__feedback-item">
                             <div class="course__feedback-photo"><img src="images/user-1.jpg" alt="">
                             </div>
@@ -458,13 +466,17 @@
                   <div class="lego-result__group-title lego-result__group-title">Сопутствующие курсы</div>
                   <div class="lego-result__list">
                     <div class="lego-result__item"> 
-                      <div class="lego-result__sity-toggle"><a class="lego-result__sity-item" href="">Москва</a><a class="lego-result__sity-item" href="">Санкт-Петербург</a><a class="lego-result__sity-item lego-result__sity-item--current" href="">Екатеринбург</a></div>
+                      <div class="lego-result__sity-toggle"><a class="lego-result__sity-item lego-result__sity-item--current" href="">Москва</a><a class="lego-result__sity-item" href="">Санкт-Петербург</a><a class="lego-result__sity-item" href="">Екатеринбург</a></div>
                       <div class="row"> 
-                        <div class="col-md-2"> <a href="#"><img class="lego-result__img" src="http://placehold.it/157x136" alt=""></a></div>
-                        <div class="col-md-7"> 
-                          <div class="lego-result__status">очно (5 дней)</div><a class="lego-result__name" href="#">Главный бухгалтер</a>
-                          <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
-                          <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                        <div class="col-md-3"> 
+                          <div class="lego-result__wrapper-image"><a href="#"><img class="lego-result__img" src="http://placehold.it/174x136" alt=""></a></div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="lego-result__col-text">
+                            <div class="lego-result__status">очно (5 дней)</div><a class="lego-result__name" href="#">Главный бухгалтер</a>
+                            <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
+                            <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                          </div>
                         </div>
                         <div class="col-md-3"> 
                           <div class="lego-result__price-col"> 
@@ -477,11 +489,15 @@
                     <div class="lego-result__item"> 
                       <div class="lego-result__sity-toggle"><a class="lego-result__sity-item" href="">Москва</a><a class="lego-result__sity-item" href="">Санкт-Петербург</a><a class="lego-result__sity-item lego-result__sity-item--current" href="">Екатеринбург</a></div>
                       <div class="row"> 
-                        <div class="col-md-2"> <a href="#"><img class="lego-result__img" src="http://placehold.it/157x136" alt=""></a></div>
-                        <div class="col-md-7"> 
-                          <div class="lego-result__status">онлайн (5 дней)</div><a class="lego-result__name" href="#">Юрист</a>
-                          <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
-                          <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                        <div class="col-md-3"> 
+                          <div class="lego-result__wrapper-image"><a href="#"><img class="lego-result__img" src="http://placehold.it/174x136" alt=""></a></div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="lego-result__col-text">
+                            <div class="lego-result__status">онлайн (5 дней)</div><a class="lego-result__name" href="#">Юрист</a>
+                            <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
+                            <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                          </div>
                         </div>
                         <div class="col-md-3"> 
                           <div class="lego-result__price-col"> 
@@ -492,13 +508,17 @@
                       </div>
                     </div>
                     <div class="lego-result__item"> 
-                      <div class="lego-result__sity-toggle"><a class="lego-result__sity-item" href="">Москва</a><a class="lego-result__sity-item" href="">Санкт-Петербург</a><a class="lego-result__sity-item lego-result__sity-item--current" href="">Екатеринбург</a></div>
+                      <div class="lego-result__sity-toggle"><a class="lego-result__sity-item" href="">Москва</a><a class="lego-result__sity-item lego-result__sity-item--current" href="">Санкт-Петербург</a><a class="lego-result__sity-item" href="">Екатеринбург</a></div>
                       <div class="row"> 
-                        <div class="col-md-2"> <a href="#"><img class="lego-result__img" src="http://placehold.it/157x136" alt=""></a></div>
-                        <div class="col-md-7"> 
-                          <div class="lego-result__status">ОНЛАЙН (10 дней - модули по 5 дней с перерывом)</div><a class="lego-result__name" href="#">ДИРЕКТОР ПО ЛОГИСТИКЕ</a>
-                          <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
-                          <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                        <div class="col-md-3"> 
+                          <div class="lego-result__wrapper-image"><a href="#"><img class="lego-result__img" src="http://placehold.it/174x136" alt=""></a></div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="lego-result__col-text">
+                            <div class="lego-result__status">ОНЛАЙН (10 дней - модули по 5 дней с перерывом)</div><a class="lego-result__name" href="#">ДИРЕКТОР ПО ЛОГИСТИКЕ</a>
+                            <div class="lego-result__text">Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... </div>
+                            <div class="lego-result__dates">Продолжительность: 12 дней (90 часов)</div>
+                          </div>
                         </div>
                         <div class="col-md-3"> 
                           <div class="lego-result__price-col"> 

@@ -54,3 +54,5 @@
 // ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 //= ../../bower_components/lightgallery/dist/js/lightgallery-all.min.js
 //= ../../node_modules/selectric/public/jquery.selectric.min.js
+//= ../../node_modules/jscrollpane/script/jquery.jscrollpane.js
+//= ../../node_modules/jscrollpane/script/jquery.mousewheel.js

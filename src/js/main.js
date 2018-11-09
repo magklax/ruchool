@@ -77,6 +77,13 @@ $(document).ready(function() {
             arrows: true
         });
     })
+    $('a[href="#equipment4"]').on('shown.bs.tab', function (e) {
+        $(window).trigger('resize');
+        $(function() {
+            $('#equipment4 .scroll-pane').jScrollPane({showArrows: true});
+        });
+    })
+
     $('.books__list > .row').slick({
         infiniti: true,
         slidesToShow: 5,
@@ -110,10 +117,14 @@ $(document).ready(function() {
         $('.courses-section').slideToggle();
     })
    
-        $('.js-select').selectric();
-     $('.cart__like').on('click', function(e) {
+    $(function() {
+	    $('.scroll-pane').jScrollPane({showArrows: true});
+    });
+
+    $('.js-select').selectric();
+    $('.cart__like').on('click', function(e) {
+    
         
-         
         if( $(this).is('.cart__like_active')) {
             $(this).removeClass('cart__like_anim');
             $(this).removeClass('cart__like_active');
@@ -125,7 +136,7 @@ $(document).ready(function() {
             }, 1000)
         }
         return false
-     })
+    })
      $('.cart__count-input').on('input', function(e) {
          var val = parseFloat($(this).val());
          var rez = val > 0 ? val : 1;
@@ -247,6 +258,13 @@ $(".rent-gallery__gallery-item").on("click", function() {
 if ($(".course__programms")) {
     $(".course__programms-title").on("click", function(e) {
         $(".course__programms-content").slideToggle();
+        if ($(".course__title-arrow_expand").is(":visible")) {
+            $(".course__title-arrow_expand").css("display", "none");
+            $(".course__title-arrow_collapse").css("display", "block");
+        } else {
+            $(".course__title-arrow_expand").css("display", "block");
+            $(".course__title-arrow_collapse").css("display", "none");
+        }
     });
 
     var sublist = $(".course__programms-sublist");

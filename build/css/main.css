@@ -4970,6 +4970,91 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .selectric-items .selectric-group li {
   padding-left: 25px; }
 
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative; }
+
+.jspPane {
+  position: absolute; }
+
+.jspVerticalBar {
+  background: red;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16px; }
+
+.jspHorizontalBar {
+  background: red;
+  bottom: 0;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.jspCap {
+  display: none; }
+
+.jspHorizontalBar .jspCap {
+  float: left; }
+
+.jspTrack {
+  background: #dde;
+  position: relative; }
+
+.jspDrag {
+  background: #bbd;
+  cursor: pointer;
+  left: 0;
+  position: relative;
+  top: 0; }
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%; }
+
+.jspArrow {
+  background: #50506d;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-indent: -20000px; }
+
+.jspDisabled {
+  background: #80808d;
+  cursor: default; }
+
+.jspVerticalBar .jspArrow {
+  height: 16px; }
+
+.jspHorizontalBar .jspArrow {
+  float: left;
+  height: 100%;
+  width: 16px; }
+
+.jspVerticalBar .jspArrow:focus {
+  border: 1px solid red;
+  outline: none; }
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%; }
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0; }
+
 /*! Base */
 .svg {
   transition: 0.2s !important;
@@ -9944,17 +10029,40 @@ a {
     line-height: 17px;
     text-transform: uppercase;
     letter-spacing: 0.8px; }
-    .course__programms-title::after {
-      content: '';
-      width: 9px;
-      height: 5px;
+  .course__title-arrow {
+    width: 60px;
+    position: absolute;
+    right: -62px;
+    top: 7px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    transition: 0s;
+    text-align: center; }
+    .course__title-arrow_expand svg {
       position: absolute;
-      top: 50%;
-      right: 15px;
-      margin-top: -3px;
-      background-image: url(../images/tre-big.svg);
-      background-size: 100%;
-      background-repeat: no-repeat; }
+      top: calc(100% - 2px);
+      left: 50%;
+      margin-left: -6px;
+      width: 11px;
+      height: 10px;
+      fill: rgba(255, 255, 255, 0.8); }
+    .course__title-arrow_collapse {
+      display: none; }
+      .course__title-arrow_collapse svg {
+        position: absolute;
+        top: calc(100% - 2px);
+        left: 50%;
+        margin-left: -6px;
+        width: 11px;
+        height: 10px;
+        fill: rgba(255, 255, 255, 0.8);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
   .course__programms-button {
     position: relative;
     padding-top: 24px;
@@ -10077,7 +10185,7 @@ a {
     display: none; }
   .course__about-course {
     padding-left: 34px;
-    padding-right: 34px;
+    padding-right: 5px;
     padding-top: 25px;
     padding-bottom: 13px;
     border-bottom: 1px solid #8c9ba0; }
@@ -10093,7 +10201,9 @@ a {
   .course__about-list {
     padding: 0;
     margin: 0;
-    list-style: none; }
+    list-style: none;
+    overflow: auto;
+    max-height: 108px; }
     .course__about-list li {
       padding-bottom: 5px;
       color: #000000;
@@ -10142,9 +10252,10 @@ a {
     min-height: 230px;
     padding-top: 10px;
     padding-left: 34px;
-    padding-right: 25px;
+    padding-right: 5px;
     border: 1px solid #8c9ba0; }
   .course__incost-list {
+    margin-right: 20px;
     margin-left: 28px;
     padding-bottom: 63px; }
   .course__incost-item {
@@ -10200,7 +10311,7 @@ a {
       background-repeat: no-repeat; }
   .course__process-learn {
     margin-left: -13px;
-    margin-right: -18px; }
+    margin-right: 2px; }
     .course__process-learn .col-md-2:first-child .course__learn-item::before {
       content: none; }
   .course__learn-item {
@@ -10288,7 +10399,7 @@ a {
   .course__teacher-list {
     margin-top: 16px;
     margin-left: 27px;
-    margin-right: 29px; }
+    margin-right: 49px; }
     .course__teacher-list .slick-prev,
     .course__teacher-list .slick-next {
       margin-top: -18px; }
@@ -10315,7 +10426,8 @@ a {
     padding: 0;
     list-style: none;
     height: 202px;
-    overflow-y: auto; }
+    width: 100%;
+    overflow: auto; }
   .course__feedback-item {
     display: flex;
     align-items: flex-start;
@@ -10482,6 +10594,9 @@ a {
       top: 0;
       border-top: 29px solid #edf2f3; }
 
+.page-course .lego-result__group {
+  margin-bottom: 13px; }
+
 .page-course .lego-result__group-title {
   margin-top: 37px;
   margin-left: 68px;
@@ -10495,7 +10610,73 @@ a {
   letter-spacing: 0.6px;
   text-transform: none; }
 
+.page-course .lego-result__item {
+  padding-left: 0;
+  padding-top: 25px;
+  padding-bottom: 9px; }
+
+.page-course .lego-result__sity-toggle {
+  top: 25px;
+  right: 29px; }
+
+.page-course .lego-result__sity-item {
+  padding-top: 7px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid #8c9ba0;
+  margin-left: 0; }
+  .page-course .lego-result__sity-item--current {
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #8c9ba0; }
+
+.page-course .lego-result__status {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.37px;
+  background-color: #96b0bb; }
+
+.page-course .lego-result__text {
+  padding-bottom: 15px;
+  line-height: 1.25;
+  margin-bottom: 6px; }
+  .page-course .lego-result__text::after {
+    width: 262px; }
+
+.page-course .lego-result__name {
+  margin-bottom: 7px; }
+
+.page-course .lego-result__wrapper-image {
+  width: 174px;
+  margin-left: 32px; }
+
+.page-course .lego-result__img {
+  display: block;
+  border: 1px solid #8c9ba0; }
+
+.page-course .lego-result__col-text {
+  margin-left: -30px; }
+
+.page-course .lego-result__price {
+  margin-bottom: 21px;
+  margin-left: 25px;
+  letter-spacing: 1.6px; }
+
 .page-course .lego-result__old-price {
+  margin-top: 7px;
+  margin-bottom: 0;
   opacity: 0.4;
   color: #3f4e55;
   font-family: "Futura Medium C", Arial, sans-serif;
@@ -10503,7 +10684,6 @@ a {
   font-weight: 400;
   line-height: 24.37px;
   text-decoration: line-through;
-  text-transform: uppercase;
   letter-spacing: 0.33px; }
   .page-course .lego-result__old-price .rub {
     letter-spacing: 0.33px;
@@ -10511,6 +10691,7 @@ a {
 
 .page-course .lego-result__one-click {
   margin-top: 17px;
+  margin-right: 35px;
   color: #000000; }
 
 .salary {
@@ -10915,6 +11096,43 @@ a {
   .books .cart__like {
     padding-top: 3px;
     margin-left: 15px; }
+
+.scroll-pane-costom .jspVerticalBar {
+  width: 17px; }
+
+.scroll-pane-costom .jspTrack {
+  background-color: #d3dee2; }
+
+.scroll-pane-costom .jspDrag {
+  border: 1px solid #8c9ba0;
+  background-color: #edf2f3; }
+
+.scroll-pane-costom .jspArrow {
+  position: relative;
+  border: 1px solid #8c9ba0;
+  background-color: #edf2f3; }
+  .scroll-pane-costom .jspArrow::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #8c9ba0;
+    border-bottom: none; }
+
+.scroll-pane-costom .jspArrowUp::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.scroll-pane-costom .jspDisabled {
+  border: 1px solid rgba(140, 155, 160, 0.6); }
+  .scroll-pane-costom .jspDisabled::after {
+    border-top-color: rgba(140, 155, 160, 0.6); }
 
 .personal-header {
   padding: 0;

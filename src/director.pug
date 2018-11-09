@@ -72,6 +72,10 @@ html
                   +e.programms
                     +e.header-programms
                       +e.A.programms-title Программа семинара
+                        +e.title-arrow._expand Развернуть
+                          +svg('arrow-expand')
+                        +e.title-arrow._collapse Свернуть
+                          +svg('arrow-expand')
                       +e.A.programms-button._download Скачать
                       +e.A.programms-button._print Печатать
                     +e.programms-content
@@ -145,10 +149,12 @@ html
                     
                     +e.about-course 
                       +e.about-title Для кого этот курс:
-                      +e.UL.about-list
+                      +e.UL.about-list.scroll-pane.scroll-pane-costom
                         li начальникам отдела кадров;
                         li сотрудникам кадровых служб;
                         li HR-менеджерам;
+                        li начальникам отделов, занимающихся управлением персоналом.
+                        li начальникам отделов, занимающихся управлением персоналом.
                         li начальникам отделов, занимающихся управлением персоналом.
 
                   +e.equipment
@@ -225,7 +231,7 @@ html
                             +e.name-teacher ИВАНОВ<br>Сергей Иванович
 
                       .tab-pane.fade#equipment4(role="tabpanel") 
-                        +e.UL.feedback-list
+                        +e.UL.feedback-list.scroll-pane.scroll-pane-costom
                           +e.LI.feedback-item
                             +e.feedback-photo
                               img(src="images/user-1.jpg", alt="")
@@ -265,18 +271,20 @@ html
                   .lego-result__list
                     .lego-result__item 
                       .lego-result__sity-toggle
-                        a(href='').lego-result__sity-item Москва
+                        a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
                         a(href='').lego-result__sity-item Санкт-Петербург
-                        a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+                        a(href='').lego-result__sity-item Екатеринбург
                       .row 
-                        .col-md-2 
-                          a(href='#')
-                            img(src='http://placehold.it/157x136' alt='').lego-result__img
-                        .col-md-7 
-                          .lego-result__status очно (5 дней)
-                          a(href='#').lego-result__name Главный бухгалтер
-                          .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
-                          .lego-result__dates Продолжительность: 12 дней (90 часов)
+                        .col-md-3 
+                          .lego-result__wrapper-image
+                            a(href='#')
+                              img(src='http://placehold.it/174x136' alt='').lego-result__img
+                        .col-md-6 
+                          .lego-result__col-text
+                            .lego-result__status очно (5 дней)
+                            a(href='#').lego-result__name Главный бухгалтер
+                            .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                            .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
                             .lego-result__old-price 55.000 <span class='rub'>руб.</span>
@@ -288,14 +296,16 @@ html
                         a(href='').lego-result__sity-item Санкт-Петербург
                         a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
                       .row 
-                        .col-md-2 
-                          a(href='#')
-                            img(src='http://placehold.it/157x136' alt='').lego-result__img
-                        .col-md-7 
-                          .lego-result__status онлайн (5 дней)
-                          a(href='#').lego-result__name Юрист
-                          .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
-                          .lego-result__dates Продолжительность: 12 дней (90 часов)
+                        .col-md-3 
+                          .lego-result__wrapper-image
+                            a(href='#')
+                              img(src='http://placehold.it/174x136' alt='').lego-result__img
+                        .col-md-6 
+                          .lego-result__col-text
+                            .lego-result__status онлайн (5 дней)
+                            a(href='#').lego-result__name Юрист
+                            .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                            .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
                             .lego-result__old-price 52.000 <span class='rub'>руб.</span>
@@ -304,17 +314,19 @@ html
                     .lego-result__item 
                       .lego-result__sity-toggle
                         a(href='').lego-result__sity-item Москва
-                        a(href='').lego-result__sity-item Санкт-Петербург
-                        a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+                        a(href='').lego-result__sity-item.lego-result__sity-item--current Санкт-Петербург
+                        a(href='').lego-result__sity-item Екатеринбург
                       .row 
-                        .col-md-2 
-                          a(href='#')
-                            img(src='http://placehold.it/157x136' alt='').lego-result__img
-                        .col-md-7 
-                          .lego-result__status ОНЛАЙН (10 дней - модули по 5 дней с перерывом)
-                          a(href='#').lego-result__name ДИРЕКТОР ПО ЛОГИСТИКЕ
-                          .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
-                          .lego-result__dates Продолжительность: 12 дней (90 часов)
+                        .col-md-3 
+                          .lego-result__wrapper-image
+                            a(href='#')
+                              img(src='http://placehold.it/174x136' alt='').lego-result__img
+                        .col-md-6 
+                          .lego-result__col-text
+                            .lego-result__status ОНЛАЙН (10 дней - модули по 5 дней с перерывом)
+                            a(href='#').lego-result__name ДИРЕКТОР ПО ЛОГИСТИКЕ
+                            .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                            .lego-result__dates Продолжительность: 12 дней (90 часов)
                         .col-md-3  
                           .lego-result__price-col 
                             .lego-result__old-price 45.000 <span class='rub'>руб.</span>
@@ -488,5 +500,5 @@ html
                     a.cart__like.cart__like_active(href='#')
                       +svg('like-empty')
                       +svg('like-full')
-
+    
     include pug/footer.pug
