@@ -70,13 +70,13 @@ $(document).ready(function() {
     }
     $('a[href="#equipment3"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
-        $('.course__teacher-list').slick({
-            infiniti: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            arrows: true
-        });
     })
+    $('.course__teacher-list').slick({
+        infiniti: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true
+    });
     $('a[href="#equipment4"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
         $(function() {
