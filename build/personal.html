@@ -336,6 +336,8 @@
           </div>
         </div>
       </div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programmModal">Модалка "программа курса"</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrModal">Модалка "регистрация на курс"</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tableModal">Модалка "расписание курса"</button>
 <div class="modal fade modal-programm" id="programmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
       <div class="modal-programm__content">
@@ -354,6 +356,166 @@
             <button class="modal-programm__submit" type="submit">Получить на почту</button><a class="modal-programm__dawnload" href="#">Скачать</a>
           </div>
         </form><button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+      </div></div>
+</div>
+<div class="modal fade modal-table" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+      <div class="modal-table__content">
+        <div class="modal-table__title">Расписание курса «Директор по закупкам»</div>
+        <table class="modal-table__main">
+          <tr>
+            <th class="modal-table__col-first"></th>
+            <th>Январь</th>
+            <th>Февраль</th>
+            <th>Март</th>
+            <th>Апрель</th>
+            <th>Май</th>
+            <th>Июнь</th>
+            <th>Июль</th>
+            <th>Август</th>
+            <th>Сентябрь</th>
+            <th>Октябрь</th>
+            <th>Ноябрь</th>
+            <th>Декабрь</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Москва</td>
+            <td><span class="modal-table__date" style="left: 0; width: 100%">17.01—25.01</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="modal-table__date" style="left: 0; width: 240%">11.04—05.06</span></td>
+            <td></td>
+            <td><span class="modal-table__date" style="left: 50%; width: 255%">11.06—05.08</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="modal-table__date" style="left: 0; width: 150%">10.10—11.11</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="modal-table__date" style="left: 53%; width: 150%">28.01—07.02</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="modal-table__date" style="left: 0; width: 100%">20.05.—25.05</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="modal-table__date" style="left: 0; width: 100%">15.09—20.09</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Санкт-Петербург</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Краснодар</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Пермь</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Сочи</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table><button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+      </div></div>
+</div>
+<div class="modal fade modal-registr" id="registrModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+      <div class="modal-registr__content">
+        <div class="modal-registr__title">Регистрация на курс</div>
+        <div class="modal-registr__main">
+          <form class="modal-registr__form">
+            <div class="modal-registr__row">
+              <div class="modal-registr__col-bg">
+                <div class="modal-registr__title-course">Курс «Директор по закупкам»</div>
+                <div class="modal-registr__text-course">Текст  текст текст, Текст текст  текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст текст текст текст... <a href="#"> Подробнее &gt;&gt; </a></div>
+              </div>
+              <div class="modal-registr__col-sm">
+                <div class="modal-registr__old-price">56.000 <span class='rub'>руб.</span></div>
+                <div class="modal-registr__price">44.000 <span class='rub'>руб.</span></div>
+                <div class="modal-registr__wrapper-select">
+                  <div class="modal-registr__select_item">
+                    <select class="js-select">
+                      <option>Санкт-Петербург</option>
+                      <option>Санкт-Петербург</option>
+                      <option>Санкт-Петербург</option>
+                    </select>
+                  </div>
+                  <div class="modal-registr__select_item">
+                    <select class="js-select">
+                      <option>Выбрать дату</option>
+                      <option>Выбрать дату</option>
+                      <option>Выбрать дату</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-registr__wrapper-text">
+              <input type="text" placeholder="ФИО">
+            </div>
+            <div class="modal-registr__wrapper-text">
+              <input type="text" placeholder="E-mail">
+            </div>
+            <div class="modal-registr__wrapper-text">
+              <input type="text" placeholder="Телефон">
+            </div>
+            <div class="modal-registr__wrapper-button"><a class="modal-registr__promo" href="#">Промокод</a>
+              <button class="modal-registr__submit" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div><button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
       </div></div>
 </div>
     </section>

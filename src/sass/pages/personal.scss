@@ -335,11 +335,12 @@
       }
     }
     &__button-download {
+      flex-shrink: 0;
       margin-left: auto;
       width: 33px;
       background-image: url("../images/download-programm.png");
       background-size: 16px 16px;
-      background-position: center 8px;
+      background-position: center calc(50% - 2px);
       background-repeat: no-repeat;
       background-color: #55a730;
       &:hover {
@@ -400,9 +401,209 @@
   }
 }
 
+.modal-registr {
+  &:not(.modal-video) button {
+    min-width: auto;
+  }
+  .modal-dialog {
+    max-width: 496px;
+  }
+  &__content {
+    position: relative;
+    width: 496px;
+    border: 2px solid #8c9ba0;
+    background-color: #ffffff;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: #0d465e;
+    color: #ffffff;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1.23px;
+    text-align: center;
+  }
+  &__main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  &__col-bg {
+    flex: 0 0 56.4%;
+    max-width: 56.4%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &__col-sm {
+    flex: 0 0 43.6%;
+    max-width: 43.6%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  &__title-course {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: #3f4e55;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.47px;
+  }
+  &__text-course {
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.05px;
+    text-align: justify;
+    margin-bottom: 22px;
+    a {
+      color: #001eff;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-weight: 300;
+      text-decoration: underline;
+      &:hover {
+        color: #ff4005;
+      }
+    }
+  }
+  &__old-price {
+    margin-top: 17px;
+    color: rgba(#3f4e55, 0.4);
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.37px;
+    text-decoration: line-through;
+    letter-spacing: 0.83px;
+    text-align: right;
+    .rub {
+      letter-spacing: 0.33px;
+      font-variant: small-caps;
+    }
+  }
+  &__price {
+    color: #ff5f10;
+    font-family: "Futura Demi C", Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: 1.7px;
+    margin-bottom: 14px;
+    text-align: right;
+    .rub {
+      letter-spacing: 0.33px;
+      font-variant: small-caps;
+    }
+  }
+  &__wrapper-select {
+    padding-bottom: 9px;
+  }
+  &__select_item {
+    margin-bottom: 13px;
+  }
+  .selectric {
+    .label {
+      margin-left: 0;
+      margin-right: 20px;
+      color: #000000;
+    }
+    .button {
+      &::after {
+        margin-top: 15px;
+        margin-left: 21px;
+      }
+    }
+  }
+
+  &__wrapper-text {
+    margin-bottom: 15px;
+    input {
+      padding-top: 9px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      border: 1px solid #8c9ba0;
+      color: rgba(#000000, 0.5);
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+      &:hover {
+        border: 1px solid #c4c4c4;
+      }
+    }
+  }
+  &__wrapper-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__promo {
+    width: 153px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid #8c9ba0;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    text-transform: uppercase;
+    &:hover {
+      background-color: rgba(117, 151, 165, 0.4);
+    }
+  }
+  &__submit {
+    margin-left: auto;
+    width: 153px;
+    border: none;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    text-align: center;
+    background-color: #ff5f10;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    &:hover {
+      background-color: #ff4005;
+    }
+  }
+}
+
 .modal-programm {
   &:not(.modal-video) button {
     min-width: auto;
+  }
+  .modal-dialog {
+    max-width: 323px;
   }
   &__content {
     position: relative;
@@ -489,6 +690,96 @@
     &:hover {
       background-color: #ff4005;
     }
+  }
+}
+
+.modal-table {
+  &:not(.modal-video) button {
+    min-width: auto;
+  }
+  .modal-dialog {
+    max-width: 1140px;
+  }
+  &__content {
+    position: relative;
+    width: 1140px;
+    border: 2px solid #8c9ba0;
+    background-color: #ffffff;
+  }
+  &__title {
+    padding-top: 11px;
+    padding-bottom: 7px;
+    background-color: #0d465e;
+    color: #ffffff;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1.65px;
+    text-align: center;
+  }
+  &__main {
+    margin-top: -1px;
+    margin-bottom: -2px;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    margin-right: -1px;
+    // border-collapse: collapse;
+    table-layout: fixed;
+    border-spacing: 0 1px;
+
+    tr {
+      padding-bottom: 1px;
+    }
+
+    th {
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.4px;
+    }
+
+    th,
+    td {
+      position: relative;
+      padding: 0;
+      border: 1px solid #8c9ba0;
+      height: 28px;
+      &:first-child {
+        padding-left: 14px;
+      }
+    }
+  }
+  &__date {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+
+    padding-top: 8px;
+    display: block;
+    height: 100%;
+    background-color: #cee3eb;
+    color: #000000;
+    font-family: "Futura Light Light", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.4px;
+    text-align: center;
+  }
+  
+  &__col-first {
+    width: 147px;
+    height: auto;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px;
   }
 }
 

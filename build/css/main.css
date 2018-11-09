@@ -11176,11 +11176,12 @@ a {
       .personal-main .lego-result__button-programm:hover {
         background-color: rgba(117, 151, 165, 0.4); }
     .personal-main .lego-result__button-download {
+      flex-shrink: 0;
       margin-left: auto;
       width: 33px;
       background-image: url("../images/download-programm.png");
       background-size: 16px 16px;
-      background-position: center 8px;
+      background-position: center calc(50% - 2px);
       background-repeat: no-repeat;
       background-color: #55a730; }
       .personal-main .lego-result__button-download:hover {
@@ -11226,8 +11227,190 @@ a {
     .personal-main__more:hover {
       border: 1px solid #DDD; }
 
+.modal-registr:not(.modal-video) button {
+  min-width: auto; }
+
+.modal-registr .modal-dialog {
+  max-width: 496px; }
+
+.modal-registr__content {
+  position: relative;
+  width: 496px;
+  border: 2px solid #8c9ba0;
+  background-color: #ffffff;
+  padding-bottom: 25px; }
+
+.modal-registr__title {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  background-color: #0d465e;
+  color: #ffffff;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1.23px;
+  text-align: center; }
+
+.modal-registr__main {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.modal-registr__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px; }
+
+.modal-registr__col-bg {
+  flex: 0 0 56.4%;
+  max-width: 56.4%;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.modal-registr__col-sm {
+  flex: 0 0 43.6%;
+  max-width: 43.6%;
+  padding-right: 16px;
+  padding-left: 16px; }
+
+.modal-registr__title-course {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  color: #3f4e55;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.47px; }
+
+.modal-registr__text-course {
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.05px;
+  text-align: justify;
+  margin-bottom: 22px; }
+  .modal-registr__text-course a {
+    color: #001eff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-weight: 300;
+    text-decoration: underline; }
+    .modal-registr__text-course a:hover {
+      color: #ff4005; }
+
+.modal-registr__old-price {
+  margin-top: 17px;
+  color: rgba(63, 78, 85, 0.4);
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-decoration: line-through;
+  letter-spacing: 0.83px;
+  text-align: right; }
+  .modal-registr__old-price .rub {
+    letter-spacing: 0.33px;
+    font-variant: small-caps; }
+
+.modal-registr__price {
+  color: #ff5f10;
+  font-family: "Futura Demi C", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: 1.7px;
+  margin-bottom: 14px;
+  text-align: right; }
+  .modal-registr__price .rub {
+    letter-spacing: 0.33px;
+    font-variant: small-caps; }
+
+.modal-registr__wrapper-select {
+  padding-bottom: 9px; }
+
+.modal-registr__select_item {
+  margin-bottom: 13px; }
+
+.modal-registr .selectric .label {
+  margin-left: 0;
+  margin-right: 20px;
+  color: #000000; }
+
+.modal-registr .selectric .button::after {
+  margin-top: 15px;
+  margin-left: 21px; }
+
+.modal-registr__wrapper-text {
+  margin-bottom: 15px; }
+  .modal-registr__wrapper-text input {
+    padding-top: 9px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    border: 1px solid #8c9ba0;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px; }
+    .modal-registr__wrapper-text input:hover {
+      border: 1px solid #c4c4c4; }
+
+.modal-registr__wrapper-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; }
+
+.modal-registr__promo {
+  width: 153px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #8c9ba0;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  text-transform: uppercase; }
+  .modal-registr__promo:hover {
+    background-color: rgba(117, 151, 165, 0.4); }
+
+.modal-registr__submit {
+  margin-left: auto;
+  width: 153px;
+  border: none;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  text-align: center;
+  background-color: #ff5f10;
+  color: #ffffff;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.3px; }
+  .modal-registr__submit:hover {
+    background-color: #ff4005; }
+
 .modal-programm:not(.modal-video) button {
   min-width: auto; }
+
+.modal-programm .modal-dialog {
+  max-width: 323px; }
 
 .modal-programm__content {
   position: relative;
@@ -11310,6 +11493,84 @@ a {
   letter-spacing: 0.3px; }
   .modal-programm__dawnload:hover {
     background-color: #ff4005; }
+
+.modal-table:not(.modal-video) button {
+  min-width: auto; }
+
+.modal-table .modal-dialog {
+  max-width: 1140px; }
+
+.modal-table__content {
+  position: relative;
+  width: 1140px;
+  border: 2px solid #8c9ba0;
+  background-color: #ffffff; }
+
+.modal-table__title {
+  padding-top: 11px;
+  padding-bottom: 7px;
+  background-color: #0d465e;
+  color: #ffffff;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1.65px;
+  text-align: center; }
+
+.modal-table__main {
+  margin-top: -1px;
+  margin-bottom: -2px;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  margin-right: -1px;
+  table-layout: fixed;
+  border-spacing: 0 1px; }
+  .modal-table__main tr {
+    padding-bottom: 1px; }
+  .modal-table__main th {
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.4px; }
+  .modal-table__main th,
+  .modal-table__main td {
+    position: relative;
+    padding: 0;
+    border: 1px solid #8c9ba0;
+    height: 28px; }
+    .modal-table__main th:first-child,
+    .modal-table__main td:first-child {
+      padding-left: 14px; }
+
+.modal-table__date {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  padding-top: 8px;
+  display: block;
+  height: 100%;
+  background-color: #cee3eb;
+  color: #000000;
+  font-family: "Futura Light Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.4px;
+  text-align: center; }
+
+.modal-table__col-first {
+  width: 147px;
+  height: auto;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.4px; }
 
 .close-modal {
   position: absolute;

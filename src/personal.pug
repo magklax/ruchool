@@ -235,6 +235,12 @@ html
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programmModal">
         |Модалка "программа курса"
       </button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrModal">
+        |Модалка "регистрация на курс"
+      </button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tableModal">
+        |Модалка "расписание курса"
+      </button>
 
       <div class="modal fade modal-programm" id="programmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -250,6 +256,161 @@ html
               .modal-programm__wrapper-button
                 button(type="submit").modal-programm__submit Получить на почту
                 a(href="#").modal-programm__dawnload Скачать
+
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="modal fade modal-table" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          .modal-table__content
+            .modal-table__title Расписание курса «Директор по закупкам»
+            table.modal-table__main
+              tr
+                th.modal-table__col-first
+                th Январь
+                th Февраль
+                th Март
+                th Апрель
+                th Май
+                th Июнь
+                th Июль
+                th Август
+                th Сентябрь
+                th Октябрь
+                th Ноябрь
+                th Декабрь
+              tr
+                td(rowspan="2") Москва
+                td
+                  span.modal-table__date(style="left: 0; width: 100%") 17.01—25.01
+                td
+                td
+                td
+                  span.modal-table__date(style="left: 0; width: 240%") 11.04—05.06
+                td
+                td
+                  span.modal-table__date(style="left: 50%; width: 255%") 11.06—05.08
+                td
+                td
+                td
+                td
+                  span.modal-table__date(style="left: 0; width: 150%") 10.10—11.11
+                td
+                td
+              tr
+                td
+                  span.modal-table__date(style="left: 53%; width: 150%") 28.01—07.02
+                td
+                td
+                td
+                td
+                  span.modal-table__date(style="left: 0; width: 100%") 20.05.—25.05
+                td
+                td
+                td
+                td
+                  span.modal-table__date(style="left: 0; width: 100%") 15.09—20.09
+                td
+                td
+                td
+
+              tr
+                td Санкт-Петербург
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+              tr
+                td Краснодар
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+              tr
+                td Пермь
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+              tr
+                td Сочи
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+
+            
+
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="modal fade modal-registr" id="registrModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          .modal-registr__content
+            .modal-registr__title Регистрация на курс
+            .modal-registr__main
+              form.modal-registr__form
+                .modal-registr__row
+                  .modal-registr__col-bg
+                    .modal-registr__title-course Курс «Директор по закупкам»
+                    .modal-registr__text-course Текст  текст текст, Текст текст  текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст текст текст текст... <a href="#"> Подробнее &gt;&gt; </a>
+                  .modal-registr__col-sm
+                    .modal-registr__old-price 56.000 <span class='rub'>руб.</span>
+                    .modal-registr__price 44.000 <span class='rub'>руб.</span>
+                    .modal-registr__wrapper-select
+                      .modal-registr__select_item
+                        select.js-select
+                          option Санкт-Петербург
+                          option Санкт-Петербург
+                          option Санкт-Петербург
+                      .modal-registr__select_item
+                        select.js-select
+                          option Выбрать дату
+                          option Выбрать дату
+                          option Выбрать дату
+                .modal-registr__wrapper-text
+                  input(type="text" placeholder="ФИО")
+                .modal-registr__wrapper-text
+                  input(type="text" placeholder="E-mail")
+                .modal-registr__wrapper-text
+                  input(type="text" placeholder="Телефон")
+                .modal-registr__wrapper-button
+                  a(href="#").modal-registr__promo Промокод
+                  button(type="submit").modal-registr__submit Отправить
 
             <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
         </div>
