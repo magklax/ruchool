@@ -80,7 +80,10 @@ $(document).ready(function() {
     $('a[href="#equipment4"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
         $(function() {
-            $('#equipment4 .scroll-pane').jScrollPane({showArrows: true});
+            $('#equipment4 .scroll-pane').jScrollPane({
+                showArrows: true,
+                contentWidth: '0px'
+            });
         });
     })
 
