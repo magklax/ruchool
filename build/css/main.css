@@ -11845,8 +11845,8 @@ a {
     min-width: 165px;
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
     text-align: center;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -11901,7 +11901,8 @@ a {
   padding-bottom: 35px;
   background-image: url("../images/shadow.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
   .history__title {
     padding-top: 7px;
     padding-bottom: 84px;
@@ -11922,7 +11923,7 @@ a {
       top: 55px;
       width: 100%;
       height: 5px;
-      background-image: url("../images/dot.svg");
+      background-image: url("../images/dot.png");
       background-size: 20px 5px;
       background-repeat: repeat-x; }
   .history__list {
