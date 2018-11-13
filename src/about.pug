@@ -1,0 +1,228 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Аренда аудиторий')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/leo.jpg)")
+      .container
+        .row.justify-content-end
+          .col-md-5
+            +b.about-title 
+              +e.title-top О Русской Школе Управления
+              +e.A.button._tour 3Д-ТУР
+              +e.A.button Скачать презентацию
+
+    +b.SECTION.progress
+      .container
+        +e.TABLE.table
+          tr
+            td
+             +e.item-title 16 лет
+             +e.item-text на рынке <br> бизнес-образования
+            td
+             +e.item-title 100000+ 
+             +e.item-text выпускников
+            td
+             +e.item-title 35
+             +e.item-text направлений <br> обучения
+          tr
+            td
+             +e.item-title 300
+             +e.item-text преподавателей<br>-практиков
+            td
+             +e.item-title 600
+             +e.item-text семинаров <br> и тренингов
+            td
+             +e.item-title 12
+             +e.item-text городов <br> России
+
+    +b.SECTION.history
+      .container
+        +e.title История развития компании
+      +e.line
+        .container
+          +e.list
+            .row
+              .col
+                +e.item
+                  +e.circle 2002
+                  +e.item-title Год<br>создания
+                  +e.item-text 31 июля – день рождения<br>Русской Школы Управления
+              .col
+                +e.item
+                  +e.circle 2003
+                  +e.item-title Mini MBA
+                  +e.item-text Русская Школа Управления стала первой российской<br>бизнес-школой, представившей программу Mini MBA 
+              .col
+                +e.item
+                  +e.circle 2013
+                  +e.item-title ISO 9001
+                  +e.item-text Системе менеджмента качества РШУ присвоен Сертификат соответствия требованиям международного стандарта ISO 9001.
+              .col
+                +e.item
+                  +e.circle 2016
+                  +e.item-title РАБО и ТОП-5 бизнес-школ
+                  +e.item-text Русская Школа Управления вступила в международную ассоциацию AMBA – одну из крупнейших и наиболее престижных международных ассоциаций бизнес-школ в мире.
+              .col
+                +e.item
+                  +e.circle 2018
+                  +e.item-title АМВА
+                  +e.item-text Русская Школа Управления вступила в международную ассоциацию AMBA – одну из крупнейших и наиболее престижных международных ассоциаций бизнес-школ в мире.
+
+    +b.SECTION.awards
+      .container
+        +e.title Сертификаты <span>•</span> награды <span>•</span> аккредитация
+        +e.list    
+          +e.A.item(href="#")
+            +e.teacher-image
+              img(src="http://placehold.it/178x246", alt="")
+          +e.A.item(href="#")
+            +e.teacher-image
+              img(src="http://placehold.it/178x246", alt="")
+          +e.A.item(href="#")
+            +e.teacher-image
+              img(src="http://placehold.it/178x246", alt="")
+          +e.A.item(href="#")
+            +e.teacher-image
+              img(src="http://placehold.it/178x246", alt="")
+          +e.A.item(href="#")
+            +e.teacher-image
+              img(src="http://placehold.it/178x246", alt="")
+
+    +b.SECTION.plus
+      .container
+        +e.title нАШИ ПРЕИМУЩЕСТВА
+        +e.list
+          .row
+            .col-md-3
+              +e.item._license
+                +e.text Лицензия на образовательную деятельность №&nbsp;029045
+            .col-md-3
+              +e.item._format
+                +e.text Множество форматов: очный, вечерний, дистанционный и корпоративный
+            .col-md-3
+              +e.item._top
+                +e.text В пятерке лучших бизнес-школ по версии&nbsp;журнала «Эксперт»
+            .col-md-3
+              +e.item._sertiicate
+                +e.text Международный сертификат качества ISO 9001
+            .col-md-3
+              +e.item._actual
+                +e.text Постоянная&nbsp;актуализация учебных программ
+            .col-md-3
+              +e.item._member
+                +e.text Член РАБО и АМВА
+            .col-md-3
+              +e.item._price
+                +e.text Гибкие цены и регулярные скидки
+            .col-md-3
+              +e.item._document
+                +e.text Документы по итогам&nbsp;обучения
+
+    +b.SECTION.inmedia
+      .container
+        +e.title Школа в сми
+        +e.list
+          +e.wrapper-item
+            +e.item
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом
+          +e.wrapper-item
+            +e.item._even
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Русская школа управления составила портрет современного руководителя
+          +e.wrapper-item
+            +e.item._even
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом айти баланс  и бизнесом айти баланс
+          +e.wrapper-item
+            +e.item
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом  между семьей и бизнесом айти баланс
+          +e.wrapper-item
+            +e.item
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом
+          +e.wrapper-item
+            +e.item._even
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Русская школа управления составила портрет современного руководителя
+          +e.wrapper-item
+            +e.item._even
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом
+          +e.wrapper-item
+            +e.item
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом  между семьей и бизнесом
+          +e.wrapper-item
+            +e.item
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом
+          +e.wrapper-item
+            +e.item._even
+              img(src="http://placehold.it/166x42", alt="")
+              +e.text Как ранние подъемы помогают найти баланс между семьей и бизнесом
+
+    +b.SECTION.tour
+      .container
+        +e.title 3D-тур по Русской Школе Управления
+        +e.slider 
+          img(src="images/test.png", alt="")
+          
+    +b.SECTION.useful
+      .container
+        +e.title Полезное о нас
+        +e.list
+          .row
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-1.jpg", alt="")
+                +e.item-title Условия обучения
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-2.jpg", alt="")
+                +e.item-title Скидки и акции
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="http://placehold.it/230x193", alt="")
+                +e.item-title Сотрудничество
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-3.jpg", alt="")
+                +e.item-title Аренда аудиторий
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-4.jpg", alt="")
+                +e.item-title Реклама в РШУ
+
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-5.jpg", alt="")
+                +e.item-title Информация для СМИ
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="http://placehold.it/230x193", alt="")
+                +e.item-title Сведения об организации
+            .col-md-3
+              +e.A.item(href="#")
+                img(src="images/useful-7.jpg", alt="")
+                +e.item-title Государственные Заказы
+
+
+
+
+    include pug/footer.pug

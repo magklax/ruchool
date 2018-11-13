@@ -84,6 +84,19 @@ $(document).ready(function() {
         });
     })
 
+    $('.awards__list').slick({        
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true
+    });
+    $('.inmedia__list').slick({        
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        slidesPerRow: 1,
+        rows: 2
+    });
+    
     $('.books__list > .row').slick({
         infiniti: true,
         slidesToShow: 5,
