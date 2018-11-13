@@ -80,13 +80,26 @@ $(document).ready(function() {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
         $(function() {
-            $('#equipment4 .scroll-pane').jScrollPane({
+            $('.course__feedback-list').jScrollPane({
                 showArrows: true,
                 contentWidth: '0px'
             });
         });
     })
 
+    $('.awards__list').slick({        
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true
+    });
+    $('.inmedia__list').slick({        
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        slidesPerRow: 1,
+        rows: 2
+    });
+    
     $('.books__list > .row').slick({
         infiniti: true,
         slidesToShow: 5,

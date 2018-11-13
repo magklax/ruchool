@@ -468,6 +468,18 @@
       padding-right: 5px;
       border: 1px solid #8c9ba0;
     }
+    // фикс для слика с бутстрап табами
+    .tab-content > .tab-pane, 
+    .pill-content > .pill-pane {
+      display: block;    /* undo display:none          */
+      height: 0;         /* height:0 is also invisible */ 
+      overflow: hidden;  /* no-overflow                */
+    }
+    .tab-content > .active, 
+    .pill-content > .active {
+        height: auto;      /* let the content decide it  */
+    } 
+    // конец фикса
   }
   &__incost-list {
     margin-right: 20px;
