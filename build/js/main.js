@@ -77,7 +77,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: true
     });
-    $('a[href="#equipment4"]').on('shown.bs.tab', function (e) {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         $(window).trigger('resize');
         $(function() {
             $('#equipment4 .scroll-pane').jScrollPane({
