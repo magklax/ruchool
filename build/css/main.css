@@ -10254,6 +10254,18 @@ a {
     padding-left: 34px;
     padding-right: 5px;
     border: 1px solid #8c9ba0; }
+  .course__equipment .tab-content > .tab-pane,
+  .course__equipment .pill-content > .pill-pane {
+    display: block;
+    /* undo display:none          */
+    height: 0;
+    /* height:0 is also invisible */
+    overflow: hidden;
+    /* no-overflow                */ }
+  .course__equipment .tab-content > .active,
+  .course__equipment .pill-content > .active {
+    height: auto;
+    /* let the content decide it  */ }
   .course__incost-list {
     margin-right: 20px;
     margin-left: 28px;
