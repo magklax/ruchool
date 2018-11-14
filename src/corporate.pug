@@ -1,0 +1,126 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Аренда аудиторий')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.main-section--owl.pb-0.header-section(style="background-image: url(images/corporate.jpg)")
+      .container
+        +b.corporate-title
+          +e.text Корпоративное обучение
+
+    +b.SECTION.proposal
+      .container
+        +e.title Заголовок
+        +e.text
+          <p>Корпоративный формат создан для обучения группы сотрудников одной компании с учетом стоящих перед ними задач. Участники занимаются по специальной программе, тонко настроенной под интересы руководства и потребности бизнеса.</p>
+          <p>Консультанты Русской Школы Управления выявляют проблемные моменты и вместе с опытными бизнес-тренерами прорабатывают программу курса. В итоге компания получает профессиональную и сплоченную команду, мотивированную на достижение поставленных целей</p>
+        +e.FORM.form
+          +e.subtitle Оставить заявку:
+          .row
+            .col-md-6
+              +e.INPUT.input-text(type="text" placeholder="ФИО")
+              +e.INPUT.input-text(type="text" placeholder="Телефон:")
+              +e.INPUT.input-text(type="text" placeholder="E-mail:")
+            .col-md-6
+              +e.TEXTAREA.input-text._textarea(placeholder="Краткое описание заявки")
+          +e.politic Нажимая кнопку «Отправить запрос» я даю согласие НП ДПО ЦПК «Русская Школа Управления» и лицам, действующим по его поручению, на обработку моих персональных данных в соответствии с <a href="#">Политикой</a>.
+          +e.INPUT.button(type="submit" value="Отправить")
+        +e.bottom Или позвоните нам по номеру  
+          a(href="tel:+78001000203") 8 800 100 02 03
+
+    +b.SECTION.about-corporate
+      .container
+        .row.justify-content-end
+          .col-md-6
+            +e.wrapper-content
+              +e.title Корпоративное обучение — это
+              +e.UL.list
+                li Аудит работы сотрудников и разработка плана обучения
+                li Индивидуальный подбор программ обучения
+                li Адаптация программ обучения под специфику компании 
+                li Подбор опытного бизнес-тренера
+                li Посттренинговая поддержка
+
+    +b.SECTION.advantage-corporate
+      .container
+        +e.title Что вы получите
+        .row
+          .col-md-4
+            +e.item Практические инструменты<br> для решения конкретных задач
+          .col-md-4
+            +e.item Сплоченную и профессиональную команду
+          .col-md-4
+            +e.item Высокую лояльность<br> и мотивацию сотрудников
+
+    +b.SECTION.detals
+      .container
+        .row
+          .col-md-6
+            +e.wrapper-content
+              +e.title Мы проводим корпоративное обучение
+              +e.UL.list
+                li На любой удобной площадке
+                li В рабочие и выходные дни
+                li Очно и дистанционно
+
+    +b.SECTION.wherefore
+      .container
+        +e.title Почему выбирают русскую школу управления
+        +e.wrapper
+          +e.TABLE.table
+            tr
+              td
+                +e.item
+                  +e.item-title 16 лет
+                  +e.item-text на рынке <br> бизнес-образования
+              td
+                +e.item
+                  +e.item-title 300
+                  +e.item-text преподавателей<br>-практиков
+              td
+                +e.item
+                  +e.item-title 35
+                  +e.item-text направлений <br> обучения
+            tr
+              td
+                +e.item-text._middle Единый образовательный стандарт
+              td
+                +e.item-text._middle Индивидуальный подход
+              td
+                +e.item-text._middle Обучение<br>в любом городе<br>РФ и СНГ
+
+    +b.SECTION.totals
+      .container
+        .row.justify-content-end
+          .col-md-6
+            +e.wrapper-content
+              +e.title Итоги за последний год
+              +e.UL.list
+                .row
+                  .col-md-4
+                    +e.item
+                      +e.item-title 84
+                      +e.item-text компаний обучилось
+                  .col-md-4
+                    +e.item
+                      +e.item-title 37
+                      +e.item-text городов России
+                  .col-md-4
+                    +e.item    
+                      +e.item-title 12
+                      +e.item-text корпоративных Mini MBA
+
+    include pug/footer.pug

@@ -1,0 +1,459 @@
+.corporate-title {
+  &__text {
+    margin-top: -9px;
+    margin-bottom: 75px;
+    color: #ffffff;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 1;
+    font-variant: small-caps;
+    letter-spacing: 1.67px;
+    text-align: center;
+  }
+}
+
+.proposal {
+  padding-top: 49px;
+  padding-bottom: 60px;
+  &__title {
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+    &::after {
+      @include s-title-line;
+      margin-top: 33px;
+      margin-bottom: 49px;
+    }
+  }
+  &__text {
+    p {
+      margin: 0;
+      margin-left: -2px;
+      padding-bottom: 29px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0px;
+    }
+  }
+  &__subtitle  {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+  &__input-text {
+    margin-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-right: 5px;
+    width: 100%;
+    border: 1px solid #8c9ba0;
+    color: rgba(#000000, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    &_textarea {
+      resize: none;
+      height: 135px;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(#8c9ba0, 0.6);
+    }
+  }
+  &__politic {
+    padding-top: 9px;
+    padding-bottom: 37px;
+    line-height: 1.2;
+    color: rgba(#000000, 0.5);
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.33px;
+    text-align: center;
+    a {
+      color: rgba(#000000, 0.5);
+      text-decoration: underline;
+      &:hover {
+        color: rgba(#000000, 1);
+      }
+    }
+  }
+  &__button {
+    cursor: pointer;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    width: 165px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #ff5f10;
+    color: #ffffff;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    &:hover {
+      background-color: #ff4005;
+    }
+  }
+  &__bottom {
+    margin-right: 16px;
+    padding-top: 39px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: center;
+     a {
+       font-size: 22px;
+       letter-spacing: 0.55px;
+     }
+  }
+}
+
+.about-corporate {
+  padding: 0;
+  background-color: #edf2f3;
+  .container {
+    position: relative;
+    &::after {
+      content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -375px;
+        width: 958px;
+
+        background-image: url("../images/corporate-about.jpg");
+        background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    padding-top: 62px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-variant: small-caps;
+    letter-spacing: 0.6px;
+    &::after {
+      @include s-title-line;
+      margin-left: 0;
+      margin-top: 21px;
+      margin-bottom: 35px;
+    }
+  }
+  &__wrapper-content {
+    position: relative;
+    z-index: 3;
+    margin-left: 36px;
+    margin-bottom: 45px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      padding-bottom: 22px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.41px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 7px;
+        width: 6px;
+        height: 6px;
+        background-color: #003b5e;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.advantage-corporate {
+  padding: 0;
+  padding-bottom: 49px;
+  &__title {
+    padding-top: 67px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-align: center;
+    &::after {
+      @include s-title-line;
+      margin-top: 34px;
+      margin-bottom: 30px;
+    }
+  }
+  .col-md-4 {
+    &:nth-child(3n+1) {
+      .advantage-corporate__item {
+        margin-right: 23%;
+      }
+    }
+    &:nth-child(3n) {
+      .advantage-corporate__item {
+        margin-left: 32%;
+      }
+    }
+    
+  }
+  &__item {
+    padding-top: 102px;
+    position: relative;
+    text-align: center;
+    color: #000000;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    font-variant: small-caps;
+    letter-spacing: 0.6px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -35px;
+      width: 70px;
+      height: 70px;
+      background-image: url("../images/done.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.detals {
+  position: relative;
+  padding: 0;
+  background-color: #edf2f3;
+  &::after {
+    content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 1;
+     width: 50%;
+     background-image: url("../images/detals.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  &__title {
+    padding-top: 66px;
+    margin-left: -2px;
+
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 400;
+    font-variant: small-caps;
+    &::after {
+      @include s-title-line;
+      margin-left: 0;
+      margin-top: 32px;
+      margin-bottom: 35px;
+    }
+  }
+  &__list {
+    margin: 0;
+    margin-left: -3px;
+    margin-bottom: 83px;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      padding-bottom: 22px;
+      color: #000000;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.41px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 7px;
+        width: 6px;
+        height: 6px;
+        background-color: #003b5e;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.wherefore {
+  padding: 0;
+  padding-bottom: 67px;
+  &__title {
+    padding-top: 68px;
+    padding-bottom: 64px;
+    color: #4e5c62;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-align: center;
+  }
+  &__wrapper {
+    margin-left: 54px;
+    margin-right: 49px;
+  }
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse; 
+    border: 2px solid #ffffff; 
+
+    th, td {
+      vertical-align: middle;
+      padding: 0;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 26px;
+      border: 1px solid #829ca7;
+      text-align: center; 
+    }
+  }
+  &__item {
+    min-height: 143px;
+  }
+  &__item-title {
+    padding-top: 21px;
+    padding-bottom: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #03aab9;
+    font-family: "Futura Light Light", Arial, sans-serif;
+    font-size: 82px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1.15px;
+  }
+  &__item-text {
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.27px;
+    &_middle {
+      padding-top: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      line-height: 1.6;
+    }
+  }
+}
+
+.totals {
+  margin-bottom: -49px;
+  padding: 0;
+  background-color: #f3f3f3;
+  .container {
+    position: relative;
+    &::after {
+      content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -184px;
+        width: 768px;
+
+        background-image: url("../images/chest.jpg");
+        background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    padding-top: 71px;
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    font-variant: small-caps;
+    letter-spacing: 0.6px;
+    &::after {
+      @include s-title-line;
+      margin-left: 0;
+      margin-top: 32px;
+      margin-bottom: 55px;
+    }
+  }
+  &__wrapper-content {
+    margin-left: -14px;
+    position: relative;
+    z-index: 3;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-bottom: 61px;
+    width: 82%;
+  }
+  &__item-title {
+    margin-left: -6px;
+    color: #ff5400;
+    font-family: "Futura Light Light", Arial, sans-serif;
+    font-size: 82px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+  &__item-text {
+    margin-top: -2px;
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+}
