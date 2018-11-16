@@ -335,4 +335,18 @@ if ($(".course-registry")) {
     });
 }
 
+var workshopItem = $(".workshop__item");
 
+workshopItem.on("click", function(event) {
+    event.preventDefault();
+    if ($(this).hasClass("workshop__item_active")) {
+        workshopItem.siblings(".workshop__sublist").fadeOut();
+        $(this).removeClass("workshop__item_active");
+    } else {
+        workshopItem.removeClass("workshop__item_active");
+        workshopItem.siblings(".workshop__sublist").fadeOut();
+        $(this).siblings(".workshop__sublist").fadeIn();
+        $(this).addClass("workshop__item_active");
+        
+    }
+});
