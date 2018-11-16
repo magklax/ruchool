@@ -12817,3 +12817,221 @@ a {
     text-align: center; }
     .reviews__more:hover {
       border: 1px solid #DDD; }
+
+.workshop {
+  margin-bottom: -70px;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 65px; }
+  .workshop__list {
+    padding-bottom: 9px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 29px;
+    background-color: rgba(205, 225, 231, 0.25); }
+    .workshop__list > .row [class^='col']:nth-child(4n+2) .workshop__sublist {
+      left: -100%; }
+    .workshop__list > .row [class^='col']:nth-child(4n+3) .workshop__sublist {
+      left: -200%; }
+    .workshop__list > .row [class^='col']:nth-child(4n) .workshop__sublist {
+      left: -300%; }
+    .workshop__list > .row [class^='col']:last-child {
+      margin-bottom: 15px; }
+  .workshop__item-title {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 0px;
+    color: #235469;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1;
+    font-variant: small-caps;
+    letter-spacing: 0.56px;
+    text-align: center; }
+  .workshop__sublist {
+    width: calc(400% - 30px);
+    z-index: 888;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 5px);
+    -webkit-column-count: 4;
+            column-count: 4;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    margin-left: 15px;
+    list-style: none;
+    background-color: #d1f5fd;
+    border: 1px solid #235469; }
+    .workshop__sublist li {
+      padding-left: 10px;
+      padding-right: 2px;
+      color: #323232;
+      font-family: "Futura Book C", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400; }
+      .workshop__sublist li::before {
+        content: "•"; }
+    .workshop__sublist li:nth-child(even) {
+      background-color: #b6d4db; }
+  .workshop__item {
+    position: relative;
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+    height: 111px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #cde1e7;
+    border: 1px solid #cde1e7; }
+    .workshop__item:hover {
+      border: 1px solid #235469;
+      border-bottom-color: #235469;
+      background-color: #d1f5fd; }
+    .workshop__item_active {
+      z-index: 999;
+      border-top-color: #235469;
+      border-left-color: #235469;
+      border-right-color: #235469;
+      border-bottom-color: #d1f5fd;
+      background-color: #d1f5fd; }
+      .workshop__item_active:hover {
+        border-bottom-color: #d1f5fd; }
+    .workshop__item::before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      background-repeat: no-repeat; }
+    .workshop__item_c1::before {
+      margin-left: -22px;
+      width: 44px;
+      height: 46px;
+      background-image: url("../images/c1.png"); }
+    .workshop__item_c2::before {
+      margin-left: -16px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../images/c2.png"); }
+    .workshop__item_c3::before {
+      margin-left: -18px;
+      width: 36px;
+      height: 33px;
+      background-image: url("../images/c3.png"); }
+    .workshop__item_c4::before {
+      margin-left: -21px;
+      width: 43px;
+      height: 43px;
+      background-image: url("../images/c4.png"); }
+    .workshop__item_c5::before {
+      margin-left: -24px;
+      width: 48px;
+      height: 44px;
+      background-image: url("../images/c5.png"); }
+    .workshop__item_c6::before {
+      margin-left: -17px;
+      width: 35px;
+      height: 40px;
+      background-image: url("../images/c6.png"); }
+    .workshop__item_c7::before {
+      margin-left: -24px;
+      width: 49px;
+      height: 42px;
+      background-image: url("../images/c7.png"); }
+    .workshop__item_c8::before {
+      margin-left: -21px;
+      width: 42px;
+      height: 42px;
+      background-image: url("../images/c8.png"); }
+    .workshop__item_c9::before {
+      top: 27px;
+      margin: -16px;
+      width: 32px;
+      height: 46px;
+      background-image: url("../images/c9.png"); }
+    .workshop__item_c10::before {
+      margin-left: -20px;
+      width: 41px;
+      height: 41px;
+      background-image: url("../images/c10.png"); }
+    .workshop__item_c11::before {
+      margin-left: -27px;
+      width: 53px;
+      height: 36px;
+      background-image: url("../images/c11.png"); }
+    .workshop__item_c12::before {
+      margin-left: -23px;
+      width: 57px;
+      height: 48px;
+      background-image: url("../images/c12.png"); }
+    .workshop__item_c13::before {
+      margin-left: -19px;
+      width: 38px;
+      height: 39px;
+      background-image: url("../images/c13.png"); }
+    .workshop__item_c14::before {
+      margin-left: -20px;
+      width: 40px;
+      height: 51px;
+      background-image: url("../images/c14.png"); }
+    .workshop__item_c15::before {
+      margin-left: -19px;
+      width: 39px;
+      height: 47px;
+      background-image: url("../images/c15.png"); }
+    .workshop__item_c16::before {
+      margin-left: -23px;
+      width: 46px;
+      height: 47px;
+      background-image: url("../images/c16.png"); }
+    .workshop__item_c17::before {
+      margin-left: -22px;
+      width: 43px;
+      height: 43px;
+      background-image: url("../images/c17.png"); }
+    .workshop__item_c18::before {
+      margin-left: -18px;
+      width: 37px;
+      height: 39px;
+      background-image: url("../images/c18.png"); }
+    .workshop__item_c19::before {
+      margin-left: -21px;
+      width: 42px;
+      height: 37px;
+      background-image: url("../images/c19.png"); }
+    .workshop__item_c20::before {
+      margin-left: -23px;
+      width: 56px;
+      height: 45px;
+      background-image: url("../images/c20.png"); }
+    .workshop__item_c21::before {
+      margin-left: -19px;
+      width: 39px;
+      height: 39px;
+      background-image: url("../images/c21.png"); }
+    .workshop__item_c22::before {
+      margin-left: -8px;
+      width: 16px;
+      height: 33px;
+      background-image: url("../images/c22.png"); }
+    .workshop__item_c23::before {
+      margin-left: -17px;
+      width: 35px;
+      height: 38px;
+      background-image: url("../images/c23.png"); }
+    .workshop__item_c24::before {
+      margin-left: -20px;
+      width: 40px;
+      height: 36px;
+      background-image: url("../images/c24.png"); }
