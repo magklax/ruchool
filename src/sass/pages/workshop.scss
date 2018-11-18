@@ -99,6 +99,7 @@
       background-color: #d1f5fd;
     }
     &_active {
+      position: relative;
       z-index: 999;
       border-top-color: #235469;
       border-left-color: #235469;
@@ -107,6 +108,17 @@
       background-color: #d1f5fd;
       &:hover {
         border-bottom-color: #d1f5fd;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1000;
+        left: 50%;
+        bottom: -1px;
+        height: 1px;
+        width: 70%;
+        margin-left: -35%;
+        background-color: #235469;
       }
       & + .workshop__sublist {
         // display: block;
