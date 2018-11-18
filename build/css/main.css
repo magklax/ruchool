@@ -13035,3 +13035,162 @@ a {
       width: 40px;
       height: 36px;
       background-image: url("../images/c24.png"); }
+
+.tech-list__title {
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.06;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+  text-align: center; }
+  .tech-list__title::after {
+    content: "";
+    background: #86a3ae;
+    width: 195px;
+    height: 1px;
+    margin: 42px auto 66px;
+    display: block;
+    margin-bottom: 47px; }
+
+.tech-list__text {
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.06;
+  margin-bottom: 34px; }
+  .tech-list__text p {
+    margin-bottom: 24px; }
+
+.tech-list__form-title {
+  color: #000000;
+  font-family: "Futura Demi C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.06;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px; }
+
+.tech-list__group {
+  position: relative;
+  width: 301px; }
+
+.tech-list__control {
+  border: 1px solid #86a3ae;
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding: 7px 12px;
+  padding-right: 40px;
+  width: 100%; }
+
+.tech-list__btn {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../images/searh.png);
+  background-size: cover;
+  display: inline-block;
+  border: none;
+  z-index: 2; }
+
+.tech-list__search-form {
+  margin-bottom: 20px; }
+
+.tech-list__tag-list {
+  -webkit-column-count: 5;
+          column-count: 5;
+  -webkit-column-gap: 3;
+          column-gap: 3;
+  border-bottom: 1px solid #86a3ae;
+  padding-bottom: 20px;
+  margin-bottom: 43px; }
+
+.tech-list__tag-item {
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 0.75;
+  font-variant: small-caps;
+  color: #093a4f;
+  letter-spacing: -0.28px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 11px 18px;
+  padding-right: 5px;
+  margin-bottom: 3px;
+  transition: 0.2s; }
+  .tech-list__tag-item_active {
+    color: #0081cb;
+    border: 1px solid #86a3ae; }
+  .tech-list__tag-item:hover {
+    border: 1px solid rgba(134, 163, 174, 0.4); }
+
+.tech-list__card-list .row > div {
+  margin-bottom: 30px; }
+
+.tech-list__card {
+  display: block;
+  height: 100%;
+  background-color: #edf2f3;
+  padding: 23px 23px 20px; }
+
+.tech-list__name {
+  color: #093a4f;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.26;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: block;
+  margin-left: 12px;
+  margin-bottom: 7px; }
+
+.tech-list__img {
+  border: 6px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-bottom: 14px; }
+  .tech-list__img img {
+    max-height: 100%; }
+
+.tech-list__skill-list {
+  color: #000000;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 11px; }
+  .tech-list__skill-list li {
+    display: flex;
+    margin-bottom: 5px; }
+    .tech-list__skill-list li:before {
+      content: '';
+      margin-top: 0.4em;
+      width: 6px;
+      height: 6px;
+      background-color: #003b5e;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-right: 14px; }
+
+.personal-main__bottom_teach {
+  padding: 0;
+  margin-top: 22px; }

@@ -1,0 +1,227 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Преподаватели')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+      .main-section__left-bar 
+
+        .main-section__left-item 
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')   
+        .main-section__left-item 
+          img(src='images/calendar-white.png' alt='')       
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-close           
+      .main-section__right-bar 
+        .main-section__right-item 
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')       
+          .main-section__right-text Подписаться      
+      .container
+        .pagetitle.pagetitle--order Преподаватели
+    +b.SECTION.tech-list 
+      .container
+        +e.title Наши преподаватели
+        +e.text 
+          p В Русской Школе Управления преподают более 300 высококлассных экспертов-практиков, представляющих различные отрасли бизнеса. 
+          p Все они имеют опыт реализации собственных проектов и работы на руководящих должностях, поэтому дают только проверенные знания и навыки, позволяющие добиваться реальных результатов.
+        +e.search-form 
+          form(action="")
+            +e.form-title Преподаватели по Направлениям:
+            +e.group
+              +e.INPUT.control(type='text' placeholder="ФИО преподавателя")
+              +e.BUTTON.btn 
+        +e.tag-list 
+          +e.A.tag-item._active(href='#') PR и реклама
+          +e.A.tag-item(href='#') Маркетинг
+          +e.A.tag-item(href='#') Производство
+          +e.A.tag-item(href='#') Право
+          +e.A.tag-item(href='#') Продажи
+          +e.A.tag-item(href='#') Сфера услуг
+          +e.A.tag-item(href='#') Торговля Ритейл
+          +e.A.tag-item(href='#') Офис АХО Сервис
+          +e.A.tag-item(href='#') Общее управление
+          +e.A.tag-item(href='#') ЖКХ
+          +e.A.tag-item(href='#') ИТ
+          +e.A.tag-item(href='#') ВЭД
+          +e.A.tag-item(href='#') Конкурсы и Тендеры
+          +e.A.tag-item(href='#') Безопасность
+          +e.A.tag-item(href='#') Процессы и качество
+          +e.A.tag-item(href='#') Логистика Снабжение
+          +e.A.tag-item(href='#') Органмзация обучения (T&D)
+          +e.A.tag-item(href='#') Стратегия Проекты Инновации
+          +e.A.tag-item(href='#') Коммерческая недвижимость
+          +e.A.tag-item(href='#') Строительство Девелопмент
+          +e.A.tag-item(href='#') Финансы Экономика Бухгалтерия
+          
+        +e.card-list 
+          .row 
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p1.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p2.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                 
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p3.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p4.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей            
+          
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p1.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p2.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p3.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p4.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей            
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p1.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p2.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p3.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+            .col-md-3
+              +e.A.card(href='#')
+                +e.name Авраменко <br>Андрей Геннадьевич
+                +e.img 
+                  img(src="images/p4.jpg", alt="")
+                +e.UL.skill-list 
+                  li Интернет-маркетинг и интернет-реклама, ориентированные на продажи
+                  li Аналитика в маркетинге
+                  li SMM
+                  li Маркетинг в медицине
+                  li Продвижение клиник и персональных брендов врачей
+      .container
+        .personal-main__bottom.personal-main__bottom_teach
+          a.personal-main__more Показать еще
+          .personal-main__wrapper-select
+            .personal-main__select.personal-main__select_item
+              select.js-select
+                option Показывать по 10
+                option Показывать по 20
+                option Показывать по 30
+
+  
+                  
+    include pug/footer.pug
