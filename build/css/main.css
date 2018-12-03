@@ -5252,7 +5252,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
   overflow-y: scroll; }
   @media (min-width: 992px) {
@@ -13205,3 +13205,166 @@ a {
 .personal-main__bottom_teach {
   padding: 0;
   margin-top: 22px; }
+
+.tech-item {
+  border-bottom: 1px solid #86a3ae;
+  padding-bottom: 24px;
+  margin-bottom: 10px; }
+  .tech-item__title {
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .tech-item__card {
+    background-color: #edf2f3;
+    padding: 18px 18px 10px;
+    margin-bottom: 39px; }
+  .tech-item__title2 {
+    color: #4e5c62;
+    font-family: "Futura Medium C", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.06;
+    font-variant: small-caps;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px; }
+    .tech-item__title2_big::after {
+      content: "";
+      background: #86a3ae;
+      width: 195px;
+      height: 1px;
+      margin: 42px auto 66px;
+      display: block;
+      margin: 20px 0 24px; }
+  .tech-item__text {
+    color: #000000;
+    font-family: "Futura Book C", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 31px; }
+    .tech-item__text p {
+      margin-bottom: 14px; }
+    .tech-item__text ul {
+      padding: 0;
+      margin: 0;
+      padding-left: 2px;
+      margin-top: 18px; }
+      .tech-item__text ul li {
+        display: flex;
+        margin-bottom: 5px; }
+        .tech-item__text ul li:before {
+          content: '';
+          margin-top: 0.4em;
+          width: 5px;
+          height: 5px;
+          background-color: #003b5e;
+          border-radius: 50%;
+          flex-shrink: 0;
+          margin-right: 14px; }
+  .tech-item__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .tech-item__photo img {
+      max-height: 100%;
+      border: 11px solid white; }
+  .tech-item__body {
+    margin-top: 15px;
+    margin-left: 15px; }
+
+.lego-result__group-title_teach-item {
+  margin-left: 0;
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.06;
+  font-variant: small-caps;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  margin-bottom: 28px; }
+
+.lego-result__img-col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 19.16667%;
+  max-width: 19.16667%; }
+  @media (min-width: 576px) {
+    .lego-result__img-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .lego-result__img-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .lego-result__img-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1250px) {
+    .lego-result__img-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.lego-result__main-col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+  @media (min-width: 576px) {
+    .lego-result__main-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .lego-result__main-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .lego-result__main-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1250px) {
+    .lego-result__main-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.lego-result__right-col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 20%;
+  max-width: 20%; }
+  @media (min-width: 576px) {
+    .lego-result__right-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .lego-result__right-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .lego-result__right-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1250px) {
+    .lego-result__right-col {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.personal-main__bottom_teach-item {
+  padding: 0;
+  margin-top: -30px; }

@@ -1,0 +1,175 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Преподаватель')
+    include pug/styles.pug
+    meta(http-equiv='Cache-Control', content='public')
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
+      .main-section__left-bar 
+
+        .main-section__left-item 
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')   
+        .main-section__left-item 
+          img(src='images/calendar-white.png' alt='')       
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей        
+        .main-section__left-close           
+      .main-section__right-bar 
+        .main-section__right-item 
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')       
+          .main-section__right-text Подписаться      
+      .container
+        .pagetitle.pagetitle--order Преподаватели
+    div.bread-crumps
+      .container
+          
+              div.bread-crumps
+                a.bread-crumps-link1(href='#') 
+                  | Главная
+                a.bread-crumps-link1(href='#') 
+                  | Преподаватели
+                a.bread-crumps-link1
+                  | Авраменко Андрей Геннадьевич
+    .container
+      +b.SECTION.tech-item 
+      
+        +e.title Авраменко Андрей Геннадьевич
+        +e.card 
+          .row 
+            .col-md-4 
+              +e.photo 
+                img(src="images/teacher.jpg", alt="")
+            .col-md-8 
+              +e.body 
+                +e.title2._big Сфера профессиональных интересов:
+                +e.text Эксперт в области интернет-маркетинга, автоматизации бизнес-процессов и IT. Заместитель генерального директора институт красоты «СПИКА» (Санкт-Петербург). В зону ответственности входит руководство службами IT и коммуникаций, маркетинга и рекламы, реализация специальных рекламных проектов и продвижение персональных брендов врачей-косметологов и пластических хирургов, др.
+                  ul 
+                    li Интернет-маркетинг и интернет-реклама, ориентированные на продажи;
+                    li  Аналитика в маркетинге;
+                    li SMM;
+                    li Маркетинг в медицине;
+                    li Продвижение клиник и персональных брендов врачей.
+        +e.title2 Практическая деятельность
+        +e.text 
+          p Опыт работы с 2000 года, прошёл карьерный путь от сотрудника технической поддержки крупного интернет-провайдера до заместителя генерального директора. Работал в производственных, логистических, строительных, торговых компаниях («Русский Стандарт Водка», «Усть-Луга», Евросиб, DigitalSecurity, Lanck-Интернет, А.Д.Мастер, др.).
+          p С 2008 года по настоящее время заместитель генерального директора крупного медицинского холдинга, в зону ответственности входит управление информационными технологиями, автоматизация бизнес-процессов, блок маркетинга, рекламы и PR.
+          p Имеет ряд успешно реализованных проектов в сфере автоматизации бизнес-процессов, внедрения корпоративных информационных систем (ERP SAP и 1С, WMS), разработке программных продуктов, продвижения брендов.
+          p Спикер специализированных конференций по маркетингу и рекламе, крупных медицинских конгрессов.
+        +e.title2 Образование, повышение квалификации, научные стажировки
+        +e.text 
+          p С отличием окончил Санкт-Петербургский государственный электротехнический университет им.В.И.Ленина (ЛЭТИ) по специальности «Автоматизированные системы обработки информации и управления»
+          p Санкт-Петербургский государственный электротехнический университет им.В.И.Ленина (ЛЭТИ), аспирантура по специальности «Системный анализ и обработка информации».
+          p Санкт-Петербургский институт информатики и автоматизации РАН, курс «Управление программным проектом».
+          p International Academy of Advance Education/The IAAE School of Business (Saint-Petersburg – Boston, USA), профессиональная переподготовка по программе «Корпоративный информационный менеджмент», квалификация «Директор по информационным технологиям» (CIO – Chief Information Officer).
+          p Русская Школа Управления, повышение квалификации по курсу «Директор по маркетингу».
+          p Семинары и конференции по маркетингу и рекламе: «Суровый Питерский SMM», «Найди свой трафик», «Интернет-маркетинг по делу», пр.
+          p Программа «Для руководителей, главных врачей и косметологов-предпринимателей по нормативно-правовому регулированию, бизнес-компетенциям и бизнес-коммуникациям» в рамках VI Национального Конгресса «Пластическая хирургия, эстетическая медицина и косметология».
+        +e.title2 Основные публикации
+        +e.text 
+          p – 5 мифов в медицинском интернет-маркетинге
+          p – Портал COSSA.RU Принципы работы сквозной аналитики в медицине
+          p – Журнал «Директор клиники»
+          p – Федеральный закон «О рекламе» и основные аспекты медицинской рекламы»
+          p – Журнал «Директор клиники».
+
+  
+      section.lego-result.lego-result_course-page
+        .lego-result__group 
+          .lego-result__group-title.lego-result__group-title_teach-item Список семинаров преподавателя
+          .lego-result__list
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .lego-result__img-col
+                  .lego-result__wrapper-image
+                    a(href='#')
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                .lego-result__main-col
+                  .lego-result__col-text
+                    .lego-result__status очно (5 дней)
+                    a(href='#').lego-result__name Главный бухгалтер
+                    .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                    .lego-result__dates Продолжительность: 12 дней (90 часов)
+                .lego-result__right-col
+                  .lego-result__price-col 
+                    .lego-result__old-price 55.000 <span class='rub'>руб.</span>
+                    .lego-result__price 45.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Подробнее
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item Санкт-Петербург
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Екатеринбург
+              .row 
+                .lego-result__img-col
+                  .lego-result__wrapper-image
+                    a(href='#')
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                .lego-result__main-col
+                  .lego-result__col-text
+                    .lego-result__status онлайн (5 дней)
+                    a(href='#').lego-result__name Юрист
+                    .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                    .lego-result__dates Продолжительность: 12 дней (90 часов)
+                .lego-result__right-col
+                  .lego-result__price-col 
+                    .lego-result__old-price 52.000 <span class='rub'>руб.</span>
+                    .lego-result__price 41.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Подробнее
+            .lego-result__item 
+              .lego-result__sity-toggle
+                a(href='').lego-result__sity-item Москва
+                a(href='').lego-result__sity-item.lego-result__sity-item--current Санкт-Петербург
+                a(href='').lego-result__sity-item Екатеринбург
+              .row 
+                .lego-result__img-col
+                  .lego-result__wrapper-image
+                    a(href='#')
+                      img(src='http://placehold.it/174x136' alt='').lego-result__img
+                .lego-result__main-col
+                  .lego-result__col-text
+                    .lego-result__status ОНЛАЙН (10 дней - модули по 5 дней с перерывом)
+                    a(href='#').lego-result__name ДИРЕКТОР ПО ЛОГИСТИКЕ
+                    .lego-result__text Текст текст текст, текст текст, текст текст, текст текст, Текст текст текст, текст текст, текст текст, текст текст,  текст текст, текст текст, текст текст, текст текст... 
+                    .lego-result__dates Продолжительность: 12 дней (90 часов)
+                .lego-result__right-col
+                  .lego-result__price-col 
+                    .lego-result__old-price 45.000 <span class='rub'>руб.</span>
+                    .lego-result__price 35.000 <span class='rub'>руб.</span>
+                    a(href='#').lego-result__one-click Подробнее
+      .personal-main__bottom.personal-main__bottom_teach-item
+          a.personal-main__more Показать еще
+          .personal-main__wrapper-select
+            .personal-main__select.personal-main__select_item
+              select.js-select
+                option Показывать по 10
+                option Показывать по 20
+                option Показывать по 30            
+    include pug/footer.pug
