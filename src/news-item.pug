@@ -1,13 +1,14 @@
 include pug/project-settings.pug
 include pug/mixins/mixins.pug
 include pug/mixins/bemto.pug
+
 doctype html
 html
   head(lang="en")
     include pug/metatags.pug
-    +title('Новости')
+    +title("Следите за новостями РШУ")
     include pug/styles.pug
-    meta(http-equiv='Cache-Control', content='public')
+    meta(http-equiv="Cache-Control", content="public")
 
   body
     // векторный спрайт
@@ -15,45 +16,71 @@ html
     // векторный спрайт конец
 
     include pug/header.pug
-    section.main-section.pb-0(style='background-image: url(images/main.jpg)')
-      .main-section__left-bar 
-
-        .main-section__left-item 
-          img(src='images/like.png' alt='')
-        .main-section__left-item.main-section__left-item--mb
-          img(src='images/calendar.png' alt='')   
-        .main-section__left-item 
-          img(src='images/calendar-white.png' alt='')       
-        .main-section__left-day 15 авг
-          .main-section__left-hidden День открытых дверей
-        .main-section__left-day 16 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 17 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 18 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-day 19 авг
-          .main-section__left-hidden День открытых дверей        
-        .main-section__left-close           
-      .main-section__right-bar 
-        .main-section__right-item 
-          img(src='images/tel.png' alt='')
-          .main-section__right-text консультация
-        .main-section__right-item.main-section__left-item--mb
-          img(src='images/mail.png' alt='')       
-          .main-section__right-text Подписаться      
-      .container
-        .pagetitle.pagetitle--order Преподаватели
-    div.bread-crumps
-      .container
-          
-              div.bread-crumps
-                a.bread-crumps-link1(href='#') 
+    +b.news
+      +e.SECTION.main-section.pb-0(style="background-image: url(images/cat.jpg)")
+        .main-section__left-bar
+          .main-section__left-item
+            img(src='images/like.png' alt='')
+          .main-section__left-item.main-section__left-item--mb
+            img(src='images/calendar.png' alt='')
+          .main-section__left-item
+            img(src='images/calendar-white.png' alt='')
+          .main-section__left-day 15 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-day 16 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-day 17 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-day 18 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-day 19 авг
+            .main-section__left-hidden День открытых дверей
+          .main-section__left-close
+        .main-section__right-bar
+          .main-section__right-item
+            img(src='images/tel.png' alt='')
+            .main-section__right-text консультация
+          .main-section__right-item.main-section__left-item--mb
+            img(src='images/mail.png' alt='')
+            .main-section__right-text Подписаться
+        .container
+          .row
+            .col-md-12
+              +e.title Следите за новостями РШУ
+            +e.A.btn(href="#") Подписаться
+      section.pb-0.pt-0
+        .container
+          .row
+            .col-md-12
+              +e.bread-crumps.bread-crumps
+                a.bread-crumps-link1(href="#")
                   | Главная
-                a.bread-crumps-link1(href='#') 
-                  | Преподаватели
+                a.bread-crumps-link1(href="#")
+                  | О школе
+                a.bread-crumps-link1(href="#")
+                  | Новости
                 a.bread-crumps-link1
-                  | Авраменко Андрей Геннадьевич
-    .container
-      
+                  | Улучшаем работу ИТ-отдела
+      +e.SECTION.content.pb-0
+        .container
+            .row
+              .col-md-12
+                +e.H2.subtitle Улучшаем работу ИТ-отдела
+                +e.P.date 20.11.2018
+              .col-md-5
+                +e.img-wrapper
+                    img(src="images/it-man.jpg", alt="изображение человека с компьютером", width="503", height="296")
+              .col-md-7
+                +e.text
+                  p
+                    | На прошлой неделе в Русской Школе Управления состоялись курсы повышения квалификации для директоров ИТ-компаний, ИТ-директоров, руководителей служб поддержки пользователей, менеджеров ИТ-инфраструктуры и специалистов служб технической поддержки.
+                  p
+                    | В рамках обучения разбирались вопросы, связанные с управлением ИТ-проектами, ИТ-инфраструктурой, информационными системами и ИТ-бюджетом. Наши преподаватели рассказали участникам семинаров о полном цикле управления проектами, организации и автоматизации ServiceDesk, применении Agile для бизнеса, инновациях в ИТ, а также о возможностях использования инновационных проектов и стартапов для развития компании. 
+                  p
+                    | В следующий раз
+                    |
+                    +e.A.text-link(href="#") семинары по ИТ
+
+                    |
+                    | будут проходить в Москве с 3 по 7 декабря. Спешите зарегистрироваться!
     include pug/footer.pug
