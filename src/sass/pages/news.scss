@@ -89,5 +89,10 @@ $orange-hover: #ff4005;
   &__text-link {
     text-decoration: underline;
     color: $blue;
+    transition: 0.2s;
+
+    &:hover {
+      color: #ff5f10;
+    }
   }
 }
