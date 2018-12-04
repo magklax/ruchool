@@ -13377,31 +13377,33 @@ a {
   background-position: center; }
 
 .news__title {
-  padding-bottom: 13px;
+  padding-bottom: 29px;
   color: #4e5c62;
-  font-family: "Futura Book C", Arial, sans-serif;
   font-size: 63px;
   line-height: 0.9;
   font-weight: 400;
   font-variant: small-caps;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.025em;
   text-align: center; }
 
 .news__subtitle {
-  margin: 0;
   color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
+  line-height: 1.06;
   text-transform: uppercase;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.78px;
+  margin: 0;
   text-align: center; }
   .news__subtitle::after {
     content: "";
-    display: block;
+    background: #86a3ae;
     width: 195px;
     height: 1px;
-    margin: 32px auto;
-    background: #4e5c62; }
+    margin: 42px auto 66px;
+    display: block;
+    margin: 32px auto; }
 
 .news__btn {
   display: inline-block;
@@ -13416,6 +13418,8 @@ a {
   border: none;
   transition: 0.2s;
   text-align: center; }
+  .news__btn:hover {
+    background: #ff4005; }
 
 .news__bread-crumps {
   margin-top: 20px;
@@ -13425,8 +13429,7 @@ a {
   padding-top: 50px; }
 
 .news__date {
-  margin: 0;
-  margin-bottom: 23px;
+  margin-top: 0;
   text-align: center;
   font-variant: small-caps;
   line-height: 1.2; }
@@ -13436,14 +13439,17 @@ a {
   margin-left: -15px; }
 
 .news__text {
-  padding-left: 40px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 0.4px; }
+  padding-left: 40px; }
 
 .news__text p {
-  margin: 17px 0;
-  text-align: justify; }
+  margin: 0;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  margin: 17px 0; }
 
 .news__text-link {
   text-decoration: underline;
