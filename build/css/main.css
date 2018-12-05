@@ -13456,3 +13456,61 @@ a {
   transition: 0.2s; }
   .news__text-link:hover {
     color: #ff5f10; }
+
+.newslist {
+  padding: 44px 0; }
+  .newslist ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0; }
+  .newslist .personal-main__bottom {
+    padding: 0; }
+  .newslist .news__text-link {
+    white-space: nowrap;
+    display: inline-block; }
+
+.newslist__item {
+  width: 555px;
+  display: flex;
+  border: 0.8px solid #86a3ae;
+  margin: 0 0 22px;
+  background-color: #edf2f3; }
+
+.newslist__img-link {
+  font-size: 0;
+  flex-shrink: 0; }
+
+.newslist__wrapper {
+  box-sizing: border-box;
+  padding: 12px 5px 12px 20px;
+  line-height: 1.2; }
+
+.newslist__title {
+  margin: 5px 0 10px;
+  text-transform: uppercase;
+  font-weight: 400; }
+  .newslist__title::after {
+    content: "";
+    background: #86a3ae;
+    width: 195px;
+    height: 1px;
+    margin: 42px auto 66px;
+    display: block;
+    width: 154px;
+    margin: 10px 0; }
+
+.newslist__date {
+  font-size: 12px;
+  font-variant: small-caps; }
+
+.newslist__excerpt {
+  margin: 0;
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  display: block;
+  margin: 5px 0; }
