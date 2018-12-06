@@ -13459,13 +13459,6 @@ a {
 
 .newslist {
   padding: 44px 0; }
-  .newslist ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0 0 20px;
-    margin: 0; }
   .newslist .personal-main__bottom {
     padding: 0; }
   .newslist .news__text-link {
@@ -13473,11 +13466,13 @@ a {
     display: inline-block; }
 
 .newslist__item {
-  width: 555px;
   display: flex;
   border: 0.8px solid #86a3ae;
   margin: 0 0 22px;
   background-color: #edf2f3; }
+
+.newslist__item:last-child {
+  margin-bottom: 30px; }
 
 .newslist__img-link {
   font-size: 0;
@@ -13514,3 +13509,202 @@ a {
   font-weight: 400;
   display: block;
   margin: 5px 0; }
+
+.branches__main-section {
+  margin-top: -160px;
+  padding-top: 220px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.branches__title {
+  padding-bottom: 100px;
+  color: #ffffff;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 63px;
+  line-height: 0.635;
+  font-variant: small-caps;
+  text-align: center; }
+
+.branches__content {
+  padding: 30px 0 35px; }
+
+.branches__content .col-md-3 {
+  margin-bottom: 30px; }
+
+.branches__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.branches__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 150px; }
+
+.branches__cityname {
+  margin: 10px 0 0;
+  font-family: "Futura Demi C", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.263;
+  font-weight: 400;
+  font-variant: small-caps; }
+  .branches__cityname::after {
+    content: "";
+    background: #86a3ae;
+    width: 195px;
+    height: 1px;
+    margin: 42px auto 66px;
+    display: block;
+    margin: 12px auto 7px; }
+
+.branches__item span,
+.branches__email {
+  display: inline-block;
+  line-height: 1.375; }
+
+.branches__email {
+  text-transform: uppercase; }
+
+.branches__btn {
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid #8c9ba0; }
+
+.branches__btn_item {
+  margin: 10px auto 0;
+  padding: 9px 48px; }
+  .branches__btn_item:hover {
+    border: 1px solid rgba(134, 163, 174, 0.4); }
+
+.branches__page {
+  padding: 45px 0 0; }
+
+.branches__subtitle {
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.06;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+  text-align: center; }
+  .branches__subtitle::after {
+    content: "";
+    background: #86a3ae;
+    width: 195px;
+    height: 1px;
+    margin: 42px auto 66px;
+    display: block;
+    margin: 24px auto 34px; }
+
+.branches__btn-wrapper {
+  margin-bottom: 35px; }
+
+.branches__btn_page {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  color: #ffffff;
+  background-color: #ff5722;
+  border: 1px solid #ff5722; }
+  .branches__btn_page:hover {
+    background: #ff4005; }
+
+.branches__map {
+  height: 360px;
+  margin-bottom: 25px; }
+
+.branches__route {
+  padding: 12px 0;
+  line-height: 1.4; }
+  .branches__route p:not(.branches__attention) {
+    margin: 0;
+    text-align: justify; }
+
+.branches__upper {
+  text-transform: uppercase; }
+
+.branches__attention {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid; }
+
+.contact-us {
+  background-color: #edf2f3;
+  margin-bottom: -53px; }
+
+.contact-us__wrapper {
+  padding-bottom: 30px;
+  text-align: center; }
+
+.contact-us__subtitle {
+  color: #4e5c62;
+  font-family: "Futura Medium C", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.06;
+  text-transform: uppercase;
+  letter-spacing: 0.78px; }
+  .contact-us__subtitle::after {
+    content: "";
+    background: #86a3ae;
+    width: 195px;
+    height: 1px;
+    margin: 42px auto 66px;
+    display: block;
+    margin: 24px auto 44px; }
+
+.contact-us__text {
+  margin-bottom: 8px; }
+
+.contact-us__wrapper-select,
+.contact-us__wrapper-text:not(:last-child) {
+  margin-bottom: 16px; }
+
+.contact-us__field {
+  padding: 9px 15px 5px;
+  width: 100%;
+  border: 1px solid #8c9ba0;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Futura Book C", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  background-color: transparent; }
+  .contact-us__field:hover {
+    border: 1px solid #c4c4c4; }
+
+.contact-us__wrapper-textarea {
+  height: 100%; }
+  .contact-us__wrapper-textarea textarea {
+    resize: none;
+    height: 100%; }
+
+.contact-us__btn {
+  display: block;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.2s;
+  text-align: center; }
+
+.contact-us__btn_right {
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid #8c9ba0; }
+  .contact-us__btn_right:hover {
+    border: 1px solid rgba(134, 163, 174, 0.4); }
+
+.contact-us__btn_left {
+  margin-left: auto;
+  padding: 8px 38px;
+  color: #ffffff;
+  background-color: #ff5722;
+  border: 1px solid #ff5722; }
+  .contact-us__btn_left:hover {
+    background: #ff4005; }

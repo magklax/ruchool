@@ -1,0 +1,78 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title("Контакты")
+    include pug/styles.pug
+    meta(http-equiv="Cache-Control", content="public")
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    +b.SECTION.branches__main-section.branches.pb-0(style="background-image: url(images/contacts.jpg)")
+      .main-section__left-bar
+        .main-section__left-item
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')
+        .main-section__left-item
+          img(src='images/calendar-white.png' alt='')
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-close
+      .main-section__right-bar
+        .main-section__right-item
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')
+          .main-section__right-text Подписаться
+      .container
+        .row
+          .col-md-2
+          .col-md-10
+            +e.title Контакты
+
+    +b.SECTION.branches__page
+      .container
+        +e.subtitle Мы в г. Москва
+        +e.btn-wrapper.row
+          .col-md-2
+          .col-md-2
+          .col-md-2.pl-0.mb-0
+            +e.BUTTON.btn._page(type="button") 7 минут пешком от м.Ботанический сад
+          .col-md-2.pr-0.mb-0
+            +e.BUTTON.btn._page(type="button") 25 минут пешком от м.ВДНХ
+          .col-md-2
+          .col-md-2
+        +e.map
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afba61b9cbe2cfa74420a4cb175a89e504d3d72c9e9ccd206c7583a2f31c7e3da&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        p г. Москва, ул. Сельскохозяйственная, д.17, корпус 5, телефон: 8 495 980 57 28, E-mail: uprav@uprav.ru
+
+        +e.route
+          p
+            +e.SPAN.upper Как нас найти:
+          p Выход из метро ВДНХ из первого вагона из центра. Далее по указателям в сторону ВДНХ. После выхода из метро вы идете пешком в сторону Главного входа Выставки, оставляя по левую руку стелу Музея Космонавтики.
+          p Проходите через Главный вход ВДНХ и идете прямо, никуда не сворачивая до фонтана Дружба Народов и далее до Промышленной площади (ориентир – ракета «Восток», которая стоит посреди этой площади).
+          p С Промышленной площади уходите направо – по указателю на Совхозный вход. Дорога к нему проходит через Архитектурный, а затем Совхозный проезды.
+          p После того, как вы покидаете территорию ВДНХ – поверните направо и пройдите 200 метров. Вы увидите шлагбаум и вход на территорию гостиницы «Турист». Заходите на территорию гостиницы и двигайтесь по прямой 100 метров – пока не окажетесь у главного входа в Бизнес-отель (ул. Сельскохозяйственная, 17 к. 5).
+          +e.P.attention
+            +e.SPAN.upper Внимание!
+            |Проход от метро ВДНХ занимает больше времени (25 минут) и более сложен в плане ориентирования. Если Вы впервые приезжаете к нам  учиться, то мы рекомендуем пользоваться метро Ботанический сад.
+
+    include pug/footer.pug

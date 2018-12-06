@@ -49,55 +49,57 @@ html
             +e.A.btn(href="#") Подписаться
       +b.SECTION.newslist.pb-0
         .container
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-1.jpg", alt="изображение 1", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 20.11.2018
-              +e.H4.title Расширяем границы бизнеса
-              +e.SPAN.excerpt В московском офисе Русской Школы Управления прошло обучение по ВЭД.&emsp;
-                a.news__text-link(href="#") Читать далее
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-2.jpg", alt="изображение 2", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 14.11.2018
-              +e.H4.title Фотоконкурс «Учусь в РШУ» — итоги октября
-              +e.SPAN.excerpt РШУ подводит итоги ежемесячного фотоконкурса.&emsp;
-                a.news__text-link(href="#") Читать далее
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-3.jpg", alt="изображение 3", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 12.11.2018
-              +e.H4.title РШУ стала партнером конкурса «Лидеры России»
-              +e.SPAN.excerpt Участникам конкурса доступны специальные условия обучения.&emsp;
-                a.news__text-link(href="#") Читать далее
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-4.jpg", alt="изображение 4", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 19.11.2018
-              +e.H4.title Повышаем эффективность финансового менеджмента
-              +e.SPAN.excerpt На прошлой неделе в РШУ состоялись курсы по финансам, экономике и бухгалтерии.&emsp;
-                a.news__text-link(href="#") Читать далее
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-5.jpg", alt="изображение 5", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 13.11.2018
-              +e.H4.title Кого и чему будут учить в 2019 году
-              +e.SPAN.excerpt Русская Школа Управления приглашает принять участие в опросе.&emsp;
-                a.news__text-link(href="#") Читать далее
-          +e.LI.item
-            +e.A.img-link(href="#")
-              img(src="images/news-pic-6.jpg", alt="изображение 6", width="228", height="174")
-            +e.wrapper
-              +e.SPAN.date 09.11.2018
-              +e.H4.title РШУ провела курсы по логистике и недвижимости
-              +e.SPAN.excerpt В Санкт-Петербурге прошло обучение специалистов по логистике и коммерческой недвижимости.&emsp;
-                a.news__text-link(href="#") Читать далее
-        .container
+          .row
+            .col-md-6
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-1.jpg", alt="изображение 1", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 20.11.2018
+                  +e.H4.title Расширяем границы бизнеса
+                  +e.SPAN.excerpt В московском офисе Русской Школы Управления прошло обучение по ВЭД.&emsp;
+                    a.news__text-link(href="#") Читать далее
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-2.jpg", alt="изображение 2", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 14.11.2018
+                  +e.H4.title Фотоконкурс «Учусь в РШУ» — итоги октября
+                  +e.SPAN.excerpt РШУ подводит итоги ежемесячного фотоконкурса.&emsp;
+                    a.news__text-link(href="#") Читать далее
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-3.jpg", alt="изображение 3", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 12.11.2018
+                  +e.H4.title РШУ стала партнером конкурса «Лидеры России»
+                  +e.SPAN.excerpt Участникам конкурса доступны специальные условия обучения.&emsp;
+                    a.news__text-link(href="#") Читать далее
+            .col-md-6
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-4.jpg", alt="изображение 4", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 19.11.2018
+                  +e.H4.title Повышаем эффективность финансового менеджмента
+                  +e.SPAN.excerpt На прошлой неделе в РШУ состоялись курсы по финансам, экономике и бухгалтерии.&emsp;
+                    a.news__text-link(href="#") Читать далее
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-5.jpg", alt="изображение 5", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 13.11.2018
+                  +e.H4.title Кого и чему будут учить в 2019 году
+                  +e.SPAN.excerpt Русская Школа Управления приглашает принять участие в опросе.&emsp;
+                    a.news__text-link(href="#") Читать далее
+              +e.item
+                +e.A.img-link(href="#")
+                  img(src="images/news-pic-6.jpg", alt="изображение 6", width="228", height="174")
+                +e.wrapper
+                  +e.SPAN.date 09.11.2018
+                  +e.H4.title РШУ провела курсы по логистике и недвижимости
+                  +e.SPAN.excerpt В Санкт-Петербурге прошло обучение специалистов по логистике и коммерческой недвижимости.&emsp;
+                    a.news__text-link(href="#") Читать далее
           .personal-main__bottom
             a.personal-main__more Показать еще
             .personal-main__wrapper-select

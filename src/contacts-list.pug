@@ -1,0 +1,160 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/bemto.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title("Контакты")
+    include pug/styles.pug
+    meta(http-equiv="Cache-Control", content="public")
+
+  body
+    // векторный спрайт
+    include pug/svg.pug
+    // векторный спрайт конец
+
+    include pug/header.pug
+    +b.SECTION.branches__main-section.branches.pb-0(style="background-image: url(images/contacts.jpg)")
+      .main-section__left-bar
+        .main-section__left-item
+          img(src='images/like.png' alt='')
+        .main-section__left-item.main-section__left-item--mb
+          img(src='images/calendar.png' alt='')
+        .main-section__left-item
+          img(src='images/calendar-white.png' alt='')
+        .main-section__left-day 15 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 16 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 17 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 18 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-day 19 авг
+          .main-section__left-hidden День открытых дверей
+        .main-section__left-close
+      .main-section__right-bar
+        .main-section__right-item
+          img(src='images/tel.png' alt='')
+          .main-section__right-text консультация
+        .main-section__right-item.main-section__left-item--mb
+          img(src='images/mail.png' alt='')
+          .main-section__right-text Подписаться
+      .container
+        .row
+          .col-md-2
+          .col-md-10
+            +e.title Контакты
+
+    +b.SECTION.branches__content
+      .container
+        .row
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-1.png", alt="герб 1", width="61", height="70")
+                +e.H4.cityname г. Москва
+              span ул. Сельскохозяйственная, д.17, корп.5
+              span +7 495 980 57 28
+              +e.A.email(href="#") E-mail: uprav@uprav.ru
+              +e.A.btn(href="#") Схема проезда
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-2.png", alt="герб 2", width="61", height="70")
+                +e.H4.cityname г. Санкт-Петербург
+              span пер. Биржевой 2, литера «А»
+              span +7 812 982 55 92
+              +e.A.email(href="#") E-mail: spb@uprav.ru
+              +e.A.btn._item(href="#") Схема проезда
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-3.png", alt="герб 3", width="73", height="65")
+                +e.H4.cityname г. Екатеринбург
+              span ул. Сакко и Ванцетти, д.102
+              span +7 343 346 53 89
+              +e.A.email(href="#") E-mail: ural@uprav.ru
+              +e.A.btn._item(href="#") Схема проезда
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-4.png", alt="герб 4", width="39", height="67")
+                +e.H4.cityname г. Тюмень
+              span ул. Розы Люксембург, 12Б, этаж 2
+              span +7 812 982 55 92
+              +e.A.email(href="#") E-mail: office.tmn@uprav.ru
+              +e.A.btn._item(href="#") Схема проезда
+          .col-md-3.mb-0
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-5.png", alt="герб 5", width="49", height="83")
+                +e.H4.cityname г. Краснодар
+              span ул. Красных партизан, 238, отель «Red Royal»
+              span +7 800 100 02 03
+              +e.A.email(href="#") E-mail: minimba@uprav.ru
+              +e.A.btn._item(href="#") Схема проезда
+
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-6.png", alt="герб 6", width="49", height="83")
+                +e.H4.cityname г. Уфа
+              span ул. Менделеева, д.137 (ТРЦ «Иремель», вход с ул. Бакалинская)
+              span +7 927 335 34 76
+              +e.A.email(href="#") E-mail: c-vector@mail.ru
+              +e.A.btn._item(href="#") Схема проезда
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-7.png", alt="герб 7", width="88", height="68")
+                +e.H4.cityname г. Ростов-на-Дону
+              span Проспект Буденовский, 120/1, офис 33-34
+              span +7 863 226 46 84, +7 928 182 11 71
+              +e.A.email(href="#") E-mail: pr1500@yandex.ru
+              +e.A.btn._item(href="#") Схема проезда
+          .col-md-3
+            +e.item
+              +e.A.link(href="#")
+                img(src="images/emblem-8.png", alt="герб 86", width="48", height="64")
+                +e.H4.cityname г. Нижневартовск
+              span ул. Героев Самотлора, д.19, офис 1005
+              span +7 3466 422 629,  +7 3466 528 481
+              +e.A.email(href="#") E-mail: c-burord2013@mail.ru
+              +e.A.btn._item(href="#") Схема проезда
+
+    +b.SECTION.contact-us
+      .container
+        +e.wrapper
+          +e.subtitle Связаться с нами
+          +e.P.text По вопросам сотрудничества обращайтесь:
+        +e.FORM.form
+          .row.m-b-40
+            .col-md-6.mb-0
+              +e.wrapper-select
+                select.js-select
+                  option Если вы заинтересованы стать преподавателем Школы
+                  option По вопросам обучения на программе Мini МВА
+                  option Если вы заинтересованы стать нашим партнером
+                  option По вопросам корпоративного обучения
+                  option По вопросам информационного партнерства и размещения рекламы
+                  option Пресс-служба, комментарии экспертов и интервью
+              +e.wrapper-text
+                +e.INPUT.field(type="text" name="user-name" placeholder="ФИО")
+              +e.wrapper-text
+                +e.INPUT.field(type="tel" name="user-phone" placeholder="Телефон:")
+              +e.wrapper-text
+                +e.INPUT.field(type="email" name="user-email" placeholder="E-mail:")
+            .col-md-6.mb-0
+              +e.wrapper-textarea
+                +e.TEXTAREA.field(placeholder="Краткое описание заявки")
+          .row
+            .col-md-3
+              +e.BUTTON.btn._right(type="button") Скачать реквизиты
+            .col-md-3
+            .col-md-3
+            .col-md-3
+              +e.BUTTON.btn._left(type="submit") Отправить
+    include pug/footer.pug
